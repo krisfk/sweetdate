@@ -280,3 +280,8 @@ h2.title-type-pink-line {
     width: 32px;
     height: 32px;
 }
+
+.s-case-div {
+    display: block;
+    background: #fff;
+}
