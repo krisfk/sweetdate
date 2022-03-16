@@ -66,15 +66,17 @@ get_header();
         <div class="col-6">
 
             <div class="row align-items-center">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-1.png" alt="">
-                    </div>
-                    <div class="d-table-cell  align-middle">
+                <div class="col-6">
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-1.png" alt="">
+                        </div>
+                        <div class="d-table-cell  align-middle">
 
-                        <h2 class="d-inline-block m-0">
-                            關於蜜遇
-                        </h2>
+                            <h2 class="d-inline-block m-0">
+                                關於蜜遇
+                            </h2>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 text-end">
