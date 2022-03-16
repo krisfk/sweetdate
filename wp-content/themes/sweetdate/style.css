@@ -245,5 +245,37 @@ h2.title-type-pink-line {
     background-size: 6px;
     position: relative;
     width: 100%;
-    padding-bottom: 20px;
+}
+
+.beginner-section:before {
+    left: 0;
+    top: 0;
+}
+
+.beginner-section:before,
+.beginner-section:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(./assets/images/point_corner.svg);
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+}
+
+.beginner-section:after {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.beginner-section:before,
+.beginner-section:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(./assets/images/point_corner.svg);
+    background-size: contain;
+    width: 32px;
+    height: 32px;
 }
