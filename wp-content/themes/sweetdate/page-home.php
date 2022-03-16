@@ -80,6 +80,22 @@ get_header();
 
 
             <div class="sep-line mt-4 mb-4"></div>
+
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h2 class="d-inline-block m-0">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-2.png" alt=""> 最新資訊
+                    </h2>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="#" class="more-btn">更多資訊 〉</a>
+                </div>
+            </div>
+
+            <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
+
+
+            <div class="sep-line mt-4 mb-4"></div>
         </div>
     </div>
 
