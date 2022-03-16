@@ -285,8 +285,9 @@ h2.title-type-pink-line {
     display: block;
     background: #fff;
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 0 1rem;
+    /* box-shadow: 5px 2px 13px #000; */
 }
 
 .s-case-div img {
@@ -297,4 +298,7 @@ h2.title-type-pink-line {
     text-decoration: none;
     color: #595959;
     text-align: left;
+    display: block;
+    padding: 1rem;
+    box-shadow: 1px 2px 4px #d3d3d3;
 }
