@@ -154,7 +154,7 @@ get_header();
         </div>
     </div>
 
-    <div class="news-act-container">
+    <div class="news-act-container mt-5">
 
         <h2 class="title-type-pink-line">最新活動</h2>
 
