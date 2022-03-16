@@ -148,7 +148,13 @@ echo'</li>';
                     <a href="#" class="mobile-menu-btn"> <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <div class="col-2">fds</div>
+                <div class="col-2">
+
+                    <ul>
+                        <li><a href="javascript:void(0);">會員註冊</a></li>
+                        <li><a href="javascript:void(0);">登入</a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
