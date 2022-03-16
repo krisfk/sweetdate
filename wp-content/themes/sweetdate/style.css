@@ -335,5 +335,5 @@ h2.title-type-pink-line {
 }
 
 .news-act-container .s-case-div-a h2 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
 }
