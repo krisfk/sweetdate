@@ -164,7 +164,18 @@ get_header();
 
                 <a href="#" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
-                    <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
+                    <div class="mt-4">
+
+
+                        <h2>成熟人士. 婚活族New Year Wish下午茶</h2>
+
+
+                        <div>來結織同樣希望以組織家庭為前題的對象! <br>
+                            飲品及精美下午茶 <br>
+                            創配對遊戲, 助你極速了解對象, 送精美奬品 <br>
+                            一對一論流傾談時段 (每組4-6分鐘) <br>
+                            使用Dating自動配對系統 (全電腦操作// 保證100% )</div>
+                    </div>
                 </a>
             </div>
             <div class="col-6"></div>
