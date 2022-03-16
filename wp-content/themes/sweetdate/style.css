@@ -247,13 +247,13 @@ h2.title-type-pink-line {
     width: 100%;
 }
 
-.beginner-section:before {
+.successful-story-container:before {
     left: 0;
     top: 0;
 }
 
-.beginner-section:before,
-.beginner-section:after {
+.successful-story-container:before,
+.successful-story-container:after {
     content: '';
     display: block;
     position: absolute;
@@ -263,14 +263,14 @@ h2.title-type-pink-line {
     height: 32px;
 }
 
-.beginner-section:after {
+.successful-story-container:after {
     right: 0;
     bottom: 0;
     transform: rotate(180deg);
 }
 
-.beginner-section:before,
-.beginner-section:after {
+.successful-story-container:before,
+.successful-story-container:after {
     content: '';
     display: block;
     position: absolute;
