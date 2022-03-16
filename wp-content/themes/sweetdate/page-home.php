@@ -22,10 +22,6 @@ get_header();
             <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
                 alt="">
 
-        </div>
-
-        <div class="col-6">
-
             <ul class="thumbanil-slide-ul">
                 <li>
                     <a href="javascript:void(0);">
@@ -64,6 +60,12 @@ get_header();
 
                 </li>
             </ul>
+
+        </div>
+
+        <div class="col-6">
+
+
 
         </div>
     </div>
