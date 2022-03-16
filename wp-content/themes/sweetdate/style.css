@@ -245,6 +245,7 @@ h2.title-type-pink-line {
     background-size: 6px;
     position: relative;
     width: 100%;
+    padding: 4rem;
 }
 
 .successful-story-container:before {
