@@ -174,4 +174,5 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .user-menu-ul li a {
     text-decoration: none;
     color: #595959;
+    font-size: 0.9rem;
 }
