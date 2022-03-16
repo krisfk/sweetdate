@@ -12,7 +12,25 @@
 get_header();
 
 ?>
-<!-- fdsfd -->
+<div class="container">
+
+
+    <div class="row">
+
+        <div class="col-6">
+
+            <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
+                alt="">
+
+        </div>
+
+        <div class="col-6">
+
+
+        </div>
+    </div>
+
+</div>
 <?php
 /* Start the Loop */
 // while ( have_posts() ) :
