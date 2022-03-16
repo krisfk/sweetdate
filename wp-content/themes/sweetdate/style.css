@@ -314,7 +314,7 @@ h2.title-type-pink-line {
 }
 
 .slick-dots {
-    position: relative;
+    position: relative !important;
     display: block;
     width: 100%;
     padding: 0;
