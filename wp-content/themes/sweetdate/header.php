@@ -132,30 +132,7 @@ echo'</li>';
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/fb-icon.png" alt="">
                         </a>
                     </li>
-                    <li>
 
-                        <a href="<?php echo get_site_url()?>/my-account">
-                            <?php
-                        
-                        if(is_user_logged_in())
-                        {
-                            ?>
-                            會員帳號
-                            <?php
-                        }
-                        else
-                        {
-                            ?>
-                            會員登入
-                            <?php
-                        }
-                        ?>
-
-
-
-
-                        </a>
-                    </li>
 
 
 
