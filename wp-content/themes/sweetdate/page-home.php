@@ -89,7 +89,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-2.png" alt="">
 
                             <h2 class="d-inline-block m-0">
-                                <span> 最新資訊</span>
+                                <span> 最新資訊 <br>fdsf</span>
                             </h2>
                         </div>
                     </div>
