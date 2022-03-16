@@ -302,3 +302,13 @@ h2.title-type-pink-line {
     padding: 1rem;
     box-shadow: 1px 2px 4px #d3d3d3;
 }
+
+.slick-dots li button:before {
+    color: #e6e6e6 !important;
+    opacity: 1 !important;
+    font-size: 0.8rem !important;
+}
+
+.slick-dots .slick-active button:before {
+    color: #b4b4b4 !important;
+}
