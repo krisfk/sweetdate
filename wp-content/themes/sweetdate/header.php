@@ -159,10 +159,11 @@ echo'</li>';
 
                 </ul>
 
-                <div class="col-10 text-end mobile-menu-btn-div">
+                <div class="col-8 text-end mobile-menu-btn-div">
                     <a href="#" class="mobile-menu-btn"> <i class="fa fa-bars"></i>
                     </a>
                 </div>
+                <div class="col-2">fds</div>
             </div>
 
         </div>
