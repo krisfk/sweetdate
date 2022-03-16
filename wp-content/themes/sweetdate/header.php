@@ -32,41 +32,6 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <?php
-    session_start();
-    if($_SESSION['enter'] != 'wonderland' )
-    {
-        ?>
-    <div class="warn-lightbox">
-        <div class="container">
-            <!-- <a href="<?php echo get_site_url();?>" class="logo-a col-2"> -->
-            <img style="height:100px" class="mt-5"
-                src="<?php echo get_template_directory_uri()?>/assets/images/logo-clean.png" alt="">
-
-
-            <div style="font-size:30px" class="mt-3"> 警告：
-            </div>
-            <div class="mt-3">
-                本網頁內容及相關物品可能令人反感<br>
-                不可將其內容及物品派發、傳閱、出售、出租、交給或出借予年齡未滿18歲的人士<br>
-                或將其內容及物品向該等人士出示、<br>
-                播凡年齡未滿十八或當地政府規定的合法年齡 !<br>
-                請即按"離開"。
-            </div>
-
-            <div class="mt-3">
-
-                <a href="javascript:void(0);" class="enough-18 warn-btn">18歲以上按此進入</a>
-                <a href="http://www.google.com.hk" class="younger-than-18 warn-btn">18歲未滿離開</a>
-
-            </div>
-
-        </div>
-    </div>
-    <?php
-    }
-    
-    ?>
 
 
     <?php
