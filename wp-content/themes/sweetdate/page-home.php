@@ -26,6 +26,44 @@ get_header();
 
         <div class="col-6">
 
+            <ul class="thumbanil-slide-ul">
+                <li>
+                    <a href="javascript:void(0);">
+
+                        <img class="w-100"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            alt="">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+
+                        <img class="w-100"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            alt="">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+
+                        <img class="w-100"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            alt="">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+
+                        <img class="w-100"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            alt="">
+                    </a>
+
+                </li>
+            </ul>
 
         </div>
     </div>
