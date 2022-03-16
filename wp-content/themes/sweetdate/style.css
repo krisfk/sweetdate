@@ -120,7 +120,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .top-menu-ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 }
 
 .top-menu-ul li a {
