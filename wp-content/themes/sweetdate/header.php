@@ -36,33 +36,32 @@
 
     <?php
 
-echo 11;
-$args = array(  
-    'post_type' => 'config',
-    'post_status' => 'publish',
-    'posts_per_page' => -1, 
-);
+// $args = array(  
+//     'post_type' => 'config',
+//     'post_status' => 'publish',
+//     'posts_per_page' => -1, 
+// );
 
-$query = new WP_Query( $args ); 
+// $query = new WP_Query( $args ); 
  
-$query->the_post(); 
-$wts=get_field('whatsapp_no');
+// $query->the_post(); 
+// $wts=get_field('whatsapp_no');
 ?>
 
 
-    <a target="_blank" href="https://wa.me/852<?php echo str_replace(' ','',get_field('whatsapp_no'))?>"
+    <!-- <a target="_blank" href="https://wa.me/852<?php echo str_replace(' ','',get_field('whatsapp_no'))?>"
         class="fixed-whatsapp-icon">
 
 
-    </a>
+    </a> -->
     <?php
-    wp_reset_postdata(); 
+    // wp_reset_postdata(); 
 
     ?>
     <a href="javascript:void(0);" class="menu-close-btn"></a>
 
 
-    <div class="lightbox-bg">
+    <!-- <div class="lightbox-bg">
 
 
         <div class="lightbox-click-area"></div>
@@ -75,14 +74,14 @@ $wts=get_field('whatsapp_no');
         <div class="search-div lightbox-ele">
             <?php aws_get_search_form( true ); ?>
         </div>
-    </div>
+    </div> -->
     <div id="page" class="site">
-
+        <!-- 
         <img class="wonderland-bg" src="<?php echo get_template_directory_uri()?>/assets/images/wonderland-bg.jpg"
-            alt="">
+            alt=""> -->
 
         <a class="skip-link screen-reader-text"
-            href="#content"><?php esc_html_e( 'Skip to content', 'wonderland' ); ?></a>
+            href="#content"><?php esc_html_e( 'Skip to content', 'sweetdate' ); ?></a>
 
 
 
