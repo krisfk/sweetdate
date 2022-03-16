@@ -232,5 +232,10 @@ h2 {
 }
 
 h2.title-type-pink-line {
-    font-size: 4rem;
+    font-size: 1.8rem !important;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+    border-bottom: 3px solid #f17698;
 }
