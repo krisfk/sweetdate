@@ -294,7 +294,8 @@ h2.title-type-pink-line {
     width: 100%;
 }
 
-.s-case-div-a {
+.s-case-div-a,
+.s-case-div-a:hover {
     text-decoration: none;
     color: #595959;
     text-align: left;
