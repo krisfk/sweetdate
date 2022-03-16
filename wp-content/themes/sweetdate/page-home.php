@@ -79,6 +79,7 @@ get_header();
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6 text-end">
                     <a href="#" class="more-btn">詳細簡介 〉</a>
                 </div>
@@ -105,9 +106,9 @@ get_header();
                     </div>
                 </div>
 
-            </div>
-            <div class="col-6 text-end">
-                <a href="#" class="more-btn">更多資訊 〉</a>
+                <div class="col-6 text-end">
+                    <a href="#" class="more-btn">更多資訊 〉</a>
+                </div>
             </div>
         </div>
 
