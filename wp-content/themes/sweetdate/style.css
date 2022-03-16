@@ -183,6 +183,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     top: -2px;
 }
 
+.thumbanil-slide-ul {
+    margin: 0;
+    padding: 0;
+}
+
 .thumbanil-slide-ul li {
     display: inline-block;
     list-style-type: none;
