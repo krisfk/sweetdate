@@ -15,9 +15,9 @@ get_header();
 <div class="container mt-4">
 
 
-    <div class="row">
+    <div class="row gx-5">
 
-        <div class="col-7">
+        <div class="col-6">
 
             <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
                 alt="">
@@ -63,7 +63,7 @@ get_header();
 
         </div>
 
-        <div class="col-5">
+        <div class="col-6">
 
             <div class="row align-items-center">
                 <div class="col-6">
