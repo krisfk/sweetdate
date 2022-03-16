@@ -66,7 +66,7 @@ get_header();
         <div class="col-6">
 
             <div>
-                <h2>
+                <h2 class="d-inline-block">
                     <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-1.png" alt=""> 關於蜜遇
                 </h2>
 
