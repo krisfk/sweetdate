@@ -116,7 +116,7 @@ get_header();
 
     </div>
 
-    <div class="successful-story-container">
+    <div class="successful-story-container mt-5">
 
         <h2 class="title-type-pink-line">成功故事</h2>
     </div>
