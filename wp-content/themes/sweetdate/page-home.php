@@ -88,7 +88,7 @@ get_header();
                         <div class="d-table-cell">
                             <h2 class="d-inline-block m-0">
                                 <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-2.png" alt="">
-                                最新資訊
+                                <span> 最新資訊</span>
                             </h2>
                         </div>
                     </div>
