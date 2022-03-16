@@ -60,7 +60,7 @@
     ?>
     <a href="javascript:void(0);" class="menu-close-btn"></a>
 
-    fds
+    <!-- fds -->
     <!-- <div class="lightbox-bg">
 
 
@@ -72,7 +72,7 @@
             class="enlarge-foto lightbox-ele">
 
         <div class="search-div lightbox-ele">
-            <?php aws_get_search_form( true ); ?>
+            <?php //aws_get_search_form( true ); ?>
         </div>
     </div> -->
     <div id="page" class="site">
