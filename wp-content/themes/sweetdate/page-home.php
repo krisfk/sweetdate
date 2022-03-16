@@ -119,6 +119,26 @@ get_header();
     <div class="successful-story-container mt-5">
 
         <h2 class="title-type-pink-line">成功故事</h2>
+
+
+
+        <div class="successful-story-carousel">
+
+            <div>
+                <a href="#"><img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt=""></a>
+                <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
+            </div>
+
+            <div>
+                <a href="#"><img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt=""></a>
+                <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
+            </div>
+
+            <div>
+                <a href="#"><img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt=""></a>
+                <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
+            </div>
+        </div>
     </div>
 
 
@@ -129,6 +149,45 @@ get_header();
 
 
 </div>
+
+<script type="text/javascript">
+$(function() {
+    // successful - story - carousel
+
+    $('.successful-story-carousel').slick({
+        infinite: true,
+        // slidesToShow: 3,
+        // slidesToScroll: 3,
+        dots: true,
+        arrows: false,
+        autoplay: false,
+        pauseOnFocus: false,
+        infinite: true,
+        speed: 800,
+        autoplaySpeed: 5000,
+        cssEase: 'ease-out',
+        pauseOnHover: false,
+        responsive: [{
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
+    });
+
+})
+// successful-story-carousel
+</script>
 <?php
 /* Start the Loop */
 // while ( have_posts() ) :
