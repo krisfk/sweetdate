@@ -239,3 +239,11 @@ h2.title-type-pink-line {
     padding: 0 0 1rem 0;
     border-bottom: 3px solid #f17698;
 }
+
+.successful-story-container {
+    background: #faf5f0 url(./assets/images/bg_stripe.png) repeat;
+    background-size: 6px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
