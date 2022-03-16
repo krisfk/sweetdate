@@ -312,3 +312,14 @@ h2.title-type-pink-line {
 .slick-dots .slick-active button:before {
     color: #b4b4b4 !important;
 }
+
+.slick-dots {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
