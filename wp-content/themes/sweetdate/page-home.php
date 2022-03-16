@@ -83,9 +83,16 @@ get_header();
 
             <div class="row align-items-center">
                 <div class="col-6">
-                    <h2 class="d-inline-block m-0">
-                        <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-2.png" alt=""> 最新資訊
-                    </h2>
+
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <h2 class="d-inline-block m-0">
+                                <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-2.png" alt="">
+                                最新資訊
+                            </h2>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-6 text-end">
                     <a href="#" class="more-btn">更多資訊 〉</a>
