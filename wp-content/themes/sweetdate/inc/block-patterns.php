@@ -1,135 +1,203 @@
 <?php
 /**
- * Twenty Twenty-Two: Block Patterns
+ * Block Patterns
  *
- * @since Twenty Twenty-Two 1.0
+ * @link https://developer.wordpress.org/reference/functions/register_block_pattern/
+ * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty
+ * @since Twenty Twenty 1.6
  */
 
 /**
- * Registers block patterns and categories.
- *
- * @since Twenty Twenty-Two 1.0
- *
- * @return void
+ * Register Block Pattern Category.
  */
-function twentytwentytwo_register_block_patterns() {
-	$block_pattern_categories = array(
-		'featured' => array( 'label' => __( 'Featured', 'twentytwentytwo' ) ),
-		'footer'   => array( 'label' => __( 'Footers', 'twentytwentytwo' ) ),
-		'header'   => array( 'label' => __( 'Headers', 'twentytwentytwo' ) ),
-		'query'    => array( 'label' => __( 'Query', 'twentytwentytwo' ) ),
-		'pages'    => array( 'label' => __( 'Pages', 'twentytwentytwo' ) ),
+if ( function_exists( 'register_block_pattern_category' ) ) {
+
+	register_block_pattern_category(
+		'twentytwenty',
+		array( 'label' => esc_html__( 'Twenty Twenty', 'twentytwenty' ) )
 	);
-
-	/**
-	 * Filters the theme block pattern categories.
-	 *
-	 * @since Twenty Twenty-Two 1.0
-	 *
-	 * @param array[] $block_pattern_categories {
-	 *     An associative array of block pattern categories, keyed by category name.
-	 *
-	 *     @type array[] $properties {
-	 *         An array of block category properties.
-	 *
-	 *         @type string $label A human-readable label for the pattern category.
-	 *     }
-	 * }
-	 */
-	$block_pattern_categories = apply_filters( 'twentytwentytwo_block_pattern_categories', $block_pattern_categories );
-
-	foreach ( $block_pattern_categories as $name => $properties ) {
-		if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
-			register_block_pattern_category( $name, $properties );
-		}
-	}
-
-	$block_patterns = array(
-		'footer-default',
-		'footer-dark',
-		'footer-logo',
-		'footer-navigation',
-		'footer-title-tagline-social',
-		'footer-social-copyright',
-		'footer-navigation-copyright',
-		'footer-about-title-logo',
-		'footer-query-title-citation',
-		'footer-query-images-title-citation',
-		'footer-blog',
-		'general-subscribe',
-		'general-featured-posts',
-		'general-layered-images-with-duotone',
-		'general-wide-image-intro-buttons',
-		'general-large-list-names',
-		'general-video-header-details',
-		'general-list-events',
-		'general-two-images-text',
-		'general-image-with-caption',
-		'general-video-trailer',
-		'general-pricing-table',
-		'general-divider-light',
-		'general-divider-dark',
-		'header-default',
-		'header-large-dark',
-		'header-small-dark',
-		'header-image-background',
-		'header-image-background-overlay',
-		'header-with-tagline',
-		'header-text-only-green-background',
-		'header-text-only-salmon-background',
-		'header-title-and-button',
-		'header-text-only-with-tagline-black-background',
-		'header-logo-navigation-gray-background',
-		'header-logo-navigation-social-black-background',
-		'header-title-navigation-social',
-		'header-logo-navigation-offset-tagline',
-		'header-stacked',
-		'header-centered-logo',
-		'header-centered-logo-black-background',
-		'header-centered-title-navigation-social',
-		'header-title-and-button',
-		'hidden-404',
-		'hidden-bird',
-		'hidden-heading-and-bird',
-		'page-about-media-left',
-		'page-about-simple-dark',
-		'page-about-media-right',
-		'page-about-solid-color',
-		'page-about-links',
-		'page-about-links-dark',
-		'page-about-large-image-and-buttons',
-		'page-layout-image-and-text',
-		'page-layout-image-text-and-video',
-		'page-layout-two-columns',
-		'page-sidebar-poster',
-		'page-sidebar-grid-posts',
-		'page-sidebar-blog-posts',
-		'page-sidebar-blog-posts-right',
-		'query-default',
-		'query-simple-blog',
-		'query-grid',
-		'query-text-grid',
-		'query-image-grid',
-		'query-large-titles',
-		'query-irregular-grid',
-	);
-
-	/**
-	 * Filters the theme block patterns.
-	 *
-	 * @since Twenty Twenty-Two 1.0
-	 *
-	 * @param array $block_patterns List of block patterns by name.
-	 */
-	$block_patterns = apply_filters( 'twentytwentytwo_block_patterns', $block_patterns );
-
-	foreach ( $block_patterns as $block_pattern ) {
-		$pattern_file = get_theme_file_path( '/inc/patterns/' . $block_pattern . '.php' );
-
-		register_block_pattern(
-			'twentytwentytwo/' . $block_pattern,
-			require $pattern_file
-		);
-	}
 }
-add_action( 'init', 'twentytwentytwo_register_block_patterns', 9 );
+
+/**
+ * Register Block Patterns.
+ */
+if ( function_exists( 'register_block_pattern' ) ) {
+
+	// Call to Action.
+	register_block_pattern(
+		'twentytwenty/call-to-action',
+		array(
+			'title'         => esc_html__( 'Call to Action', 'twentytwenty' ),
+			'categories'    => array( 'twentytwenty' ),
+			'viewportWidth' => 1400,
+			'content'       => implode(
+				'',
+				array(
+					'<!-- wp:group {"align":"wide","style":{"color":{"background":"#ffffff"}}} -->',
+					'<div class="wp-block-group alignwide has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:group -->',
+					'<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+					'<h2 class="has-text-align-center">' . esc_html__( 'Support the Museum and Get Exclusive Offers', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"align":"center"} -->',
+					'<p class="has-text-align-center">' . esc_html__( 'Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually.', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+					'<!-- wp:button {"align":"center","className":"is-style-outline"} -->',
+					'<div class="wp-block-button aligncenter is-style-outline"><a class="wp-block-button__link" href="#">' . esc_html__( 'Become a Member', 'twentytwenty' ) . '</a></div>',
+					'<!-- /wp:button --></div></div>',
+					'<!-- /wp:group --></div></div>',
+					'<!-- /wp:group -->',
+				)
+			),
+		)
+	);
+
+	// Double Call to Action.
+	register_block_pattern(
+		'twentytwenty/double-call-to-action',
+		array(
+			'title'         => esc_html__( 'Double Call to Action', 'twentytwenty' ),
+			'categories'    => array( 'twentytwenty' ),
+			'viewportWidth' => 1400,
+			'content'       => implode(
+				'',
+				array(
+					'<!-- wp:columns {"align":"wide"} -->',
+					'<div class="wp-block-columns alignwide"><!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"}}} -->',
+					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+					'<h2 class="has-text-align-center">' . esc_html__( 'The Museum', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"align":"center"} -->',
+					'<p class="has-text-align-center">' . esc_html__( 'Award-winning exhibitions featuring internationally-renowned artists.', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+					'<!-- wp:buttons {"align":"center"} -->',
+					'<div class="wp-block-buttons aligncenter"><!-- wp:button {"className":"is-style-outline"} -->',
+					'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link">' . esc_html__( 'Read More', 'twentytwenty' ) . '</a></div>',
+					'<!-- /wp:button --></div>',
+					'<!-- /wp:buttons --></div></div>',
+					'<!-- /wp:group --></div>',
+					'<!-- /wp:column -->',
+					'<!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"}}} -->',
+					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+					'<h2 class="has-text-align-center">' . esc_html__( 'The Store', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"align":"center"} -->',
+					'<p class="has-text-align-center">' . esc_html__( 'An awe-inspiring collection of books, prints, and gifts from our exhibitions.', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+					'<!-- wp:buttons {"align":"center"} -->',
+					'<div class="wp-block-buttons aligncenter"><!-- wp:button {"className":"is-style-outline"} -->',
+					'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link">' . esc_html__( 'Shop Now', 'twentytwenty' ) . '</a></div>',
+					'<!-- /wp:button --></div>',
+					'<!-- /wp:buttons --></div></div>',
+					'<!-- /wp:group --></div>',
+					'<!-- /wp:column --></div>',
+					'<!-- /wp:columns -->',
+				)
+			),
+		)
+	);
+
+	// Event Details.
+	register_block_pattern(
+		'twentytwenty/event-details',
+		array(
+			'title'         => esc_html__( 'Event Details', 'twentytwenty' ),
+			'categories'    => array( 'twentytwenty' ),
+			'viewportWidth' => 1400,
+			'content'       => implode(
+				'',
+				array(
+					'<!-- wp:group {"align":"wide","backgroundColor":"primary"} -->',
+					'<div class="wp-block-group alignwide has-primary-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns -->',
+					'<div class="wp-block-columns"><!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->',
+					'<p class="has-text-align-center has-background-color has-text-color has-large-font-size">' . wp_kses_post( __( '<em>Dates</em><br>Aug 1 — Dec 1', 'twentytwenty' ) ) . '</p>',
+					'<!-- /wp:paragraph --></div>',
+					'<!-- /wp:column -->',
+					'<!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->',
+					'<p class="has-text-align-center has-background-color has-text-color has-large-font-size">' . wp_kses_post( __( '<em>Location</em><br>Exhibit Hall B', 'twentytwenty' ) ) . '</p>',
+					'<!-- /wp:paragraph --></div>',
+					'<!-- /wp:column -->',
+					'<!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->',
+					'<p class="has-text-align-center has-background-color has-text-color has-large-font-size">' . wp_kses_post( __( '<em>Price</em><br>Included', 'twentytwenty' ) ) . '</p>',
+					'<!-- /wp:paragraph --></div>',
+					'<!-- /wp:column --></div>',
+					'<!-- /wp:columns --></div></div>',
+					'<!-- /wp:group -->',
+				)
+			),
+		)
+	);
+
+	// Featured Content.
+	register_block_pattern(
+		'twentytwenty/featured-content',
+		array(
+			'title'         => esc_html__( 'Featured Content', 'twentytwenty' ),
+			'categories'    => array( 'twentytwenty' ),
+			'viewportWidth' => 1400,
+			'content'       => implode(
+				'',
+				array(
+					'<!-- wp:columns {"align":"wide"} -->',
+					'<div class="wp-block-columns alignwide"><!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:image {"sizeSlug":"full"} -->',
+					'<figure class="wp-block-image size-full"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/2020-three-quarters-1.png" alt="' . esc_attr__( 'Abstract Rectangles', 'twentytwenty' ) . '"/></figure>',
+					'<!-- /wp:image -->',
+					'<!-- wp:heading -->',
+					'<h2>' . esc_html__( 'Works and Days', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"fontSize":"larger"} -->',
+					'<p class="has-larger-font-size">' . esc_html__( 'August 1 — December 1', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+					'<!-- wp:button {"align":"left","className":"is-style-outline"} -->',
+					'<div class="wp-block-button alignleft is-style-outline"><a class="wp-block-button__link" href="#">' . esc_html__( 'Read More', 'twentytwenty' ) . '</a></div>',
+					'<!-- /wp:button --></div>',
+					'<!-- /wp:column -->',
+					'<!-- wp:column -->',
+					'<div class="wp-block-column"><!-- wp:image {sizeSlug":"full"} -->',
+					'<figure class="wp-block-image size-full"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/2020-three-quarters-2.png" alt="' . esc_attr__( 'Abstract Rectangles', 'twentytwenty' ) . '"/></figure>',
+					'<!-- /wp:image -->',
+					'<!-- wp:heading -->',
+					'<h2>' . esc_html__( 'The Life I Deserve', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"fontSize":"larger"} -->',
+					'<p class="has-larger-font-size">' . esc_html__( 'August 1 — December 1', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+					'<!-- wp:button {"align":"left","className":"is-style-outline"} -->',
+					'<div class="wp-block-button alignleft is-style-outline"><a class="wp-block-button__link" href="#">' . esc_html__( 'Read More', 'twentytwenty' ) . '</a></div>',
+					'<!-- /wp:button --></div>',
+					'<!-- /wp:column --></div>',
+					'<!-- /wp:columns -->',
+				)
+			),
+		)
+	);
+
+	// Introduction.
+	register_block_pattern(
+		'twentytwenty/introduction',
+		array(
+			'title'         => esc_html__( 'Introduction', 'twentytwenty' ),
+			'categories'    => array( 'twentytwenty' ),
+			'viewportWidth' => 1400,
+			'content'       => implode(
+				'',
+				array(
+					'<!-- wp:heading {"align":"center"} -->',
+					'<h2 class="has-text-align-center">' . esc_html__( 'The Premier Destination for Modern Art in Sweden', 'twentytwenty' ) . '</h2>',
+					'<!-- /wp:heading -->',
+					'<!-- wp:paragraph {"dropCap":true} -->',
+					'<p class="has-drop-cap">' . esc_html__( 'With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political, and philosophical issues are intrinsic to our program. As visitor, you are invited to guided tours artist talks, lectures, film screenings, and other events with free admission.', 'twentytwenty' ) . '</p>',
+					'<!-- /wp:paragraph -->',
+				)
+			),
+		)
+	);
+}
