@@ -302,6 +302,7 @@ h2.title-type-pink-line {
     display: block;
     padding: 1rem;
     box-shadow: 1px 2px 4px #d3d3d3;
+    text-decoration: none;
 }
 
 .slick-dots li button:before {
