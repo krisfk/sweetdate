@@ -284,4 +284,15 @@ h2.title-type-pink-line {
 .s-case-div {
     display: block;
     background: #fff;
+    text-align: center;
+}
+
+.s-case-div img {
+    width: 100%;
+}
+
+.s-case-div-a {
+    text-decoration: none;
+    color: #595959;
+    text-align: left;
 }
