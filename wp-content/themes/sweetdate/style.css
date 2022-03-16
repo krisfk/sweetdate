@@ -186,6 +186,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .thumbanil-slide-ul li {
     display: inline-block;
     list-style-type: none;
+    width: 25%;
 }
 
 .thumbanil-slide-ul li a {}
