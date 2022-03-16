@@ -154,6 +154,18 @@ get_header();
         </div>
     </div>
 
+    <div class="news-act-container">
+
+        <h2 class="title-type-pink-line">最新活動</h2>
+
+        <div class="row">
+
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+
+        </div>
+
+    </div>
 
 
 </div>
