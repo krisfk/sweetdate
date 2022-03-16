@@ -49,7 +49,7 @@
 ?>
 
 
-    <!-- <a target="_blank" href="https://wa.me/852<?php echo str_replace(' ','',get_field('whatsapp_no'))?>"
+    <!-- <a target="_blank" href="https://wa.me/852<?php //echo str_replace(' ','',get_field('whatsapp_no'))?>"
         class="fixed-whatsapp-icon">
 
 
@@ -60,7 +60,7 @@
     ?>
     <a href="javascript:void(0);" class="menu-close-btn"></a>
 
-
+    fds
     <!-- <div class="lightbox-bg">
 
 
@@ -84,7 +84,6 @@
             href="#content"><?php esc_html_e( 'Skip to content', 'sweetdate' ); ?></a>
 
 
-        fdsf
         <div class=" top-menu-div pt-4 container">
             <div class="row align-items-center">
 
