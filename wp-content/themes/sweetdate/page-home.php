@@ -36,7 +36,7 @@ get_header();
                     <a href="javascript:void(0);">
 
                         <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-2.jpg"
                             alt="">
                     </a>
 
@@ -45,7 +45,7 @@ get_header();
                     <a href="javascript:void(0);">
 
                         <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-3.jpg"
                             alt="">
                     </a>
 
@@ -54,7 +54,7 @@ get_header();
                     <a href="javascript:void(0);">
 
                         <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
+                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-4.jpg"
                             alt="">
                     </a>
 
