@@ -230,3 +230,7 @@ h2 {
     height: 1px;
     background: #e1e1e1;
 }
+
+h2.title-type-pink-line {
+    font-size: 2rem;
+}

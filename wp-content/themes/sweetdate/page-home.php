@@ -118,7 +118,7 @@ get_header();
 
     <div class="successful-story-container">
 
-        fdas
+        <h2 class="title-type-pink-line">成功故事</h2>
     </div>
 
 
