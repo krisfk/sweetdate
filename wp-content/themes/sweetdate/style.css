@@ -305,6 +305,10 @@ h2.title-type-pink-line {
     text-decoration: none;
 }
 
+.s-case-div-a img {
+    width: 100%;
+}
+
 .slick-dots li button:before {
     color: #e6e6e6 !important;
     opacity: 1 !important;
