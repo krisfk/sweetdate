@@ -73,7 +73,7 @@ get_header();
                         </div>
                         <div class="d-table-cell  align-middle">
 
-                            <h2 class="d-inline-block m-0">
+                            <h2 class="d-inline-block m-0 ps-2">
                                 關於蜜遇
                             </h2>
                         </div>
@@ -98,7 +98,7 @@ get_header();
                         </div>
                         <div class="d-table-cell  align-middle">
 
-                            <h2 class="d-inline-block m-0">
+                            <h2 class="d-inline-block m-0  ps-2">
                                 最新資訊
                             </h2>
                         </div>
