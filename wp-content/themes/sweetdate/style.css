@@ -202,8 +202,15 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     width: 100%;
 }
 
-.more-btn {
+.more-btn,
+.more-btn:hover {
     color: #9c9c9c;
     border: 1px solid #9c9c9c;
-    padding: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transform: 0.2s all;
+}
+
+.more-btn:hover {
+    opacity: 0.85;
 }
