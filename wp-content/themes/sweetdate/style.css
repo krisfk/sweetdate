@@ -173,6 +173,12 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 .user-menu-ul li a {
     text-decoration: none;
+    display: block;
     color: #595959;
     font-size: 0.9rem;
+}
+
+.user-menu-ul li a img {
+    position: relative;
+    top: -2px;
 }
