@@ -49,36 +49,10 @@
 ?>
 
 
-    <!-- <a target="_blank" href="https://wa.me/852<?php //echo str_replace(' ','',get_field('whatsapp_no'))?>"
-        class="fixed-whatsapp-icon">
-
-
-    </a> -->
-    <?php
-    // wp_reset_postdata(); 
-
-    ?>
     <a href="javascript:void(0);" class="menu-close-btn"></a>
 
-    <!-- fds -->
-    <!-- <div class="lightbox-bg">
-
-
-        <div class="lightbox-click-area"></div>
-
-
-        <a href="javascript:void(0);" class="lightbox-close-btn"></a>
-        <img src="http://localhost:8888/wonderland/wp-content/uploads/2021/08/test-product-3-e1630187757431.jpg" alt=""
-            class="enlarge-foto lightbox-ele">
-
-        <div class="search-div lightbox-ele">
-            <?php //aws_get_search_form( true ); ?>
-        </div>
-    </div> -->
     <div id="page" class="site">
-        <!-- 
-        <img class="wonderland-bg" src="<?php echo get_template_directory_uri()?>/assets/images/wonderland-bg.jpg"
-            alt=""> -->
+
 
         <a class="skip-link screen-reader-text"
             href="#content"><?php esc_html_e( 'Skip to content', 'sweetdate' ); ?></a>
