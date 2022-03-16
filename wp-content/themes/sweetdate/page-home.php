@@ -65,7 +65,13 @@ get_header();
 
         <div class="col-6">
 
+            <div>
+                <h2>
+                    <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-1.png" alt=""> 關於蜜遇
+                </h2>
 
+                <a href="#" class="more-btn">詳細簡介 〉</a>
+            </div>
 
         </div>
     </div>
