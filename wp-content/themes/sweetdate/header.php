@@ -124,7 +124,14 @@ echo'</li>';
 
 ?>
 
-                    <li>fdsf</li>
+                    <li>
+                        <a href="javascript:void()">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/ig-icon.png" alt="">
+                        </a>
+                        <a href="javascript:void(0);">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/fb-icon.png" alt="">
+                        </a>
+                    </li>
                     <li>
 
                         <a href="<?php echo get_site_url()?>/my-account">
