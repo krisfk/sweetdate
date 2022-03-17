@@ -18,7 +18,7 @@
 
 <?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-<footer id="colophon" class="site-footer text-center mt-5 mb-5">
+<footer id="colophon" class="site-footer text-center mt-5 mb-4">
     Copyright © <?php echo date('Y');?> TutorCloud
 </footer><!-- #colophon -->
 
