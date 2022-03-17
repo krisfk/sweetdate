@@ -20,33 +20,31 @@ get_header();
     <div class="main-content mt-4">
 
 
-        <form action="">
 
-            <form action="" class="contact-form" method="post">
-                <table>
-                    <tr>
-                        <td>稱呼</td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
+        <form action="" class="contact-form" method="post">
+            <table>
+                <tr>
+                    <td>稱呼</td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
 
-                        <td>電郵</td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
+                    <td>電郵</td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
 
-                        <td>標題</td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
+                    <td>標題</td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
 
-                        <td>內容</td>
-                        <td><textarea class="form-control" name="" rows="4" cols="50">
+                    <td>內容</td>
+                    <td><textarea class="form-control" name="" rows="4" cols="50">
 </textarea></td>
-                    </tr>
+                </tr>
 
-                </table>
-            </form>
+            </table>
 
         </form>
 
