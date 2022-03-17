@@ -44,7 +44,10 @@ get_header();
 </textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2">fds</td>
+                    <td colspan="2" class="text-end">
+
+                        <input type="submit" class="form-submit-btn">
+                    </td>
                 </tr>
 
             </table>
