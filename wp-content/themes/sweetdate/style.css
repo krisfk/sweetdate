@@ -338,6 +338,11 @@ h2.title-type-pink-line {
     font-size: 1.8rem !important;
 }
 
+.news-act-info-ul {
+    margin: 0;
+    padding: 0;
+}
+
 .news-act-info-ul li {
     display: inline-block;
 }
