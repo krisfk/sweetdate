@@ -437,5 +437,5 @@ h2.title-type-pink-line {
 
 .contact-form td {
     padding: 0 1rem 0.5rem 0;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
