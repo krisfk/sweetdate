@@ -12,7 +12,7 @@
 get_header();
 
 ?>
-<div class="container mt-4">
+<div class="container mt-3">
 
     <h2 class="title-type-pink-line">關於我們</h2>
 
