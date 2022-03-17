@@ -91,7 +91,16 @@ for($i=0;$i<6;$i++)
 
 
 </div>
+<script type="text/javascript">
+$(function() {
 
+    $('.filter-ul li a').click(function() {
+
+        $('.filter-ul li a').removeClass('active');
+        $(this).addClass('active');
+    })
+})
+</script>
 
 
 <?php
