@@ -452,11 +452,15 @@ h2.title-type-pink-line {
 .qt .arrow {
     height: 17px;
     width: auto;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
 }
 
 .qt {
     display: block;
-    border: 1px solid;
+    border: 1px solid #595959;
     padding: 1rem;
     text-decoration: none;
+    color: #595959;
 }
