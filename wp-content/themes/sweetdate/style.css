@@ -413,3 +413,7 @@ h2.title-type-pink-line {
     color: #595959;
     border-radius: 0.3rem;
 }
+
+.filter-ul li a.active {
+    background: #f17698;
+}
