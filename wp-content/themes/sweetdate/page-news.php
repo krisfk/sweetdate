@@ -17,7 +17,7 @@ get_header();
     <h2 class="title-type-pink-line">最新資訊</h2>
 
 
-    <div class="main-content mt-4">
+    <div class="main-content-2 mt-4">
 
 
 
