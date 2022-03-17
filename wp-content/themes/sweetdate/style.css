@@ -342,5 +342,10 @@ h2.title-type-pink-line {
     display: inline-block;
 }
 
+.news-act-info-ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
 
 /*  */
