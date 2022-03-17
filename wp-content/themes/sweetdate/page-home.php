@@ -160,6 +160,10 @@ get_header();
 
         <div class="row">
 
+            <?php
+        for($i=0;$i<4;$i++)
+        {
+            ?>
             <div class="col-6">
 
                 <a href="#" class="s-case-div-a"><img
@@ -264,7 +268,10 @@ get_header();
                     </div>
                 </a>
             </div>
-            <div class="col-6"></div>
+            <?php
+        }
+        ?>
+
 
         </div>
 
