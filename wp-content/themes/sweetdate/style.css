@@ -455,10 +455,11 @@ h2.title-type-pink-line {
     position: absolute;
     top: 1.7rem;
     right: 1rem;
+    transition: 0.2s all;
 }
 
 .qt.active .arrow {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 .qt,
