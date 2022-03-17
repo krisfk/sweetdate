@@ -394,3 +394,12 @@ h2.title-type-pink-line {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.filter-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-ul li {
+    display: inline-block;
+}
