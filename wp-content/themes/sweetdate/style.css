@@ -440,4 +440,11 @@ h2.title-type-pink-line {
     /* vertical-align: top; */
 }
 
-.form-submit-btn {}
+.form-submit-btn {
+    background: #f07798;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0 0;
+}
