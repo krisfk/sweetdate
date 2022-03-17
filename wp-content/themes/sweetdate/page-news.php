@@ -26,7 +26,7 @@ get_header();
         <div class="row mt-3">
 
             <?php
-for($i=0;$i<4;$i++)
+for($i=0;$i<6;$i++)
 {
     ?>
             <div class="col-4 mb-4">
