@@ -29,7 +29,7 @@ get_header();
 for($i=0;$i<4;$i++)
 {
     ?>
-            <div class="col-4 mb-3">
+            <div class="col-4 mb-4">
 
                 <a href="#" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
