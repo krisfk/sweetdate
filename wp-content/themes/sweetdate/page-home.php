@@ -163,6 +163,7 @@ get_header();
             <?php
         for($i=0;$i<4;$i++)
         {
+            //
             ?>
             <div class="col-6 mb-2">
 
