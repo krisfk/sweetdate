@@ -359,7 +359,12 @@ h2.title-type-pink-line {
     border: none;
 }
 
-.gender-div {
+.gender-div.male {
+    background: #e0edf4;
+    color: #000;
+}
+
+.gender-div.female {
     background: #e0edf4;
     color: #000;
 }

@@ -224,7 +224,6 @@ get_header();
 
 
                                     </td>
-                                    <!--  -->
                                     <td class="">
                                         <div class="row">
 
@@ -234,11 +233,34 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
+
                             </table>
                         </div>
-                        <div class="gender-div female">
 
+
+                        <div class="gender-div female">
+                            <table>
+                                <tr>
+                                    <td class="gender-icon-td">
+                                        <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png"
+                                            alt="">
+
+
+                                    </td>
+                                    <td class="">
+                                        <div class="row">
+
+                                            <div class="col-5">名額 : 10人 (36 ~ 41歲)</div>
+                                            <div class="col-7">餘額 : 2人</div>
+                                            <div class="col-12 mt-1">大學程度或以上, 穏定職業及希望組織家庭</div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
                         </div>
+
+
                     </div>
                 </a>
             </div>
