@@ -20,8 +20,12 @@ get_header();
     <div class="main-content mt-4">
 
 
+        <?php
 
-        <div>
+for($i=0;$i<4;$i++)
+{
+    ?>
+        <div class="qt-ans-group">
 
             <a href="javascript:void(0);" class="qt position-relative">
 
@@ -53,6 +57,10 @@ get_header();
 
             </div>
         </div>
+        <?php
+}
+?>
+
 
 
 
