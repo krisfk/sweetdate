@@ -158,7 +158,7 @@ get_header();
 
         <h2 class="title-type-pink-line">最新活動</h2>
 
-        <div class="row">
+        <div class="row mt-4">
 
             <?php
         for($i=0;$i<4;$i++)
