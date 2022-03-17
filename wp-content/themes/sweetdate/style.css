@@ -457,7 +457,8 @@ h2.title-type-pink-line {
     right: 1rem;
 }
 
-.qt {
+.qt,
+.qt:hover {
     display: block;
     border: 1px solid #595959;
     padding: 1rem;
