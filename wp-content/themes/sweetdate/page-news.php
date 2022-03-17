@@ -23,19 +23,19 @@ get_header();
 
         <ul class="filter-ul">
             <li>
-                <a class="active" href="#">顯示全部</a>
+                <a class="active" href="javascript:void(0);">顯示全部</a>
             </li>
             <li>
-                <a href="">約會資訊</a>
+                <a href="javascript:void(0);">約會資訊</a>
             </li>
             <li>
-                <a href="">約會貼士</a>
+                <a href="javascript:void(0);">約會貼士</a>
             </li>
             <li>
-                <a href="">最新活動</a>
+                <a href="javascript:void(0);">最新活動</a>
             </li>
             <li>
-                <a href="">成功故事</a>
+                <a href="javascript:void(0);">成功故事</a>
             </li>
         </ul>
 
