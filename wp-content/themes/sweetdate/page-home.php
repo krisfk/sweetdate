@@ -218,14 +218,14 @@ get_header();
                         <div class="gender-div male">
                             <table>
                                 <tr>
-                                    <td class="p-5">
+                                    <td class="">
                                         <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
                                             alt="">
 
 
                                     </td>
                                     <!--  -->
-                                    <td class="p-5">
+                                    <td class="">
                                         <div class="row">
 
                                             <div class="col-4">名額 : 10人 (36 ~ 41歲)</div>

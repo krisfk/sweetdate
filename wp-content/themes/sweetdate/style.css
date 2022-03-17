@@ -363,3 +363,7 @@ h2.title-type-pink-line {
     background: #e0edf4;
     color: #000;
 }
+
+.gender-div td {
+    padding: 1rem;
+}
