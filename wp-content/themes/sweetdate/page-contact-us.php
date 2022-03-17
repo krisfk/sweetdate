@@ -22,7 +22,7 @@ get_header();
 
         <form action="">
 
-            <form action="" method="post">
+            <form action="" class="contact-form" method="post">
                 <table>
                     <tr>
                         <td>稱呼</td>

@@ -429,3 +429,7 @@ h2.title-type-pink-line {
     padding: 0.5rem 1rem;
     border-radius: 1rem;
 }
+
+.contact-form td {
+    padding: 1rem;
+}
