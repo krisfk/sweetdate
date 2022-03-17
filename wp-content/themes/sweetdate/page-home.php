@@ -175,7 +175,7 @@ get_header();
                             <ul class="news-act-info-ul">
                                 <li>
                                     <div class="d-table">
-                                        <div class="d-table-cell">
+                                        <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
                                                 alt="">
                                         </div>
@@ -185,7 +185,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="d-table">
-                                        <div class="d-table-cell">
+                                        <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
                                                 alt="">
                                         </div>
@@ -195,7 +195,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="d-table">
-                                        <div class="d-table-cell">
+                                        <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
                                                 alt="">
                                         </div>
