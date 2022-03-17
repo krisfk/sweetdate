@@ -218,7 +218,7 @@ get_header();
                 </a>
             </div>
             <div class="col-6"></div>
-
+            <!--  -->
         </div>
 
     </div>
