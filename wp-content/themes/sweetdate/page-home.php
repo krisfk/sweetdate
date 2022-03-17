@@ -158,7 +158,7 @@ get_header();
 
         <div class="position-relative">
             <h2 class="title-type-pink-line">最新活動</h2>
-            <a href="#" class="more-btn position-absolute top right">詳細簡介 〉</a>
+            <a href="#" class="more-btn position-absolute top-0 end-0">詳細簡介 〉</a>
 
         </div>
 
