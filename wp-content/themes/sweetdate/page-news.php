@@ -47,6 +47,7 @@ for($i=0;$i<6;$i++)
     ?>
             <div class="col-4 mb-4">
 
+                <div class="news-label">約會資訊</div>
                 <a href="#" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">

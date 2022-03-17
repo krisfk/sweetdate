@@ -417,3 +417,9 @@ h2.title-type-pink-line {
 .filter-ul li a.active {
     background: #fff3f5;
 }
+
+.news-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
