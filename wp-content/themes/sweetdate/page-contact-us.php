@@ -24,23 +24,32 @@ get_header();
         <form action="" class="contact-form" method="post">
             <table>
                 <tr>
-                    <td>稱呼</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td>
+                        <label for="nickname">稱呼</label>
+
+                    </td>
+                    <td><input id="nickname" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
-                    <td>電郵</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td>
+                        <label for="email">電郵</label>
+                    </td>
+                    <td><input id="email" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
-                    <td>標題</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td>
+                        <label for="msg-title">標題</label>
+                    </td>
+                    <td><input id="msg-title" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
-                    <td class="align-top pt-1">內容</td>
-                    <td><textarea class="form-control" name="" rows="4" cols="50">
+                    <td class="align-top pt-1">
+                        <label for="msg-content">內容</label>
+                    </td>
+                    <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
 </textarea></td>
                 </tr>
                 <tr>
