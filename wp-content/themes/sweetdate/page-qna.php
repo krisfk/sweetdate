@@ -85,7 +85,7 @@ $(function() {
         if ($(this).hasClass('active')) {
             $(this).next('.ans').slideDown(200);
         } else {
-            $(this).next('.ans').fadeOut(200);
+            $(this).next('.ans').slideUp(200);
 
         }
     });
