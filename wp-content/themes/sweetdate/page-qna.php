@@ -25,6 +25,12 @@ get_header();
 
             <a href="javascript:void(0);" class="qt position-relative">
 
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
                 <span class="symbol">Q</span>
                 問題問題問題問題問題問題問題問題問題問題問題問題問題
 
