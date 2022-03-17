@@ -118,7 +118,7 @@ get_header();
 
     <div class="successful-story-container mt-5">
 
-        <div>
+        <div class="position-relative">
             <h2 class="title-type-pink-line">成功故事</h2>
             <a href="#" class="more-btn position-absolute top-0 end-0">全部故事 〉</a>
 
