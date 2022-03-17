@@ -358,3 +358,7 @@ h2.title-type-pink-line {
 .news-act-info-ul li:last-child {
     border: none;
 }
+
+.gender-div {
+    background: #e0edf4;
+}
