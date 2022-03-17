@@ -17,7 +17,7 @@ get_header();
     <h2 class="title-type-pink-line">關於我們</h2>
 
 
-    <div class="main-content">
+    <div class="main-content mt-4">
 
         <div class="text-center">
             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
