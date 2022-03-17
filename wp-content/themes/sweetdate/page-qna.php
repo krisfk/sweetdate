@@ -27,7 +27,8 @@ get_header();
 
                 <table>
                     <tr>
-                        <td> <span class="symbol">Q</span>
+                        <td class="pe-2">
+                            <span class="symbol">Q</span>
                         </td>
                         <td>問題問題問題問題問題問題問題問題問題問題問題問題問題</td>
                     </tr>
@@ -41,7 +42,8 @@ get_header();
 
                 <table>
                     <tr>
-                        <td> <span class="symbol">A</span>
+                        <td class="pe-2">
+                            <span class="symbol">A</span>
                         </td>
                         <td>答案答案答案答案答案答案答案答案答案答案答案答案答案</td>
                     </tr>
