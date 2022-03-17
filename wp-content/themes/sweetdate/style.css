@@ -476,11 +476,11 @@ h2.title-type-pink-line {
 }
 
 .qt .symbol {
-    color: #f07798;
     font-size: 1.5rem;
+    color: #f07798;
 }
 
 .ans .symbol {
-    color: #93abc4;
     font-size: 1.5rem;
+    color: #7798f0;
 }
