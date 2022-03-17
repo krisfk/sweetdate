@@ -457,6 +457,10 @@ h2.title-type-pink-line {
     right: 1rem;
 }
 
+.qt.active .arrow {
+    transform: rotate(90deg);
+}
+
 .qt,
 .qt:hover {
     display: block;
