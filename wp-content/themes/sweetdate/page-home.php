@@ -214,11 +214,31 @@ get_header();
                             創配對遊戲, 助你極速了解對象, 送精美奬品 <br>
                             一對一論流傾談時段 (每組4-6分鐘) <br>
                             使用Dating自動配對系統 (全電腦操作// 保證100% )</div>
+
+                        <div class="gender-div male">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
+                                            alt="">
+
+
+                                    </td>
+                                    <td>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="gender-div female">
+
+                        </div>
                     </div>
                 </a>
             </div>
             <div class="col-6"></div>
-            <!--  -->
+
         </div>
 
     </div>
