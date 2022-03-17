@@ -25,20 +25,24 @@ get_header();
             <form action="" method="post">
                 <table>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>稱呼</td>
+                        <td><input type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+
+                        <td>電郵</td>
+                        <td><input type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+
+                        <td>標題</td>
+                        <td><input type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+
+                        <td>內容</td>
+                        <td><textarea class="form-control" name="" rows="4" cols="50">
+</textarea></td>
                     </tr>
 
                 </table>
