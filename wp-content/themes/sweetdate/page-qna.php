@@ -21,38 +21,8 @@ get_header();
 
 
 
-        <form action="" class="contact-form" method="post">
-            <table>
-                <tr>
-                    <td>稱呼</td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
 
-                    <td>電郵</td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
 
-                    <td>標題</td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-
-                    <td class="align-top pt-1">內容</td>
-                    <td><textarea class="form-control" name="" rows="4" cols="50">
-</textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="text-end">
-
-                        <input type="submit" value="送出表格" class="form-submit-btn">
-                    </td>
-                </tr>
-
-            </table>
-
-        </form>
 
 
 
