@@ -345,10 +345,15 @@ h2.title-type-pink-line {
 
 .news-act-info-ul li {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     list-style-type: none;
+    border-right: 1px solid #cecece;
 }
 
 .news-act-info-ul li:first-child {
-    padding: 0 1rem 0 0;
+    padding: 0 0.5rem 0 0;
+}
+
+.news-act-info-ul li:last-child {
+    border: none;
 }
