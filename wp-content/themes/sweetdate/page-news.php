@@ -23,7 +23,7 @@ get_header();
 
         <ul class="filter-ul">
             <li>
-                <a href="active">顯示全部</a>
+                <a class="active" href="#">顯示全部</a>
             </li>
             <li>
                 <a href="">約會資訊</a>
