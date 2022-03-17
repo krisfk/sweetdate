@@ -39,7 +39,7 @@ get_header();
                 </tr>
                 <tr>
 
-                    <td>內容</td>
+                    <td class="align-top pt-1">內容</td>
                     <td><textarea class="form-control" name="" rows="4" cols="50">
 </textarea></td>
                 </tr>
