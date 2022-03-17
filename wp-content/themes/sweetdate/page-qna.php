@@ -23,13 +23,15 @@ get_header();
 
         <div>
 
-            <a href="javascript:void(0);" class="qt">
+            <a href="javascript:void(0);" class="qt position-relative">
 
                 <span class="symbol">Q</span>
                 問題問題問題問題問題問題問題問題問題問題問題問題問題
+
+                <img class="arrow" src="<?php echo get_template_directory_uri()?>/assets/images/down-arrow.png" alt="">
             </a>
 
-            <div class="ans">
+            <div class="ans position-relative">
                 <span class="symbol">A</span>
                 答案答案答案答案答案答案答案答案答案答案答案答案答案
 
