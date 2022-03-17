@@ -405,4 +405,8 @@ h2.title-type-pink-line {
     display: inline-block;
 }
 
-.filter-ul li a {}
+.filter-ul li a {
+    display: inline-block;
+    border: 1px solid #bbb;
+    padding: 1rem;
+}
