@@ -25,7 +25,7 @@ get_header();
 for($i=0;$i<4;$i++)
 {
     ?>
-        <div class="qt-ans-group mb-4">
+        <div class="qt-ans-group mb-3">
 
             <a href="javascript:void(0);" class="qt position-relative">
 
