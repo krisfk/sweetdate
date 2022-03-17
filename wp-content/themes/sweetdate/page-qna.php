@@ -27,19 +27,26 @@ get_header();
 
                 <table>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td> <span class="symbol">Q</span>
+                        </td>
+                        <td>問題問題問題問題問題問題問題問題問題問題問題問題問題</td>
                     </tr>
                 </table>
-                <span class="symbol">Q</span>
-                問題問題問題問題問題問題問題問題問題問題問題問題問題
+
 
                 <img class="arrow" src="<?php echo get_template_directory_uri()?>/assets/images/down-arrow.png" alt="">
             </a>
 
             <div class="ans position-relative">
-                <span class="symbol">A</span>
-                答案答案答案答案答案答案答案答案答案答案答案答案答案
+
+                <table>
+                    <tr>
+                        <td> <span class="symbol">A</span>
+                        </td>
+                        <td>答案答案答案答案答案答案答案答案答案答案答案答案答案</td>
+                    </tr>
+                </table>
+
 
 
             </div>
