@@ -367,3 +367,7 @@ h2.title-type-pink-line {
 .gender-div td {
     padding: 1rem;
 }
+
+.gender-div .gender-icon-td {
+    padding: 2rem 1rem 2rem 2rem;
+}

@@ -218,7 +218,7 @@ get_header();
                         <div class="gender-div male">
                             <table>
                                 <tr>
-                                    <td class="">
+                                    <td class="gender-icon-td">
                                         <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
                                             alt="">
 
