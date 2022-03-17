@@ -14,7 +14,7 @@ get_header();
 ?>
 <div class="container mt-3">
 
-    <h2 class="title-type-pink-line">關於我們</h2>
+    <h2 class="title-type-pink-line">聯給我們</h2>
 
 
     <div class="main-content mt-4">
