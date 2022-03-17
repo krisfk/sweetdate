@@ -45,7 +45,7 @@ get_header();
 for($i=0;$i<6;$i++)
 {
     ?>
-            <div class="col-4 mb-4">
+            <div class="col-4 mb-4 position-relative">
 
                 <div class="news-label">約會資訊</div>
                 <a href="#" class="s-case-div-a"><img
