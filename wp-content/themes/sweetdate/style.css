@@ -301,12 +301,16 @@ h2.title-type-pink-line {
     text-align: left;
     display: block;
     padding: 1rem;
-    box-shadow: 2px 1px 4px #d3d3d3;
+    box-shadow: 2px 2px 4px #d3d3d3, 2px 2px 4px #d3d3d3, 2px 2px 4px #d3d3d3, 2px 2px 0px #d3d3d3, 2px 1px 3px #d3d3d3;
     text-decoration: none;
 }
 
 .s-case-div-a img {
     width: 100%;
+}
+
+.slick-track {
+    padding: 1rem 0 1rem 0;
 }
 
 .slick-dots li button:before {
