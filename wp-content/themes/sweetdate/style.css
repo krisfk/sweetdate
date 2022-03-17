@@ -467,7 +467,7 @@ h2.title-type-pink-line {
 }
 
 .ans {
-    display: block;
+    display: none;
     border: 1px solid #dcdcdc;
     padding: 1rem;
     text-decoration: none;
