@@ -156,7 +156,11 @@ get_header();
 
     <div class="news-act-container mt-5">
 
-        <h2 class="title-type-pink-line">最新活動</h2>
+        <div class="position-relative">
+            <h2 class="title-type-pink-line">最新活動</h2>
+            <a href="#" class="more-btn">詳細簡介 〉</a>
+
+        </div>
 
         <div class="row mt-3">
 
