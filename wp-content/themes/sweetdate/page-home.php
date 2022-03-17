@@ -227,8 +227,8 @@ get_header();
                                     <td>
                                         <div class="row">
 
-                                            <div class="col-6">名額 : 10人 (36 ~ 41歲)</div>
-                                            <div class="col-6">餘額 : 2人</div>
+                                            <div class="col-4">名額 : 10人 (36 ~ 41歲)</div>
+                                            <div class="col-8">餘額 : 2人</div>
                                             <div class="col-12">大學程度或以上, 穏定職業及希望組織家庭</div>
                                         </div>
                                     </td>
