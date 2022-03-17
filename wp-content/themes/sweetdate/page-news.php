@@ -40,43 +40,7 @@ for($i=0;$i<4;$i++)
 
 
 
-                        <div>
-                            <ul class="news-act-info-ul">
-                                <li>
-                                    <div class="d-table">
-                                        <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
-                                                alt="">
-                                        </div>
-                                        <div class="d-table-cell">
-                                            12月9日</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-table">
-                                        <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
-                                                alt="">
-                                        </div>
-                                        <div class="d-table-cell">
-                                            15:30 - 17:00</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-table">
-                                        <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
-                                                alt="">
-                                        </div>
-                                        <div class="d-table-cell">
-                                            上環西餐廳 (鄰近MTR)</div>
-                                    </div>
-                                </li>
-                            </ul>
 
-
-
-                        </div>
 
                         <div class="mt-3">來結織同樣希望以組織家庭為前題的對象! <br>
                             飲品及精美下午茶 <br>
