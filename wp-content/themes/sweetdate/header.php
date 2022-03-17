@@ -62,7 +62,7 @@
             href="#content"><?php esc_html_e( 'Skip to content', 'sweetdate' ); ?></a>
 
 
-        <div class=" top-menu-div pt-4 container">
+        <div class=" top-menu-div pt-1 container">
             <div class="row align-items-center">
 
                 <a href="<?php echo get_site_url();?>" class="logo-a col-2">
