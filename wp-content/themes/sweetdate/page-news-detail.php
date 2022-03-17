@@ -14,7 +14,7 @@ get_header();
 ?>
 <div class="container mt-3">
 
-    <h2 class="title-type-pink-line">最新資訊</h2>
+    <h2 class="title-type-pink-line">titletitletitletitletitle</h2>
 
 
     <div class="main-content-2 mt-4">
@@ -24,10 +24,6 @@ get_header();
 
         <div class="row mt-3">
 
-            <?php
-for($i=0;$i<1;$i++)
-{
-    ?>
             <div class="col-12 mb-4 position-relative">
 
                 <div class="news-label">約會資訊</div>
@@ -54,9 +50,7 @@ for($i=0;$i<1;$i++)
                     </div>
                 </a>
             </div>
-            <?php
-}
-?>
+
 
 
         </div>
