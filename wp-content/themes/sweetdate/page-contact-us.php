@@ -46,7 +46,7 @@ get_header();
                 <tr>
                     <td colspan="2" class="text-end">
 
-                        <input type="submit" value="發送" class="form-submit-btn">
+                        <input type="submit" value="送出表格" class="form-submit-btn">
                     </td>
                 </tr>
 
