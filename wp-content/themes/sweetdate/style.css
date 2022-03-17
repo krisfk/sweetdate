@@ -449,6 +449,6 @@ h2.title-type-pink-line {
     margin: 1rem 0 0 0;
 }
 
-.qt:after {
+.qt::after {
     background: url(./assets/images/down-arrow.png);
 }
