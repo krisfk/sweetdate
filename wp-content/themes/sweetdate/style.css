@@ -449,4 +449,14 @@ h2.title-type-pink-line {
     margin: 1rem 0 0 0;
 }
 
-.qt .arrow {}
+.qt .arrow {
+    height: 17px;
+    width: auto;
+}
+
+.qt {
+    display: block;
+    border: 1px solid;
+    padding: 1rem;
+    text-decoration: none;
+}
