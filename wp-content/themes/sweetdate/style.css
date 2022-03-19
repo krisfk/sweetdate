@@ -390,6 +390,10 @@ h2.title-type-pink-line {
     padding: 1rem;
 }
 
+.gender-div td:last-child {
+    padding: 1rem 1rem 1rem 0;
+}
+
 .gender-div .gender-icon-td {
     /* padding: 2rem 1rem 2rem 2rem; */
 }
