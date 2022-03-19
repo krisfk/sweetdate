@@ -258,9 +258,9 @@ get_header();
                                     <td class="">
                                         <div class="row">
 
-                                            <div class="col-7">名額 : <?php echo get_field('male_quota');?>人
+                                            <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
                                                 (<?php echo get_field('male_age_range');?>歲)</div>
-                                            <div class="col-5">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                            <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
                                             <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
                                         </div>
                                     </td>
@@ -282,9 +282,9 @@ get_header();
                                     <td class="">
                                         <div class="row">
 
-                                            <div class="col-7">名額 : <?php echo get_field('female_quota');?>人
+                                            <div class="col-6">名額 : <?php echo get_field('female_quota');?>人
                                                 (<?php echo get_field('female_age_range');?>歲)</div>
-                                            <div class="col-5">餘額 : <?php echo get_field('female_remain_quota');?>人
+                                            <div class="col-6">餘額 : <?php echo get_field('female_remain_quota');?>人
                                             </div>
                                             <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
                                         </div>
