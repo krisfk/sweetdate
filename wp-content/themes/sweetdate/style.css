@@ -499,3 +499,10 @@ input[type='radio'] {
     position: relative;
     top: 1px;
 }
+
+.title-pink-line {
+    display: block;
+    height: 1px;
+    width: 30px;
+    background: #f17698;
+}
