@@ -461,7 +461,8 @@ h2.title-type-pink-line {
     margin: 1rem 0 0 0;
 }
 
-.reg-btn {
+.reg-btn,
+.reg-btn:hover {
     background: #f07798;
     color: #fff;
     border: none;
