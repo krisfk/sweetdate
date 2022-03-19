@@ -77,69 +77,73 @@ get_header();
                 </ul>
             </div>
 
+            <div class="row mt-3">
+
+                <div class="col-6 gender-div-col male">
+                    <div class="gender-div male">
+                        <table>
+                            <tr>
+                                <td class="gender-icon-td">
+                                    <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
+                                        alt="">
 
 
-        </div>
+                                </td>
+                                <td class="">
+                                    <div class="row">
 
-
-        <div class="row mt-3">
-
-            <div class="col-6 gender-div-col male">
-                <div class="gender-div male">
-                    <table>
-                        <tr>
-                            <td class="gender-icon-td">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
-
-
-                            </td>
-                            <td class="">
-                                <div class="row">
-
-                                    <div class="col-7">名額 : <?php echo get_field('male_quota');?>人
-                                        (<?php echo get_field('male_age_range');?>歲)</div>
-                                    <div class="col-5">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
-                                    <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-            </div>
-            <div class="col-6 gender-div-col female">
-                <div class="gender-div female">
-                    <table>
-                        <tr>
-                            <td class="gender-icon-td">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png" alt="">
-
-
-                            </td>
-                            <td class="">
-                                <div class="row">
-
-                                    <div class="col-7">名額 : <?php echo get_field('female_quota');?>人
-                                        (<?php echo get_field('female_age_range');?>歲)</div>
-                                    <div class="col-5">餘額 : <?php echo get_field('female_remain_quota');?>人
+                                        <div class="col-7">名額 : <?php echo get_field('male_quota');?>人
+                                            (<?php echo get_field('male_age_range');?>歲)</div>
+                                        <div class="col-5">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                        <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
                                     </div>
-                                    <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
-                                </div>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
 
-                    </table>
+                        </table>
+                    </div>
                 </div>
+                <div class="col-6 gender-div-col female">
+                    <div class="gender-div female">
+                        <table>
+                            <tr>
+                                <td class="gender-icon-td">
+                                    <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png"
+                                        alt="">
+
+
+                                </td>
+                                <td class="">
+                                    <div class="row">
+
+                                        <div class="col-7">名額 : <?php echo get_field('female_quota');?>人
+                                            (<?php echo get_field('female_age_range');?>歲)</div>
+                                        <div class="col-5">餘額 : <?php echo get_field('female_remain_quota');?>人
+                                        </div>
+                                        <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
             </div>
 
+
+
+            <div class="mt-4 text-end">
+                <span class="price me-2">$150/位</span>
+                <a href="javascript:void(0);" class="reg-btn">活動報名</a>
+            </div>
+
+
+
+
+
         </div>
 
-
-
-        <div class="mt-4 text-end">
-            <span class="price me-2">$150/位</span>
-            <a href="javascript:void(0);" class="reg-btn">活動報名</a>
-        </div>
 
 
 
