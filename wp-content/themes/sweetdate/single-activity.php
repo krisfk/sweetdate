@@ -147,7 +147,7 @@ get_header();
         </div>
 
 
-        <div class="position-relative">
+        <div class="position-relative mt-5">
             <h2 class="title-type-pink-line">活動詳情</h2>
 
             <div class="text-center">
