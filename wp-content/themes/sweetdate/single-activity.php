@@ -148,7 +148,7 @@ get_header();
 
 
         <div class="position-relative mt-5">
-            <h2 class="title-type-pink-line">活動詳情</h2>
+            <h3 class="title-type-pink-line">活動詳情</h3>
 
             <div class="text-center">
                 <div class="title-pink-line"></div>
@@ -166,7 +166,7 @@ get_header();
 
 
         <div class="position-relative mt-5">
-            <h2 class="title-type-pink-line">備註</h2>
+            <h3 class="title-type-pink-line">備註</h3>
 
             <div class="text-center">
                 <div class="title-pink-line"></div>
