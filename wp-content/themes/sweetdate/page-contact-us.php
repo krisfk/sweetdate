@@ -52,12 +52,64 @@ get_header();
                     <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
 </textarea></td>
                 </tr>
+
+
+                <tr>
+
+                    <td class="align-top pt-1">
+                        <label for="msg-content">喜歡吃的食物：</label>
+                    </td>
+                    <td>
+                        <select id="like-food" name="like-food" class="form-select" aria-label="">
+                            <option value="" selected="">選擇</option>
+                            <option value="牛">牛</option>
+                            <option value="雞">雞</option>
+                            <option value="羊">羊</option>
+                            <option value="豬">豬</option>
+                            <option value="魚">魚</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="align-top pt-1">
+                        <label for="msg-content">不喜歡吃的食物：</label>
+                    </td>
+                    <td>
+
+
+                    <td>
+                        <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
+                            <option value="" selected="">選擇</option>
+                            <option value="牛">牛</option>
+                            <option value="雞">雞</option>
+                            <option value="羊">羊</option>
+                            <option value="豬">豬</option>
+                            <option value="魚">魚</option>
+                        </select>
+                    </td>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+
+                    <td class="align-top pt-1">
+                        <label for="msg-content">內容：</label>
+                    </td>
+                    <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
+</textarea></td>
+                </tr>
+
+
                 <tr>
                     <td colspan="2" class="text-end">
 
                         <input type="submit" value="送出表格" class="form-submit-btn">
                     </td>
                 </tr>
+
 
             </table>
 
