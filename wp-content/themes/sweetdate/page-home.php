@@ -162,7 +162,7 @@ get_header();
 
     <div class="news-act-container mt-5">
 
-        <div class="row justify-content-center">
+        <div class=" gx-0 row justify-content-center">
             <div class="position-relative col-10">
                 <h2 class="title-type-pink-line">最新活動</h2>
 
