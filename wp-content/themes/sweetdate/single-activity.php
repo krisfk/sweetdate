@@ -30,7 +30,7 @@ get_header();
     <div class="main-content mt-4">
 
 
-        fdsf
+        <img src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
 
 
 
