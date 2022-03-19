@@ -36,39 +36,43 @@ get_header();
                 src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
         </div>
 
-        <div class="text-center mt-4">
-            <ul class="news-act-info-ul">
-                <li>
-                    <div class="d-table">
-                        <div class="d-table-cell pe-1">
-                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
-                                alt="">
+        <div class="row mt-4">
+            <div class="col-6">成熟人士. 婚活族New Year Wish下午茶
+            </div>
+            <div class="col-6">
+                <ul class="news-act-info-ul">
+                    <li>
+                        <div class="d-table">
+                            <div class="d-table-cell pe-1">
+                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
+                                    alt="">
+                            </div>
+                            <div class="d-table-cell">
+                                <?php echo get_field('activity_date');?></div>
                         </div>
-                        <div class="d-table-cell">
-                            <?php echo get_field('activity_date');?></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-table">
-                        <div class="d-table-cell pe-1">
-                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
-                                alt="">
+                    </li>
+                    <li>
+                        <div class="d-table">
+                            <div class="d-table-cell pe-1">
+                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
+                                    alt="">
+                            </div>
+                            <div class="d-table-cell">
+                                <?php echo get_field('activity_time');?></div>
                         </div>
-                        <div class="d-table-cell">
-                            <?php echo get_field('activity_time');?></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-table">
-                        <div class="d-table-cell pe-1">
-                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png" alt="">
-                        </div>
-                        <div class="d-table-cell">
+                    </li>
+                    <li>
+                        <div class="d-table">
+                            <div class="d-table-cell pe-1">
+                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png" alt="">
+                            </div>
+                            <div class="d-table-cell">
 
-                            <?php echo get_field('activity_place');?></div>
-                    </div>
-                </li>
-            </ul>
+                                <?php echo get_field('activity_place');?></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
 
 
