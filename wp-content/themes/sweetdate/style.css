@@ -503,6 +503,7 @@ input[type='radio'] {
 .title-pink-line {
     display: block;
     height: 3px;
-    width: 30px;
+    width: 80px;
     background: #f17698;
+    margin: 0 auto;
 }
