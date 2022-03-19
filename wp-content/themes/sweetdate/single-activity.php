@@ -134,7 +134,10 @@ get_header();
 
 
 
-        <div>$150/位 <a href="javascript:void(0);" class="reg-btn">活動報名</a></div>
+        <div class="mt-4">
+            <span class="price me-2">$150/位</span>
+            <a href="javascript:void(0);" class="reg-btn">活動報名</a>
+        </div>
 
 
 
