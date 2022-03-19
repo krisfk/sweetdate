@@ -162,16 +162,19 @@ get_header();
 
     <div class="news-act-container mt-5">
 
-        <div class="position-relative">
-            <h2 class="title-type-pink-line">最新活動</h2>
+        <div class="row">
+            <div class="position-relative col-10">
+                <h2 class="title-type-pink-line">最新活動</h2>
 
-            <div class="text-center">
-                <div class="title-pink-line"></div>
+                <div class="text-center">
+                    <div class="title-pink-line"></div>
+                </div>
+
+                <a href="<?php echo get_site_url();?>/new-activities"
+                    class="more-btn position-absolute top-0 end-0">過往活動
+                    〉</a>
+
             </div>
-
-            <a href="<?php echo get_site_url();?>/new-activities" class="more-btn position-absolute top-0 end-0">過往活動
-                〉</a>
-
         </div>
 
         <div class="row mt-3 justify-content-center">
