@@ -14,7 +14,16 @@ get_header();
 ?>
 <div class="container mt-3">
 
-    <h2 class="title-type-pink-line">最新資訊</h2>
+
+
+
+    <div class="relative">
+        <h2 class="title-type-pink-line">最新資訊</h2>
+        <div class="text-center">
+            <div class="title-pink-line"></div>
+        </div>
+    </div>
+
 
 
     <div class="main-content-2 mt-4">
