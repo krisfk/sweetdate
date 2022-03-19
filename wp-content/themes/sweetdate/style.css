@@ -430,12 +430,14 @@ h2.title-type-pink-line {
     border-radius: 1rem;
 }
 
-.contact-form {
+.contact-form,
+.login-form {
     margin: 0 auto;
     display: table;
 }
 
-.contact-form td {
+.contact-form td,
+.login-form td {
     padding: 0 1rem 0.5rem 0;
     /* vertical-align: top; */
 }
