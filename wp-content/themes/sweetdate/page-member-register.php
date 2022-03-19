@@ -67,7 +67,6 @@ get_header();
                     </td>
                     <td>
 
-                    <td>
                         <select id="like-food" name="like-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="牛">牛</option>
@@ -76,15 +75,7 @@ get_header();
                             <option value="豬">豬</option>
                             <option value="魚">魚</option>
                         </select>
-                        <!-- <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
-                            <option value="" selected="">選擇</option>
-                            <option value="牛">牛</option>
-                            <option value="雞">雞</option>
-                            <option value="羊">羊</option>
-                            <option value="豬">豬</option>
-                            <option value="魚">魚</option>
-                        </select> -->
-                    </td>
+
                     </td>
                 </tr>
                 <tr>
