@@ -65,7 +65,7 @@ get_header();
 
         </ul>
 
-        <div class="row mt-4">
+        <div class="row mt-5">
 
             <?php
 for($i=0;$i<6;$i++)
