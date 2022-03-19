@@ -30,7 +30,18 @@ get_header();
             </li>
 
             <?php
-            print_r( get_categories());
+
+            $categories = get_categories();
+            for($i=0;$i<count($categories);$i++)
+            {
+             ?>
+            <li>
+                <a href="javascript:void(0);"
+                    ref="<?php echo $categories[0]->slug;?>"><?php echo $categories[0]->name;?></a>
+            </li>
+            <?php   
+            }
+            // print_r( get_categories());
             ?>
 
             <!-- 
