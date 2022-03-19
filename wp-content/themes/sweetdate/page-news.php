@@ -37,7 +37,7 @@ get_header();
              ?>
             <li>
                 <a href="javascript:void(0);"
-                    ref="<?php echo $categories[0]->slug;?>"><?php echo $categories[0]->name;?></a>
+                    ref="<?php echo $categories[$i]->slug;?>"><?php echo $categories[$i]->name;?></a>
             </li>
             <?php   
             }
