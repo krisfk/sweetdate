@@ -40,7 +40,7 @@ get_header();
                         src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
                 </div>
 
-                <h2> 成熟人士. 婚活族New Year Wish下午茶</h2>
+                <h2 class="mt-3"> 成熟人士. 婚活族New Year Wish下午茶</h2>
             </div>
             <div class="col-12 mt-1">
                 <ul class="news-act-info-ul">
