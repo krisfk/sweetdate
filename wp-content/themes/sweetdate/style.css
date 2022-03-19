@@ -434,6 +434,7 @@ h2.title-type-pink-line {
 .login-form {
     margin: 0 auto;
     display: table;
+    color: #595959;
 }
 
 .contact-form td,
