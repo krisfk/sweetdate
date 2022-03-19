@@ -193,7 +193,7 @@ get_header();
                         <h2><?php echo get_field('activity_title');?></h2>
 
 
-
+                        <?php echo get_field('activity_main_image');?>
                         <div>
                             <ul class="news-act-info-ul">
                                 <li>
