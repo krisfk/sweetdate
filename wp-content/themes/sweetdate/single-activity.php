@@ -141,52 +141,56 @@ get_header();
 
 
 
-        <div class="mt-5 text-center">
-            <span class="price me-2">$<?php echo get_field('price');?>/位</span>
-            <a href="javascript:void(0);" class="reg-btn">活動報名</a>
-        </div>
+        <div class="step step-1">
 
 
-        <div class="position-relative mt-5">
-            <h3 class="title-type-pink-line">活動詳情</h3>
-
-            <div class="text-center">
-                <div class="title-pink-line"></div>
-            </div>
-
-            <div class="mt-4">
-
-                <?php echo get_field('activity_long_content');?>
+            <div class="mt-5 text-center">
+                <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+                <a href="javascript:void(0);" class="reg-btn">活動報名</a>
             </div>
 
 
+            <div class="position-relative mt-5">
+                <h3 class="title-type-pink-line">活動詳情</h3>
+
+                <div class="text-center">
+                    <div class="title-pink-line"></div>
+                </div>
+
+                <div class="mt-4">
+
+                    <?php echo get_field('activity_long_content');?>
+                </div>
 
 
-        </div>
 
 
-        <div class="position-relative mt-5">
-            <h3 class="title-type-pink-line">注意事項</h3>
-
-            <div class="text-center">
-                <div class="title-pink-line"></div>
             </div>
 
-            <div class="mt-4">
 
-                <?php echo get_field('activity_remark');?>
+            <div class="position-relative mt-5">
+                <h3 class="title-type-pink-line">注意事項</h3>
+
+                <div class="text-center">
+                    <div class="title-pink-line"></div>
+                </div>
+
+                <div class="mt-4">
+
+                    <?php echo get_field('activity_remark');?>
+                </div>
+
+
+
+
             </div>
 
 
 
-
-        </div>
-
-
-
-        <div class="mt-5 text-center">
-            <span class="price me-2">$<?php echo get_field('price');?>/位</span>
-            <a href="javascript:void(0);" class="reg-btn">活動報名</a>
+            <div class="mt-5 text-center">
+                <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+                <a href="javascript:void(0);" class="reg-btn">活動報名</a>
+            </div>
         </div>
 
 
