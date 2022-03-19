@@ -509,6 +509,6 @@ input[type='radio'] {
 }
 
 .activity-detail-main-img {
-    width: 80% !important;
+    width: 100% !important;
     max-width: 100% !important;
 }
