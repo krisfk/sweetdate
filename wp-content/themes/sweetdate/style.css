@@ -512,3 +512,7 @@ input[type='radio'] {
     width: 100% !important;
     max-width: 100% !important;
 }
+
+.single-activity .gender-div {
+    margin: 0;
+}
