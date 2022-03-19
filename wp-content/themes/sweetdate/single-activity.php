@@ -23,16 +23,6 @@ get_header();
             <div class="title-pink-line"></div>
         </div>
 
-    </div>
-
-
-
-    <div class="main-content mt-4">
-
-        <div class="text-center"> <img class="activity-detail-main-img"
-                src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
-        </div>
-
         <div class="text-center mt-4">
             <ul class="news-act-info-ul">
                 <li>
@@ -70,6 +60,19 @@ get_header();
 
 
         </div>
+
+
+
+    </div>
+
+
+
+    <div class="main-content mt-4">
+
+        <div class="text-center"> <img class="activity-detail-main-img"
+                src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
+        </div>
+
 
 
     </div>
