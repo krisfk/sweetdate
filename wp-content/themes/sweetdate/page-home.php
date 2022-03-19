@@ -244,12 +244,6 @@ get_header();
 
                             <?php echo get_field('activity_short_content');?>
 
-                            <!-- 來結織同樣希望以組織家庭為前題的對象! <br>
-                            飲品及精美下午茶 <br>
-                            創配對遊戲, 助你極速了解對象, 送精美奬品 <br>
-                            一對一論流傾談時段 (每組4-6分鐘) <br>
-                            使用Dating自動配對系統 (全電腦操作// 保證100% )
-                         -->
                         </div>
 
                         <div class="gender-div male">
@@ -306,10 +300,8 @@ get_header();
             </div>
             <?php
         }
-        /* Restore original Post Data */
         wp_reset_postdata();
     } else {
-        // no posts found
     }
             
             ?>
