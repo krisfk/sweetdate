@@ -166,7 +166,7 @@ get_header();
 
 
         <div class="position-relative mt-5">
-            <h3 class="title-type-pink-line">備註</h3>
+            <h3 class="title-type-pink-line">注意事項</h3>
 
             <div class="text-center">
                 <div class="title-pink-line"></div>
