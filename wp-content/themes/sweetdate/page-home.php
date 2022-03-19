@@ -190,7 +190,7 @@ get_header();
                     <div class="mt-4">
 
 
-                        <h2><?php echo get_field('activity_title');?></h2>
+                        <h2><?php echo wp_get_attachment_image(get_field('activity_title'))[0];?></h2>
 
 
                         <?php echo get_field('activity_main_image');?>
