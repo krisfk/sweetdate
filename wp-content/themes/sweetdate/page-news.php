@@ -35,10 +35,18 @@ get_header();
             for($i=0;$i<count($categories);$i++)
             {
              ?>
+            <?php if($categories[$i]->slug !='uncategorized')
+             {
+
+                ?>
+
             <li>
                 <a href="javascript:void(0);"
                     ref="<?php echo $categories[$i]->slug;?>"><?php echo $categories[$i]->name;?></a>
             </li>
+            <?php
+             }
+             ?>
             <?php   
             }
             // print_r( get_categories());
