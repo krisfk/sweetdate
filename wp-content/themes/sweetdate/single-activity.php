@@ -40,7 +40,7 @@ get_header();
             <div class="col-12">
                 <h2> 成熟人士. 婚活族New Year Wish下午茶</h2>
             </div>
-            <div class="col-12 mt-3">
+            <div class="col-12 mt-2">
                 <ul class="news-act-info-ul">
                     <li>
                         <div class="d-table">
