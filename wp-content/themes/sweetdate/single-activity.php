@@ -194,6 +194,10 @@ get_header();
         </div>
 
 
+        <div class="step step-2">
+
+
+        </div>
 
     </div>
 
