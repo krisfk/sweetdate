@@ -81,7 +81,7 @@ get_header();
                 </div>
 
                 <div class="col-6 text-end">
-                    <a href="#" class="more-btn">詳細簡介 〉</a>
+                    <a href="<?php echo get_site_url();?>/about-us" class="more-btn">詳細簡介 〉</a>
                 </div>
             </div>
 
@@ -107,7 +107,7 @@ get_header();
                 </div>
 
                 <div class="col-6 text-end">
-                    <a href="#" class="more-btn">更多資訊 〉</a>
+                    <a href="<?php echo get_site_url();?>/news" class="more-btn">更多資訊 〉</a>
                 </div>
             </div>
             <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
