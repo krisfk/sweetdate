@@ -193,7 +193,7 @@ get_header();
                         <h2><?php echo get_field('activity_title');?></h2>
 
                         <!-- wp_get_attachment_image()  -->
-                        <?php echo wp_get_attachment_image_src(get_field('activity_main_image','full'));?>
+                        <?php echo wp_get_attachment_image(get_field('activity_main_image','Full'));?>
                         <div>
                             <ul class="news-act-info-ul">
                                 <li>
