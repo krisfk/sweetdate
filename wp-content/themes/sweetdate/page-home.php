@@ -169,8 +169,8 @@ get_header();
         <div class="row mt-3">
 
             <?php
-        for($i=0;$i<4;$i++)
-        {
+        // for($i=0;$i<4;$i++)
+        // {
             ?>
             <div class="col-6 mb-2">
 
@@ -277,7 +277,7 @@ get_header();
                 </a>
             </div>
             <?php
-        }
+        // }
         ?>
 
 
