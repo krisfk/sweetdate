@@ -33,7 +33,7 @@ get_header();
                 src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
         </div>
 
-        <div>fdsf
+        <div class="text-center mt-4">
             <ul class="news-act-info-ul">
                 <li>
                     <div class="d-table">
