@@ -142,7 +142,7 @@ get_header();
 
 
         <div class="mt-5 text-center">
-            <span class="price me-2">$150/位</span>
+            <span class="price me-2">$<?php echo get_field('price');?>/位</span>
             <a href="javascript:void(0);" class="reg-btn">活動報名</a>
         </div>
 
