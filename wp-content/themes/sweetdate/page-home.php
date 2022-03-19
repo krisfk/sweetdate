@@ -169,8 +169,26 @@ get_header();
         <div class="row mt-3">
 
             <?php
-        // for($i=0;$i<4;$i++)
-        // {
+      
+      $query_args = array(
+        'post_type' => 'activity',
+    );
+    
+    // The Query
+    $the_query = new WP_Query( $query_args );
+    
+    // The Loop
+    if ( $the_query->have_posts() ) {
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            echo 999;
+        }
+        /* Restore original Post Data */
+        wp_reset_postdata();
+    } else {
+        // no posts found
+    }
+            
             ?>
             <div class="col-6 mb-2">
 
