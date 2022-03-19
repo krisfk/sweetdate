@@ -14,7 +14,17 @@ get_header();
 ?>
 <div class="container mt-3">
 
-    <h2 class="title-type-pink-line"><?php echo get_field('activity_title')?></h2>
+
+
+    <div class="position-relative">
+        <h2 class="title-type-pink-line"><?php echo get_field('activity_title')?></h2>
+
+        <div class="text-center">
+            <div class="title-pink-line"></div>
+        </div>
+
+    </div>
+
 
 
     <div class="main-content mt-4">
