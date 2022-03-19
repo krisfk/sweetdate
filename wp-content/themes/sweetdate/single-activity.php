@@ -29,8 +29,9 @@ get_header();
 
     <div class="main-content mt-4">
 
-
-        <img src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
+        <div class="text-center"> <img
+                src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
+        </div>
 
 
 
