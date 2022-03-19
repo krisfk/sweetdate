@@ -165,6 +165,24 @@ get_header();
         </div>
 
 
+        <div class="position-relative mt-5">
+            <h2 class="title-type-pink-line">備註</h2>
+
+            <div class="text-center">
+                <div class="title-pink-line"></div>
+            </div>
+
+            <div class="mt-4">
+
+                <?php echo get_field('activity_long_content');?>
+            </div>
+
+
+
+
+        </div>
+
+
 
     </div>
 
