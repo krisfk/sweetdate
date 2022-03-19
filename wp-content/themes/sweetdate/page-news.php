@@ -26,17 +26,24 @@ get_header();
                 <a class="active" href="javascript:void(0);">顯示全部</a>
             </li>
             <li>
+                <a href="javascript:void(0);">最新活動</a>
+            </li>
+
+            <?php
+            echo get_categories();
+            ?>
+
+            <!-- 
+            <li>
                 <a href="javascript:void(0);">約會資訊</a>
             </li>
             <li>
                 <a href="javascript:void(0);">約會貼士</a>
             </li>
             <li>
-                <a href="javascript:void(0);">最新活動</a>
-            </li>
-            <li>
                 <a href="javascript:void(0);">成功故事</a>
-            </li>
+            </li> -->
+
         </ul>
 
         <div class="row mt-3">
