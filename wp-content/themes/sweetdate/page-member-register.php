@@ -39,8 +39,8 @@ get_header();
                 <tr>
                     <td>姓別</td>
                     <td>
-                        <label class="pe-2"><input class="pe-1" type="radio" name="gender" value="男">男</label>
-                        <label class="pe-2"><input class="pe-1" type="radio" name="gender" value="女">女</label>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
 
