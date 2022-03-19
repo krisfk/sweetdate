@@ -54,42 +54,7 @@ get_header();
                 </tr>
 
 
-                <tr>
 
-                    <td class="align-top pt-1">
-                        <label for="msg-content">喜歡吃的食物：</label>
-                    </td>
-                    <td>
-                        <select id="like-food" name="like-food" class="form-select" aria-label="">
-                            <option value="" selected="">選擇</option>
-                            <option value="牛">牛</option>
-                            <option value="雞">雞</option>
-                            <option value="羊">羊</option>
-                            <option value="豬">豬</option>
-                            <option value="魚">魚</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-
-                    <td class="align-top pt-1">
-                        <label for="msg-content">不喜歡吃的食物：</label>
-                    </td>
-                    <td>
-
-                        <!--  -->
-                    <td>
-                        <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
-                            <option value="" selected="">選擇</option>
-                            <option value="牛">牛</option>
-                            <option value="雞">雞</option>
-                            <option value="羊">羊</option>
-                            <option value="豬">豬</option>
-                            <option value="魚">魚</option>
-                        </select>
-                    </td>
-                    </td>
-                </tr>
 
 
 
