@@ -257,9 +257,9 @@ get_header();
                                     <td class="">
                                         <div class="row">
 
-                                            <div class="col-5">名額 : <?php echo get_field('male_quota');?>人
+                                            <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
                                                 (<?php echo get_field('male_age_range');?>歲)</div>
-                                            <div class="col-7">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                            <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
                                             <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
                                         </div>
                                     </td>
