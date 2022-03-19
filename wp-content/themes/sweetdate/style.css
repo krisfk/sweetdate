@@ -237,7 +237,8 @@ h2.title-type-pink-line {
     display: table;
     margin: 0 auto;
     padding: 0 0 1rem 0;
-    border-bottom: 3px solid #f17698;
+    position: relative;
+    /* border-bottom: 3px solid #f17698; */
 }
 
 .successful-story-container {
