@@ -237,7 +237,7 @@ h2.title-type-pink-line {
     display: table;
     margin: 0 auto;
     padding: 0 0 1rem 0;
-    position: relative;
+    /* position: relative; */
     /* border-bottom: 3px solid #f17698; */
 }
 
