@@ -87,7 +87,7 @@ get_header();
         </div>
 
 
-        <div class="row mt-3">
+        <div class="row mt-3 gx-0">
 
             <div class="col-6 gender-div-col male">
                 <div class="gender-div male">
