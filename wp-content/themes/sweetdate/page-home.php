@@ -185,7 +185,7 @@ get_header();
             ?>
             <div class="col-6 mb-2">
 
-                <a href="<?php //echo get_permanlink();?>" class="s-case-div-a"><img
+                <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
                     <div class="mt-4">
 
