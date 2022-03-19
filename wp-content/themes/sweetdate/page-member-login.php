@@ -31,7 +31,7 @@ get_header();
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit-btn" value="登入"></td>
+                <td><input type="submit" class="form-submit-btn" value="登入"></td>
             </tr>
         </table>
 
