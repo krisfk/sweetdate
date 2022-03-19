@@ -30,7 +30,7 @@ get_header();
             </li>
 
             <?php
-            echo get_categories();
+            print_r( get_categories());
             ?>
 
             <!-- 
