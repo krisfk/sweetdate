@@ -124,7 +124,6 @@ get_header();
             <div class="text-center">
                 <div class="title-pink-line"></div>
             </div>
-            <!-- <a href="javascript:void(0);" class="more-btn position-absolute top-0 end-0">全部故事 〉</a> -->
 
         </div>
 
@@ -165,6 +164,11 @@ get_header();
 
         <div class="position-relative">
             <h2 class="title-type-pink-line">最新活動</h2>
+
+            <div class="text-center">
+                <div class="title-pink-line"></div>
+            </div>
+
             <a href="<?php echo get_site_url();?>/new-activities" class="more-btn position-absolute top-0 end-0">過往活動
                 〉</a>
 
