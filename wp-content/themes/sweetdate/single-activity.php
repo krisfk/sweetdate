@@ -82,7 +82,7 @@ get_header();
 
         <div class="row">
 
-            <div class="col-6">
+            <div class="col-6 gender-div-col male">
                 <div class="gender-div male">
                     <table>
                         <tr>
@@ -105,7 +105,7 @@ get_header();
                     </table>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 gender-div-col female">
                 <div class="gender-div female">
                     <table>
                         <tr>
