@@ -80,7 +80,7 @@ get_header();
         </div>
 
 
-        <div class="row mt-4">
+        <div class="row mt-3">
 
             <div class="col-6 gender-div-col male">
                 <div class="gender-div male">
