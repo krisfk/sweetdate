@@ -23,21 +23,21 @@ get_header();
         <form action="" class="login-form">
             <table>
                 <tr>
-                    <td class="text-end"><label for="login-email"> 登記電郵</label></td>
+                    <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                     <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
                 </tr>
                 <tr>
-                    <td class="text-end"><label for="login-password">登入密碼</label> </td>
+                    <td class="text-end"><label for="login-password">登入密碼：</label> </td>
                     <td><input type="password" class="form-control" id="login-password" name="login-password"></td>
                 </tr>
                 <tr>
-                    <td class="text-end"><label for="login-password-again">再次輸入登入密碼</label> </td>
+                    <td class="text-end"><label for="login-password-again">再次輸入登入密碼：</label> </td>
                     <td><input type="password" class="form-control" id="login-password" name="login-password-again">
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="text-end">姓別</td>
+                    <td class="text-end">姓別：</td>
                     <td>
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
