@@ -147,6 +147,19 @@ get_header();
         </div>
 
 
+        <div class="position-relative">
+            <h2 class="title-type-pink-line">活動詳情</h2>
+
+            <div class="text-center">
+                <div class="title-pink-line"></div>
+            </div>
+
+
+
+
+        </div>
+
+
 
     </div>
 
