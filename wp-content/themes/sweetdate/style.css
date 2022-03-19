@@ -507,3 +507,7 @@ input[type='radio'] {
     background: #f17698;
     margin: 0 auto;
 }
+
+.activity-detail-main-img {
+    width: 80%;
+}
