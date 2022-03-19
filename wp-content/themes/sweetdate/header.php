@@ -158,7 +158,7 @@ echo'</li>';
                         <li><a href="javascript:void(0);"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/reg-icon.png" alt="">
                                 會員註冊</a></li>
-                        <li><a href="javascript:void(0);"><img
+                        <li><a href="<?php echo get_site_url();?>/member-login"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/login-icon.png" alt="">
                                 登入</a></li>
                     </ul>
