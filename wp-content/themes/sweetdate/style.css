@@ -540,4 +540,5 @@ input[type='radio'] {
 .price {
     font-weight: bold;
     font-size: 1.3rem;
+    color: #f07898;
 }
