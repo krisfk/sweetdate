@@ -161,7 +161,8 @@ get_header();
 
         <div class="position-relative">
             <h2 class="title-type-pink-line">最新活動</h2>
-            <a href="#" class="more-btn position-absolute top-0 end-0">過往活動 〉</a>
+            <a href="<?php echo get_site_url();?>/new-activities" class="more-btn position-absolute top-0 end-0">過往活動
+                〉</a>
 
         </div>
 
