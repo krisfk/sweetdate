@@ -32,9 +32,8 @@ get_header();
 
 
         <div class="row mt-3">
-            <div class="row mt-3">
 
-                <?php
+            <?php
 
 $query_args = array(
 'post_type' => 'activity',
@@ -49,118 +48,117 @@ if ( $the_query->have_posts() ) {
 while ( $the_query->have_posts() ) {
 $the_query->the_post();
 ?>
-                <div class="col-6 mb-2">
+            <div class="col-6 mb-2">
 
-                    <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
-                            src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>"
-                            alt="">
-                        <div class="mt-4">
-
-
-                            <h2><?php echo get_field('activity_title');?></h2>
+                <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
+                        src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
+                    <div class="mt-4">
 
 
-                            <div>
-                                <ul class="news-act-info-ul">
-                                    <li>
-                                        <div class="d-table">
-                                            <div class="d-table-cell pe-1">
-                                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="d-table-cell">
-                                                <?php echo get_field('activity_date');?></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-table">
-                                            <div class="d-table-cell pe-1">
-                                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="d-table-cell">
-                                                <?php echo get_field('activity_time');?></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-table">
-                                            <div class="d-table-cell pe-1">
-                                                <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="d-table-cell">
-
-                                                <?php echo get_field('activity_place');?></div>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <h2><?php echo get_field('activity_title');?></h2>
 
 
-
-                            </div>
-
-                            <div class="mt-3">
-
-                                <?php echo get_field('activity_short_content');?>
-
-                            </div>
-
-                            <div class="gender-div male">
-                                <table>
-                                    <tr>
-                                        <td class="gender-icon-td">
-                                            <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
+                        <div>
+                            <ul class="news-act-info-ul">
+                                <li>
+                                    <div class="d-table">
+                                        <div class="d-table-cell pe-1">
+                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
                                                 alt="">
-
-
-                                        </td>
-                                        <td class="">
-                                            <div class="row">
-
-                                                <div class="col-5">名額 : <?php echo get_field('male_quota');?>人
-                                                    (<?php echo get_field('male_age_range');?>歲)</div>
-                                                <div class="col-7">餘額 : <?php echo get_field('male_remain_quota');?>人
-                                                </div>
-                                                <div class="col-12 mt-1"><?php echo get_field('male_requirement');?>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                            </div>
-
-
-                            <div class="gender-div female">
-                                <table>
-                                    <tr>
-                                        <td class="gender-icon-td">
-                                            <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png"
+                                        </div>
+                                        <div class="d-table-cell">
+                                            <?php echo get_field('activity_date');?></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-table">
+                                        <div class="d-table-cell pe-1">
+                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
                                                 alt="">
+                                        </div>
+                                        <div class="d-table-cell">
+                                            <?php echo get_field('activity_time');?></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-table">
+                                        <div class="d-table-cell pe-1">
+                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
+                                                alt="">
+                                        </div>
+                                        <div class="d-table-cell">
 
+                                            <?php echo get_field('activity_place');?></div>
+                                    </div>
+                                </li>
+                            </ul>
 
-                                        </td>
-                                        <td class="">
-                                            <div class="row">
-
-                                                <div class="col-5">名額 : <?php echo get_field('female_quota');?>人
-                                                    (<?php echo get_field('female_age_range');?>歲)</div>
-                                                <div class="col-7">餘額 : <?php echo get_field('female_remain_quota');?>人
-                                                </div>
-                                                <div class="col-12 mt-1"><?php echo get_field('female_requirement');?>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                            </div>
 
 
                         </div>
-                    </a>
-                </div>
-                <?php
+
+                        <div class="mt-3">
+
+                            <?php echo get_field('activity_short_content');?>
+
+                        </div>
+
+                        <div class="gender-div male">
+                            <table>
+                                <tr>
+                                    <td class="gender-icon-td">
+                                        <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
+                                            alt="">
+
+
+                                    </td>
+                                    <td class="">
+                                        <div class="row">
+
+                                            <div class="col-5">名額 : <?php echo get_field('male_quota');?>人
+                                                (<?php echo get_field('male_age_range');?>歲)</div>
+                                            <div class="col-7">餘額 : <?php echo get_field('male_remain_quota');?>人
+                                            </div>
+                                            <div class="col-12 mt-1"><?php echo get_field('male_requirement');?>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                        <div class="gender-div female">
+                            <table>
+                                <tr>
+                                    <td class="gender-icon-td">
+                                        <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png"
+                                            alt="">
+
+
+                                    </td>
+                                    <td class="">
+                                        <div class="row">
+
+                                            <div class="col-5">名額 : <?php echo get_field('female_quota');?>人
+                                                (<?php echo get_field('female_age_range');?>歲)</div>
+                                            <div class="col-7">餘額 : <?php echo get_field('female_remain_quota');?>人
+                                            </div>
+                                            <div class="col-12 mt-1"><?php echo get_field('female_requirement');?>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+                </a>
+            </div>
+            <?php
 }
 wp_reset_postdata();
 } else {
@@ -171,14 +169,14 @@ wp_reset_postdata();
 
 
 
-            </div>
-
         </div>
 
-
-
-
     </div>
+
+
+
+
+</div>
 
 
 
