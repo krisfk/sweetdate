@@ -154,6 +154,11 @@ get_header();
                 <div class="title-pink-line"></div>
             </div>
 
+            <div>
+
+                <?php echo get_field('activity_long_content');?>
+            </div>
+
 
 
 
