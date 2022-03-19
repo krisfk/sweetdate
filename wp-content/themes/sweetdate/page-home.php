@@ -120,7 +120,7 @@ get_header();
 
         <div class="position-relative">
             <h2 class="title-type-pink-line">成功故事</h2>
-            <!-- <a href="#" class="more-btn position-absolute top-0 end-0">全部故事 〉</a> -->
+            <!-- <a href="javascript:void(0);" class="more-btn position-absolute top-0 end-0">全部故事 〉</a> -->
 
         </div>
 
@@ -128,25 +128,25 @@ get_header();
         <div class="successful-story-carousel mt-4">
 
             <div class="s-case-div">
-                <a href="#" class="s-case-div-a"><img
+                <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
                 </a>
             </div>
             <div class="s-case-div">
-                <a href="#" class="s-case-div-a"><img
+                <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-2.jpg" alt="">
                     <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
                 </a>
             </div>
             <div class="s-case-div">
-                <a href="#" class="s-case-div-a"><img
+                <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-3.jpg" alt="">
                     <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
                 </a>
             </div>
             <div class="s-case-div">
-                <a href="#" class="s-case-div-a"><img
+                <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
                 </a>
@@ -174,7 +174,7 @@ get_header();
             ?>
             <div class="col-6 mb-2">
 
-                <a href="#" class="s-case-div-a"><img
+                <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">
 
