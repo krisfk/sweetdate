@@ -32,12 +32,14 @@ get_header();
 
     <div class="main-content mt-4">
 
-        <div class="text-center"> <img class="activity-detail-main-img"
-                src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
-        </div>
+
 
         <div class="row mt-4">
             <div class="col-12">
+                <div class="text-center"> <img class="activity-detail-main-img"
+                        src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
+                </div>
+
                 <h2> 成熟人士. 婚活族New Year Wish下午茶</h2>
             </div>
             <div class="col-12 mt-1">
