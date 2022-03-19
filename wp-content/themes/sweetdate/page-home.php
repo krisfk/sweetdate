@@ -170,9 +170,10 @@ get_header();
 
             <?php
       
-      $query_args = array(
+    $query_args = array(
         'post_type' => 'activity',
-    );
+        'posts_per_page' => -1
+     );
     
     // The Query
     $the_query = new WP_Query( $query_args );
@@ -181,14 +182,6 @@ get_header();
     if ( $the_query->have_posts() ) {
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
-            echo 999;
-        }
-        /* Restore original Post Data */
-        wp_reset_postdata();
-    } else {
-        // no posts found
-    }
-            
             ?>
             <div class="col-6 mb-2">
 
@@ -295,8 +288,16 @@ get_header();
                 </a>
             </div>
             <?php
-        // }
-        ?>
+        }
+        /* Restore original Post Data */
+        wp_reset_postdata();
+    } else {
+        // no posts found
+    }
+            
+            ?>
+
+
 
 
         </div>
