@@ -32,7 +32,7 @@ get_header();
                 </tr>
                 <tr>
                     <td></td>
-                    <td class="text-end"><input type="submit" class="form-submit-btn" value="登入"></td>
+                    <td class="text-end"><input type="submit" class="form-submit-btn" value="會員登入"></td>
                 </tr>
             </table>
         </form>
