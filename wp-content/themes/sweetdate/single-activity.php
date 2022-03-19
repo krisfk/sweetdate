@@ -134,6 +134,9 @@ get_header();
 
 
 
+        <div>$150/位 <a href="javascript:void(0);" class="reg-btn">活動報名</a></div>
+
+
 
     </div>
 
