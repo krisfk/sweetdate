@@ -39,7 +39,7 @@ get_header();
                 <tr>
                     <td>姓別</td>
                     <td>
-                        <label><input type="radio" name="gender" value="男">男</label>
+                        <label class="pe-2"><input type="radio" name="gender" value="男">男</label>
                         <label><input type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
