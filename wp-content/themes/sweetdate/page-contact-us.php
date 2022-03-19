@@ -25,7 +25,7 @@ get_header();
             <table>
                 <tr>
                     <td>
-                        <label for="nickname">稱呼</label>
+                        <label for="nickname">稱呼：</label>
 
                     </td>
                     <td><input id="nickname" type="text" class="form-control"></td>
@@ -33,21 +33,21 @@ get_header();
                 <tr>
 
                     <td>
-                        <label for="email">電郵</label>
+                        <label for="email">電郵：</label>
                     </td>
                     <td><input id="email" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
                     <td>
-                        <label for="msg-title">標題</label>
+                        <label for="msg-title">標題：</label>
                     </td>
                     <td><input id="msg-title" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
                     <td class="align-top pt-1">
-                        <label for="msg-content">內容</label>
+                        <label for="msg-content">內容：</label>
                     </td>
                     <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
 </textarea></td>
