@@ -369,7 +369,7 @@ h2.title-type-pink-line {
     color: #000;
 }
 
-.single-activity .gender-div.male {
+.single-activity .gender-div-col.male {
     background: #e0edf4;
 }
 
@@ -378,7 +378,7 @@ h2.title-type-pink-line {
     color: #000;
 }
 
-.single-activity .gender-div.female {
+.single-activity .gender-div-col.female {
     background: #fee2e9;
 }
 
