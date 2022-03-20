@@ -57,7 +57,7 @@ get_header();
                     <td></td>
                     <td class="text-end">
 
-                        <input type="submit" value="更改登入資料" class="form-submit-btn">
+                        <input type="submit" value="更新登入資料" class="form-submit-btn">
                     </td>
                 </tr>
 
