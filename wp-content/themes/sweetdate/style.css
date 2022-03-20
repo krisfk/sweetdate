@@ -588,6 +588,7 @@ input[type='radio'] {
     padding: 0;
 }
 
-a.pink {
+a.pink,
+a.pink:hover {
     color: #f07798;
 }
