@@ -245,12 +245,12 @@ get_header();
 
 
                         <tr>
-                            <td class="text-end"><label for="register-email"> 電郵：</label></td>
+                            <td class="text-end"><label for="register-email">登記電郵：</label></td>
                             <td><input type="text" class="form-control" id="register-email" name="register-email"></td>
                         </tr>
 
                         <tr>
-                            <td class="text-end"><label for="tel"> 電話：</label></td>
+                            <td class="text-end"><label for="tel">登記電話：</label></td>
                             <td><input type="text" class="form-control" id="tel" name="tel"></td>
                         </tr>
 
