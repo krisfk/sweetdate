@@ -242,21 +242,18 @@ get_header();
             <div class="position-relative mt-4">
                 <form action="" class="login-form">
                     <table>
+
+
                         <tr>
-                            <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
-                            <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
+                            <td class="text-end"><label for="register-email"> 電郵：</label></td>
+                            <td><input type="text" class="form-control" id="register-email" name="register-email"></td>
                         </tr>
+
                         <tr>
-                            <td class="text-end"><label for="login-password">登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="login-password" name="login-password">
-                            </td>
+                            <td class="text-end"><label for="tel"> 電話：</label></td>
+                            <td><input type="text" class="form-control" id="tel" name="tel"></td>
                         </tr>
-                        <tr>
-                            <td class="text-end"><label for="login-password-again">再次輸入登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="login-password"
-                                    name="login-password-again">
-                            </td>
-                        </tr>
+
 
                         <tr>
                             <td class="text-end">姓別：</td>
@@ -267,7 +264,6 @@ get_header();
                         </tr>
 
                         <tr>
-
                             <td class="align-top pt-1  text-end">
                                 <label for="msg-content">喜歡吃的食物：</label>
                             </td>
