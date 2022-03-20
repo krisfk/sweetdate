@@ -208,7 +208,26 @@ get_header();
 
             <div class="position-relative mt-4">
 
-                fds
+
+                <form action="" class="login-form">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="login-email"> 登記電郵：</label></td>
+                                <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="login-password">登入密碼：</label> </td>
+                                <td><input type="text" class="form-control" id="login-password" name="login-password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="text-end"><input type="submit" class="form-submit-btn" value="會員登入"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
             </div>
 
 
