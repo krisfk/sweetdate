@@ -28,7 +28,7 @@ get_header();
         <form action="" class="contact-form" method="post">
             <table>
                 <tr>
-                    <td>
+                    <td class="text-end">
                         <label for="nickname">稱呼：</label>
 
                     </td>
@@ -36,21 +36,21 @@ get_header();
                 </tr>
                 <tr>
 
-                    <td>
+                    <td class="text-end">
                         <label for="email">聯絡電郵：</label>
                     </td>
                     <td><input id="email" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
-                    <td>
+                    <td class="text-end">
                         <label for="msg-title">標題：</label>
                     </td>
                     <td><input id="msg-title" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
-                    <td class="">
+                    <td class="text-end">
                         <label for="msg-content">內容：</label>
                     </td>
                     <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
