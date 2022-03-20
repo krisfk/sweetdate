@@ -37,7 +37,7 @@ get_header();
                 <tr>
 
                     <td>
-                        <label for="email">電郵：</label>
+                        <label for="email">聯絡電郵：</label>
                     </td>
                     <td><input id="email" type="text" class="form-control"></td>
                 </tr>
@@ -62,14 +62,6 @@ get_header();
 
 
 
-                <tr>
-
-                    <td class="align-top pt-1">
-                        <label for="msg-content">內容：</label>
-                    </td>
-                    <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
-</textarea></td>
-                </tr>
 
 
                 <tr>
