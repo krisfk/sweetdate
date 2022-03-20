@@ -49,6 +49,10 @@ get_header();
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
+                <tr>
+                    <td class="text-end"><label for="tel">登記電話：</label></td>
+                    <td><input type="text" class="form-control" id="tel" name="tel"></td>
+                </tr>
 
                 <tr>
 
