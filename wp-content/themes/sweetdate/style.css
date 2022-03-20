@@ -615,4 +615,8 @@ a.pink:hover {
         /* max-width: 275px; */
         width: 50%;
     }
+    .contact-form,
+    .login-form {
+        min-width: auto;
+    }
 }
