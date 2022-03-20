@@ -577,3 +577,8 @@ input[type='radio'] {
 .form-control {
     font-size: 0.9rem !important;
 }
+
+.contact-form tr:last-child td,
+.login-form tr:last-child td {
+    border: none;
+}
