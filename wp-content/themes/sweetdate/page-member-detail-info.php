@@ -49,6 +49,14 @@ get_header();
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-end">
+
+                        <input type="submit" value="送出表格" class="form-submit-btn">
+                    </td>
+                </tr>
+
 
             </table>
             <table class="mt-5">
