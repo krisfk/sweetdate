@@ -65,7 +65,7 @@ get_header();
             </table>
         </form>
 
-        <form class="member-futher-info-form">
+        <form class="member-further-info-form">
             <table class="mt-5">
 
                 <tr>

@@ -455,7 +455,8 @@ h3.title-type-pink-line {
 
 .contact-form,
 .login-form,
-.member-login-info-form {
+.member-login-info-form,
+.member-further-info-form {
     margin: 0 auto;
     display: table;
     color: #595959;
@@ -464,13 +465,15 @@ h3.title-type-pink-line {
 
 .contact-form table,
 .login-form table,
-.member-login-info-form table {
+.member-login-info-form table,
+.member-further-info-form table {
     width: 100%;
 }
 
 .contact-form td,
 .login-form td,
-.member-login-info-form td {
+.member-login-info-form td,
+.member-further-info-form td {
     padding: 0;
     border: 1px solid #ebebeb;
     vertical-align: middle;
@@ -486,7 +489,8 @@ h3.title-type-pink-line {
 
 .contact-form td:last-child,
 .login-form td:last-child,
-.member-login-info-form td:last-child {
+.member-login-info-form td:last-child,
+.member-further-info-form td:last-child {
     max-width: 275px;
     width: 275px;
 }
