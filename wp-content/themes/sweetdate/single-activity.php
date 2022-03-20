@@ -217,7 +217,7 @@ get_header();
                                 <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
                             </tr>
                             <tr>
-                                <td><label for="login-password">登入密碼：</label> </td>
+                                <td><label for="login-password">&nbsp;登入密碼：</label> </td>
                                 <td><input type="text" class="form-control" id="login-password" name="login-password">
                                 </td>
                             </tr>
