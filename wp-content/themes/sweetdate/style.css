@@ -460,6 +460,11 @@ h3.title-type-pink-line {
     color: #595959;
 }
 
+.contact-form table,
+.login-form table {
+    width: 100%;
+}
+
 .contact-form td,
 .login-form td {
     padding: 0 1rem 0.5rem 0;
