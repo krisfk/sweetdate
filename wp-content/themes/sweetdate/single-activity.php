@@ -269,7 +269,7 @@ get_header();
 
                         <tr>
                             <td class="  text-end">
-                                <label for="msg-content">喜歡吃的食物：</label>
+                                <label for="msg-content">最喜歡吃的食物：</label>
                             </td>
                             <td>
                                 <select id="like-food" name="like-food" class="form-select" aria-label="">
@@ -285,7 +285,7 @@ get_header();
                         <tr>
 
                             <td class=" text-end">
-                                <label for="msg-content">不喜歡吃的食物：</label>
+                                <label for="msg-content">最不喜歡吃的食物：</label>
                             </td>
                             <td>
 
