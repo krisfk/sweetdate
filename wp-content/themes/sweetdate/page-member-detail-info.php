@@ -17,7 +17,7 @@ get_header();
 
 
     <div class="relative">
-        <h2 class="title-type-pink-line">會員註冊</h2>
+        <h2 class="title-type-pink-line">詳細會員資料</h2>
         <div class="text-center">
             <div class="title-pink-line"></div>
         </div>
