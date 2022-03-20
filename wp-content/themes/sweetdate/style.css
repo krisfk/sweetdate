@@ -489,6 +489,7 @@ h3.title-type-pink-line {
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     margin: 1rem 0 0 0;
+    font-size: 0.9rem;
 }
 
 .reg-btn,
@@ -574,5 +575,5 @@ input[type='radio'] {
 }
 
 .form-control {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
 }
