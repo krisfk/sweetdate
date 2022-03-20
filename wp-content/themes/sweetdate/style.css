@@ -470,12 +470,12 @@ h3.title-type-pink-line {
 /* .contact-form td:first-child,
 .login-form td:first-child {
     width: 145px;
-}
+}*/
 
 .contact-form td:last-child,
 .login-form td:last-child {
-    width: 100%;
-} */
+    padding: 0 0rem 0.5rem 0;
+}
 
 .form-submit-btn {
     background: #f07798;
