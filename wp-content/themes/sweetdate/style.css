@@ -592,3 +592,27 @@ a.pink,
 a.pink:hover {
     color: #f07798;
 }
+
+@media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (max-width: 480px) {
+    .contact-form td,
+    .login-form td {
+        border: 1px solid #ebebeb;
+        vertical-align: middle;
+        padding: 0.2rem;
+    }
+    .contact-form td:last-child,
+    .login-form td:last-child {
+        /* max-width: 275px; */
+        width: 50%;
+    }
+}
