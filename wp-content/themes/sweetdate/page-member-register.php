@@ -68,7 +68,7 @@ get_header();
                 </tr>
                 <tr>
 
-                    <td class="align-top pt-1 text-end">
+                    <td class=" pt-1 text-end">
                         <label for="msg-content">不喜歡吃的食物：</label>
                     </td>
                     <td>
