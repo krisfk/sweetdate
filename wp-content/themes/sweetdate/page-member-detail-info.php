@@ -65,8 +65,9 @@ get_header();
             </table>
         </form>
 
-        <h2 class="text-center mb-3">詳細會員資料</h2>
-
+        <h2 class="text-center mb-3">我的資料</h2>
+        <div>請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!
+        </div>
 
         <form class="member-further-info-form">
             <table class="">
