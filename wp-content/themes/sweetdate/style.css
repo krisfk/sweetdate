@@ -581,4 +581,5 @@ input[type='radio'] {
 .contact-form tr:last-child td,
 .login-form tr:last-child td {
     border: none;
+    padding: 0;
 }
