@@ -26,7 +26,7 @@ get_header();
     <div class="main-content mt-4">
 
 
-        <h2>登入資料</h2>
+        <h2 class="text-center mb-3">登入資料</h2>
         <form action="" class="member-login-info-form">
             <table>
                 <tr>
@@ -64,6 +64,9 @@ get_header();
 
             </table>
         </form>
+
+        <h2 class="text-center mb-3">詳細會員資料</h2>
+
 
         <form class="member-further-info-form">
             <table class="mt-5">
