@@ -458,6 +458,7 @@ h3.title-type-pink-line {
     margin: 0 auto;
     display: table;
     color: #595959;
+    min-width: 500px;
 }
 
 .contact-form table,
