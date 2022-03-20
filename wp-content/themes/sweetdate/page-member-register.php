@@ -50,7 +50,7 @@ get_header();
                     </td>
                 </tr>
                 <tr>
-                    <td class="text-end"><label for="tel">登記電話：</label></td>
+                    <td class="text-end"><label for="tel">聯絡電話：</label></td>
                     <td><input type="text" class="form-control" id="tel" name="tel"></td>
                 </tr>
 
