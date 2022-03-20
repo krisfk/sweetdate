@@ -159,7 +159,7 @@ get_header();
 
             </div>
 
-            <div class="mt-4">
+            <div class="mt-3">
 
                 <?php echo get_field('activity_long_content');?>
             </div>
@@ -178,7 +178,7 @@ get_header();
             </div>
 
 
-            <div class="mt-4">
+            <div class="mt-3">
 
                 <?php echo get_field('activity_remark');?>
             </div>
