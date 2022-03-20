@@ -224,7 +224,8 @@ get_header();
                             <tr>
                                 <td>(會員登入後會自動填寫以下個人資料)</td>
                                 <td class="text-end">
-                                    <a href="javascript:void(0);">忘記密碼</a>
+                                    <div> <a href="javascript:void(0);">忘記密碼</a>
+                                    </div>
                                     <input type="submit" class="form-submit-btn" value="會員登入">
                                 </td>
                             </tr>
