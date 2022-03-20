@@ -264,7 +264,7 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td class="align-top pt-1  text-end">
+                            <td class="  text-end">
                                 <label for="msg-content">喜歡吃的食物：</label>
                             </td>
                             <td>
@@ -280,7 +280,7 @@ get_header();
                         </tr>
                         <tr>
 
-                            <td class="align-top pt-1 text-end">
+                            <td class=" text-end">
                                 <label for="msg-content">不喜歡吃的食物：</label>
                             </td>
                             <td>
