@@ -466,6 +466,16 @@ h3.title-type-pink-line {
     /* vertical-align: top; */
 }
 
+.contact-form td:first-child,
+.login-form td:first-child {
+    width: 145px;
+}
+
+.contact-form td:last-child,
+.login-form td:last-child {
+    width: 100%;
+}
+
 .form-submit-btn {
     background: #f07798;
     color: #fff;
