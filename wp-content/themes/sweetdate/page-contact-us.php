@@ -50,7 +50,7 @@ get_header();
                 </tr>
                 <tr>
 
-                    <td class="align-top pt-1">
+                    <td class="">
                         <label for="msg-content">內容：</label>
                     </td>
                     <td><textarea id="msg-content" class="form-control" name="" rows="4" cols="50">
