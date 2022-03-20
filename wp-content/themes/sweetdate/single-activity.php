@@ -213,11 +213,11 @@ get_header();
                     <table>
                         <tbody>
                             <tr>
-                                <td><label for="login-email"> 登記電郵：</label></td>
+                                <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                                 <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
                             </tr>
                             <tr>
-                                <td><label for="login-password">登入密碼：</label> </td>
+                                <td class="text-end"><label for="login-password">登入密碼：</label> </td>
                                 <td><input type="text" class="form-control" id="login-password" name="login-password">
                                 </td>
                             </tr>
