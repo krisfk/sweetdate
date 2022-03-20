@@ -27,7 +27,7 @@ get_header();
 
 
         <h2 class="text-center mb-3">登入資料</h2>
-        <form action="" class="member-login-info-form">
+        <form action="" class="member-login-info-form mb-5">
             <table>
                 <tr>
                     <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
@@ -69,7 +69,7 @@ get_header();
 
 
         <form class="member-further-info-form">
-            <table class="mt-5">
+            <table class="">
 
                 <tr>
                     <td class="text-end">姓別：</td>
