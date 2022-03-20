@@ -53,13 +53,6 @@ get_header();
 
 
                 <tr>
-                    <td class="text-end">姓別：</td>
-                    <td>
-                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
-                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
-                    </td>
-                </tr>
-                <tr>
                     <td></td>
                     <td class="text-end">
 
@@ -70,6 +63,15 @@ get_header();
 
             </table>
             <table class="mt-5">
+
+                <tr>
+                    <td class="text-end">姓別：</td>
+                    <td>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+                    </td>
+                </tr>
+
                 <tr>
 
                     <td class=" text-end">
