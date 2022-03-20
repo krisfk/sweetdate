@@ -198,6 +198,20 @@ get_header();
 
         <div class="step step-2">
 
+            <div class="position-relative mt-5">
+                <h3 class="title-type-pink-line">活動報名</h3>
+
+                <div class="text-center">
+                    <div class="title-pink-line"></div>
+                </div>
+            </div>
+
+            <div class="position-relative mt-4">
+
+                fds
+            </div>
+
+
 
         </div>
 
