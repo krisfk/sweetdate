@@ -495,6 +495,14 @@ h3.title-type-pink-line {
     width: 275px;
 }
 
+.contact-form tr:last-child td,
+.login-form tr:last-child td,
+.member-login-info-form tr:last-child td,
+.member-further-info-form tr:last-child td {
+    border: none;
+    padding: 0;
+}
+
 .form-submit-btn {
     background: #f07798;
     color: #fff;
@@ -588,12 +596,6 @@ input[type='radio'] {
 
 .form-control {
     font-size: 0.9rem !important;
-}
-
-.contact-form tr:last-child td,
-.login-form tr:last-child td {
-    border: none;
-    padding: 0;
 }
 
 a.pink,
