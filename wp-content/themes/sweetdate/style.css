@@ -468,6 +468,7 @@ h3.title-type-pink-line {
 .contact-form td,
 .login-form td {
     padding: 0 1rem 0.5rem 0;
+    border: 1px solid;
     /* vertical-align: top; */
 }
 
