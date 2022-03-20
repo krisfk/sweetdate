@@ -223,7 +223,7 @@ get_header();
                             </tr>
                             <tr>
                                 <td></td>
-                                <td class=""><input type="submit" class="form-submit-btn" value="會員登入"></td>
+                                <td class="text-end"><input type="submit" class="form-submit-btn" value="會員登入"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -245,18 +245,18 @@ get_header();
 
 
                         <tr>
-                            <td class=""><label for="register-email">登記電郵：</label></td>
+                            <td class="text-end"><label for="register-email">登記電郵：</label></td>
                             <td><input type="text" class="form-control" id="register-email" name="register-email"></td>
                         </tr>
 
                         <tr>
-                            <td class=""><label for="tel">登記電話：</label></td>
+                            <td class="text-end"><label for="tel">登記電話：</label></td>
                             <td><input type="text" class="form-control" id="tel" name="tel"></td>
                         </tr>
 
 
                         <tr>
-                            <td class="">姓別：</td>
+                            <td class="text-end">姓別：</td>
                             <td>
                                 <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
                                 <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
@@ -264,7 +264,7 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td class="align-top pt-1  ">
+                            <td class="align-top pt-1  text-end">
                                 <label for="msg-content">喜歡吃的食物：</label>
                             </td>
                             <td>
@@ -280,7 +280,7 @@ get_header();
                         </tr>
                         <tr>
 
-                            <td class="align-top pt-1 ">
+                            <td class="align-top pt-1 text-end">
                                 <label for="msg-content">不喜歡吃的食物：</label>
                             </td>
                             <td>
@@ -298,7 +298,7 @@ get_header();
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="">
+                            <td class="text-end">
 
                                 <input type="submit" value="送出表格" class="form-submit-btn">
                             </td>
