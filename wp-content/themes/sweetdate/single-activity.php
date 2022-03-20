@@ -240,6 +240,76 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
+                <form action="" class="login-form">
+                    <table>
+                        <tr>
+                            <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
+                            <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-end"><label for="login-password">登入密碼：</label> </td>
+                            <td><input type="password" class="form-control" id="login-password" name="login-password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-end"><label for="login-password-again">再次輸入登入密碼：</label> </td>
+                            <td><input type="password" class="form-control" id="login-password"
+                                    name="login-password-again">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-end">姓別：</td>
+                            <td>
+                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td class="align-top pt-1  text-end">
+                                <label for="msg-content">喜歡吃的食物：</label>
+                            </td>
+                            <td>
+                                <select id="like-food" name="like-food" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="牛">牛</option>
+                                    <option value="雞">雞</option>
+                                    <option value="羊">羊</option>
+                                    <option value="豬">豬</option>
+                                    <option value="魚">魚</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td class="align-top pt-1 text-end">
+                                <label for="msg-content">不喜歡吃的食物：</label>
+                            </td>
+                            <td>
+
+                                <select id="like-food" name="like-food" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="牛">牛</option>
+                                    <option value="雞">雞</option>
+                                    <option value="羊">羊</option>
+                                    <option value="豬">豬</option>
+                                    <option value="魚">魚</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="text-end">
+
+                                <input type="submit" value="送出表格" class="form-submit-btn">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
 
 
 
