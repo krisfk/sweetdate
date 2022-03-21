@@ -627,7 +627,17 @@ a.pink:hover {
 
 @media only screen and (max-width: 991px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .contact-form,
+    .login-form,
+    .member-login-info-form,
+    .member-further-info-form {
+        margin: 0 auto;
+        display: table;
+        color: #595959;
+        min-width: 100%;
+    }
+}
 
 @media only screen and (max-width: 640px) {}
 
