@@ -313,8 +313,30 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="height">身高(CM)：</label>
+
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="height" name="height">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="hobby">興趣：</label>
+
+                        </td>
+                        <td>
+                            <select id="hobby" name="hobby" class="form-select" aria-label="">
+                                <option value="" selected="">選擇</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+
+                            </select>
+
+
+                        </td>
                     </tr>
                     <!--  -->
 
