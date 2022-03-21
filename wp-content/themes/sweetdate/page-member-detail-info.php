@@ -28,7 +28,7 @@ get_header();
             </a>
         </li>
         <li>
-            <a class="active" href="javascript:void(0);" ref="all">個人資料及配對要求
+            <a class="" href="javascript:void(0);" ref="all">個人資料及配對要求
             </a>
         </li>
 
