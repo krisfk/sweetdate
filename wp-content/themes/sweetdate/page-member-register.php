@@ -24,7 +24,7 @@ if($_POST)
     
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
-        'post_title' => $post_title,
+        'post_title' => '',
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
@@ -79,6 +79,22 @@ if($_POST)
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <label for="first-name">英文名(e.g.Jacky)：*</label>
+                    </td>
+                    <td>
+
+                        <input id="first-name" class="form-control" name="first-name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="last-name">姓：*</label></td>
+                    <td>
+                        <input id="last-name" class="form-control" name="last-name" type="text">
+                    </td>
+                </tr>
+
                 <tr>
                     <td>
                         <label for="age">年齡：*</label>
