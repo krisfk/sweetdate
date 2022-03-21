@@ -249,7 +249,56 @@ get_header();
                             <div class="mt-2"><input type="text" class="form-control" placeholder="其他職業"></div>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
 
+                            <label for="occupation-title">職銜</label>
+                        </td>
+                        <td>
+                            <input type="text" id="occupation-title" class="form-control" name="occupation-title">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="annual-income">年薪(HKD)</label>
+
+                        </td>
+                        <td>
+                            <input type="text" id="annual-income" class="form-control" name="annual-income">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="religion">宗教</label>
+                        </td>
+                        <td><select class="form-select" id="religion" name="religion">
+                                <option value="選擇">選擇</option>
+                                <option value="沒有">沒有</option>
+                                <option value="佛教">佛教</option>
+                                <option value="道教">道教</option>
+                                <option value="猶太教">猶太教</option>
+                                <option value="天主教">天主教</option>
+                                <option value="基督教">基督教</option>
+                                <option value="伊斯蘭教">伊斯蘭教</option>
+                                <option value="東正教">東正教</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="overseas_study">海外留學</label>
+                        </td>
+                        <td>
+                            <label class="me-2"><input class="me-1" type="radio" name="gender" value="有">有</label>
+                            <label class="me-2"><input class="me-1" type="radio" name="gender" value="沒有">沒有</label>
+
+                            <div>如有留學國家為 </div>
+
+                            <div> <input type="text" id="overseas-study-nation" name="overseas_study_nation"
+                                    class="form-control"> </div>
+
+
+                        </td>
+                    </tr>
                     <!--  -->
 
                     <!-- <tr>
@@ -275,12 +324,12 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-end">姓別：</td>
-                        <td>
-                            <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
-                            <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+
+                        <td colspan="2">
+
                         </td>
                     </tr>
+
                 </table>
             </form>
 
