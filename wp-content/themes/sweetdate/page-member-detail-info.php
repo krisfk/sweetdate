@@ -237,8 +237,8 @@ get_header();
                         </td>
                     </tr>
 
-                    <!-- 
-                    <tr>
+
+                    <!-- <tr>
                         <td></td>
                         <td class="text-end">
 
@@ -246,12 +246,15 @@ get_header();
                         </td>
                     </tr> -->
 
-                </table>
+                    <!-- </table> -->
 
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="text-center mb-1">配對要求</h2>
+                        </td>
+                    </tr>
 
-                <h2 class="text-center mb-1">配對要求</h2>
-
-                <table class="mt-3">
+                    <!-- <table class="mt-3"> -->
                     <tr>
                         <td class="text-end">姓別：</td>
                         <td>
