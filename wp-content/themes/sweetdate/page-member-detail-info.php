@@ -434,7 +434,7 @@ get_header();
 
                     <tr>
                         <td>
-                            <label for="join-activity-way">參與活動形式</label>
+                            <label for="join-activity-way">參與活動形式：</label>
                         </td>
                         <td>
                             <select class="form-select" name="join-activity-way" id="join-activity-way">
