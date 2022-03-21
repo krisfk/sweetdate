@@ -45,7 +45,7 @@ get_header();
                 </tr>
                 <tr>
                     <td class="text-end"><label for="login-password-again">再次輸入登入密碼：*</label> </td>
-                    <td><input required type="password" class="form-control" id="login-password"
+                    <td><input required type="password" class="form-control" id="login-password-again"
                             name="login-password-again">
                     </td>
                 </tr>
@@ -145,7 +145,7 @@ $(function() {
 
         var error_txt = '';
 
-
+        // error_txt = '';
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(login_email))) {
             error_txt +=
                 '電郵格式不正確</br>';
