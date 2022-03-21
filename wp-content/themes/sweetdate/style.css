@@ -637,6 +637,13 @@ a.pink:hover {
         color: #595959;
         min-width: 100%;
     }
+    .contact-form td:first-child,
+    .login-form td:first-child,
+    .member-login-info-form td:first-child,
+    .member-further-info-form td:first-child {
+        text-align: right;
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 640px) {}
