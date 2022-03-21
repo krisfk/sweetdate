@@ -97,8 +97,8 @@ get_header();
 
                     <tr>
                         <td colspan="2">
-                            <h2 class="text-center mb-1">個人資料</h2>
-                            <div class="pink text-center mb-4 small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)</div>
+                            <h2 class="text-center mb-2">個人資料</h2>
+                            <div class="pink text-center small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)</div>
 
 
                         </td>
