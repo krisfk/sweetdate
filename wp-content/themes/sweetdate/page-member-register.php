@@ -12,10 +12,32 @@
 get_header();
 
 
-// if($_POST[''])
-// {
+if($_POST)
+{
+    $login_email=$_POST['login_email'];
+    $login_password=$_POST['login_password'];
+    $gender=$_POST['gender'];
+    $age=$_POST['age'];
+    $tel = $_POST['tel'];
+    $like_food = $_POST['like_food'];
+    $dislike_food = $_POST['dislike_food'];
     
-// }
+    $post_id = wp_insert_post(array (
+        'post_type' => 'member',
+        'post_title' => $post_title,
+        'post_status' => 'publish',
+        'comment_status' => 'closed',   // if you prefer
+        'ping_status' => 'closed',      // if you prefer
+    ));
+    
+    if ($post_id) {
+
+        $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        add_post_meta($post_id, 'tutor_id', $tutor_id);
+        add_post_meta($post_id, 'email', $email);
+        add_post_meta($post_id, 'enable', 'no');
+    }
+}
 
 ?>
 <div class="container mt-3">
