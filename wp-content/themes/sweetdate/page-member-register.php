@@ -31,7 +31,7 @@ get_header();
 
     <div class="main-content mt-4">
 
-        <div class="error-msg mb-4">fds</div>
+        <div class="error-msg mb-4 text-center">fds</div>
         <form action="" method="post" class="login-form">
             <table>
                 <tr>
