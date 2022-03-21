@@ -164,7 +164,11 @@ $(function() {
         if (error_txt) {
             $('.error-msg').html(error_txt);
             return false;
+        } else {
+            return true;
         }
+
+
 
 
 
