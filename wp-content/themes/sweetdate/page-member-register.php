@@ -31,7 +31,7 @@ get_header();
 
     <div class="main-content mt-4">
 
-
+        <div class="error-msg mb-4">fds</div>
         <form action="" method="post" class="login-form">
             <table>
                 <tr>
@@ -139,7 +139,7 @@ $(function() {
 
     $('form').submit(function() {
 
-        return false;
+
     })
 
     $('.qt').click(function() {
