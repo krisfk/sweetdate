@@ -90,13 +90,19 @@ get_header();
 
 
         <div class="detail-form form-div">
-            <h2 class="text-center mb-1">個人資料</h2>
-            <div class="pink text-center mb-4 small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)
 
-            </div>
 
             <form class="member-further-info-form">
                 <table class="">
+
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="text-center mb-1">個人資料</h2>
+                            <div class="pink text-center mb-4 small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)</div>
+
+
+                        </td>
+                    </tr>
 
                     <tr>
                         <td class="text-end">姓別：</td>
