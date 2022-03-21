@@ -11,6 +11,12 @@
 
 get_header();
 
+
+// if($_POST[''])
+// {
+    
+// }
+
 ?>
 <div class="container mt-3">
 
@@ -130,6 +136,11 @@ get_header();
 </div>
 <script type="text/javascript">
 $(function() {
+
+    $('form').submit(function() {
+
+        return false;
+    })
 
     $('.qt').click(function() {
         $(this).toggleClass('active');
