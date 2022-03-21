@@ -161,6 +161,10 @@ $(function() {
                 '確認登入密碼輸入不相同</br>';
         }
 
+        if (error_txt) {
+            $('.error-msg').html(error_txt);
+        }
+
 
 
 
