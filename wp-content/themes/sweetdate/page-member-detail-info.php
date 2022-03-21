@@ -362,7 +362,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="target-education-level">教育程度</label></td>
+                        <td><label for="target-education-level">教育程度：</label></td>
                         <td>
                             <select id="target-education-level" name="target-education-level" class="form-select"
                                 aria-label="">
@@ -377,7 +377,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)</label></td>
+                        <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                         <td>
                             <textarea class="form-control" name="target-personality-request"
                                 id="target-personality-request" cols="30" rows="10"></textarea>
@@ -386,7 +386,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <label for="target-shape-request">配對身型要求</label>
+                            <label for="target-shape-request">配對身型要求：</label>
 
                         </td>
                         <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
@@ -398,7 +398,7 @@ get_header();
                             </select></td>
                     </tr>
                     <tr>
-                        <td><label for="target-matching-relationship">期望關係</label></td>
+                        <td><label for="target-matching-relationship">期望關係：</label></td>
                         <td>
                             <select id="target-matching-relationship" name="target-matching-relationship"
                                 class="form-select" aria-label="">
@@ -411,7 +411,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <label for="how-to-know-us">如何得知我們</label>
+                            <label for="how-to-know-us">如何得知我們：</label>
                         </td>
                         <td>
                             <select class="form-select" name="how-to-know-us" id="how-to-know-us">
