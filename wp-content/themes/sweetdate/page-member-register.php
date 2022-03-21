@@ -81,6 +81,14 @@ if($_POST)
                 </tr>
                 <tr>
                     <td>
+                        <label for="nickname">稱呼：</label>
+                    </td>
+                    <td>
+                        <input id="nickname" name="nickname" class="form-control" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="first-name">英文名(e.g.Jacky)：*</label>
                     </td>
                     <td>
