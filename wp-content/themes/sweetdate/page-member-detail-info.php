@@ -116,6 +116,30 @@ get_header();
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <label for="first-name">英文名：*(e.g.Jacky)：</label>
+                    </td>
+                    <td>
+
+                        <input id="first-name" class="form-control" name="first-name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="last-name">姓：</label></td>
+                    <td>
+                        <input id="last-name" class="form-control" name="last-name" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="age">年齡：</label>
+                    </td>
+                    <td>
+                        <input id="age" class="form-control" name="age" type="text">
+                    </td>
+                </tr>
+                <tr>
                     <td></td>
                     <td class="text-end">
 
