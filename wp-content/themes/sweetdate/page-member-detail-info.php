@@ -348,7 +348,7 @@ get_header();
 
 
 
-                <table class="mt-3">
+                <table class="mt-5">
                     <tr>
                         <td colspan="2">
                             <h2 class="text-center mb-1">配對要求</h2>
