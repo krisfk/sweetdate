@@ -67,7 +67,7 @@ get_header();
                 </tr>
                 <tr>
                     <td class="text-end"><label for="tel">聯絡電話：*</label></td>
-                    <td><input type="text" class="form-control" id="tel" name="tel"></td>
+                    <td><input required type="text" class="form-control" id="tel" name="tel"></td>
                 </tr>
 
                 <tr>
@@ -76,7 +76,7 @@ get_header();
                         <label for="msg-content">最喜歡吃的食物：*</label>
                     </td>
                     <td>
-                        <select id="like-food" name="like-food" class="form-select" aria-label="">
+                        <select required id="like-food" name="like-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="牛">牛</option>
                             <option value="雞">雞</option>
@@ -93,7 +93,7 @@ get_header();
                     </td>
                     <td>
 
-                        <select id="like-food" name="like-food" class="form-select" aria-label="">
+                        <select required id="like-food" name="like-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="牛">牛</option>
                             <option value="雞">雞</option>
