@@ -385,6 +385,52 @@ get_header();
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <label for="target-shape-request">配對身型要求</label>
+
+                        </td>
+                        <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
+                                aria-label="">
+                                <option value="" selected="">選擇</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="target-matching-relationship">期望關係</label></td>
+                        <td>
+                            <select id="target-matching-relationship" name="target-matching-relationship"
+                                class="form-select" aria-label="">
+                                <option value="" selected="">選擇</option>
+                                <option value="朋友">朋友</option>
+                                <option value="以結婚為大前提對象">以結婚為大前提對象</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="how-to-know-us">如何得知我們</label>
+                        </td>
+                        <td>
+                            <select class="form-select" name="how-to-know-us" id="how-to-know-us">
+                                <option value="">選擇</option>
+                                <option value="Yahoo">Yahoo</option>
+                                <option value="Google">Google</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Friend">Friend</option>
+                                <option value="Newspaper">Newspaper</option>
+                                <option value="Magazine">Magazine</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="TV">TV</option>
+                                <option value="Email">Email</option>
+                                <option value="Youtube">Youtube</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="border-0"></td>
                         <td class="border-0"></td>
                     </tr>
