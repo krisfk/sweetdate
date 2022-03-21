@@ -24,11 +24,11 @@ get_header();
     </div>
     <ul class="filter-ul mt-4">
         <li>
-            <a class="active" href="javascript:void(0);" rel="login-info">登入資料
+            <a class="active" href="javascript:void(0);" rel="login-form">登入資料
             </a>
         </li>
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-info">個人資料及配對要求
+            <a class="" href="javascript:void(0);" rel="detail-form">個人資料及配對要求
             </a>
         </li>
 
@@ -85,7 +85,7 @@ get_header();
         </div>
 
 
-        <div class="detail-info form-div">
+        <div class="detail-form form-div">
             <h2 class="text-center mb-1">個人資料</h2>
             <div class="pink text-center mb-4 small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)
 
