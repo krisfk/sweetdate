@@ -432,6 +432,22 @@ get_header();
                     </tr>
 
 
+                    <tr>
+                        <td>
+                            <label for="join-activity-way">參與活動形式</label>
+                        </td>
+                        <td>
+                            <select class="form-select" name="join-activity-way" id="join-activity-way">
+                                <option value="">選擇</option>
+                                <option value="以閣下選擇之日期參加">以閣下選擇之日期參加
+                                </option>
+                                <option value="以閣下要求異性資料參加">以閣下要求異性資料參加
+                                </option>
+
+                            </select>
+                        </td>
+                    </tr>
+
 
                     <tr>
                         <td></td>
@@ -440,6 +456,7 @@ get_header();
                             <input type="submit" value="更新資料" class="form-submit-btn">
                         </td>
                     </tr>
+
 
 
                 </table>
