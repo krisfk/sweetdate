@@ -291,10 +291,10 @@ get_header();
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="有">有</label>
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="沒有">沒有</label>
 
-                            <div>如有留學國家為 </div>
+                            <div class="mt-2"> <label for="overseas-study-nation">如有留學國家為</label> </div>
 
-                            <div> <input type="text" id="overseas-study-nation" name="overseas_study_nation"
-                                    class="form-control"> </div>
+                            <div class="mt-2"> <input type="text" id="overseas-study-nation"
+                                    name="overseas_study_nation" class="form-control"> </div>
 
 
                         </td>
