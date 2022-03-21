@@ -34,18 +34,20 @@ get_header();
                 </tr>
                 <tr>
                     <td class="text-end"><label for="login-password">登入密碼：*</label> </td>
-                    <td><input type="password" class="form-control" id="login-password" name="login-password"></td>
+                    <td><input required type="password" class="form-control" id="login-password" name="login-password">
+                    </td>
                 </tr>
                 <tr>
                     <td class="text-end"><label for="login-password-again">再次輸入登入密碼：*</label> </td>
-                    <td><input type="password" class="form-control" id="login-password" name="login-password-again">
+                    <td><input required type="password" class="form-control" id="login-password"
+                            name="login-password-again">
                     </td>
                 </tr>
 
                 <tr>
                     <td class="text-end">姓別：*</td>
                     <td>
-                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                        <label class="me-2"><input required class="me-1" type="radio" name="gender" value="男">男</label>
                         <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
