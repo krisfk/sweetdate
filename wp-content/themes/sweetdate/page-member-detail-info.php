@@ -299,6 +299,14 @@ get_header();
 
                         </td>
                     </tr>
+                    <tr>
+                        <td> <label for="language">語言</label>
+                        </td>
+                        <td><select class="form-select" id="religion" name="religion">
+                                <option value="中文">中文</option>
+                                <option value="英文">英文</option>
+                            </select></td>
+                    </tr>
                     <!--  -->
 
                     <!-- <tr>
