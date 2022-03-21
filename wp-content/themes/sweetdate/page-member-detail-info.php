@@ -136,7 +136,7 @@ get_header();
                         <label for="age">年齡：*</label>
                     </td>
                     <td>
-                        <select id="age" name="age" class="age" aria-label="">
+                        <select id="age" name="age" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="20-29">20-29</option>
                             <option value="30-34">30-34</option>
