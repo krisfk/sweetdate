@@ -197,7 +197,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-top">
+                        <td class="align-top pt-2">
                             <label for="occupation">職業：</label>
 
                         </td>
