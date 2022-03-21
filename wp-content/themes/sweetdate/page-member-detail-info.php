@@ -41,9 +41,13 @@ get_header();
 
 
         <div class="login-form form-div">
-            <h2 class="text-center mb-3">登入資料</h2>
             <form action="" class="member-login-info-form mb-5">
                 <table>
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="text-center mb-3">登入資料</h2>
+                        </td>
+                    </tr>
                     <tr>
                         <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                         <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
