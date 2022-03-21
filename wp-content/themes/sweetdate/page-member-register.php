@@ -31,7 +31,7 @@ get_header();
 
     <div class="main-content mt-4">
 
-        <div class="error-msg mb-4 text-center pink">fds</div>
+        <div class="error-msg mb-4 text-center pink"></div>
         <form action="" method="post" class="login-form">
             <table>
                 <tr>
@@ -138,6 +138,33 @@ get_header();
 $(function() {
 
     $('form').submit(function() {
+
+        var login_email = $('#login-email').val();
+        var login_password = $('#login-password').val();
+        var login_password_again = $('#login-password-again').val();
+
+        var error_txt = '';
+
+
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(login_email))) {
+            error_txt +=
+                '電郵格式不正確</br>';
+        }
+
+        if (!login_password) {
+            error_txt +=
+                '請輸入登入密碼</br>';
+        }
+
+        if (login_password != login_password_again) {
+            error_txt +=
+                '確認登入密碼輸入不相同</br>';
+        }
+
+
+
+
+        // var gender = $('#gender').val();
 
 
     })
