@@ -204,6 +204,8 @@ get_header();
                         <td>
 
                             <select id="occupation" name="occupation" class="form-select">
+                                <option value="">選擇</option>
+
                                 <option value="教師">教師</option>
                                 <option value="研究員">研究員</option>
                                 <option value="編輯">編輯</option>
