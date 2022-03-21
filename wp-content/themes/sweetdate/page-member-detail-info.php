@@ -198,7 +198,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <label for="occupation">職業</label>
+                            <label for="occupation">職業：</label>
 
                         </td>
                         <td>
