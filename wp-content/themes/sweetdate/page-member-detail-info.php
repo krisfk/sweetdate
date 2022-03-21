@@ -357,7 +357,8 @@ get_header();
                     <tr>
 
                         <td colspan="2">
-                            對象年齡由<input type="text" class="form-control">至<input type="text" class="form-control">歲
+                            對象年齡由<input type="text" class="form-control age-input">至<input type="text"
+                                class="age-input form-control">歲
                         </td>
                     </tr>
                     <tr>
