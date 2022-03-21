@@ -357,8 +357,31 @@ get_header();
                     <tr>
 
                         <td colspan="2" class="text-center">
-                            對象年齡由<input type="text" class="form-control age-input">至<input type="text"
-                                class="age-input form-control">歲
+                            對象年齡由<input type="text" class="form-control age-input" name="target-age-from">至<input
+                                type="text" class="age-input form-control" name="target-age-to">歲
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="target-education-level">教育程度</label></td>
+                        <td>
+                            <select id="target-education-level" name="target-education-level" class="form-select"
+                                aria-label="">
+                                <option value="" selected="">選擇</option>
+                                <option value="小學程度">小學程度</option>
+                                <option value="中學程度">中學程度</option>
+                                <option value="大學程度">大學程度</option>
+                                <option value="碩士">碩士</option>
+                                <option value="博士">博士</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="target-personality-request">配對性格要求(如有)</label></td>
+                        <td>
+                            <textarea class="form-control" name="target-personality-request"
+                                id="target-personality-request" cols="30" rows="10"></textarea>
+
                         </td>
                     </tr>
                     <tr>
