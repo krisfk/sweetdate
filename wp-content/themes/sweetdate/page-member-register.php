@@ -26,7 +26,7 @@ get_header();
     <div class="main-content mt-4">
 
 
-        <form action="" class="login-form">
+        <form action="" class="register-form">
             <table>
                 <tr>
                     <td class="text-end"><label for="login-email"> 登記電郵：*</label></td>
