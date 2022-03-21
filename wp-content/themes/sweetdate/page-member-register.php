@@ -125,7 +125,7 @@ if($_POST)
                 <tr>
 
                     <td class=" text-end">
-                        <label for="msg-content">最喜歡吃的食物：*</label>
+                        <label for="like-food">最喜歡吃的食物：*</label>
                     </td>
                     <td>
                         <select required id="like-food" name="like-food" class="form-select" aria-label="">
@@ -141,11 +141,11 @@ if($_POST)
                 <tr>
 
                     <td class=" text-end">
-                        <label for="msg-content">最不喜歡吃的食物：*</label>
+                        <label for="dislike-food">最不喜歡吃的食物：*</label>
                     </td>
                     <td>
 
-                        <select required id="like-food" name="like-food" class="form-select" aria-label="">
+                        <select required id="dislike-food" name="dislike-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="牛">牛</option>
                             <option value="雞">雞</option>
