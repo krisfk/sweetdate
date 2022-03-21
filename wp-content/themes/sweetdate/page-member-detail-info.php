@@ -79,7 +79,7 @@ get_header();
             </table>
         </form>
 
-        <h2 class="text-center mb-1">我的個人資料</h2>
+        <h2 class="text-center mb-1">個人資料</h2>
         <div class="pink text-center mb-3 small">(請閣下細心提供資料, 愈精準, 找到合適伴侶的機率愈高!)
 
         </div>
@@ -240,7 +240,23 @@ get_header();
                 </tr>
 
             </table>
+
+
+            <h2 class="text-center mb-1">配對要求</h2>
+
+            <table class="mt-3">
+                <tr>
+                    <td class="text-end">姓別：</td>
+                    <td>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+                    </td>
+                </tr>
+            </table>
         </form>
+
+
+
 
 
 
