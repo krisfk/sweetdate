@@ -252,7 +252,7 @@ get_header();
                     <tr>
                         <td>
 
-                            <label for="occupation-title">職銜</label>
+                            <label for="occupation-title">職銜：</label>
                         </td>
                         <td>
                             <input type="text" id="occupation-title" class="form-control" name="occupation-title">
@@ -260,7 +260,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <label for="annual-income">年薪(HKD)</label>
+                            <label for="annual-income">年薪(HKD)：</label>
 
                         </td>
                         <td>
@@ -269,7 +269,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <label for="religion">宗教</label>
+                            <label for="religion">宗教：</label>
                         </td>
                         <td><select class="form-select" id="religion" name="religion">
                                 <option value="選擇">選擇</option>
@@ -285,7 +285,7 @@ get_header();
                     </tr>
                     <tr>
                         <td class="align-top">
-                            <label for="overseas_study">海外留學</label>
+                            <label for="overseas_study">海外留學：</label>
                         </td>
                         <td>
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="有">有</label>
@@ -300,7 +300,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-top pt-3"> <label for="language">語言</label>
+                        <td class="align-top pt-4"> <label for="language">語言：</label>
                         </td>
                         <td><select class="form-select" id="religion" name="religion">
                                 <option value="中文">中文</option>
