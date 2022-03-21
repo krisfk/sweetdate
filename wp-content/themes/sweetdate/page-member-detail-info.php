@@ -153,7 +153,7 @@ get_header();
                     </td>
                     <td>
 
-                        <select id="education-level" name="education-level" class="education-level" aria-label="">
+                        <select id="education-level" name="education-level" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="小學程度">小學程度</option>
                             <option value="中學程度">中學程度</option>
@@ -172,7 +172,7 @@ get_header();
                     </td>
                     <td>
 
-                        <select id="occupation" name="occupation" class="form-control">
+                        <select id="occupation" name="occupation" class="form-select">
                             <option value="教師">教師</option>
                             <option value="研究員">研究員</option>
                             <option value="編輯">編輯</option>
