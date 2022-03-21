@@ -338,15 +338,7 @@ get_header();
 
                         </td>
                     </tr>
-                    <!--  -->
 
-                    <!-- <tr>
-                        <td></td>
-                        <td class="text-end">
-
-                            <input type="submit" value="更新會員資料" class="form-submit-btn">
-                        </td>
-                    </tr> -->
                     <tr>
                         <td class="border-0"></td>
                         <td class="border-0"></td>
