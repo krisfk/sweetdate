@@ -45,7 +45,7 @@ get_header();
                 <table>
                     <tr>
                         <td colspan="2">
-                            <h2 class="text-center mb-3">登入資料</h2>
+                            <h2 class="text-center">登入資料</h2>
                         </td>
                     </tr>
                     <tr>
