@@ -460,7 +460,7 @@ h3.title-type-pink-line {
     margin: 0 auto;
     display: table;
     color: #595959;
-    min-width: 500px;
+    min-width: 768px;
 }
 
 .contact-form table,
@@ -492,6 +492,7 @@ h3.title-type-pink-line {
 .member-login-info-form td:first-child,
 .member-further-info-form td:first-child {
     text-align: right;
+    width: 35%;
 }
 
 .contact-form td:last-child,
