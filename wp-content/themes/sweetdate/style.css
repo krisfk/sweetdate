@@ -664,4 +664,12 @@ a.pink:hover {
     .login-form {
         min-width: auto;
     }
+    .contact-form td:first-child,
+    .login-form td:first-child,
+    .member-login-info-form td:first-child,
+    .member-further-info-form td:first-child {
+        text-align: right;
+        width: 40%;
+        font-size: 1;
+    }
 }
