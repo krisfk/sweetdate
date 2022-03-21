@@ -266,6 +266,20 @@ get_header();
                                 <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <label for="age">年齡：*</label>
+                            </td>
+                            <td>
+                                <select id="age" name="age" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="20-29">20-29</option>
+                                    <option value="30-34">30-34</option>
+                                    <option value="35-39">35-39</option>
+                                    <option value="40或以上">40或以上</option>
+                                </select>
+                            </td>
+                        </tr>
 
                         <tr>
                             <td class="  text-end">
