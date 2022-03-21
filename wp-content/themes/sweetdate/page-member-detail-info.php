@@ -263,8 +263,8 @@ get_header();
                         </td>
                     </tr> -->
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td class="border-0"></td>
+                        <td class="border-0"></td>
                     </tr>
 
                 </table>
