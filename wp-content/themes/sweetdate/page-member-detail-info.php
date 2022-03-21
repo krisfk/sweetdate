@@ -117,7 +117,7 @@ get_header();
                 </tr>
                 <tr>
                     <td>
-                        <label for="first-name">英文名：*(e.g.Jacky)：</label>
+                        <label for="first-name">英文名* (e.g.Jacky)：</label>
                     </td>
                     <td>
 
