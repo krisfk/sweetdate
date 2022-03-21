@@ -22,25 +22,14 @@ get_header();
             <div class="title-pink-line"></div>
         </div>
     </div>
-    <ul class="filter-ul">
+    <ul class="filter-ul mt-4">
         <li>
-            <a class="active" href="javascript:void(0);" ref="all">顯示全部</a>
+            <a class="active" href="javascript:void(0);" ref="all">登入資料
+            </a>
         </li>
         <li>
-            <a href="javascript:void(0);" ref="activity">最新活動</a>
-        </li>
-
-
-        <li>
-            <a href="javascript:void(0);" ref="dating-info">約會資訊</a>
-        </li>
-
-        <li>
-            <a href="javascript:void(0);" ref="dating-tips">約會貼士</a>
-        </li>
-
-        <li>
-            <a href="javascript:void(0);" ref="successful-story">成功故事</a>
+            <a class="active" href="javascript:void(0);" ref="all">個人資料及配對要求
+            </a>
         </li>
 
 
