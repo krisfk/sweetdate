@@ -247,12 +247,7 @@ get_header();
                             <div><input type="text" class="form-control" placeholder="其他職員"></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
 
-                        </td>
-                        <td></td>
-                    </tr>
 
 
                     <!-- <tr>
