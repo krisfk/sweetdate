@@ -284,7 +284,7 @@ get_header();
                             </select></td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="align-top">
                             <label for="overseas_study">海外留學</label>
                         </td>
                         <td>
