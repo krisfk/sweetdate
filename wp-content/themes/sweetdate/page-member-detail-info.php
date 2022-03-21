@@ -246,7 +246,7 @@ get_header();
                                 <option value="法律工作者">法律工作者</option>
                                 <option value="教授">教授</option>
                             </select>
-                            <div class="mt-4"><input type="text" class="form-control" placeholder="其他職員"></div>
+                            <div class="mt-2"><input type="text" class="form-control" placeholder="其他職業"></div>
                         </td>
                     </tr>
 
