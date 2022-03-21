@@ -430,10 +430,18 @@ get_header();
                             </select>
                         </td>
                     </tr>
+
+
+
                     <tr>
-                        <td class="border-0"></td>
-                        <td class="border-0"></td>
+                        <td></td>
+                        <td class="text-end">
+
+                            <input type="submit" value="更新資料" class="form-submit-btn">
+                        </td>
                     </tr>
+
+
                 </table>
             </form>
 
