@@ -305,7 +305,16 @@ get_header();
                         <td><select class="form-select" id="religion" name="religion">
                                 <option value="中文">中文</option>
                                 <option value="英文">英文</option>
-                            </select></td>
+                            </select>
+                            <div class="mt-3">
+
+                                <input type="text" class="form-control" placeholder="其他語言">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <!--  -->
 
