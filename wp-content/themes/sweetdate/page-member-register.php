@@ -81,10 +81,10 @@ if($_POST)
                 </tr>
                 <tr>
                     <td>
-                        <label for="nickname">稱呼：</label>
+                        <label for="nickname">稱呼：*</label>
                     </td>
                     <td>
-                        <input id="nickname" name="nickname" class="form-control" type="text">
+                        <input required id="nickname" name="nickname" class="form-control" type="text">
                     </td>
                 </tr>
                 <tr>
