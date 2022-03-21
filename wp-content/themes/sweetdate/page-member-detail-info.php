@@ -244,7 +244,14 @@ get_header();
                                 <option value="法律工作者">法律工作者</option>
                                 <option value="教授">教授</option>
                             </select>
+                            <div><input type="text" class="form-control" placeholder="其他職員"></div>
                         </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td></td>
                     </tr>
 
 
@@ -255,16 +262,21 @@ get_header();
                             <input type="submit" value="更新會員資料" class="form-submit-btn">
                         </td>
                     </tr> -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
 
-                    <!-- </table> -->
+                </table>
 
+
+
+                <table class="mt-3">
                     <tr>
                         <td colspan="2">
                             <h2 class="text-center mb-1">配對要求</h2>
                         </td>
                     </tr>
-
-                    <!-- <table class="mt-3"> -->
                     <tr>
                         <td class="text-end">姓別：</td>
                         <td>
