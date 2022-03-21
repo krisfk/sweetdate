@@ -377,7 +377,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="target-personality-request">配對性格要求(如有)</label></td>
+                        <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)</label></td>
                         <td>
                             <textarea class="form-control" name="target-personality-request"
                                 id="target-personality-request" cols="30" rows="10"></textarea>
