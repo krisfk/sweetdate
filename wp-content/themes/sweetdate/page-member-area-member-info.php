@@ -573,9 +573,9 @@ $post_id = get_the_ID();
                         <tr>
 
                             <td colspan="2" class="text-center">
-                                對象年齡由<input type="text" value="<?php echo get_field('target-age-from');?>"
+                                對象年齡由<input type="text" value="<?php echo get_field('target_age_from');?>"
                                     class="form-control age-input" name="target-age-from">至<input
-                                    value="<?php echo get_field('target-age-to');?>" type="text"
+                                    value="<?php echo get_field('target_age_to');?>" type="text"
                                     class="age-input form-control" name="target-age-to">歲
                             </td>
                         </tr>
@@ -585,15 +585,15 @@ $post_id = get_the_ID();
                                 <select id="target-education-level" name="target-education-level" class="form-select"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option <?php echo get_field('target-education-level')=='小學程度' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_education_level')=='小學程度' ? 'selected' :'';?>
                                         value="小學程度">小學程度</option>
-                                    <option <?php echo get_field('target-education-level')=='中學程度' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_education_level')=='中學程度' ? 'selected' :'';?>
                                         value="中學程度">中學程度</option>
-                                    <option <?php echo get_field('target-education-level')=='大學程度' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_education_level')=='大學程度' ? 'selected' :'';?>
                                         value="大學程度">大學程度</option>
-                                    <option <?php echo get_field('target-education-level')=='碩士' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_education_level')=='碩士' ? 'selected' :'';?>
                                         value="碩士">碩士</option>
-                                    <option <?php echo get_field('target-education-level')=='博士' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_education_level')=='博士' ? 'selected' :'';?>
                                         value="博士">博士</option>
 
                                 </select>
@@ -604,7 +604,7 @@ $post_id = get_the_ID();
                             <td>
                                 <textarea class="form-control" name="target-personality-request"
                                     id="target-personality-request" cols="30"
-                                    rows="10"><?php echo get_field('target-personality-request');?></textarea>
+                                    rows="10"><?php echo get_field('target_personality_request');?></textarea>
 
                             </td>
                         </tr>
@@ -616,11 +616,11 @@ $post_id = get_the_ID();
                             <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option <?php echo get_field('target-shape-request')=='A' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_shape_request')=='A' ? 'selected' :'';?>
                                         value="A">A</option>
-                                    <option <?php echo get_field('target-shape-request')=='B' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_shape_request')=='B' ? 'selected' :'';?>
                                         value="B">B</option>
-                                    <option <?php echo get_field('target-shape-request')=='C' ? 'selected' :'';?>
+                                    <option <?php echo get_field('target_shape_request')=='C' ? 'selected' :'';?>
                                         value="C">C</option>
                                 </select></td>
                         </tr>
@@ -631,10 +631,10 @@ $post_id = get_the_ID();
                                     class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option
-                                        <?php echo get_field('target-matching-relationship')=='朋友' ? 'selected' :'';?>
+                                        <?php echo get_field('target_matching_relationship')=='朋友' ? 'selected' :'';?>
                                         value="朋友">朋友</option>
                                     <option
-                                        <?php echo get_field('target-matching-relationship')=='以結婚為大前提對象' ? 'selected' :'';?>
+                                        <?php echo get_field('target_matching_relationship')=='以結婚為大前提對象' ? 'selected' :'';?>
                                         value="以結婚為大前提對象">以結婚為大前提對象</option>
                                 </select>
 
@@ -645,29 +645,29 @@ $post_id = get_the_ID();
                                 <label for="how-to-know-us">如何得知我們：</label>
                             </td>
                             <td>
-                                <select class="form-select" name="how-to-know-us" id="how-to-know-us">
+                                <select class="form-select" name="how_to_know_us" id="how-to-know-us">
                                     <option value="">選擇</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Yahoo' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Yahoo' ? 'selected' :'';?>
                                         value="Yahoo">Yahoo</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Google' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Google' ? 'selected' :'';?>
                                         value="Google">Google</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Facebook' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Facebook' ? 'selected' :'';?>
                                         value="Facebook">Facebook</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Friend' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Friend' ? 'selected' :'';?>
                                         value="Friend">Friend</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Newspaper' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Newspaper' ? 'selected' :'';?>
                                         value="Newspaper">Newspaper</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Magazine' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Magazine' ? 'selected' :'';?>
                                         value="Magazine">Magazine</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Instagram' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Instagram' ? 'selected' :'';?>
                                         value="Instagram">Instagram</option>
-                                    <option <?php echo get_field('how-to-know-us')=='TV' ? 'selected' :'';?> value="TV">
+                                    <option <?php echo get_field('how_to_know_us')=='TV' ? 'selected' :'';?> value="TV">
                                         TV</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Email' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Email' ? 'selected' :'';?>
                                         value="Email">Email</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Youtube' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Youtube' ? 'selected' :'';?>
                                         value="Youtube">Youtube</option>
-                                    <option <?php echo get_field('how-to-know-us')=='Others' ? 'selected' :'';?>
+                                    <option <?php echo get_field('how_to_know_us')=='Others' ? 'selected' :'';?>
                                         value="Others">Others</option>
                                 </select>
                             </td>
@@ -681,10 +681,10 @@ $post_id = get_the_ID();
                             <td>
                                 <select class="form-select" name="join-activity-way" id="join-activity-way">
                                     <option value="">選擇</option>
-                                    <option <?php echo get_field('join-activity-way')=='以閣下選擇之日期參加' ? 'selected' :'';?>
+                                    <option <?php echo get_field('join_activity_way')=='以閣下選擇之日期參加' ? 'selected' :'';?>
                                         value="以閣下選擇之日期參加">以閣下選擇之日期參加
                                     </option>
-                                    <option <?php echo get_field('join-activity-way')=='以閣下要求異性資料參加' ? 'selected' :'';?>
+                                    <option <?php echo get_field('join_activity_way')=='以閣下要求異性資料參加' ? 'selected' :'';?>
                                         value="以閣下要求異性資料參加">以閣下要求異性資料參加
                                     </option>
 
