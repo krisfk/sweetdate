@@ -49,7 +49,7 @@ if($_POST)
         ?>
 <script type="text/javascript">
 $(function() {
-    $('.login-form').html('會員註冊成功，三秒後自動登入。');
+    // $('.login-form').html('會員註冊成功，三秒後自動登入。');
 
 
 })
