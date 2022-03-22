@@ -24,7 +24,8 @@ if($_POST)
     $tel = $_POST['tel'];
     $like_food = $_POST['like_food'];
     $dislike_food = $_POST['dislike_food'];
-    
+    $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
         'post_title' => $member_id.'('.$first_name.' '.$last_name.')('.$nickname.')',
@@ -34,7 +35,6 @@ if($_POST)
     ));
     
     if ($post_id) {
-        $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
         add_post_meta($post_id, 'member_id', $member_id);
         add_post_meta($post_id, 'login_email', $login_email);
         add_post_meta($post_id, 'login_password', $login_password);
