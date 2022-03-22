@@ -78,25 +78,29 @@ $(function() {
             <table>
                 <tr>
                     <td class="text-end"><label for="login-email"> 登記電郵：*</label></td>
-                    <td><input required type="text" class="form-control" id="login-email" name="login-email"></td>
+                    <td><input value="<?php echo $_POST['login-email']?>" required type="text" class="form-control"
+                            id="login-email" name="login-email"></td>
                 </tr>
                 <tr>
                     <td class="text-end"><label for="login-password">登入密碼：*</label> </td>
-                    <td><input required type="password" class="form-control" id="login-password" name="login-password">
+                    <td><input value="<?php echo $_POST['login-password']?>" required type="password"
+                            class="form-control" id="login-password" name="login-password">
                     </td>
                 </tr>
                 <tr>
                     <td class="text-end"><label for="login-password-again">再次輸入登入密碼：*</label> </td>
-                    <td><input required type="password" class="form-control" id="login-password-again"
-                            name="login-password-again">
+                    <td><input value="<?php echo $_POST['login-password-again'];?>" required type="password"
+                            class="form-control" id="login-password-again" name="login-password-again">
                     </td>
                 </tr>
 
                 <tr>
                     <td class="text-end">姓別：*</td>
                     <td>
-                        <label class="me-2"><input required class="me-1" type="radio" name="gender" value="男">男</label>
-                        <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+                        <label class="me-2"><input <?php echo $_POST['gender']=='男' ? 'checked' :'';?> required
+                                class="me-1" type="radio" name="gender" value="男">男</label>
+                        <label class="me-2"><input <?php echo $_POST['gender']=='女' ? 'checked' :'';?> class="me-1"
+                                type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
                 <tr>
@@ -104,7 +108,8 @@ $(function() {
                         <label for="nickname">稱呼：*</label>
                     </td>
                     <td>
-                        <input required id="nickname" name="nickname" class="form-control" type="text">
+                        <input value="<?php echo $_POST['nickname'];?>" required id="nickname" name="nickname"
+                            class="form-control" type="text">
                     </td>
                 </tr>
                 <tr>
@@ -113,13 +118,15 @@ $(function() {
                     </td>
                     <td>
 
-                        <input required id="first-name" class="form-control" name="first-name" type="text">
+                        <input value="<?php echo $_POST['first-name'];?>" required id="first-name" class="form-control"
+                            name="first-name" type="text">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="last-name">姓：*</label></td>
                     <td>
-                        <input required id="last-name" class="form-control" name="last-name" type="text">
+                        <input value="<?php echo $_POST['last-name'];?>" required id="last-name" class="form-control"
+                            name="last-name" type="text">
                     </td>
                 </tr>
 
@@ -130,16 +137,17 @@ $(function() {
                     <td>
                         <select required id="age" name="age" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option value="20-29">20-29</option>
-                            <option value="30-34">30-34</option>
-                            <option value="35-39">35-39</option>
-                            <option value="40或以上">40或以上</option>
+                            <option <?php echo $_POST['age']=='20-29' ? 'checked' :'';?> value="20-29">20-29</option>
+                            <option <?php echo $_POST['age']=='30-34' ? 'checked' :'';?> value="30-34">30-34</option>
+                            <option <?php echo $_POST['age']=='35-39' ? 'checked' :'';?> value="35-39">35-39</option>
+                            <option <?php echo $_POST['age']=='40或以上' ? 'checked' :'';?> value="40或以上">40或以上</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td class="text-end"><label for="tel">聯絡電話：*</label></td>
-                    <td><input required type="text" class="form-control" id="tel" name="tel"></td>
+                    <td><input value="<?php echo $_POST['tel'];?>" required type="text" class="form-control" id="tel"
+                            name="tel"></td>
                 </tr>
 
                 <tr>
@@ -150,11 +158,11 @@ $(function() {
                     <td>
                         <select required id="like-food" name="like-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option value="牛">牛</option>
-                            <option value="雞">雞</option>
-                            <option value="羊">羊</option>
-                            <option value="豬">豬</option>
-                            <option value="魚">魚</option>
+                            <option <?php echo $_POST['age']=='牛' ? 'checked' :'';?> value="牛">牛</option>
+                            <option <?php echo $_POST['age']=='雞' ? 'checked' :'';?> value="雞">雞</option>
+                            <option <?php echo $_POST['age']=='羊' ? 'checked' :'';?> value="羊">羊</option>
+                            <option <?php echo $_POST['age']=='豬' ? 'checked' :'';?> value="豬">豬</option>
+                            <option <?php echo $_POST['age']=='魚' ? 'checked' :'';?> value="魚">魚</option>
                         </select>
                     </td>
                 </tr>
@@ -167,11 +175,11 @@ $(function() {
 
                         <select required id="dislike-food" name="dislike-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option value="牛">牛</option>
-                            <option value="雞">雞</option>
-                            <option value="羊">羊</option>
-                            <option value="豬">豬</option>
-                            <option value="魚">魚</option>
+                            <option <?php echo $_POST['age']=='牛' ? 'checked' :'';?> value="牛">牛</option>
+                            <option <?php echo $_POST['age']=='雞' ? 'checked' :'';?> value="雞">雞</option>
+                            <option <?php echo $_POST['age']=='羊' ? 'checked' :'';?> value="羊">羊</option>
+                            <option <?php echo $_POST['age']=='豬' ? 'checked' :'';?> value="豬">豬</option>
+                            <option <?php echo $_POST['age']=='魚' ? 'checked' :'';?> value="魚">魚</option>
                         </select>
 
                     </td>
