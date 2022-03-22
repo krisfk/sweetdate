@@ -80,6 +80,10 @@ $post_id = get_the_ID();
             $age=$_POST['age'];
             $education_level=$_POST['education-level'];
             $occupation=$_POST['occupation'];
+            $occupation_title=$_POST['occupation-title'];
+
+            
+
             $other_occupation=$_POST['other-occupation'];
             $annual_income=$_POST['annual-income'];
             $religion=$_POST['religion'];
@@ -104,6 +108,7 @@ $post_id = get_the_ID();
             update_post_meta($post_id, 'age', $age);
             update_post_meta($post_id, 'education_level', $education_level);
             update_post_meta($post_id, 'occupation', $occupation);
+            update_post_meta($post_id, 'occupation_title', $occupation_title);
             update_post_meta($post_id, 'other_occupation', $other_occupation);
             update_post_meta($post_id, 'annual_income', $annual_income);
             update_post_meta($post_id, 'religion', $religion);
