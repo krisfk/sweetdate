@@ -8,7 +8,7 @@
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
-
+session_start();
 get_header();
 
 
@@ -48,13 +48,16 @@ if($_POST)
         add_post_meta($post_id, 'dislike_food', $dislike_food);
 
         //password no problem
-        
+        $_SESSION['login_member_id']=$member_id;
        
        ?>
 <script type="text/javascript">
 $(function() {
     $('.login-form').addClass('text-center');
     $('.login-form').html('會員註冊成功，三秒後自動登入。');
+    setTimeout(() => {
+        window.location = '<?php echo get_site_url();?>'
+    }, 3000);
 })
 </script>
 <?php
