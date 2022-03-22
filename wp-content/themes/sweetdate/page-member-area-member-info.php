@@ -73,7 +73,8 @@ $post_id = get_the_ID();
     {
         if($_POST['form-type']=='member-further-info-form')
         {
-            echo $post_id;
+            
+            // echo $post_id;
         }
     }
 
@@ -162,10 +163,11 @@ $post_id = get_the_ID();
                         <tr>
                             <td class="text-end">姓別：</td>
                             <td>
-                                <label class="me-2"><input <?php echo  get_field('gender')=='男' ? 'checked' :'';?>
+                                <?php echo get_field('gender');?>
+                                <!-- <label class="me-2"><input <?php echo  get_field('gender')=='男' ? 'checked' :'';?>
                                         class="me-1" type="radio" name="gender" value="男">男</label>
                                 <label class="me-2"><input <?php echo  get_field('gender')=='女' ? 'checked' :'';?>
-                                        class="me-1" type="radio" name="gender" value="女">女</label>
+                                        class="me-1" type="radio" name="gender" value="女">女</label> -->
                             </td>
                         </tr>
 
