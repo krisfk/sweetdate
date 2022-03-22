@@ -48,7 +48,7 @@ get_header();
 
 
 
-        <div class="row mt-3">
+        <div class="row mt-3 justify-content-center">
 
             <?php
 
