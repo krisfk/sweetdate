@@ -188,7 +188,8 @@ if(!$_SESSION['login_member_id'])
                        {
                            ?>
                         <li><a href="<?php echo get_site_url();?>/member-logout"><img
-                                    src="<?php echo get_template_directory_uri()?>/assets/images/login-icon.png" alt="">
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/logout-icon.png"
+                                    alt="">
                                 登出</a></li>
                         <?php
                        }
