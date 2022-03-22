@@ -80,7 +80,7 @@ $the_query->the_post();
                             <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                             <td>
                                 <?php 
-                            echo get_field('email');
+                            echo get_field('login_email');
                             ?>
                                 <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
                             </td>
