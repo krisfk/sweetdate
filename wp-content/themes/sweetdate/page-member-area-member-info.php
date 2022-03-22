@@ -34,7 +34,7 @@ get_header();
         </li>
 
         <li>
-            <a class="active" href="<?php echo get_site_url();?>/member-info" rel="detail-form">會員資料
+            <a class="active" href="<?php echo get_site_url();?>/member-area-member-info" rel="detail-form">會員資料
             </a>
         </li>
 
