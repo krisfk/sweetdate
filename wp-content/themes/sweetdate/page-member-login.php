@@ -38,10 +38,13 @@ if($_POST)
 
     $the_query = new WP_Query( $query_args );
     if ( $the_query->have_posts() ) {
+        // $the_query->the
         $loginned=true;
-        echo 222;
-        echo get_field('member_id');
-        // $_SESSION['login_member_id']=get_field('member_id');
+        $the_query->the_post();
+
+        // echo 222;
+        // echo get_field('member_id');
+        $_SESSION['login_member_id']=get_field('member_id');
         ?>
 <script type="text/javascript">
 $(function() {
