@@ -22,8 +22,8 @@ if($_POST)
     $last_name=$_POST['last-name'];
     $age=$_POST['age'];
     $tel = $_POST['tel'];
-    $like_food = $_POST['like_food'];
-    $dislike_food = $_POST['dislike_food'];
+    $like_food = $_POST['like-food'];
+    $dislike_food = $_POST['dislike-food'];
     $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
 
     $post_id = wp_insert_post(array (
