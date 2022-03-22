@@ -25,16 +25,16 @@ get_header();
 
     <ul class="filter-ul mt-4">
         <li>
-            <a class="active" href="javascript:void(0);" rel="login-form">最新活動
+            <a class="active" href="<?php echo get_site_url();?>/member-area-new-activity" rel="login-form">最新活動
             </a>
         </li>
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-form">已參加活動
+            <a class="" href="<?php echo get_site_url();?>/member-area-joined-activity" rel="detail-form">已參加活動
             </a>
         </li>
 
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-form">會員資料
+            <a class="" href="<?php echo get_site_url();?>/member-info" rel="detail-form">會員資料
             </a>
         </li>
 
@@ -490,13 +490,13 @@ get_header();
 $(function() {
 
 
-    $('.filter-ul li a').click(function() {
-        $('.filter-ul li a').removeClass('active');
-        $(this).addClass('active');
-        $('.form-div').fadeOut(0);
-        var rel = $(this).attr('rel');
-        $('.form-div.' + rel).fadeIn(0);
-    })
+    // $('.filter-ul li a').click(function() {
+    //     $('.filter-ul li a').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('.form-div').fadeOut(0);
+    //     var rel = $(this).attr('rel');
+    //     $('.form-div.' + rel).fadeIn(0);
+    // })
 })
 </script>
 
