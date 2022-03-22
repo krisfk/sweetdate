@@ -160,7 +160,8 @@ echo'</li>';
                                 會員註冊</a></li>
 
                         <li><a href="<?php echo get_site_url();?>/member-area"><img
-                                    src="<?php echo get_template_directory_uri()?>/assets/images/reg-icon.png" alt="">
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/account-icon.png"
+                                    alt="">
                                 會員專區</a></li>
 
 
