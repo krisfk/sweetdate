@@ -216,8 +216,8 @@ $the_query->the_post();
                             </td>
                             <td>
 
-                                <input value="<?php echo $_POST['first-name'] || get_field('first_name');?>" required
-                                    id="first-name" class="form-control" name="first-name" type="text">
+                                <input value="<?php echo  get_field('first_name');?>" required id="first-name"
+                                    class="form-control" name="first-name" type="text">
                             </td>
                         </tr>
                         <tr>
