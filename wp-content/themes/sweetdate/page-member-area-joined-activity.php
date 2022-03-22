@@ -25,11 +25,11 @@ get_header();
 
     <ul class="filter-ul mt-4">
         <li>
-            <a class="active" href="javascript:void(0);" rel="login-form">最新活動
+            <a class="" href="javascript:void(0);" rel="login-form">最新活動
             </a>
         </li>
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-form">已參加活動
+            <a class="active" href="javascript:void(0);" rel="detail-form">已參加活動
             </a>
         </li>
 

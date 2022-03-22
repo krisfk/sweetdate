@@ -34,7 +34,7 @@ get_header();
         </li>
 
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-form">會員資料
+            <a class="active" href="javascript:void(0);" rel="detail-form">會員資料
             </a>
         </li>
 
