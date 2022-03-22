@@ -28,7 +28,7 @@ if($_POST)
 
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
-        'post_title' => $member_id.'('.$first_name.' '.$last_name.')('.$nickname.')',
+        'post_title' => $member_id.' ('.$first_name.' '.$last_name.') ('.$nickname.')',
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
