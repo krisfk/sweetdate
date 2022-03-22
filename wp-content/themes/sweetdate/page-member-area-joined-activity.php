@@ -67,13 +67,13 @@ get_header();
 $(function() {
 
 
-    $('.filter-ul li a').click(function() {
-        $('.filter-ul li a').removeClass('active');
-        $(this).addClass('active');
-        $('.form-div').fadeOut(0);
-        var rel = $(this).attr('rel');
-        $('.form-div.' + rel).fadeIn(0);
-    })
+    // $('.filter-ul li a').click(function() {
+    //     $('.filter-ul li a').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('.form-div').fadeOut(0);
+    //     var rel = $(this).attr('rel');
+    //     $('.form-div.' + rel).fadeIn(0);
+    // })
 })
 </script>
 
