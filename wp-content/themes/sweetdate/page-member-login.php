@@ -10,7 +10,64 @@
  */
 
 get_header();
+session_start();
 
+if($_POST)
+{
+    $login_email=$_POST['login_email'];
+    $login_password=$_POST['login_password'];   
+
+
+    $query_args = array(
+        'post_type' => 'member',
+        'meta_query' => array(
+            'relation' => 'AND',
+            array(
+                'key'   => 'login_email',
+                'value' => $login_email,
+            ),
+            array(
+                'key'   => 'login_password',
+                'value' => $login_password,
+            )
+        )
+        
+    );
+    
+    $loginned =false;
+
+    $the_query = new WP_Query( $query_args );
+    if ( $the_query->have_posts() ) {
+        $loginned=true;
+        $_SESSION['login_member_id']=get_field('member_id');
+        ?>
+<script type="text/javascript">
+$(function() {
+
+    $('.login-form').addClass('text-center');
+    $('.login-form').html('登入成功，三秒後返回主頁。');
+    setTimeout(() => {
+        window.location = '<?php echo get_site_url();?>'
+    }, 3000);
+
+})
+</script>
+<?php
+    }
+    else
+    {
+        ?>
+<script type="text/javascript">
+$(function() {
+
+    $('.error-msg').html('登入電郵或密碼不正確。');
+})
+</script>
+<?php
+    }
+    
+    
+}
 ?>
 <div class="container mt-3">
 
@@ -26,6 +83,8 @@ get_header();
 
     <div class="main-content mt-4">
 
+
+        <div class="error-msg mb-4 text-center pink"></div>
 
         <form action="" class="login-form">
             <table>
