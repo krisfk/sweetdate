@@ -53,6 +53,7 @@ if($_POST)
        ?>
 <script type="text/javascript">
 $(function() {
+    $('.login-form').addClass('text-center');
     $('.login-form').html('會員註冊成功，三秒後自動登入。');
 })
 </script>
