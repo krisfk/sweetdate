@@ -137,10 +137,10 @@ $(function() {
                     <td>
                         <select required id="age" name="age" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option <?php echo $_POST['age']=='20-29' ? 'checked' :'';?> value="20-29">20-29</option>
-                            <option <?php echo $_POST['age']=='30-34' ? 'checked' :'';?> value="30-34">30-34</option>
-                            <option <?php echo $_POST['age']=='35-39' ? 'checked' :'';?> value="35-39">35-39</option>
-                            <option <?php echo $_POST['age']=='40或以上' ? 'checked' :'';?> value="40或以上">40或以上</option>
+                            <option <?php echo $_POST['age']=='20-29' ? 'selected' :'';?> value="20-29">20-29</option>
+                            <option <?php echo $_POST['age']=='30-34' ? 'selected' :'';?> value="30-34">30-34</option>
+                            <option <?php echo $_POST['age']=='35-39' ? 'selected' :'';?> value="35-39">35-39</option>
+                            <option <?php echo $_POST['age']=='40或以上' ? 'selected' :'';?> value="40或以上">40或以上</option>
                         </select>
                     </td>
                 </tr>
@@ -158,11 +158,11 @@ $(function() {
                     <td>
                         <select required id="like-food" name="like-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option <?php echo $_POST['age']=='牛' ? 'checked' :'';?> value="牛">牛</option>
-                            <option <?php echo $_POST['age']=='雞' ? 'checked' :'';?> value="雞">雞</option>
-                            <option <?php echo $_POST['age']=='羊' ? 'checked' :'';?> value="羊">羊</option>
-                            <option <?php echo $_POST['age']=='豬' ? 'checked' :'';?> value="豬">豬</option>
-                            <option <?php echo $_POST['age']=='魚' ? 'checked' :'';?> value="魚">魚</option>
+                            <option <?php echo $_POST['age']=='牛' ? 'selected' :'';?> value="牛">牛</option>
+                            <option <?php echo $_POST['age']=='雞' ? 'selected' :'';?> value="雞">雞</option>
+                            <option <?php echo $_POST['age']=='羊' ? 'selected' :'';?> value="羊">羊</option>
+                            <option <?php echo $_POST['age']=='豬' ? 'selected' :'';?> value="豬">豬</option>
+                            <option <?php echo $_POST['age']=='魚' ? 'selected' :'';?> value="魚">魚</option>
                         </select>
                     </td>
                 </tr>
@@ -175,11 +175,11 @@ $(function() {
 
                         <select required id="dislike-food" name="dislike-food" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
-                            <option <?php echo $_POST['age']=='牛' ? 'checked' :'';?> value="牛">牛</option>
-                            <option <?php echo $_POST['age']=='雞' ? 'checked' :'';?> value="雞">雞</option>
-                            <option <?php echo $_POST['age']=='羊' ? 'checked' :'';?> value="羊">羊</option>
-                            <option <?php echo $_POST['age']=='豬' ? 'checked' :'';?> value="豬">豬</option>
-                            <option <?php echo $_POST['age']=='魚' ? 'checked' :'';?> value="魚">魚</option>
+                            <option <?php echo $_POST['age']=='牛' ? 'selected' :'';?> value="牛">牛</option>
+                            <option <?php echo $_POST['age']=='雞' ? 'selected' :'';?> value="雞">雞</option>
+                            <option <?php echo $_POST['age']=='羊' ? 'selected' :'';?> value="羊">羊</option>
+                            <option <?php echo $_POST['age']=='豬' ? 'selected' :'';?> value="豬">豬</option>
+                            <option <?php echo $_POST['age']=='魚' ? 'selected' :'';?> value="魚">魚</option>
                         </select>
 
                     </td>
