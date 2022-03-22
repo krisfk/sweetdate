@@ -92,6 +92,8 @@ $post_id = get_the_ID();
             $language=$_POST['language'];
             $other_language = $_POST['other_language'];
             $height= $_POST['height'];
+            $hobby= $_POST['hobby'];
+            
             $target_age_from= $_POST['target-age-from'];
             $target_age_to= $_POST['target-age-to'];
             $target_education_level=$_POST['target-education-level'];
@@ -117,6 +119,7 @@ $post_id = get_the_ID();
             update_post_meta($post_id, 'language', $language);
             update_post_meta($post_id, 'other_language', $other_language);
             update_post_meta($post_id, 'height', $height);
+            update_post_meta($post_id, 'hobby', $hobby);
             update_post_meta($post_id, 'target_age_from', $target_age_from);
             update_post_meta($post_id, 'target_age_to', $target_age_to);
             update_post_meta($post_id, 'target_education_level', $target_education_level);
