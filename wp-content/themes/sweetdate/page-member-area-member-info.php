@@ -140,8 +140,12 @@ $the_query->the_post();
                         <tr>
                             <td class="text-end">姓別：</td>
                             <td>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
+                                <label class="me-2"><input
+                                        <?php echo $_POST['gender'] || get_field('gender')=='男' ? 'checked' :'';?>
+                                        class="me-1" type="radio" name="gender" value="男">男</label>
+                                <label class="me-2"><input
+                                        <?php echo $_POST['gender'] || get_field('gender')=='女' ? 'checked' :'';?>
+                                        class="me-1" type="radio" name="gender" value="女">女</label>
                             </td>
                         </tr>
 
@@ -151,13 +155,13 @@ $the_query->the_post();
                                 <label for="like-food">最喜歡吃的食物：</label>
                             </td>
                             <td>
-                                <select id="like-food" name="like-food" class="form-select" aria-label="">
+                                <select required id="like-food" name="like-food" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
+                                    <option <?php echo $_POST['like-food']=='牛' ? 'selected' :'';?> value="牛">牛</option>
+                                    <option <?php echo $_POST['like-food']=='雞' ? 'selected' :'';?> value="雞">雞</option>
+                                    <option <?php echo $_POST['like-food']=='羊' ? 'selected' :'';?> value="羊">羊</option>
+                                    <option <?php echo $_POST['like-food']=='豬' ? 'selected' :'';?> value="豬">豬</option>
+                                    <option <?php echo $_POST['like-food']=='魚' ? 'selected' :'';?> value="魚">魚</option>
                                 </select>
                             </td>
                         </tr>
@@ -168,14 +172,21 @@ $the_query->the_post();
                             </td>
                             <td>
 
-                                <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
+                                <select required id="dislike-food" name="dislike-food" class="form-select"
+                                    aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
+                                    <option <?php echo $_POST['dislike-food']=='牛' ? 'selected' :'';?> value="牛">牛
+                                    </option>
+                                    <option <?php echo $_POST['dislike-food']=='雞' ? 'selected' :'';?> value="雞">雞
+                                    </option>
+                                    <option <?php echo $_POST['dislike-food']=='羊' ? 'selected' :'';?> value="羊">羊
+                                    </option>
+                                    <option <?php echo $_POST['dislike-food']=='豬' ? 'selected' :'';?> value="豬">豬
+                                    </option>
+                                    <option <?php echo $_POST['dislike-food']=='魚' ? 'selected' :'';?> value="魚">魚
+                                    </option>
                                 </select>
+
 
                             </td>
                         </tr>
@@ -185,13 +196,15 @@ $the_query->the_post();
                             </td>
                             <td>
 
-                                <input id="first-name" class="form-control" name="first-name" type="text">
+                                <input value="<?php echo $_POST['first-name'];?>" required id="first-name"
+                                    class="form-control" name="first-name" type="text">
                             </td>
                         </tr>
                         <tr>
                             <td><label for="last-name">姓：*</label></td>
                             <td>
-                                <input id="last-name" class="form-control" name="last-name" type="text">
+                                <input value="<?php echo $_POST['last-name'];?>" required id="last-name"
+                                    class="form-control" name="last-name" type="text">
                             </td>
                         </tr>
 
