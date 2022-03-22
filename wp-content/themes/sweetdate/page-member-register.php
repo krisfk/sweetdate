@@ -27,7 +27,7 @@ if($_POST)
     
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
-        'post_title' => '',
+        'post_title' => $member_id.'('.$nickname.' '.$last_name.')',
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
@@ -46,12 +46,14 @@ if($_POST)
         add_post_meta($post_id, 'tel', $tel);
         add_post_meta($post_id, 'like_food', $like_food);
         add_post_meta($post_id, 'dislike_food', $dislike_food);
-        ?>
+
+        //password no problem
+        
+       
+       ?>
 <script type="text/javascript">
 $(function() {
-    // $('.login-form').html('會員註冊成功，三秒後自動登入。');
-
-
+    $('.login-form').html('會員註冊成功，三秒後自動登入。');
 })
 </script>
 <?php
