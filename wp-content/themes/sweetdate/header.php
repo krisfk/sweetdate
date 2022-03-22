@@ -157,7 +157,7 @@ echo'</li>';
                     <ul class="user-menu-ul">
 
                         <?php
-
+echo $_SESSION['login_member_id'];
 // if(!$_SESSION('login_member_id'))
 // {
 ?>
