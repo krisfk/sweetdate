@@ -264,47 +264,100 @@ $the_query->the_post();
                                 <select id="occupation" name="occupation" class="form-select">
                                     <option value="">選擇</option>
 
-                                    <option value="教師">教師</option>
-                                    <option value="研究員">研究員</option>
-                                    <option value="編輯">編輯</option>
-                                    <option value="翻譯">翻譯</option>
-                                    <option value="記者">記者</option>
-                                    <option value="作家">作家</option>
-                                    <option value="文化/美術/文藝工作者">文化/美術/文藝工作者</option>
-                                    <option value="教練">教練</option>
-                                    <option value="運動員">運動員</option>
-                                    <option value="工程師">工程師</option>
-                                    <option value="技術員">技術員</option>
-                                    <option value="會計">會計</option>
-                                    <option value="企業管理人員">企業管理人員</option>
-                                    <option value="廚師">廚師</option>
-                                    <option value="農藝師">農藝師</option>
-                                    <option value="工人">工人</option>
-                                    <option value="農民">農民</option>
-                                    <option value="牧民">牧民</option>
-                                    <option value="漁民">漁民</option>
-                                    <option value="醫生">醫生</option>
-                                    <option value="藥劑師">藥劑師</option>
-                                    <option value="護士">護士</option>
-                                    <option value="機長">機長</option>
-                                    <option value="飛行員">飛行員</option>
-                                    <option value="船長">船長</option>
-                                    <option value="乘務員">乘務員</option>
-                                    <option value="公務員">公務員</option>
-                                    <option value="服務員">服務員</option>
-                                    <option value="律師">律師</option>
-                                    <option value="商人">商人</option>
-                                    <option value="宗教職業者">宗教職業者</option>
-                                    <option value="家庭婦女">家庭婦女</option>
-                                    <option value="退休">退休</option>
-                                    <option value="無業">無業</option>
-                                    <option value="學生">學生</option>
-                                    <option value="兒童">兒童</option>
-                                    <option value="職員">職員</option>
-                                    <option value="法律工作者">法律工作者</option>
-                                    <option value="教授">教授</option>
+                                    <option <?php echo get_field('occupation')=='教師' ? 'selected' :'';?> value="教師">教師
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='研究員' ? 'selected' :'';?> value="研究員">
+                                        研究員</option>
+                                    <option <?php echo get_field('occupation')=='編輯' ? 'selected' :'';?>value="編輯">
+                                        編輯</option>
+                                    <option <?php echo get_field('occupation')=='翻譯' ? 'selected' :'';?>value="翻譯">
+                                        翻譯</option>
+                                    <option <?php echo get_field('occupation')=='記者' ? 'selected' :'';?>value="記者">
+                                        記者</option>
+                                    <option <?php echo get_field('occupation')=='作家' ? 'selected' :'';?>value="作家">
+                                        作家</option>
+                                    <option
+                                        <?php echo get_field('occupation')=='文化/美術/文藝工作者' ? 'selected' :'';?>value="文化/美術/文藝工作者">
+                                        文化/美術/文藝工作者</option>
+                                    <option <?php echo get_field('occupation')=='教練' ? 'selected' :'';?>value="教練">
+                                        教練</option>
+                                    <option <?php echo get_field('occupation')=='運動員' ? 'selected' :'';?>value="運動員">
+                                        運動員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='工程師' ? 'selected' :'';?>value="工程師">
+                                        工程師
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='技術員' ? 'selected' :'';?>value="技術員">
+                                        技術員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='會計' ? 'selected' :'';?>value="會計">
+                                        會計</option>
+                                    <option
+                                        <?php echo get_field('occupation')=='企業管理人員' ? 'selected' :'';?>value="企業管理人員">
+                                        企業管理人員</option>
+                                    <option <?php echo get_field('occupation')=='廚師' ? 'selected' :'';?>value="廚師">
+                                        廚師</option>
+                                    <option <?php echo get_field('occupation')=='農藝師' ? 'selected' :'';?>value="農藝師">
+                                        農藝師
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='工人' ? 'selected' :'';?>value="工人">
+                                        工人</option>
+                                    <option <?php echo get_field('occupation')=='農民' ? 'selected' :'';?>value="農民">
+                                        農民</option>
+                                    <option <?php echo get_field('occupation')=='牧民' ? 'selected' :'';?>value="牧民">
+                                        牧民</option>
+                                    <option <?php echo get_field('occupation')=='漁民' ? 'selected' :'';?>value="漁民">
+                                        漁民</option>
+                                    <option <?php echo get_field('occupation')=='醫生' ? 'selected' :'';?>value="醫生">
+                                        醫生</option>
+                                    <option <?php echo get_field('occupation')=='藥劑師' ? 'selected' :'';?>value="藥劑師">
+                                        藥劑師
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='護士' ? 'selected' :'';?>value="護士">
+                                        護士</option>
+                                    <option <?php echo get_field('occupation')=='機長' ? 'selected' :'';?>value="機長">
+                                        機長</option>
+                                    <option <?php echo get_field('occupation')=='飛行員' ? 'selected' :'';?>value="飛行員">
+                                        飛行員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='船長' ? 'selected' :'';?>value="船長">
+                                        船長</option>
+                                    <option <?php echo get_field('occupation')=='乘務員' ? 'selected' :'';?>value="乘務員">
+                                        乘務員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='公務員' ? 'selected' :'';?>value="公務員">
+                                        公務員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='服務員' ? 'selected' :'';?>value="服務員">
+                                        服務員
+                                    </option>
+                                    <option <?php echo get_field('occupation')=='律師' ? 'selected' :'';?>value="律師">
+                                        律師</option>
+                                    <option <?php echo get_field('occupation')=='商人' ? 'selected' :'';?>value="商人">
+                                        商人</option>
+                                    <option
+                                        <?php echo get_field('occupation')=='宗教職業者' ? 'selected' :'';?>value="宗教職業者">
+                                        宗教職業者</option>
+                                    <option <?php echo get_field('occupation')=='家庭婦女' ? 'selected' :'';?>value="家庭婦女">
+                                        家庭婦女</option>
+                                    <option <?php echo get_field('occupation')=='退休' ? 'selected' :'';?>value="退休">
+                                        退休</option>
+                                    <option <?php echo get_field('occupation')=='無業' ? 'selected' :'';?>value="無業">
+                                        無業</option>
+                                    <option <?php echo get_field('occupation')=='學生' ? 'selected' :'';?>value="學生">
+                                        學生</option>
+                                    <option <?php echo get_field('occupation')=='兒童' ? 'selected' :'';?>value="兒童">
+                                        兒童</option>
+                                    <option <?php echo get_field('occupation')=='職員' ? 'selected' :'';?>value="職員">
+                                        職員</option>
+                                    <option
+                                        <?php echo get_field('occupation')=='法律工作者' ? 'selected' :'';?>value="法律工作者">
+                                        法律工作者</option>
+                                    <option <?php echo get_field('occupation')=='教授' ? 'selected' :'';?>value="教授">
+                                        教授</option>
                                 </select>
-                                <div class="mt-2"><input type="text" class="form-control" placeholder="其他職業"></div>
+                                <div class="mt-2"><input value="<?php echo get_field('other_occupation');?>" type="text"
+                                        class="form-control" placeholder="其他職業"></div>
                             </td>
                         </tr>
                         <tr>
@@ -313,7 +366,8 @@ $the_query->the_post();
                                 <label for="occupation-title">職銜：</label>
                             </td>
                             <td>
-                                <input type="text" id="occupation-title" class="form-control" name="occupation-title">
+                                <input value="<?php echo get_field('occupation_title');?>" type="text"
+                                    id="occupation-title" class="form-control" name="occupation-title">
                             </td>
                         </tr>
                         <tr>
@@ -322,7 +376,8 @@ $the_query->the_post();
 
                             </td>
                             <td>
-                                <input type="text" id="annual-income" class="form-control" name="annual-income">
+                                <input value="<?php echo get_field('annual_income');?>" type="text" id="annual-income"
+                                    class="form-control" name="annual-income">
                             </td>
                         </tr>
                         <tr>
@@ -330,15 +385,25 @@ $the_query->the_post();
                                 <label for="religion">宗教：</label>
                             </td>
                             <td><select class="form-select" id="religion" name="religion">
-                                    <option value="選擇">選擇</option>
-                                    <option value="沒有">沒有</option>
-                                    <option value="佛教">佛教</option>
-                                    <option value="道教">道教</option>
-                                    <option value="猶太教">猶太教</option>
-                                    <option value="天主教">天主教</option>
-                                    <option value="基督教">基督教</option>
-                                    <option value="伊斯蘭教">伊斯蘭教</option>
-                                    <option value="東正教">東正教</option>
+                                    <option value="">選擇
+                                    </option>
+                                    <option <?php echo get_field('religion')=='沒有' ? 'selected' :'';?> value="沒有">沒有
+                                    </option>
+                                    <option <?php echo get_field('religion')=='佛教' ? 'selected' :'';?> value="佛教">佛教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='道教' ? 'selected' :'';?> value="道教">道教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='猶太教' ? 'selected' :'';?> value="猶太教">猶太教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='天主教' ? 'selected' :'';?> value="天主教">天主教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='基督教' ? 'selected' :'';?> value="基督教">基督教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='伊斯蘭教' ? 'selected' :'';?> value="伊斯蘭教">
+                                        伊斯蘭教
+                                    </option>
+                                    <option <?php echo get_field('religion')=='東正教' ? 'selected' :'';?> value="東正教">東正教
+                                    </option>
                                 </select></td>
                         </tr>
                         <tr>
