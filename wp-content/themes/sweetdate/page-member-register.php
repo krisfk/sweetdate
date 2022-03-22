@@ -14,9 +14,12 @@ get_header();
 
 if($_POST)
 {
-    $login_email=$_POST['login_email'];
-    $login_password=$_POST['login_password'];
+    $login_email=$_POST['login-email'];
+    $login_password=$_POST['login-password'];
     $gender=$_POST['gender'];
+    $nickname=$_POST['nickname'];
+    $first_name=$_POST['first-name'];
+    $last_name=$_POST['last-name'];
     $age=$_POST['age'];
     $tel = $_POST['tel'];
     $like_food = $_POST['like_food'];
@@ -31,12 +34,29 @@ if($_POST)
     ));
     
     if ($post_id) {
+        $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        add_post_meta($post_id, 'member_id', $member_id);
+        add_post_meta($post_id, 'login_email', $login_email);
+        add_post_meta($post_id, 'login_password', $login_password);
+        add_post_meta($post_id, 'gender', $gender);
+        add_post_meta($post_id, 'nickname', $nickname);
+        add_post_meta($post_id, 'first_name', $first_name);
+        add_post_meta($post_id, 'last_name', $last_name);
+        add_post_meta($post_id, 'age', $age);
+        add_post_meta($post_id, 'tel', $tel);
+        add_post_meta($post_id, 'like_food', $like_food);
+        add_post_meta($post_id, 'dislike_food', $dislike_food);
+        ?>
+<script type="text/javascript">
+$(function() {
+    $('.login-form').html('會員註冊成功，三秒後自動登入。');
 
-        $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-        add_post_meta($post_id, 'tutor_id', $tutor_id);
-        add_post_meta($post_id, 'email', $email);
-        add_post_meta($post_id, 'enable', 'no');
+
+})
+</script>
+<?php
     }
+    
 }
 
 ?>
