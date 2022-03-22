@@ -411,13 +411,18 @@ $the_query->the_post();
                                 <label for="overseas_study">海外留學：</label>
                             </td>
                             <td>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="有">有</label>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="沒有">沒有</label>
+                                <label class="me-2"><input
+                                        <?php echo get_field('overseas_study')=='有' ? 'checked' :'';?> class="me-1"
+                                        type="radio" name="overseas-study" value="有">有</label>
+                                <label class="me-2"><input
+                                        <?php echo get_field('overseas_study')=='沒有' ? 'checked' :'';?> class="me-1"
+                                        type="radio" name="overseas-study" value="沒有">沒有</label>
 
                                 <div class="mt-2"> <label for="overseas-study-nation">如有留學國家為</label> </div>
 
-                                <div class="mt-2"> <input type="text" id="overseas-study-nation"
-                                        name="overseas_study_nation" class="form-control"> </div>
+                                <div class="mt-2"> <input value="<?php echo get_field('overseas_study_nation');?>"
+                                        type="text" id="overseas-study-nation" name="overseas_study_nation"
+                                        class="form-control"> </div>
 
 
                             </td>
@@ -425,13 +430,16 @@ $the_query->the_post();
                         <tr>
                             <td class="align-top pt-4"> <label for="language">語言：</label>
                             </td>
-                            <td><select class="form-select" id="religion" name="religion">
-                                    <option value="中文">中文</option>
-                                    <option value="英文">英文</option>
+                            <td><select class="form-select" id="language" name="language">
+                                    <option <?php echo get_field('language')=='中文' ? 'selected' :'';?> value="中文">
+                                        中文</option>
+                                    <option <?php echo get_field('language')=='英文' ? 'selected' :'';?> value="英文">
+                                        英文</option>
                                 </select>
                                 <div class="mt-3">
 
-                                    <input type="text" class="form-control" placeholder="其他語言">
+                                    <input type="text" value="<?php echo get_field('other_language');?>"
+                                        class="form-control" placeholder="其他語言">
                                 </div>
                             </td>
                         </tr>
@@ -441,7 +449,8 @@ $the_query->the_post();
 
                             </td>
                             <td>
-                                <input type="text" class="form-control" id="height" name="height">
+                                <input type="text" value="<?php echo get_field('height');?>" class="form-control"
+                                    id="height" name="height">
                             </td>
                         </tr>
                         <tr>
@@ -452,9 +461,12 @@ $the_query->the_post();
                             <td>
                                 <select id="hobby" name="hobby" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
+                                    <option <?php echo get_field('hobby')=='A' ? 'selected' :'';?> value="A">A
+                                    </option>
+                                    <option <?php echo get_field('hobby')=='B' ? 'selected' :'';?> value="B">B
+                                    </option>
+                                    <option <?php echo get_field('hobby')=='C' ? 'selected' :'';?> value="C">C
+                                    </option>
 
                                 </select>
 
@@ -480,8 +492,10 @@ $the_query->the_post();
                         <tr>
 
                             <td colspan="2" class="text-center">
-                                對象年齡由<input type="text" class="form-control age-input" name="target-age-from">至<input
-                                    type="text" class="age-input form-control" name="target-age-to">歲
+                                對象年齡由<input type="text" value="<?php echo get_field('target-age-from');?>"
+                                    class="form-control age-input" name="target-age-from">至<input
+                                    value="<?php echo get_field('target-age-to');?>" type="text"
+                                    class="age-input form-control" name="target-age-to">歲
                             </td>
                         </tr>
                         <tr>
@@ -490,11 +504,16 @@ $the_query->the_post();
                                 <select id="target-education-level" name="target-education-level" class="form-select"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="小學程度">小學程度</option>
-                                    <option value="中學程度">中學程度</option>
-                                    <option value="大學程度">大學程度</option>
-                                    <option value="碩士">碩士</option>
-                                    <option value="博士">博士</option>
+                                    <option <?php echo get_field('target-education-level')=='小學程度' ? 'selected' :'';?>
+                                        value="小學程度">小學程度</option>
+                                    <option <?php echo get_field('target-education-level')=='中學程度' ? 'selected' :'';?>
+                                        value="中學程度">中學程度</option>
+                                    <option <?php echo get_field('target-education-level')=='大學程度' ? 'selected' :'';?>
+                                        value="大學程度">大學程度</option>
+                                    <option <?php echo get_field('target-education-level')=='碩士' ? 'selected' :'';?>
+                                        value="碩士">碩士</option>
+                                    <option <?php echo get_field('target-education-level')=='博士' ? 'selected' :'';?>
+                                        value="博士">博士</option>
 
                                 </select>
                             </td>
@@ -503,7 +522,8 @@ $the_query->the_post();
                             <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                             <td>
                                 <textarea class="form-control" name="target-personality-request"
-                                    id="target-personality-request" cols="30" rows="10"></textarea>
+                                    id="target-personality-request" cols="30"
+                                    rows="10"><?php echo get_field('target-personality-request');?></textarea>
 
                             </td>
                         </tr>
@@ -515,9 +535,12 @@ $the_query->the_post();
                             <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
+                                    <option <?php echo get_field('target-shape-request')=='A' ? 'selected' :'';?>
+                                        value="A">A</option>
+                                    <option <?php echo get_field('target-shape-request')=='B' ? 'selected' :'';?>
+                                        value="B">B</option>
+                                    <option <?php echo get_field('target-shape-request')=='C' ? 'selected' :'';?>
+                                        value="C">C</option>
                                 </select></td>
                         </tr>
                         <tr>
@@ -526,8 +549,12 @@ $the_query->the_post();
                                 <select id="target-matching-relationship" name="target-matching-relationship"
                                     class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="朋友">朋友</option>
-                                    <option value="以結婚為大前提對象">以結婚為大前提對象</option>
+                                    <option
+                                        <?php echo get_field('target-matching-relationship')=='朋友' ? 'selected' :'';?>
+                                        value="朋友">朋友</option>
+                                    <option
+                                        <?php echo get_field('target-matching-relationship')=='以結婚為大前提對象' ? 'selected' :'';?>
+                                        value="以結婚為大前提對象">以結婚為大前提對象</option>
                                 </select>
 
                             </td>
@@ -539,17 +566,28 @@ $the_query->the_post();
                             <td>
                                 <select class="form-select" name="how-to-know-us" id="how-to-know-us">
                                     <option value="">選擇</option>
-                                    <option value="Yahoo">Yahoo</option>
-                                    <option value="Google">Google</option>
-                                    <option value="Facebook">Facebook</option>
-                                    <option value="Friend">Friend</option>
-                                    <option value="Newspaper">Newspaper</option>
-                                    <option value="Magazine">Magazine</option>
-                                    <option value="Instagram">Instagram</option>
-                                    <option value="TV">TV</option>
-                                    <option value="Email">Email</option>
-                                    <option value="Youtube">Youtube</option>
-                                    <option value="Others">Others</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Yahoo' ? 'selected' :'';?>
+                                        value="Yahoo">Yahoo</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Google' ? 'selected' :'';?>
+                                        value="Google">Google</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Facebook' ? 'selected' :'';?>
+                                        value="Facebook">Facebook</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Friend' ? 'selected' :'';?>
+                                        value="Friend">Friend</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Newspaper' ? 'selected' :'';?>
+                                        value="Newspaper">Newspaper</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Magazine' ? 'selected' :'';?>
+                                        value="Magazine">Magazine</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Instagram' ? 'selected' :'';?>
+                                        value="Instagram">Instagram</option>
+                                    <option <?php echo get_field('how-to-know-us')=='TV' ? 'selected' :'';?> value="TV">
+                                        TV</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Email' ? 'selected' :'';?>
+                                        value="Email">Email</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Youtube' ? 'selected' :'';?>
+                                        value="Youtube">Youtube</option>
+                                    <option <?php echo get_field('how-to-know-us')=='Others' ? 'selected' :'';?>
+                                        value="Others">Others</option>
                                 </select>
                             </td>
                         </tr>
