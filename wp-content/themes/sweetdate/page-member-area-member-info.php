@@ -239,11 +239,16 @@ $the_query->the_post();
 
                                 <select id="education-level" name="education-level" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="小學程度">小學程度</option>
-                                    <option value="中學程度">中學程度</option>
-                                    <option value="大學程度">大學程度</option>
-                                    <option value="碩士">碩士</option>
-                                    <option value="博士">博士</option>
+                                    <option <?php echo get_field('education_level')=='小學程度' ? 'selected' :'';?>
+                                        value="小學程度">小學程度</option>
+                                    <option <?php echo get_field('education_level')=='中學程度' ? 'selected' :'';?>
+                                        value="中學程度">中學程度</option>
+                                    <option <?php echo get_field('education_level')=='大學程度' ? 'selected' :'';?>
+                                        value="大學程度">大學程度</option>
+                                    <option <?php echo get_field('education_level')=='碩士' ? 'selected' :'';?>
+                                        value="碩士">碩士</option>
+                                    <option <?php echo get_field('education_level')=='博士' ? 'selected' :'';?>
+                                        value="博士">博士</option>
 
                                 </select>
 
