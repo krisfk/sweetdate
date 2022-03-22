@@ -86,7 +86,7 @@ $(function() {
 
         <div class="error-msg mb-4 text-center pink"></div>
 
-        <form action="" class="login-form">
+        <form action="" method="post" class="login-form">
             <table>
                 <tr>
                     <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
