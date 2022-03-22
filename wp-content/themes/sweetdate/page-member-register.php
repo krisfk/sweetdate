@@ -93,13 +93,13 @@ if($_POST)
                     </td>
                     <td>
 
-                        <input id="first-name" class="form-control" name="first-name" type="text">
+                        <input required id="first-name" class="form-control" name="first-name" type="text">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="last-name">姓：*</label></td>
                     <td>
-                        <input id="last-name" class="form-control" name="last-name" type="text">
+                        <input required id="last-name" class="form-control" name="last-name" type="text">
                     </td>
                 </tr>
 
@@ -108,7 +108,7 @@ if($_POST)
                         <label for="age">年齡：*</label>
                     </td>
                     <td>
-                        <select id="age" name="age" class="form-select" aria-label="">
+                        <select required id="age" name="age" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="20-29">20-29</option>
                             <option value="30-34">30-34</option>
