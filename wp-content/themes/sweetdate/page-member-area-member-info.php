@@ -11,6 +11,24 @@
 
 get_header();
 
+session_start();
+
+$member_id = $_SESSION['login_member_id'];
+
+$query_args = array(
+    'post_type' => 'member',
+    'meta_query' => array(
+            'key'   => 'member_id',
+            'value' => $member_id
+    )
+);
+
+$the_query = new WP_Query( $query_args );
+$the_query->the_post();
+echo get_field('member_id');
+// if ( $the_query->have_posts() ) {
+
+// }
 ?>
 <div class="container mt-3">
 
@@ -60,7 +78,9 @@ get_header();
                         </tr>
                         <tr>
                             <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
-                            <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
+                            <td>
+                                <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
+                            </td>
                         </tr>
                         <tr>
                             <td class="text-end"><label for="old-login-password">舊登入密碼：</label> </td>
