@@ -71,6 +71,7 @@ $post_id = get_the_ID();
 
     if($_POST)
     {
+        echo $_POST['target-age-from'];
         if($_POST['form-type']=='member-further-info-form')
         {
             $like_food=$_POST['like-food'];
