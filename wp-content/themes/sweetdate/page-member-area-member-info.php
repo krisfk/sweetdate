@@ -122,7 +122,7 @@ $post_id = get_the_ID();
             update_post_meta($post_id, 'join_activity_way', $join_activity_way);
 
 
-            echo '會員資料已更新。';
+            echo '會員資料已更新！';
         }
     }
 
