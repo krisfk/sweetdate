@@ -12,67 +12,9 @@
 get_header();
 session_start();
 
-if($_POST)
-{
-    $login_email=$_POST['login-email'];
-    $login_password=$_POST['login-password'];   
+$_SESSION['login_member_id'] = '';
 
 
-    $query_args = array(
-        'post_type' => 'member',
-        'meta_query' => array(
-            'relation' => 'AND',
-            array(
-                'key'   => 'login_email',
-                'value' => $login_email,
-            ),
-            array(
-                'key'   => 'login_password',
-                'value' => $login_password,
-            )
-        )
-        
-    );
-    
-    $loginned =false;
-
-    $the_query = new WP_Query( $query_args );
-    if ( $the_query->have_posts() ) {
-        // $the_query->the
-        $loginned=true;
-        $the_query->the_post();
-
-        // echo 222;
-        // echo get_field('member_id');
-        $_SESSION['login_member_id']=get_field('member_id');
-        ?>
-<script type="text/javascript">
-$(function() {
-
-    $('.login-form').addClass('text-center');
-    $('.login-form').html('登入成功，三秒後返回主頁。');
-    setTimeout(() => {
-        window.location = '<?php echo get_site_url();?>'
-    }, 3000);
-
-})
-</script>
-<?php
-    }
-    else
-    {
-        ?>
-<script type="text/javascript">
-$(function() {
-
-    $('.error-msg').html('登入電郵或密碼不正確。');
-})
-</script>
-<?php
-    }
-    
-    
-}
 ?>
 <div class="container mt-3">
 
@@ -94,7 +36,6 @@ $(function() {
             // $('.login-form').addClass('text-center');
             // $('.login-form').html('登入成功，三秒後返回主頁。');
             // $_SESSION['member']
-            $_SESSION['login_member_id'] = '';
             // get_field('member_id');
 
             setTimeout(() => {
