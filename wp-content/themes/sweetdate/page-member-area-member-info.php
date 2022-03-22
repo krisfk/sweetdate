@@ -25,7 +25,7 @@ $query_args = array(
 
 $the_query = new WP_Query( $query_args );
 $the_query->the_post();
-echo get_field('member_id');
+// echo get_field('member_id');
 // if ( $the_query->have_posts() ) {
 
 // }
@@ -79,6 +79,9 @@ echo get_field('member_id');
                         <tr>
                             <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                             <td>
+                                <?php 
+                            echo get_field('email');
+                            ?>
                                 <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
                             </td>
                         </tr>
