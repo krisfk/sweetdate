@@ -158,8 +158,8 @@ echo'</li>';
 
                         <?php
 
-if(!$_SESSION('login_member_id'))
-{
+// if(!$_SESSION('login_member_id'))
+// {
 ?>
 
                         <li><a href="<?php echo get_site_url();?>/member-register"><img
@@ -167,18 +167,18 @@ if(!$_SESSION('login_member_id'))
                                 會員註冊</a></li>
 
                         <?php
-}
+// }
 ?>
                         <?php
-                        if($_SESSION('login_member_id'))
-                        {
+                        // if($_SESSION('login_member_id'))
+                        // {
                             ?>
                         <li><a href="<?php echo get_site_url();?>/member-area"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/account-icon.png"
                                     alt="">
                                 會員專區</a></li>
                         <?php
-                        }
+                        // }
                         ?>
 
 
