@@ -158,7 +158,7 @@ echo'</li>';
 
                         <?php
 
-if(!$_session('login_member_id'))
+if(!$_SESSION('login_member_id'))
 {
 ?>
 
@@ -170,7 +170,7 @@ if(!$_session('login_member_id'))
 }
 ?>
                         <?php
-                        if($_session('login_member_id'))
+                        if($_SESSION('login_member_id'))
                         {
                             ?>
                         <li><a href="<?php echo get_site_url();?>/member-area"><img
