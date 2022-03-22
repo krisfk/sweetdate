@@ -97,9 +97,32 @@ $post_id = get_the_ID();
             $how_to_know_us=$_POST['how-to-know-us'];
             $join_activity_way=$_POST['join-activity-way'];
 
+            update_post_meta($post_id, 'like_food', $like_food);
+            update_post_meta($post_id, 'dislike_food', $dislike_food);
+            update_post_meta($post_id, 'first_name', $first_name);
+            update_post_meta($post_id, 'last_name', $last_name);
+            update_post_meta($post_id, 'age', $age);
+            update_post_meta($post_id, 'education_level', $education_level);
+            update_post_meta($post_id, 'occupation', $occupation);
+            update_post_meta($post_id, 'other_occupation', $other_occupation);
+            update_post_meta($post_id, 'annual_income', $annual_income);
+            update_post_meta($post_id, 'religion', $religion);
+            update_post_meta($post_id, 'overseas_study', $overseas_study);
+            update_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+            update_post_meta($post_id, 'language', $language);
+            update_post_meta($post_id, 'other_language', $other_language);
+            update_post_meta($post_id, 'height', $height);
+            update_post_meta($post_id, 'target_age_from', $target_age_from);
+            update_post_meta($post_id, 'target_age_to', $target_age_to);
+            update_post_meta($post_id, 'target_education_level', $target_education_level);
+            update_post_meta($post_id, 'target_personality_request', $target_personality_request);
+            update_post_meta($post_id, 'target_shape_request', $target_shape_request);
+            update_post_meta($post_id, 'target_matching_relationship', $target_matching_relationship);
+            update_post_meta($post_id, 'how_to_know_us', $how_to_know_us);
+            update_post_meta($post_id, 'join_activity_way', $join_activity_way);
 
 
-            // echo $post_id;
+            echo '會員資料已更新。';
         }
     }
 
