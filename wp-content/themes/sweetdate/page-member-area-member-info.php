@@ -73,7 +73,32 @@ $post_id = get_the_ID();
     {
         if($_POST['form-type']=='member-further-info-form')
         {
-            
+            $like_food=$_POST['like-food'];
+            $dislike_food=$_POST['dislike-food'];
+            $first_name=$_POST['first-name'];
+            $last_name=$_POST['last-name'];
+            $age=$_POST['age'];
+            $education_level=$_POST['education-level'];
+            $occupation=$_POST['occupation'];
+            $other_occupation=$_POST['other-occupation'];
+            $annual_income=$_POST['annual-income'];
+            $religion=$_POST['religion'];
+            $overseas_study=$_POST['overseas-study'];
+            $overseas_study_nation=$_POST['overseas_study_nation'];
+            $language=$_POST['language'];
+            $other_language = $_POST['other_language'];
+            $height= $_POST['height'];
+            $target_age_from= $_POST['target-age-from'];
+            $target_age_to= $_POST['target-age-to'];
+            $target_education_level=$_POST['target-education-level'];
+            $target_personality_request=$_POST['target-personality-request'];
+            $target_shape_request = $_POST['target-shape-request'];
+            $target_matching_relationship=$_POST['target-matching-relationship'];
+            $how_to_know_us=$_POST['how-to-know-us'];
+            $join_activity_way=$_POST['join-activity-way'];
+
+
+
             // echo $post_id;
         }
     }
@@ -381,7 +406,7 @@ $post_id = get_the_ID();
                                         教授</option>
                                 </select>
                                 <div class="mt-2"><input value="<?php echo get_field('other_occupation');?>" type="text"
-                                        class="form-control" placeholder="其他職業"></div>
+                                        class="form-control" name="other-occupation" placeholder="其他職業"></div>
                             </td>
                         </tr>
                         <tr>
@@ -463,7 +488,7 @@ $post_id = get_the_ID();
                                 <div class="mt-3">
 
                                     <input type="text" value="<?php echo get_field('other_language');?>"
-                                        class="form-control" placeholder="其他語言">
+                                        class="form-control" placeholder="其他語言" name="other_language">
                                 </div>
                             </td>
                         </tr>
