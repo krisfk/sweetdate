@@ -13,6 +13,17 @@ get_header();
 
 session_start();
 
+
+if($_POST)
+{
+    if($_POST['form-type']=='member-further-info-form')
+    {
+        echo 111;
+    }
+}
+
+
+
 $member_id = $_SESSION['login_member_id'];
 
 $query_args = array(
@@ -25,10 +36,10 @@ $query_args = array(
 
 $the_query = new WP_Query( $query_args );
 $the_query->the_post();
-// echo get_field('member_id');
-// if ( $the_query->have_posts() ) {
 
-// }
+
+
+
 ?>
 <div class="container mt-3">
 
@@ -69,7 +80,8 @@ $the_query->the_post();
 
 
             <div class="login-form form-div">
-                <form action="" class="member-login-info-form mb-5">
+                <form action="" class="member-login-info-form mb-5" method="post" action="">
+                    <input type="hidden" name="form-type" value="login-form">
                     <table>
                         <tr>
                             <td colspan="2">
@@ -125,7 +137,9 @@ $the_query->the_post();
             <div class="detail-form form-div">
 
 
-                <form class="member-further-info-form">
+                <form class="member-further-info-form" method="post" action="">
+                    <input type="hidden" name="form-type" value="member-further-info-form">
+
                     <table class="">
 
                         <tr>
@@ -600,9 +614,11 @@ $the_query->the_post();
                             <td>
                                 <select class="form-select" name="join-activity-way" id="join-activity-way">
                                     <option value="">選擇</option>
-                                    <option value="以閣下選擇之日期參加">以閣下選擇之日期參加
+                                    <option <?php echo get_field('join-activity-way')=='以閣下選擇之日期參加' ? 'selected' :'';?>
+                                        value="以閣下選擇之日期參加">以閣下選擇之日期參加
                                     </option>
-                                    <option value="以閣下要求異性資料參加">以閣下要求異性資料參加
+                                    <option <?php echo get_field('join-activity-way')=='以閣下要求異性資料參加' ? 'selected' :'';?>
+                                        value="以閣下要求異性資料參加">以閣下要求異性資料參加
                                     </option>
 
                                 </select>
