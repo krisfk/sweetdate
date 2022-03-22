@@ -10,7 +10,7 @@
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
-
+$session_start();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
@@ -155,14 +155,32 @@ echo'</li>';
                 <div class="col-2">
 
                     <ul class="user-menu-ul">
+
+                        <?php
+
+if(!$_session('login_member_id'))
+{
+?>
+
                         <li><a href="<?php echo get_site_url();?>/member-register"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/reg-icon.png" alt="">
                                 會員註冊</a></li>
 
+                        <?php
+}
+?>
+                        <?php
+                        if($_session('login_member_id'))
+                        {
+                            ?>
                         <li><a href="<?php echo get_site_url();?>/member-area"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/account-icon.png"
                                     alt="">
                                 會員專區</a></li>
+                        <?php
+                        }
+                        ?>
+
 
 
                         <li><a href="<?php echo get_site_url();?>/member-login"><img
