@@ -216,15 +216,12 @@ $the_query->the_post();
                                 <label for="age">年齡：*</label>
                             </td>
                             <td>
-                                <option value="" selected="">選擇</option>
-                                <option <?php echo $_POST['age']=='20-29' ? 'selected' :'';?> value="20-29">20-29
-                                </option>
-                                <option <?php echo $_POST['age']=='30-34' ? 'selected' :'';?> value="30-34">30-34
-                                </option>
-                                <option <?php echo $_POST['age']=='35-39' ? 'selected' :'';?> value="35-39">35-39
-                                </option>
-                                <option <?php echo $_POST['age']=='40或以上' ? 'selected' :'';?> value="40或以上">40或以上
-                                </option>
+                                <select id="age" name="age" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="20-29">20-29</option>
+                                    <option value="30-34">30-34</option>
+                                    <option value="35-39">35-39</option>
+                                    <option value="40或以上">40或以上</option>
                                 </select>
                             </td>
                         </tr>
