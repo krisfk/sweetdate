@@ -173,7 +173,7 @@ if(!$_SESSION['login_member_id'])
                         if($_SESSION['login_member_id'])
                         {
                             ?>
-                        <li><a href="<?php echo get_site_url();?>/member-area"><img
+                        <li><a href="<?php echo get_site_url();?>/member-area-new-activity"><img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/account-icon.png"
                                     alt="">
                                 會員專區</a></li>
