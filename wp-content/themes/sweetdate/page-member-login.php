@@ -40,7 +40,7 @@ if($_POST)
     if ( $the_query->have_posts() ) {
         $loginned=true;
         // echo 222;
-        get_field('member_id');
+        echo get_field('member_id');
         // $_SESSION['login_member_id']=get_field('member_id');
         ?>
 <script type="text/javascript">
