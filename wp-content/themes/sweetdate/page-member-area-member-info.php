@@ -14,14 +14,6 @@ get_header();
 session_start();
 
 
-if($_POST)
-{
-    if($_POST['form-type']=='member-further-info-form')
-    {
-        echo 111;
-    }
-}
-
 
 
 $member_id = $_SESSION['login_member_id'];
@@ -36,7 +28,7 @@ $query_args = array(
 
 $the_query = new WP_Query( $query_args );
 $the_query->the_post();
-
+$post_id = get_the_ID();
 
 
 
@@ -72,6 +64,22 @@ $the_query->the_post();
     </ul>
 
 
+    <div>
+
+        <?php
+    
+
+    if($_POST)
+    {
+        if($_POST['form-type']=='member-further-info-form')
+        {
+            echo $post_id;
+        }
+    }
+
+
+    ?>
+    </div>
     <div class="main-content mt-5">
 
 
