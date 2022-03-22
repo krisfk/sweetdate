@@ -206,7 +206,7 @@ $the_query->the_post();
                         <tr>
                             <td><label for="last-name">姓：*</label></td>
                             <td>
-                                <input value="<?php echo $_POST['last-name'];?>" required id="last-name"
+                                <input value="<?php echo get_field('last_name');?>" required id="last-name"
                                     class="form-control" name="last-name" type="text">
                             </td>
                         </tr>
