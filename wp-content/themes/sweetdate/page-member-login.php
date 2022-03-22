@@ -14,8 +14,8 @@ session_start();
 
 if($_POST)
 {
-    $login_email=$_POST['login_email'];
-    $login_password=$_POST['login_password'];   
+    $login_email=$_POST['login-email'];
+    $login_password=$_POST['login-password'];   
 
 
     $query_args = array(
