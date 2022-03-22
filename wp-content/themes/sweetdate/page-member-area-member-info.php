@@ -64,7 +64,7 @@ $post_id = get_the_ID();
     </ul>
 
 
-    <div>
+    <div class="text-center mt-4">
 
         <?php
     
