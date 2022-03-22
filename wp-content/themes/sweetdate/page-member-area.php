@@ -22,13 +22,19 @@ get_header();
             <div class="title-pink-line"></div>
         </div>
     </div>
+
     <ul class="filter-ul mt-4">
         <li>
-            <a class="active" href="javascript:void(0);" rel="login-form">登入資料
+            <a class="active" href="javascript:void(0);" rel="login-form">最新活動
             </a>
         </li>
         <li>
-            <a class="" href="javascript:void(0);" rel="detail-form">個人資料及配對要求
+            <a class="" href="javascript:void(0);" rel="detail-form">已參加活動
+            </a>
+        </li>
+
+        <li>
+            <a class="" href="javascript:void(0);" rel="detail-form">會員資料
             </a>
         </li>
 
