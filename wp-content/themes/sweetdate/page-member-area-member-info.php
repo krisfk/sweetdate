@@ -217,13 +217,13 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <option value="" selected="">選擇</option>
-                                <option <?php echo get_field('age')=='20-29' ? 'selected' :'';?> value="20-29">20-29
+                                <option <?php echo $_POST['age']=='20-29' ? 'selected' :'';?> value="20-29">20-29
                                 </option>
-                                <option <?php echo get_field('age')=='30-34' ? 'selected' :'';?> value="30-34">30-34
+                                <option <?php echo $_POST['age']=='30-34' ? 'selected' :'';?> value="30-34">30-34
                                 </option>
-                                <option <?php echo get_field('age')=='35-39' ? 'selected' :'';?> value="35-39">35-39
+                                <option <?php echo $_POST['age']=='35-39' ? 'selected' :'';?> value="35-39">35-39
                                 </option>
-                                <option <?php echo get_field('age')=='40或以上' ? 'selected' :'';?> value="40或以上">40或以上
+                                <option <?php echo $_POST['age']=='40或以上' ? 'selected' :'';?> value="40或以上">40或以上
                                 </option>
                                 </select>
                             </td>
