@@ -492,7 +492,7 @@ $post_id = get_the_ID();
                                 <label for="overseas_study">海外留學：</label>
                             </td>
                             <td>
-                                <label class="me-2"><?php echo  get_field('overseas_study');?><input
+                                <label class="me-2"><?php echo  get_field('religion');?><input
                                         <?php echo get_field('overseas_study')=='有' ? 'checked' :'';?> class="me-1"
                                         type="radio" name="overseas-study" value="有">有</label>
                                 <label class="me-2"><input
