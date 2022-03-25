@@ -94,8 +94,8 @@ if($_POST)
        ?>
 <script type="text/javascript">
 $(function() {
-    $('.login-form').addClass('text-center');
-    $('.login-form').html('會員註冊成功，三秒後自動登入。');
+    $('.member-further-info-form').addClass('text-center');
+    $('.member-further-info-form').html('會員註冊成功，三秒後自動登入。');
     setTimeout(() => {
         window.location = '<?php echo get_site_url();?>'
     }, 3000);
@@ -160,7 +160,7 @@ $(function() {
         <div class="detail-form form-div">
 
 
-            <form class="member-further-info-form">
+            <form class="member-further-info-form" method="post" action="">
                 <table class="">
 
                     <tr>
@@ -538,7 +538,7 @@ $(function() {
                         <td></td>
                         <td class="text-end">
 
-                            <input type="submit" value="更新資料" class="form-submit-btn">
+                            <input type="submit" value="遞交資料" class="form-submit-btn">
                         </td>
                     </tr>
 
