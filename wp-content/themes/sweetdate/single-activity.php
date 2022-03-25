@@ -405,21 +405,24 @@ if($_POST['form-type']=='reg')
     }
 
 }
+else
+{
+    ?>
+
+
+            <script type="text/javascript">
+            $(function() {
+                $('.step').fadeOut(0);
+
+                $('.step.step-1').fadeIn(0);
+            })
+            </script>
+            <?php
+}
 ?>
             <div></div>
 
         </div>
-
-        <?php
-        
-        
-        if($_POST['form-type']=='reg' )
-
-        {
-            echo 999;
-print_r($charge);
-        }
-        ?>
 
         <div class="step step-3 text-center mt-5">
             <?php 
