@@ -541,7 +541,8 @@ $post_id = get_the_ID();
                                 <div class="mt-2">
 
                                     <input type="text" id="other-overseas-study-nation" class="form-control"
-                                        name="other-overseas-study-nation">
+                                        name="other-overseas-study-nation"
+                                        value="<?php echo get_field('other_overseas_study_nation');?>">
                                 </div>
 
 
