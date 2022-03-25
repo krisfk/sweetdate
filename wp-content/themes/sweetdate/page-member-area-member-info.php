@@ -275,6 +275,16 @@ $post_id = get_the_ID();
                             </td>
                         </tr>
                         <tr>
+                            <td> <label for="tel">聯絡電話*</label>
+                            </td>
+                            <td>
+                                <input required type="text" id="tel" name="tel" class="form-control"
+                                    value="<?php echo get_field('tel');?>">
+                            </td>
+
+                        </tr>
+
+                        <tr>
                             <td>
                                 <label for="first-name">英文名(e.g.Jacky)：*</label>
                             </td>
