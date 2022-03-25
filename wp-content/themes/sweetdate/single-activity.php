@@ -387,8 +387,8 @@ if($_POST['form-type']=='reg')
             ?>
             <script type="text/javascript">
             $(function() {
-                $('.step').fadeOut(0);
-                $('.step.step-3').fadeIn(200);
+                // $('.step').fadeOut(0);
+                // $('.step.step-3').fadeIn(200);
 
             })
             </script>
