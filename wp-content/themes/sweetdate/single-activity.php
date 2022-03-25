@@ -333,8 +333,8 @@ get_header();
                         <tr>
                             <td></td>
                             <td class="text-end">
-
-                                <input type="submit" value="送出表格" class="form-submit-btn">
+                                <button class="form-submit-btn">Submit Payment</button>
+                                <!-- <input type="submit" value="送出表格" class="form-submit-btn"> -->
                             </td>
                         </tr>
 
