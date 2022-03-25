@@ -582,6 +582,29 @@ $post_id = get_the_ID();
                             <td>
                                 <input type="text" value="<?php echo get_field('height');?>" class="form-control"
                                     id="height" name="height">
+
+                                <select class="form-select" id="height" name="height">
+                                    <option value="">選擇</option>
+
+                                    <option <?php echo get_field('height')=='144-153' ? 'selected' :'';?>
+                                        value="144-153">
+                                        144-153</option>
+                                    <option <?php echo get_field('height')=='154-163' ? 'selected' :'';?>
+                                        value="154-163">
+                                        154-163</option>
+                                    <option <?php echo get_field('height')=='164-173' ? 'selected' :'';?>
+                                        value="164-173">
+                                        164-173</option>
+                                    <option <?php echo get_field('height')=='174-183' ? 'selected' :'';?>
+                                        value="174-183">
+                                        174-183</option>
+                                    <option <?php echo get_field('height')=='184-195' ? 'selected' :'';?>
+                                        value="184-195">
+                                        184-195</option>
+                                    <option <?php echo get_field('height')=='196以上' ? 'selected' :'';?> value="196以上">
+                                        196以上</option>
+                                </select>
+
                             </td>
                         </tr>
                         <tr>
