@@ -244,7 +244,7 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
-                <form action="" class="login-form" method="post">
+                <form action="" class="login-form" id="payment-form">
                     <table>
 
 
@@ -333,8 +333,8 @@ get_header();
                         <tr>
                             <td></td>
                             <td class="text-end">
-                                <button class="form-submit-btn">Submit Payment</button>
-                                <!-- <input type="submit" value="送出表格" class="form-submit-btn"> -->
+
+                                <input type="submit" value="送出表格" class="form-submit-btn">
                             </td>
                         </tr>
 
