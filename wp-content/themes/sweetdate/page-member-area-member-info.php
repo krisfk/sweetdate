@@ -567,6 +567,7 @@ $post_id = get_the_ID();
                             <td class="align-top pt-4"> <label for="language">語言：*</label>
                             </td>
                             <td><select required class="form-select" id="language" name="language">
+                                    <option value="">選擇</option>
                                     <option <?php echo get_field('language')=='中文' ? 'selected' :'';?> value="中文">
                                         中文</option>
                                     <option <?php echo get_field('language')=='英文' ? 'selected' :'';?> value="英文">
