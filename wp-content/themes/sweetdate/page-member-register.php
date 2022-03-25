@@ -362,7 +362,6 @@ $(function() {
                                 <label for="religion">宗教：*</label>
                             </td>
                             <td><select required class="form-select" id="religion" name="religion">
-                                    <!-- <option value="">選擇</option> -->
                                     <option value="沒有">沒有</option>
                                     <option value="佛教">佛教</option>
                                     <option value="道教">道教</option>
