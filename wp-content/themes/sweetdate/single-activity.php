@@ -21,8 +21,12 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['postdata'] = $_POST;
         unset($_POST);
-        header("Location: ".$_SERVER['PHP_SELF']);
-        exit;
+        // header("Location: ".$_SERVER['PHP_SELF']);
+        // exit;
+        global $wp;
+        $current_url = home_url(add_query_arg(array(), $wp->request));
+        echo $current_url;
+
     }
 
 
