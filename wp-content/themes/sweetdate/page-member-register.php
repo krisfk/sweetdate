@@ -24,6 +24,26 @@ if($_POST)
     $tel = $_POST['tel'];
     $like_food = $_POST['like-food'];
     $dislike_food = $_POST['dislike-food'];
+    $education_level=$_POST['education-level'];
+    $occupation=$_POST['occupation'];
+    $occupation_title=$_POST['occupation-title'];
+    $other_occupation=$_POST['other-occupation'];
+    $annual_income=$_POST['annual-income'];
+    $religion=$_POST['religion'];
+    $overseas_study=$_POST['overseas-study'];
+    $overseas_study_nation=$_POST['overseas_study_nation'];
+    $language=$_POST['language'];
+    $other_language = $_POST['other_language'];
+    $height= $_POST['height'];
+    $hobby= $_POST['hobby'];
+    $target_age_from= $_POST['target-age-from'];
+    $target_age_to= $_POST['target-age-to'];
+    $target_education_level=$_POST['target-education-level'];
+    $target_personality_request=$_POST['target-personality-request'];
+    $target_shape_request = $_POST['target-shape-request'];
+    $target_matching_relationship=$_POST['target-matching-relationship'];
+    $how_to_know_us=$_POST['how-to-know-us'];
+    $join_activity_way=$_POST['join-activity-way'];
     $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
 
     $post_id = wp_insert_post(array (
@@ -46,6 +66,27 @@ if($_POST)
         add_post_meta($post_id, 'tel', $tel);
         add_post_meta($post_id, 'like_food', $like_food);
         add_post_meta($post_id, 'dislike_food', $dislike_food);
+        add_post_meta($post_id, 'education_level', $education_level);
+        add_post_meta($post_id, 'occupation', $occupation);
+        add_post_meta($post_id, 'occupation_title', $occupation_title);
+        add_post_meta($post_id, 'other_occupation', $other_occupation);
+        add_post_meta($post_id, 'annual_income', $annual_income);
+        add_post_meta($post_id, 'religion', $religion);
+        add_post_meta($post_id, 'overseas_study', $overseas_study);
+        add_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+        add_post_meta($post_id, 'language', $language);
+        add_post_meta($post_id, 'other_language', $other_language);
+        add_post_meta($post_id, 'height', $height);
+        add_post_meta($post_id, 'hobby', $hobby);
+        add_post_meta($post_id, 'target_age_from', $target_age_from);
+        add_post_meta($post_id, 'target_age_to', $target_age_to);
+        add_post_meta($post_id, 'target_education_level', $target_education_level);
+        add_post_meta($post_id, 'target_personality_request', $target_personality_request);
+        add_post_meta($post_id, 'target_shape_request', $target_shape_request);
+        add_post_meta($post_id, 'target_matching_relationship', $target_matching_relationship);
+        add_post_meta($post_id, 'how_to_know_us', $how_to_know_us);
+        add_post_meta($post_id, 'join_activity_way', $join_activity_way);
+
 
         //password no problem
         $_SESSION['login_member_id']=$member_id;
