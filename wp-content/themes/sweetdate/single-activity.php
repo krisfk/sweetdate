@@ -345,7 +345,16 @@ get_header();
 
 </div>
 
+<script type="text/javascript">
+$(function() {
 
+    $('.reg-btn').click(function() {
+        $('.step').fadeOut(0);
+        $('.step.step2').fadeIn(200);
+
+    })
+})
+</script>
 
 <?php
 /* Start the Loop */
