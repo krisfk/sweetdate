@@ -349,7 +349,7 @@ get_header();
 
             <?php
 if($_POST)
-{
+{echo 111;
     require_once('./stripe-test/stripe/init.php');
 
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
