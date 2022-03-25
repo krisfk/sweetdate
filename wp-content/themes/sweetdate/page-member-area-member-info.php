@@ -505,31 +505,31 @@ $post_id = get_the_ID();
                                 <div class="mt-2"> <select class="form-control" id="overseas-study-nation"
                                         name="overseas-study-nation">
                                         <option value="">選擇</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='紐西蘭' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='紐西蘭' ? 'selected' :'';?>
                                             value="紐西蘭">
                                             紐西蘭</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='中國' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='中國' ? 'selected' :'';?>
                                             value="中國">
                                             中國</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='英國' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='英國' ? 'selected' :'';?>
                                             value="英國">
                                             英國</option>
                                         <option
-                                            <?php echo get_field('overseas-study-nation')=='澳大利亞' ? 'selected' :'';?>
+                                            <?php echo get_field('overseas_study_nation')=='澳大利亞' ? 'selected' :'';?>
                                             value="澳大利亞">澳大利亞</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='美國' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='美國' ? 'selected' :'';?>
                                             value="美國">
                                             美國</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='日本' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='日本' ? 'selected' :'';?>
                                             value="日本">
                                             日本</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='法國' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='法國' ? 'selected' :'';?>
                                             value="法國">
                                             法國</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='德國' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='德國' ? 'selected' :'';?>
                                             value="德國">
                                             德國</option>
-                                        <option <?php echo get_field('overseas-study-nation')=='加拿大' ? 'selected' :'';?>
+                                        <option <?php echo get_field('overseas_study_nation')=='加拿大' ? 'selected' :'';?>
                                             value="加拿大">
                                             加拿大</option>
                                     </select> </div>
