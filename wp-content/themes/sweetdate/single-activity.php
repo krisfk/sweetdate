@@ -416,6 +416,7 @@ if($_POST['form-type']=='reg')
         if($_POST['form-type']=='reg' )
 
         {
+            echo 999;
 print_r($charge);
         }
         ?>
