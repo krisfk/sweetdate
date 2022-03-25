@@ -380,6 +380,7 @@ if($_POST['form-type']=='reg')
           "metadata" => array("IMEI" => $IMEI))
         );
 
+        print_r($charge);
         // if(!$charge){
         //     echo 999;
         // }
@@ -391,7 +392,7 @@ if($_POST['form-type']=='reg')
             ?>
             <script type="text/javascript">
             $(function() {
-                // $('.step').fadeOut(0);
+                $('.step').fadeOut(0);
                 $('.step.step-3').fadeIn(200);
 
             })
