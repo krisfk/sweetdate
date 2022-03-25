@@ -134,7 +134,8 @@ $(function() {
                     <tr>
                         <td class="text-end">姓別：*</td>
                         <td>
-                            <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                            <label class="me-2"><input required class="me-1" type="radio" name="gender"
+                                    value="男">男</label>
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                         </td>
                     </tr>
@@ -145,7 +146,7 @@ $(function() {
                             <label for="like-food">最喜歡吃的食物：*</label>
                         </td>
                         <td>
-                            <select id="like-food" name="like-food" class="form-select" aria-label="">
+                            <select required id="like-food" name="like-food" class="form-select" aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="牛">牛</option>
                                 <option value="雞">雞</option>
@@ -162,7 +163,7 @@ $(function() {
                         </td>
                         <td>
 
-                            <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
+                            <select required id="dislike-food" name="dislike-food" class="form-select" aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="牛">牛</option>
                                 <option value="雞">雞</option>
@@ -179,13 +180,13 @@ $(function() {
                         </td>
                         <td>
 
-                            <input id="first-name" class="form-control" name="first-name" type="text">
+                            <input required id="first-name" class="form-control" name="first-name" type="text">
                         </td>
                     </tr>
                     <tr>
                         <td><label for="last-name">姓：*</label></td>
                         <td>
-                            <input id="last-name" class="form-control" name="last-name" type="text">
+                            <input required id="last-name" class="form-control" name="last-name" type="text">
                         </td>
                     </tr>
 
@@ -194,7 +195,7 @@ $(function() {
                             <label for="age">年齡：*</label>
                         </td>
                         <td>
-                            <select id="age" name="age" class="form-select" aria-label="">
+                            <select required id="age" name="age" class="form-select" aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="20-29">20-29</option>
                                 <option value="30-34">30-34</option>
@@ -211,7 +212,8 @@ $(function() {
                         </td>
                         <td>
 
-                            <select id="education-level" name="education-level" class="form-select" aria-label="">
+                            <select required id="education-level" name="education-level" class="form-select"
+                                aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="小學程度">小學程度</option>
                                 <option value="中學程度">中學程度</option>
@@ -232,7 +234,6 @@ $(function() {
 
                             <select id="occupation" name="occupation" class="form-select">
                                 <option value="">選擇</option>
-
                                 <option value="教師">教師</option>
                                 <option value="研究員">研究員</option>
                                 <option value="編輯">編輯</option>
@@ -298,7 +299,7 @@ $(function() {
                         <td>
                             <label for="religion">宗教：*</label>
                         </td>
-                        <td><select class="form-select" id="religion" name="religion">
+                        <td><select required class="form-select" id="religion" name="religion">
                                 <option value="">選擇</option>
                                 <option value="沒有">沒有</option>
                                 <option value="佛教">佛教</option>
@@ -329,7 +330,9 @@ $(function() {
                     <tr>
                         <td class="align-top pt-4"> <label for="language">語言：*</label>
                         </td>
-                        <td><select class="form-select" id="religion" name="religion">
+                        <td><select required class="form-select" id="language" name="language">
+                                <option value="">選擇</option>
+
                                 <option value="中文">中文</option>
                                 <option value="英文">英文</option>
                             </select>
@@ -345,12 +348,12 @@ $(function() {
 
                         </td>
                         <td>
-                            <input type="text" class="form-control" id="height" name="height">
+                            <input required type="text" class="form-control" id="height" name="height">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="hobby">興趣：*</label>
+                            <label for="hobby">興趣：</label>
 
                         </td>
                         <td>
@@ -384,15 +387,16 @@ $(function() {
                     <tr>
 
                         <td colspan="2" class="text-center">
-                            *對象年齡由<input type="text" class="form-control age-input" name="target-age-from">至<input
-                                type="text" class="age-input form-control" name="target-age-to">歲
+                            *對象年齡由<input required type="text" class="form-control age-input"
+                                name="target-age-from">至<input required type="text" class="age-input form-control"
+                                name="target-age-to">歲
                         </td>
                     </tr>
                     <tr>
                         <td><label for="target-education-level">教育程度：*</label></td>
                         <td>
-                            <select id="target-education-level" name="target-education-level" class="form-select"
-                                aria-label="">
+                            <select required id="target-education-level" name="target-education-level"
+                                class="form-select" aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="小學程度">小學程度</option>
                                 <option value="中學程度">中學程度</option>
@@ -413,7 +417,7 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="target-shape-request">配對身型要求：*</label>
+                            <label for="target-shape-request">配對身型要求：</label>
 
                         </td>
                         <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
@@ -427,7 +431,7 @@ $(function() {
                     <tr>
                         <td><label for="target-matching-relationship">期望關係：*</label></td>
                         <td>
-                            <select id="target-matching-relationship" name="target-matching-relationship"
+                            <select required id="target-matching-relationship" name="target-matching-relationship"
                                 class="form-select" aria-label="">
                                 <option value="" selected="">選擇</option>
                                 <option value="朋友">朋友</option>
@@ -438,10 +442,10 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="how-to-know-us">如何得知我們：</label>
+                            <label for="how-to-know-us">如何得知我們：*</label>
                         </td>
                         <td>
-                            <select class="form-select" name="how-to-know-us" id="how-to-know-us">
+                            <select required class="form-select" name="how-to-know-us" id="how-to-know-us">
                                 <option value="">選擇</option>
                                 <option value="Yahoo">Yahoo</option>
                                 <option value="Google">Google</option>
@@ -464,7 +468,7 @@ $(function() {
                             <label for="join-activity-way">參與活動形式：*</label>
                         </td>
                         <td>
-                            <select class="form-select" name="join-activity-way" id="join-activity-way">
+                            <select required class="form-select" name="join-activity-way" id="join-activity-way">
                                 <option value="">選擇</option>
                                 <option value="以閣下選擇之日期參加">以閣下選擇之日期參加
                                 </option>
