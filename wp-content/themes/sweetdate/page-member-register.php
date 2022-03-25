@@ -34,7 +34,7 @@ if($_POST)
     $overseas_study=$_POST['overseas-study'];
     $overseas_study_nation=$_POST['overseas_study_nation'];
     $language=$_POST['language'];
-    $other_language = $_POST['other_language'];
+    $other_language = $_POST['other-language'];
     $height= $_POST['height'];
     $hobby= $_POST['hobby'];
     $target_age_from= $_POST['target-age-from'];
@@ -416,7 +416,7 @@ $(function() {
                                 </select>
                                 <div class="mt-3">
 
-                                    <input type="text" class="form-control" placeholder="其他語言">
+                                    <input type="text" class="form-control" placeholder="其他語言" name="other-language">
                                 </div>
                             </td>
                         </tr>
@@ -426,7 +426,15 @@ $(function() {
 
                             </td>
                             <td>
-                                <input required type="text" class="form-control" id="height" name="height">
+                                <select class="form-select" id="height" name="height">
+                                    <option value="144-153">144-153</option>
+                                    <option value="154-163">154-163</option>
+                                    <option value="164-173">164-173</option>
+                                    <option value="174-183">174-183</option>
+                                    <option value="184-195">184-195</option>
+                                    <option value="196以上">196以上</option>
+                                </select>
+                                <!-- <input required type="text" class="form-control" id="height" name="height"> -->
                             </td>
                         </tr>
                         <tr>
@@ -488,8 +496,16 @@ $(function() {
                         <tr>
                             <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                             <td>
-                                <textarea class="form-control" name="target-personality-request"
-                                    id="target-personality-request" cols="30" rows="10"></textarea>
+
+
+                                <select id="target-personality-request" name="target-personality-request"
+                                    class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+
+                                </select>
 
                             </td>
                         </tr>
