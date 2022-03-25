@@ -12,9 +12,12 @@
 get_header();
 session_start();
 
-if($_POST['form-type']=='reg')
+if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
-    echo $_SESSION['paid'];
+     $_SESSION['paid'] ='';
+     header("Refresh:0");
+
+
 }
 ?>
 <div class="container mt-3">
