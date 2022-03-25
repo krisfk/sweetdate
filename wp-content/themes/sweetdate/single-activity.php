@@ -14,18 +14,17 @@ session_start();
 
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
-     $_SESSION['paid'] ='';
-     $_POST = array();
+    //  $_SESSION['paid'] ='';
+    //  $_POST = array();
 
-     ?>
-<script type="text/javascript">
-$(function() {
 
-    location.reload();
+     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $_SESSION['postdata'] = $_POST;
+        unset($_POST);
+        header("Location: ".$_SERVER['PHP_SELF']);
+        exit;
+    }
 
-})
-</script>
-<?php
 
 
 }
