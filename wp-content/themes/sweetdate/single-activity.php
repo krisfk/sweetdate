@@ -353,7 +353,7 @@ session_start();
             <?php
 if($_POST['form-type']=='reg')
 {
-
+    echo 999;
     if($_SESSION['paid'])
     {
         $_SESSION['paid']='';
