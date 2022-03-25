@@ -642,10 +642,19 @@ $post_id = get_the_ID();
                         <tr>
                             <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                             <td>
-                                <textarea class="form-control" name="target-personality-request"
-                                    id="target-personality-request" cols="30"
-                                    rows="10"><?php echo get_field('target_personality_request');?></textarea>
 
+
+                                <select id="target-personality-request" name="target-personality-request"
+                                    class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option <?php echo get_field('target_personality_request')=='A' ? 'selected' :'';?>
+                                        value="A">A</option>
+                                    <option <?php echo get_field('target_personality_request')=='B' ? 'selected' :'';?>
+                                        value="B">B</option>
+                                    <option <?php echo get_field('target_personality_request')=='C' ? 'selected' :'';?>
+                                        value="C">C</option>
+
+                                </select>
                             </td>
                         </tr>
                         <tr>
