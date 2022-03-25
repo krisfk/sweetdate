@@ -19,7 +19,7 @@ require_once('./stripe/init.php');
         );
 
         // print_r($charge);
-        echo $charge->id;
+        echo $charge['id'];
     }catch(\Stripe\Error\Card $e){
         echo $e->getMessage();
     }
