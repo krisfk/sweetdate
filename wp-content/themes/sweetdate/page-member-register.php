@@ -32,7 +32,9 @@ if($_POST)
     $annual_income=$_POST['annual-income'];
     $religion=$_POST['religion'];
     $overseas_study=$_POST['overseas-study'];
-    $overseas_study_nation=$_POST['overseas_study_nation'];
+    $overseas_study_nation=$_POST['overseas-study-nation'];
+    $other_overseas_study_nation=$_POST['other-overseas-study-nation'];
+
     $language=$_POST['language'];
     $other_language = $_POST['other-language'];
     $height= $_POST['height'];
@@ -75,6 +77,8 @@ if($_POST)
         add_post_meta($post_id, 'religion', $religion);
         add_post_meta($post_id, 'overseas_study', $overseas_study);
         add_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+        add_post_meta($post_id, 'other_overseas_study_nation', $other_overseas_study_nation);
+
         add_post_meta($post_id, 'language', $language);
         add_post_meta($post_id, 'other_language', $other_language);
         add_post_meta($post_id, 'height', $height);
