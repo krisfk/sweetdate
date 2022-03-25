@@ -544,6 +544,18 @@ $(function() {
                 '確認登入密碼輸入不相同</br>';
         }
 
+        if (!$('#agree1').is(':checked')) {
+            error_txt +=
+                '請先同意條款1</br>';
+        }
+
+        if (!$('#agree2').is(':checked')) {
+            error_txt +=
+                '請先同意條款2</br>';
+        }
+
+
+
         if (error_txt) {
             $('.error-msg').html(error_txt);
             $('body,html').animate({
