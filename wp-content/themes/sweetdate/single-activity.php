@@ -416,9 +416,9 @@ if($_POST['form-type']=='reg')
         <div class="step step-3 text-center mt-5">
             <?php 
             
-            if($_POST['form-type']=='reg' && !$charge)
+            if($_POST['form-type']=='reg' )
             {
-                echo '99';
+                echo 999;
             }
             
             ?>
