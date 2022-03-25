@@ -91,17 +91,18 @@ $(function() {
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
-                        <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
+                        <td class="text-end"><label for="login-email"> 登記電郵：*</label></td>
+                        <td><input required type="text" class="form-control" id="login-email" name="login-email"></td>
                     </tr>
                     <tr>
-                        <td class="text-end"><label for="login-password">登入密碼：</label> </td>
-                        <td><input type="password" class="form-control" id="login-password" name="login-password">
+                        <td class="text-end"><label for="login-password">登入密碼：*</label> </td>
+                        <td><input required type="password" class="form-control" id="login-password"
+                                name="login-password">
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-end"><label for="login-password-again">再次輸入登入密碼：</label> </td>
-                        <td><input type="password" class="form-control" id="login-password-again"
+                        <td class="text-end"><label for="login-password-again">再次輸入登入密碼：*</label> </td>
+                        <td><input required type="password" class="form-control" id="login-password-again"
                                 name="login-password-again">
                         </td>
                     </tr>
@@ -131,7 +132,7 @@ $(function() {
                     </tr>
 
                     <tr>
-                        <td class="text-end">姓別：</td>
+                        <td class="text-end">姓別：*</td>
                         <td>
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
                             <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
@@ -141,7 +142,7 @@ $(function() {
                     <tr>
 
                         <td class=" text-end">
-                            <label for="like-food">最喜歡吃的食物：</label>
+                            <label for="like-food">最喜歡吃的食物：*</label>
                         </td>
                         <td>
                             <select id="like-food" name="like-food" class="form-select" aria-label="">
@@ -157,7 +158,7 @@ $(function() {
                     <tr>
 
                         <td class=" text-end">
-                            <label for="dislike-food">最不喜歡吃的食物：</label>
+                            <label for="dislike-food">最不喜歡吃的食物：*</label>
                         </td>
                         <td>
 
@@ -224,7 +225,7 @@ $(function() {
                     </tr>
                     <tr>
                         <td class="align-top pt-4">
-                            <label for="occupation">職業：</label>
+                            <label for="occupation">職業：*</label>
 
                         </td>
                         <td>
@@ -295,10 +296,10 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="religion">宗教：</label>
+                            <label for="religion">宗教：*</label>
                         </td>
                         <td><select class="form-select" id="religion" name="religion">
-                                <option value="選擇">選擇</option>
+                                <option value="">選擇</option>
                                 <option value="沒有">沒有</option>
                                 <option value="佛教">佛教</option>
                                 <option value="道教">道教</option>
@@ -326,7 +327,7 @@ $(function() {
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-top pt-4"> <label for="language">語言：</label>
+                        <td class="align-top pt-4"> <label for="language">語言：*</label>
                         </td>
                         <td><select class="form-select" id="religion" name="religion">
                                 <option value="中文">中文</option>
@@ -340,7 +341,7 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="height">身高(CM)：</label>
+                            <label for="height">身高(CM)：*</label>
 
                         </td>
                         <td>
@@ -349,7 +350,7 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="hobby">興趣：</label>
+                            <label for="hobby">興趣：*</label>
 
                         </td>
                         <td>
@@ -383,12 +384,12 @@ $(function() {
                     <tr>
 
                         <td colspan="2" class="text-center">
-                            對象年齡由<input type="text" class="form-control age-input" name="target-age-from">至<input
+                            *對象年齡由<input type="text" class="form-control age-input" name="target-age-from">至<input
                                 type="text" class="age-input form-control" name="target-age-to">歲
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="target-education-level">教育程度：</label></td>
+                        <td><label for="target-education-level">教育程度：*</label></td>
                         <td>
                             <select id="target-education-level" name="target-education-level" class="form-select"
                                 aria-label="">
@@ -412,7 +413,7 @@ $(function() {
                     </tr>
                     <tr>
                         <td>
-                            <label for="target-shape-request">配對身型要求：</label>
+                            <label for="target-shape-request">配對身型要求：*</label>
 
                         </td>
                         <td> <select id="target-shape-request" name="target-shape-request" class="form-select"
@@ -424,7 +425,7 @@ $(function() {
                             </select></td>
                     </tr>
                     <tr>
-                        <td><label for="target-matching-relationship">期望關係：</label></td>
+                        <td><label for="target-matching-relationship">期望關係：*</label></td>
                         <td>
                             <select id="target-matching-relationship" name="target-matching-relationship"
                                 class="form-select" aria-label="">
@@ -460,7 +461,7 @@ $(function() {
 
                     <tr>
                         <td>
-                            <label for="join-activity-way">參與活動形式：</label>
+                            <label for="join-activity-way">參與活動形式：*</label>
                         </td>
                         <td>
                             <select class="form-select" name="join-activity-way" id="join-activity-way">
@@ -471,6 +472,17 @@ $(function() {
                                 </option>
 
                             </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"> <input type="checkbox" name="agree1" id="agree1"> <label for="agree1">
+                                *本人已得悉欲報名活動所註明之學歷及年齡要求。Sweet
+                                Date保留任何人士因未符合學歷及年齡要求，而拒絕該人士參加之權利。</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="checkbox" name="agree2" id="agree2">
+                            <label for="agree2">*我已閱讀，接受及同意有關Sweet Date的服務及免責條款。</label>
                         </td>
                     </tr>
 
