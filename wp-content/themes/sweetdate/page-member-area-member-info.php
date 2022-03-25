@@ -294,14 +294,14 @@ $post_id = get_the_ID();
                             </td>
                             <td>
 
-                                <input value="<?php echo  get_field('first_name') ;?>" required id="first-name"
+                                <input required value="<?php echo  get_field('first_name') ;?>" required id="first-name"
                                     class="form-control" name="first-name" type="text">
                             </td>
                         </tr>
                         <tr>
                             <td><label for="last-name">姓：*</label></td>
                             <td>
-                                <input value="<?php echo get_field('last_name');?>" required id="last-name"
+                                <input required value="<?php echo get_field('last_name');?>" required id="last-name"
                                     class="form-control" name="last-name" type="text">
                             </td>
                         </tr>
@@ -311,7 +311,7 @@ $post_id = get_the_ID();
                                 <label for="age">年齡：*</label>
                             </td>
                             <td>
-                                <select id="age" name="age" class="form-select" aria-label="">
+                                <select required id="age" name="age" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option <?php echo get_field('age')=='20-29' ? 'selected' :'';?> value="20-29">20-29
                                     </option>
@@ -332,7 +332,8 @@ $post_id = get_the_ID();
                             </td>
                             <td>
 
-                                <select id="education-level" name="education-level" class="form-select" aria-label="">
+                                <select required id="education-level" name="education-level" class="form-select"
+                                    aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option <?php echo get_field('education_level')=='小學程度' ? 'selected' :'';?>
                                         value="小學程度">小學程度</option>
@@ -471,15 +472,15 @@ $post_id = get_the_ID();
 
                             </td>
                             <td>
-                                <input value="<?php echo get_field('annual_income');?>" type="text" id="annual-income"
-                                    class="form-control" name="annual-income">
+                                <input required value="<?php echo get_field('annual_income');?>" type="text"
+                                    id="annual-income" class="form-control" name="annual-income">
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="religion">宗教：*</label>
                             </td>
-                            <td><select class="form-select" id="religion" name="religion">
+                            <td><select required class="form-select" id="religion" name="religion">
                                     <option value="">選擇
                                     </option>
                                     <option <?php echo get_field('religion')=='沒有' ? 'selected' :'';?> value="沒有">沒有
@@ -565,7 +566,7 @@ $post_id = get_the_ID();
                         <tr>
                             <td class="align-top pt-4"> <label for="language">語言：*</label>
                             </td>
-                            <td><select class="form-select" id="language" name="language">
+                            <td><select required class="form-select" id="language" name="language">
                                     <option <?php echo get_field('language')=='中文' ? 'selected' :'';?> value="中文">
                                         中文</option>
                                     <option <?php echo get_field('language')=='英文' ? 'selected' :'';?> value="英文">
@@ -580,13 +581,13 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td>
-                                <label for="height">身高(CM)：</label>
+                                <label for="height">身高(CM)：*</label>
 
                             </td>
                             <td>
 
 
-                                <select class="form-select" id="height" name="height">
+                                <select required class="form-select" id="height" name="height">
                                     <option value="">選擇</option>
 
                                     <option <?php echo get_field('height')=='144-153' ? 'selected' :'';?>
@@ -658,8 +659,8 @@ $post_id = get_the_ID();
                         <tr>
                             <td><label for="target-education-level">教育程度：*</label></td>
                             <td>
-                                <select id="target-education-level" name="target-education-level" class="form-select"
-                                    aria-label="">
+                                <select required id="target-education-level" name="target-education-level"
+                                    class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option <?php echo get_field('target_education_level')=='小學程度' ? 'selected' :'';?>
                                         value="小學程度">小學程度</option>
@@ -712,7 +713,7 @@ $post_id = get_the_ID();
                         <tr>
                             <td><label for="target-matching-relationship">期望關係：*</label></td>
                             <td>
-                                <select id="target-matching-relationship" name="target-matching-relationship"
+                                <select required id="target-matching-relationship" name="target-matching-relationship"
                                     class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option
@@ -730,7 +731,7 @@ $post_id = get_the_ID();
                                 <label for="how-to-know-us">如何得知我們：*</label>
                             </td>
                             <td>
-                                <select class="form-select" name="how_to_know_us" id="how-to-know-us">
+                                <select required class="form-select" name="how_to_know_us" id="how-to-know-us">
                                     <option value="">選擇</option>
                                     <option <?php echo get_field('how_to_know_us')=='Yahoo' ? 'selected' :'';?>
                                         value="Yahoo">Yahoo</option>
@@ -764,7 +765,7 @@ $post_id = get_the_ID();
                                 <label for="join-activity-way">參與活動形式：*</label>
                             </td>
                             <td>
-                                <select class="form-select" name="join-activity-way" id="join-activity-way">
+                                <select required class="form-select" name="join-activity-way" id="join-activity-way">
                                     <option value="">選擇</option>
                                     <option <?php echo get_field('join_activity_way')=='以閣下選擇之日期參加' ? 'selected' :'';?>
                                         value="以閣下選擇之日期參加">以閣下選擇之日期參加
