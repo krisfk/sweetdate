@@ -322,7 +322,8 @@ $(function() {
                                     <option value="法律工作者">法律工作者</option>
                                     <option value="教授">教授</option>
                                 </select>
-                                <div class="mt-2"><input type="text" class="form-control" placeholder="其他職業"></div>
+                                <div class="mt-2"><input type="text" class="form-control" placeholder="其他職業"
+                                        name="other-occupation"></div>
                             </td>
                         </tr>
                         <tr>
