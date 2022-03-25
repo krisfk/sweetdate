@@ -532,6 +532,10 @@ $(function() {
 
         if (error_txt) {
             $('.error-msg').html(error_txt);
+
+            $('body html').animate({
+                scrollTop: 0
+            }, 500);
             return false;
         } else {
             return true;
