@@ -476,12 +476,14 @@ $(function() {
                     </tr>
 
                     <tr>
-                        <td colspan="2"> <input type="checkbox" name="agree1" id="agree1"> <label for="agree1">
+                        <td colspan="2" class="text-start"> <input type="checkbox" name="agree1" id="agree1"> <label
+                                for="agree1" class="d-inline">
                                 *本人已得悉欲報名活動所註明之學歷及年齡要求。Sweet
                                 Date保留任何人士因未符合學歷及年齡要求，而拒絕該人士參加之權利。</label></td>
                     </tr>
                     <tr>
-                        <td colspan="2"> <input type="checkbox" name="agree2" id="agree2">
+                        <td colspan="2" class="text-start"> <input type="checkbox" name="agree2" id="agree2"
+                                class="d-inline">
                             <label for="agree2">*我已閱讀，接受及同意有關Sweet Date的服務及免責條款。</label>
                         </td>
                     </tr>
