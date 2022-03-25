@@ -141,7 +141,7 @@ get_header();
 
 
 
-        <div class="step step-1">
+        <div class="step step-1 <?php if($_POST){ echo 'd-none';}?>">
 
 
             <div class="mt-5 text-center">
