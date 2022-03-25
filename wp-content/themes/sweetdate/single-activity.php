@@ -14,7 +14,7 @@ session_start();
 
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
-    //  $_SESSION['paid'] ='';
+     $_SESSION['paid'] ='';
     //  $_POST = array();
 
 
