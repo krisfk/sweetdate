@@ -499,11 +499,50 @@ $post_id = get_the_ID();
                                         <?php echo get_field('overseas_study')=='沒有' ? 'checked' :'';?> class="me-1"
                                         type="radio" name="overseas-study" value="沒有">沒有</label>
 
+
                                 <div class="mt-2"> <label for="overseas-study-nation">如有留學國家為</label> </div>
 
-                                <div class="mt-2"> <input value="<?php echo get_field('overseas_study_nation');?>"
-                                        type="text" id="overseas-study-nation" name="overseas_study_nation"
-                                        class="form-control"> </div>
+                                <div class="mt-2"> <select class="form-control" id="overseas-study-nation"
+                                        name="overseas-study-nation">
+                                        <option value="">選擇</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='紐西蘭' ? 'selected' :'';?>
+                                            value="紐西蘭">
+                                            紐西蘭</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='中國' ? 'selected' :'';?>
+                                            value="中國">
+                                            中國</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='英國' ? 'selected' :'';?>
+                                            value="英國">
+                                            英國</option>
+                                        <option
+                                            <?php echo get_field('overseas-study-nation')=='澳大利亞' ? 'selected' :'';?>
+                                            value="澳大利亞">澳大利亞</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='美國' ? 'selected' :'';?>
+                                            value="美國">
+                                            美國</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='日本' ? 'selected' :'';?>
+                                            value="日本">
+                                            日本</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='法國' ? 'selected' :'';?>
+                                            value="法國">
+                                            法國</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='德國' ? 'selected' :'';?>
+                                            value="德國">
+                                            德國</option>
+                                        <option <?php echo get_field('overseas-study-nation')=='加拿大' ? 'selected' :'';?>
+                                            value="加拿大">
+                                            加拿大</option>
+                                    </select> </div>
+
+                                <div class="mt-2">
+
+                                    <label for="other-overseas-study-nation">其他海外留學國家</label>
+                                </div>
+                                <div class="mt-2">
+
+                                    <input type="text" id="other-overseas-study-nation" class="form-control"
+                                        name="other-overseas-study-nation">
+                                </div>
 
 
                             </td>
