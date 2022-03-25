@@ -18,7 +18,8 @@ require_once('./stripe/init.php');
           "metadata" => array("IMEI" => $IMEI))
         );
 
-        print_r($charge);
+        // print_r($charge);
+        echo $charge->id;
     }catch(\Stripe\Error\Card $e){
         echo $e->getMessage();
     }
