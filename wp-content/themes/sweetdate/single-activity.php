@@ -244,7 +244,7 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
-                <form action="" class="login-form">
+                <form action="" class="login-form" method="post">
                     <table>
 
 
@@ -326,7 +326,7 @@ get_header();
                                     <div id="card-errors" role="alert"></div>
                                 </div>
 
-                                <button class="form-submit-btn">Submit Payment</button>
+                                <!-- <button class="form-submit-btn">Submit Payment</button> -->
                                 <!-- </form> -->
                             </td>
                         </tr>
