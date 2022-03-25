@@ -340,20 +340,12 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
-                <form action="" method="post" id="payment-form">
+                <form action="http://64.227.13.14/sweetdate/test" method="post" id="payment-form">
                     <div class="form-row">
 
-
-
-                        <!-- <input id="name" name="name" value="haha" placeholder="Jenny Rosen" required> -->
-
-
-
                         <div id="card-element">
-                            <!-- A Stripe Element will be inserted here. -->
                         </div>
 
-                        <!-- Used to display form errors. -->
                         <div id="card-errors" role="alert"></div>
                     </div>
 
