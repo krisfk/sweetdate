@@ -377,8 +377,10 @@ $(function() {
                                 <label for="overseas_study">海外留學：</label>
                             </td>
                             <td>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="有">有</label>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="沒有">沒有</label>
+                                <label class="me-2"><input class="me-1" type="radio" name="overseas-study"
+                                        value="有">有</label>
+                                <label class="me-2"><input class="me-1" type="radio" name="overseas-study"
+                                        value="沒有">沒有</label>
 
                                 <div class="mt-2"> <label for="overseas-study-nation">如有留學國家為</label> </div>
 
