@@ -315,6 +315,22 @@ get_header();
                             </td>
                         </tr>
                         <tr>
+                            <td>信用咭付款</td>
+                            <td>
+                                <!-- <form action="" method="post" id="payment-form"> -->
+                                <div class="form-row">
+
+                                    <div id="card-element">
+                                    </div>
+
+                                    <div id="card-errors" role="alert"></div>
+                                </div>
+
+                                <button class="form-submit-btn">Submit Payment</button>
+                                <!-- </form> -->
+                            </td>
+                        </tr>
+                        <tr>
                             <td></td>
                             <td class="text-end">
 
@@ -330,28 +346,6 @@ get_header();
             </div>
 
 
-
-            <div class="position-relative mt-5">
-                <h3 class="title-type-pink-line">信用咭付款</h3>
-
-                <div class="text-center">
-                    <div class="title-pink-line"></div>
-                </div>
-            </div>
-
-            <div class="position-relative mt-4">
-                <form action="" method="post" id="payment-form">
-                    <div class="form-row">
-
-                        <div id="card-element">
-                        </div>
-
-                        <div id="card-errors" role="alert"></div>
-                    </div>
-
-                    <button class="form-submit-btn">Submit Payment</button>
-                </form>
-            </div>
 
             <?php
 if($_POST)
