@@ -14,7 +14,7 @@ session_start();
 
 if($_POST['form-type']=='reg')
 {
-    echo 111;
+    echo $_SESSION['paid'];
 }
 ?>
 <div class="container mt-3">
