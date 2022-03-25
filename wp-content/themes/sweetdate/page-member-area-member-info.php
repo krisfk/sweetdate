@@ -580,8 +580,7 @@ $post_id = get_the_ID();
 
                             </td>
                             <td>
-                                <input type="text" value="<?php echo get_field('height');?>" class="form-control"
-                                    id="height" name="height">
+
 
                                 <select class="form-select" id="height" name="height">
                                     <option value="">選擇</option>
