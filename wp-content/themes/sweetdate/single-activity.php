@@ -383,7 +383,7 @@ if($_POST['form-type']=='reg')
         // if(!$charge){
         //     echo 999;
         // }
-        echo 99;
+        echo 12345;
         // print_r($charge);
 
         if($charge->paid)
