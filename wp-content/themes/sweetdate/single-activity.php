@@ -344,9 +344,6 @@ get_header();
                     <div class="form-row">
 
 
-                        <label for="card-element">
-                            Credit or debit card
-                        </label>
 
                         <!-- <input id="name" name="name" value="haha" placeholder="Jenny Rosen" required> -->
 
