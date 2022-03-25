@@ -15,7 +15,14 @@ session_start();
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
      $_SESSION['paid'] ='';
-     header("Refresh:0");
+     ?>
+<script type="text/javascript">
+$(function() {
+    location.reload();
+
+})
+</script>
+<?php
 
 
 }
