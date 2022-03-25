@@ -11,6 +11,11 @@
 
 get_header();
 session_start();
+
+if($_POST['form-type']=='reg')
+{
+    echo 111;
+}
 ?>
 <div class="container mt-3">
 
@@ -353,13 +358,7 @@ session_start();
             <?php
 if($_POST['form-type']=='reg')
 {
-    echo 999;
-    if($_SESSION['paid'])
-    {
-        $_SESSION['paid']='';
-        header("Refresh:0");
-
-    }
+  
     
     ?>
             <script type="text/javascript">
