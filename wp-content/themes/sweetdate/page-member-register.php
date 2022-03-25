@@ -341,7 +341,15 @@ $(function() {
 
                             </td>
                             <td>
-                                <input type="text" id="annual-income" class="form-control" name="annual-income">
+
+                                <select id="annual-income" name="annual-income" class="form-control">
+                                    <option value="250,000以下">250,000以下</option>
+                                    <option value="250,001-500,001">250,001-500,001</option>
+                                    <option value="500,000-750,000">500,000-750,000</option>
+                                    <option value="750,001-100,000">750,001-100,000</option>
+                                    <option value="1,000,001以上">1,000,001以上</option>
+                                </select>
+
                             </td>
                         </tr>
                         <tr>
@@ -370,8 +378,25 @@ $(function() {
 
                                 <div class="mt-2"> <label for="overseas-study-nation">如有留學國家為</label> </div>
 
-                                <div class="mt-2"> <input type="text" id="overseas-study-nation"
-                                        name="overseas_study_nation" class="form-control"> </div>
+                                <div class="mt-2"> <select class="form-control" id="overseas-study-nation"
+                                        name="overseas-study-nation">
+                                        <option value="紐西蘭">紐西蘭</option>
+                                        <option value="中國">中國</option>
+                                        <option value="英國">英國</option>
+                                        <option value="澳大利亞">澳大利亞</option>
+                                        <option value="美國">美國</option>
+                                        <option value="日本">日本</option>
+                                        <option value="法國">法國</option>
+                                        <option value="德國">德國</option>
+                                        <option value="加拿大">加拿大</option>
+                                    </select> </div>
+
+                                <div class="mt-2">
+
+                                    <label for="other-overseas-study-nation">其他海外留學國家</label>
+                                    <input type="text" id="other-overseas-study-nation" class="form-control"
+                                        name="other-overseas-study-nation">
+                                </div>
 
 
                             </td>
