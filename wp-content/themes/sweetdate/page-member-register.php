@@ -156,7 +156,7 @@ $(function() {
                 </table>
 
 
-                <div class="detail-form form-div">
+                <div class="detail-form form-div mt-5">
 
 
                     <table class="">
