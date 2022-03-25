@@ -141,7 +141,7 @@ get_header();
 
 
         <!--  -->
-        <div class="step step-1 <?php if($_POST){ echo 'd-none';}?>">
+        <div class="step step-1">
 
 
             <div class="mt-5 text-center">
@@ -349,7 +349,16 @@ get_header();
 
             <?php
 if($_POST)
-{echo 111;
+{
+    ?>
+            <script type="text/javascript">
+            $(function() {
+                $('.step.step-1').fadeOut(0);
+            })
+            </script>
+            <?php
+    
+    //echo 111;
     require_once('./stripe-test/stripe/init.php');
 
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
