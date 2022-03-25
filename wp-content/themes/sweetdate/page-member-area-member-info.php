@@ -104,11 +104,15 @@ $post_id = get_the_ID();
             $how_to_know_us=$_POST['how-to-know-us'];
             $join_activity_way=$_POST['join-activity-way'];
 
+            $overseas_study_nation=$_POST['overseas-study-nation'];
+
             update_post_meta($post_id, 'like_food', $like_food);
             update_post_meta($post_id, 'dislike_food', $dislike_food);
             update_post_meta($post_id, 'first_name', $first_name);
             update_post_meta($post_id, 'last_name', $last_name);
             update_post_meta($post_id, 'age', $age);
+            update_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+
             update_post_meta($post_id, 'education_level', $education_level);
             update_post_meta($post_id, 'occupation', $occupation);
             update_post_meta($post_id, 'occupation_title', $occupation_title);
