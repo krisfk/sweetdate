@@ -10,7 +10,7 @@
  */
 
 get_header();
-
+session_start();
 ?>
 <div class="container mt-3">
 
@@ -353,6 +353,13 @@ get_header();
             <?php
 if($_POST['form-type']=='reg')
 {
+
+    if($_SESSION['paid'])
+    {
+        $_SESSION['paid']='';
+        header("Refresh:0");
+
+    }
     
     ?>
             <script type="text/javascript">
@@ -379,16 +386,10 @@ if($_POST['form-type']=='reg')
           "description" => $email,
           "metadata" => array("IMEI" => $IMEI))
         );
-
-        // print_r($charge);
-        // if(!$charge){
-        //     echo 999;
-        // }
-        // echo 12345;
-        // print_r($charge);
-
         if($charge->paid)
         {
+
+            $_SESSION['paid']=1;
             ?>
             <script type="text/javascript">
             $(function() {
@@ -405,7 +406,7 @@ if($_POST['form-type']=='reg')
     }
 
 }
-echo 999;
+// echo 999;
     ?>
 
 
@@ -416,7 +417,7 @@ echo 999;
 
         <div class="step step-3 text-center mt-5">
             <?php 
-            
+        
             ?>
             <h4 class="pink">我們已收到你的報名！會盡快聯絡您！謝謝！</h4>
 
