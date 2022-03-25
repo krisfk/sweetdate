@@ -383,7 +383,7 @@ if($_POST['form-type']=='reg')
         // if(!$charge){
         //     echo 999;
         // }
-        echo 12345;
+        // echo 12345;
         // print_r($charge);
 
         if($charge->paid)
@@ -392,7 +392,7 @@ if($_POST['form-type']=='reg')
             <script type="text/javascript">
             $(function() {
                 // $('.step').fadeOut(0);
-                // $('.step.step-3').fadeIn(200);
+                $('.step.step-3').fadeIn(200);
 
             })
             </script>
