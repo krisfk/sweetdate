@@ -380,7 +380,7 @@ if($_POST['form-type']=='reg')
           "metadata" => array("IMEI" => $IMEI))
         );
 
-        print_r($charge);
+        // print_r($charge);
         // if(!$charge){
         //     echo 999;
         // }
@@ -410,8 +410,22 @@ if($_POST['form-type']=='reg')
 
         </div>
 
+        <?php
+        
+        
+        if($_POST['form-type']=='reg' )
+
+        {
+print_r($charge);
+        }
+        ?>
 
         <div class="step step-3 text-center mt-5">
+            <?php 
+            
+            
+            
+            ?>
             <h4 class="pink">我們已收到你的報名！會盡快聯絡您！謝謝！</h4>
 
 
