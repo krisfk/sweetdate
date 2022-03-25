@@ -427,6 +427,8 @@ $(function() {
                             </td>
                             <td>
                                 <select class="form-select" id="height" name="height">
+                                    <option value="">選擇</option>
+
                                     <option value="144-153">144-153</option>
                                     <option value="154-163">154-163</option>
                                     <option value="164-173">164-173</option>
