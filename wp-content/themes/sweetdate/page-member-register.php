@@ -395,6 +395,9 @@ $(function() {
                                 <div class="mt-2">
 
                                     <label for="other-overseas-study-nation">其他海外留學國家</label>
+                                </div>
+                                <div class="mt-2">
+
                                     <input type="text" id="other-overseas-study-nation" class="form-control"
                                         name="other-overseas-study-nation">
                                 </div>
