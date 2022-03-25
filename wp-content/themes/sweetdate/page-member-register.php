@@ -105,6 +105,11 @@ $(function() {
                                 name="login-password-again">
                         </td>
                     </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </table>
             </form>
         </div>
