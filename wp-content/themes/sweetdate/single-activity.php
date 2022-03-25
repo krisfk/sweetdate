@@ -340,7 +340,7 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
-                <form action="http://64.227.13.14/sweetdate/stripe-test/charge.php" method="post" id="payment-form">
+                <form action="http://64.227.13.14/sweetdate/test" method="post" id="payment-form">
                     <div class="form-row">
 
                         <div id="card-element">
