@@ -244,7 +244,7 @@ get_header();
             </div>
 
             <div class="position-relative mt-4">
-                <form action="" class="login-form" id="payment-form">
+                <form action="" class="login-form" id="payment-form" method="post">
                     <table>
 
 
