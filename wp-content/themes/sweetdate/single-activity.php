@@ -350,7 +350,7 @@ $(function() {
 
     $('.reg-btn').click(function() {
         $('.step').fadeOut(0);
-        $('.step.step2').fadeIn(200);
+        $('.step.step-2').fadeIn(200);
 
     })
 })
