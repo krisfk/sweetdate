@@ -409,24 +409,6 @@ if($_POST['form-type']=='reg')
 
 
 
-            <?php
-if(!$_POST)
-{
-    ?>
-
-            <script type="text/javascript">
-            $(function() {
-                $('.step').fadeOut(0);
-
-                $('.step.step-1').fadeIn(0);
-            })
-            </script>
-            <?php
-}
-else{
-    echo 999;
-}
-?>
             <div></div>
 
         </div>
