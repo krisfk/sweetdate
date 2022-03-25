@@ -30,7 +30,6 @@ require_once('./stripe/init.php');
         $json['amount']=$amount;
         $json['purchase_item']=$purchase_item;
         $json['purchase_datetime']=$purchase_datetime;
-        // echo 999;
         $json['member_id']=$_POST['member_id'];
         $json['member_name']=$_POST['member_name'];
         $json['member_email']= $_POST['member_email'];
