@@ -406,8 +406,9 @@ if($_POST['form-type']=='reg')
         </div>
 
 
-        <div class="step step-3">
-            我們已收到你的報名！會盡快聯絡您！謝謝！
+        <div class="step step-3 text-center mt-5">
+            <h4>我們已收到你的報名！會盡快聯絡您！謝謝！</h4>
+
 
         </div>
 
