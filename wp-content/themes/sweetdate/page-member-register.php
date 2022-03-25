@@ -125,7 +125,7 @@ $(function() {
 
 
         <div class="login-form form-div">
-            <form action="" class="member-login-info-form mb-5">
+            <form action="" class="member-login-info-form mb-5" action="" method="post">
                 <table>
                     <tr>
                         <td colspan="2">
