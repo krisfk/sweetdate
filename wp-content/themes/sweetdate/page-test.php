@@ -1,7 +1,8 @@
 <?php
 
 
-require_once('./stripe/init.php');
+// require_once('./stripe-test/init.php');
+require_once('fdsg.php');
 
     // \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
 
