@@ -95,8 +95,8 @@ if($_POST)
        ?>
 <script type="text/javascript">
 $(function() {
-    $('.member-further-info-form').addClass('text-center');
-    $('.member-further-info-form').html('會員註冊成功，三秒後自動登入。');
+    $('.member-login-info-form').addClass('text-center');
+    $('.member-login-info-form').html('會員註冊成功，三秒後自動登入。');
     setTimeout(() => {
         window.location = '<?php echo get_site_url();?>'
     }, 3000);
