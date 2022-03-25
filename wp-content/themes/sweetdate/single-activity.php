@@ -15,9 +15,12 @@ session_start();
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
      $_SESSION['paid'] ='';
+     $_POST = array();
+
      ?>
 <script type="text/javascript">
 $(function() {
+
     location.reload();
 
 })
