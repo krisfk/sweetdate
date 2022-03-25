@@ -380,6 +380,7 @@ $(function() {
 
                                 <div class="mt-2"> <select class="form-control" id="overseas-study-nation"
                                         name="overseas-study-nation">
+                                        <option value="">選擇</option>
                                         <option value="紐西蘭">紐西蘭</option>
                                         <option value="中國">中國</option>
                                         <option value="英國">英國</option>
