@@ -210,6 +210,7 @@ get_header();
 
 
                 <form action="" class="login-form">
+                    <input type="hidden" name="form-type" value="login">
                     <table>
                         <tbody>
                             <tr>
@@ -245,6 +246,8 @@ get_header();
 
             <div class="position-relative mt-4">
                 <form action="" class="login-form" id="payment-form" method="post">
+                    <input type="hidden" name="form-type" value="reg">
+
                     <table>
 
 
@@ -348,8 +351,9 @@ get_header();
 
 
             <?php
-if($_POST)
+if($_POST['form-type']=='reg')
 {
+    
     ?>
             <script type="text/javascript">
             $(function() {
@@ -358,7 +362,7 @@ if($_POST)
             </script>
             <?php
     
-    //echo 111;
+    
     require_once('./stripe-test/stripe/init.php');
 
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
@@ -377,6 +381,19 @@ if($_POST)
         );
 
         print_r($charge);
+
+        if($charge->paid)
+        {
+            ?>
+            <script type="text/javascript">
+            $(function() {
+                $('.step').fadeOut(0);
+                $('.step.step-3').fadeIn(200);
+
+            })
+            </script>
+            <?php
+        }
         // echo $charge->id;
     }catch(\Stripe\Error\Card $e){
         echo $e->getMessage();
@@ -385,6 +402,12 @@ if($_POST)
 }
 ?>
             <div></div>
+
+        </div>
+
+
+        <div class="step step-3">
+            我們已收到你的報名！會盡快聯絡您！謝謝！
 
         </div>
 
