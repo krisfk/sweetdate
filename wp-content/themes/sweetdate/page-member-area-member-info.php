@@ -235,7 +235,7 @@ $post_id = get_the_ID();
                         <tr>
 
                             <td class=" text-end">
-                                <label for="like-food">最喜歡吃的食物：</label>
+                                <label for="like-food">最喜歡吃的食物：*</label>
                             </td>
                             <td>
                                 <select required id="like-food" name="like-food" class="form-select" aria-label="">
@@ -256,7 +256,7 @@ $post_id = get_the_ID();
                         <tr>
 
                             <td class=" text-end">
-                                <label for="dislike-food">最不喜歡吃的食物：</label>
+                                <label for="dislike-food">最不喜歡吃的食物：*</label>
                             </td>
                             <td>
 
@@ -279,7 +279,7 @@ $post_id = get_the_ID();
                             </td>
                         </tr>
                         <tr>
-                            <td> <label for="tel">聯絡電話*</label>
+                            <td> <label for="tel">聯絡電話：*</label>
                             </td>
                             <td>
                                 <input required type="text" id="tel" name="tel" class="form-control"
@@ -351,7 +351,7 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td class="align-top pt-4">
-                                <label for="occupation">職業：</label>
+                                <label for="occupation">職業：*</label>
 
                             </td>
                             <td>
@@ -467,7 +467,7 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td>
-                                <label for="annual-income">年薪(HKD)：</label>
+                                <label for="annual-income">年薪(HKD)：*</label>
 
                             </td>
                             <td>
@@ -477,7 +477,7 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td>
-                                <label for="religion">宗教：</label>
+                                <label for="religion">宗教：*</label>
                             </td>
                             <td><select class="form-select" id="religion" name="religion">
                                     <option value="">選擇
@@ -563,7 +563,7 @@ $post_id = get_the_ID();
                             </td>
                         </tr>
                         <tr>
-                            <td class="align-top pt-4"> <label for="language">語言：</label>
+                            <td class="align-top pt-4"> <label for="language">語言：*</label>
                             </td>
                             <td><select class="form-select" id="language" name="language">
                                     <option <?php echo get_field('language')=='中文' ? 'selected' :'';?> value="中文">
@@ -649,14 +649,14 @@ $post_id = get_the_ID();
                         <tr>
 
                             <td colspan="2" class="text-center">
-                                對象年齡由<input type="text" value="<?php echo get_field('target_age_from');?>"
+                                *對象年齡由<input type="text" value="<?php echo get_field('target_age_from');?>"
                                     class="form-control age-input" name="target-age-from">至<input
                                     value="<?php echo get_field('target_age_to');?>" type="text"
                                     class="age-input form-control" name="target-age-to">歲
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="target-education-level">教育程度：</label></td>
+                            <td><label for="target-education-level">教育程度：*</label></td>
                             <td>
                                 <select id="target-education-level" name="target-education-level" class="form-select"
                                     aria-label="">
@@ -710,7 +710,7 @@ $post_id = get_the_ID();
                                 </select></td>
                         </tr>
                         <tr>
-                            <td><label for="target-matching-relationship">期望關係：</label></td>
+                            <td><label for="target-matching-relationship">期望關係：*</label></td>
                             <td>
                                 <select id="target-matching-relationship" name="target-matching-relationship"
                                     class="form-select" aria-label="">
@@ -727,7 +727,7 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td>
-                                <label for="how-to-know-us">如何得知我們：</label>
+                                <label for="how-to-know-us">如何得知我們：*</label>
                             </td>
                             <td>
                                 <select class="form-select" name="how_to_know_us" id="how-to-know-us">
@@ -761,7 +761,7 @@ $post_id = get_the_ID();
 
                         <tr>
                             <td>
-                                <label for="join-activity-way">參與活動形式：</label>
+                                <label for="join-activity-way">參與活動形式：*</label>
                             </td>
                             <td>
                                 <select class="form-select" name="join-activity-way" id="join-activity-way">
