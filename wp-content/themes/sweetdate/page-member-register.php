@@ -341,12 +341,13 @@ $(function() {
                         </tr>
                         <tr>
                             <td>
-                                <label for="annual-income">年薪(HKD)：</label>
+                                <label for="annual-income">年薪(HKD)：*</label>
 
                             </td>
                             <td>
 
-                                <select id="annual-income" name="annual-income" class="form-control">
+                                <select required id="annual-income" name="annual-income" class="form-control">
+                                    <option value="">選擇</option>
                                     <option value="250,000以下">250,000以下</option>
                                     <option value="250,001-500,001">250,001-500,001</option>
                                     <option value="500,000-750,000">500,000-750,000</option>
