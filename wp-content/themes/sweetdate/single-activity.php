@@ -423,6 +423,9 @@ if(!$_POST)
             </script>
             <?php
 }
+else{
+    echo 999;
+}
 ?>
             <div></div>
 
