@@ -2,7 +2,7 @@ result
 <?php
 
 // if($_POST){
-    require_once('./stripe/init.php');
+    require_once('http://64.227.13.14/sweetdate/stripe-test/stripe/init.php');
 
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
 
