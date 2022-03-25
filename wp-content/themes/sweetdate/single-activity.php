@@ -360,7 +360,7 @@ get_header();
                         <div id="card-errors" role="alert"></div>
                     </div>
 
-                    <button>Submit Payment</button>
+                    <button class="form-submit-btn">Submit Payment</button>
                 </form>
             </div>
 
