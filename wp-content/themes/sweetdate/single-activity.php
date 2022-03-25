@@ -405,10 +405,14 @@ if($_POST['form-type']=='reg')
     }
 
 }
-else
-{
     ?>
 
+
+
+            <?php
+if(!$_POST)
+{
+    ?>
 
             <script type="text/javascript">
             $(function() {
