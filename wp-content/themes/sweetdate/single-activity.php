@@ -411,14 +411,17 @@ if($_POST['form-type']=='reg')
 
     $token = $_POST['stripeToken'];
 
-    // $IMEI = $_POST['ImeiNum'];
+    $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
           "amount" => get_field('price')*100,
           "currency" => "hkd",
           "source" => $token,
-          "description" => 'fdsf')
+          "description" => $_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'),
+          "metadata" => array("IMEI" => $IMEI))
+          
+
         //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
