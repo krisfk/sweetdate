@@ -251,8 +251,8 @@ get_header();
 
                         <div>
 
-                            <a class="form-submit-btn" href="<?php echo get_permalink();?>">一人參加</a>
-                            <a class="form-submit-btn" href="<?php echo get_permalink();?>">
+                            <a class="entry-person-btn" href="<?php echo get_permalink();?>">一人參加</a>
+                            <a class="entry-person-btn" href="<?php echo get_permalink();?>">
                                 二人同行 (附優惠價) </a>
                         </div>
 
