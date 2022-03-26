@@ -292,208 +292,210 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <div class="position-relative mt-4">
                 <form action="" class="login-form" id="payment-form" method="post">
                     <input type="hidden" name="form-type" value="reg">
-
-                    <tbody>
-
-
-                        <tr>
-                            <td class="text-end"><label for="register-email">登記電郵：*</label></td>
-                            <td><input required type="text" class="form-control" id="register-email"
-                                    name="register-email"></td>
-                        </tr>
-
-                        <tr>
-                            <td class="text-end"><label for="tel">登記電話：*</label></td>
-                            <td><input required type="text" class="form-control" id="tel" name="tel"></td>
-                        </tr>
+                    <table>
+                        <tbody>
 
 
-                        <tr>
-                            <td class="text-end">姓別：*</td>
-                            <td>
-                                <label class="me-2"><input required class="me-1" type="radio" name="gender"
-                                        value="男">男</label>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                            <tr>
+                                <td class="text-end"><label for="register-email">登記電郵：*</label></td>
+                                <td><input required type="text" class="form-control" id="register-email"
+                                        name="register-email"></td>
+                            </tr>
 
-                                <label for="first-name">稱呼：*</label>
-
-                            </td>
-                            <td>
-                                <input required type="text" class="form-control" id="first-name" name="first-name">
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="age">年齡：*</label>
-                            </td>
-                            <td>
-                                <select required id="age" name="age" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="20-29">20-29</option>
-                                    <option value="30-34">30-34</option>
-                                    <option value="35-39">35-39</option>
-                                    <option value="40或以上">40或以上</option>
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="  text-end">
-                                <label for="like-food">最喜歡吃的食物：*</label>
-                            </td>
-                            <td>
-                                <select required id="like-food" name="like-food" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td class=" text-end">
-                                <label for="dislike-food">最不喜歡吃的食物：*</label>
-                            </td>
-                            <td>
-
-                                <select required id="dislike-food" name="dislike-food" class="form-select"
-                                    aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
-                                </select>
-
-                            </td>
-                        </tr>
-                    </tbody>
-
-                    <tbody>
-                        <tr>
-                            <td colspan="2">另一位朋友的個人資料</td>
-                            <!-- <td></td> -->
-                        </tr>
-                        <tr>
-                            <td class="text-end"><label for="register-email">登記電郵：*</label></td>
-                            <td><input required type="text" class="form-control" id="register-email"
-                                    name="register-email"></td>
-                        </tr>
-
-                        <tr>
-                            <td class="text-end"><label for="tel">登記電話：*</label></td>
-                            <td><input required type="text" class="form-control" id="tel" name="tel"></td>
-                        </tr>
+                            <tr>
+                                <td class="text-end"><label for="tel">登記電話：*</label></td>
+                                <td><input required type="text" class="form-control" id="tel" name="tel"></td>
+                            </tr>
 
 
-                        <tr>
-                            <td class="text-end">姓別：*</td>
-                            <td>
-                                <label class="me-2"><input required class="me-1" type="radio" name="gender"
-                                        value="男">男</label>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                            <tr>
+                                <td class="text-end">姓別：*</td>
+                                <td>
+                                    <label class="me-2"><input required class="me-1" type="radio" name="gender"
+                                            value="男">男</label>
+                                    <label class="me-2"><input class="me-1" type="radio" name="gender"
+                                            value="女">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
 
-                                <label for="first-name">稱呼：*</label>
+                                    <label for="first-name">稱呼：*</label>
 
-                            </td>
-                            <td>
-                                <input required type="text" class="form-control" id="first-name" name="first-name">
+                                </td>
+                                <td>
+                                    <input required type="text" class="form-control" id="first-name" name="first-name">
 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="age">年齡：*</label>
-                            </td>
-                            <td>
-                                <select required id="age" name="age" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="20-29">20-29</option>
-                                    <option value="30-34">30-34</option>
-                                    <option value="35-39">35-39</option>
-                                    <option value="40或以上">40或以上</option>
-                                </select>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="age">年齡：*</label>
+                                </td>
+                                <td>
+                                    <select required id="age" name="age" class="form-select" aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="20-29">20-29</option>
+                                        <option value="30-34">30-34</option>
+                                        <option value="35-39">35-39</option>
+                                        <option value="40或以上">40或以上</option>
+                                    </select>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td class="  text-end">
-                                <label for="like-food">最喜歡吃的食物：*</label>
-                            </td>
-                            <td>
-                                <select required id="like-food" name="like-food" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
+                            <tr>
+                                <td class="  text-end">
+                                    <label for="like-food">最喜歡吃的食物：*</label>
+                                </td>
+                                <td>
+                                    <select required id="like-food" name="like-food" class="form-select" aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="牛">牛</option>
+                                        <option value="雞">雞</option>
+                                        <option value="羊">羊</option>
+                                        <option value="豬">豬</option>
+                                        <option value="魚">魚</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
 
-                            <td class=" text-end">
-                                <label for="dislike-food">最不喜歡吃的食物：*</label>
-                            </td>
-                            <td>
+                                <td class=" text-end">
+                                    <label for="dislike-food">最不喜歡吃的食物：*</label>
+                                </td>
+                                <td>
 
-                                <select required id="dislike-food" name="dislike-food" class="form-select"
-                                    aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="牛">牛</option>
-                                    <option value="雞">雞</option>
-                                    <option value="羊">羊</option>
-                                    <option value="豬">豬</option>
-                                    <option value="魚">魚</option>
-                                </select>
+                                    <select required id="dislike-food" name="dislike-food" class="form-select"
+                                        aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="牛">牛</option>
+                                        <option value="雞">雞</option>
+                                        <option value="羊">羊</option>
+                                        <option value="豬">豬</option>
+                                        <option value="魚">魚</option>
+                                    </select>
 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>報名費用：</td>
-                            <td class="">$<?php  echo get_field('price');?></td>
-                        </tr>
-                        <tr>
-                            <td>信用咭付款</td>
-                            <td>
-                                <div class="form-row">
+                                </td>
+                            </tr>
+                        </tbody>
 
-                                    <div id="card-element">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">另一位朋友的個人資料</td>
+                                <!-- <td></td> -->
+                            </tr>
+                            <tr>
+                                <td class="text-end"><label for="register-email">登記電郵：*</label></td>
+                                <td><input required type="text" class="form-control" id="register-email"
+                                        name="register-email"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-end"><label for="tel">登記電話：*</label></td>
+                                <td><input required type="text" class="form-control" id="tel" name="tel"></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="text-end">姓別：*</td>
+                                <td>
+                                    <label class="me-2"><input required class="me-1" type="radio" name="gender"
+                                            value="男">男</label>
+                                    <label class="me-2"><input class="me-1" type="radio" name="gender"
+                                            value="女">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="first-name">稱呼：*</label>
+
+                                </td>
+                                <td>
+                                    <input required type="text" class="form-control" id="first-name" name="first-name">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="age">年齡：*</label>
+                                </td>
+                                <td>
+                                    <select required id="age" name="age" class="form-select" aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="20-29">20-29</option>
+                                        <option value="30-34">30-34</option>
+                                        <option value="35-39">35-39</option>
+                                        <option value="40或以上">40或以上</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="  text-end">
+                                    <label for="like-food">最喜歡吃的食物：*</label>
+                                </td>
+                                <td>
+                                    <select required id="like-food" name="like-food" class="form-select" aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="牛">牛</option>
+                                        <option value="雞">雞</option>
+                                        <option value="羊">羊</option>
+                                        <option value="豬">豬</option>
+                                        <option value="魚">魚</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td class=" text-end">
+                                    <label for="dislike-food">最不喜歡吃的食物：*</label>
+                                </td>
+                                <td>
+
+                                    <select required id="dislike-food" name="dislike-food" class="form-select"
+                                        aria-label="">
+                                        <option value="" selected="">選擇</option>
+                                        <option value="牛">牛</option>
+                                        <option value="雞">雞</option>
+                                        <option value="羊">羊</option>
+                                        <option value="豬">豬</option>
+                                        <option value="魚">魚</option>
+                                    </select>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>報名費用：</td>
+                                <td class="">$<?php  echo get_field('price');?></td>
+                            </tr>
+                            <tr>
+                                <td>信用咭付款</td>
+                                <td>
+                                    <div class="form-row">
+
+                                        <div id="card-element">
+                                        </div>
+
+                                        <div id="card-errors" role="alert"></div>
                                     </div>
 
-                                    <div id="card-errors" role="alert"></div>
-                                </div>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="text-end">
-                                <button class="form-submit-btn">送出表格</button>
-                                <!-- <input type="submit" value="送出表格" class="form-submit-btn"> -->
-                            </td>
-                        </tr>
-                    </tbody>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="text-end">
+                                    <button class="form-submit-btn">送出表格</button>
+                                    <!-- <input type="submit" value="送出表格" class="form-submit-btn"> -->
+                                </td>
+                            </tr>
+                        </tbody>
 
                     </table>
                 </form>
