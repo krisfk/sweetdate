@@ -418,7 +418,7 @@ if($_POST['form-type']=='reg')
           "amount" => get_field('price')*100,
           "currency" => "hkd",
           "source" => $token,
-          "description" => get_field('activity_title').' '.get_field('register_email').' '.get_field('tel'))
+          "description" => get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
         if($charge->paid)
