@@ -168,7 +168,26 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <div class="mt-5 text-center">
+                <?php 
+                if($_GET['person']==2)
+                {
+                    ?>
                 <span class="price me-2">二人同行優惠價 $<?php echo get_field('two_people_discount_price');?>/位</span>
+
+                <?php
+                }
+                ?>
+
+                <?php 
+                if($_GET['person']==1)
+                {
+                    ?>
+                <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+
+                <?php
+                }
+                ?>
+
                 <a href="javascript:void(0);" class="reg-btn">活動報名</a>
             </div>
 
