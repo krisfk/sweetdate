@@ -610,6 +610,7 @@ if($_POST['form-type']=='reg')
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
+        /*
         if($charge->paid)
         {
 
@@ -718,6 +719,7 @@ if($_POST['form-type']=='reg')
             </script>
             <?php
         }
+        */
         // echo $charge->id;
     }catch(\Stripe\Error\Card $e){
         echo $e->getMessage();
