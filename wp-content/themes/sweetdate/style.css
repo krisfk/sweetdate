@@ -536,8 +536,11 @@ h3.title-type-pink-line {
 
 .entry-person-btn .btn-right-arrow {
     position: absolute;
-    right: 100%;
-    top: 100%;
+    right: 15px;
+    top: 50%;
+    height: 15px;
+    width: auto;
+    transform: translate(0, -50%);
 }
 
 .reg-btn,
