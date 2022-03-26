@@ -524,9 +524,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 if($_GET['person']==2)
                                 {
                                     echo get_field('two_people_discount_price').' x 2 = $'.get_field('two_people_discount_price')*2;
-                                    
+                                    $final_price=   get_field('two_people_discount_price')*2;
                                 }
-                                ?></td>
+                                ?>
+                                    <input type="hidden" name="final_price" value="<?php
+                            echo $final_price;
+                            ?>">
+                                </td>
                             </tr>
                             <tr>
                                 <td>信用咭付款</td>
@@ -583,7 +587,7 @@ if($_POST['form-type']=='reg')
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
-          "amount" => get_field('price')*100,
+          "amount" => $_POST('final_price')*100,
           "currency" => "hkd",
           "source" => $token,
           "description" => '',
