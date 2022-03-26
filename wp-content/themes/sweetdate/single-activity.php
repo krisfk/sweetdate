@@ -296,6 +296,17 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         </tr>
                         <tr>
                             <td>
+
+                                <label for="first-name">稱呼：*</label>
+
+                            </td>
+                            <td>
+                                <input required type="text" class="form-control" id="first-name" name="first-name">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <label for="age">年齡：*</label>
                             </td>
                             <td>
