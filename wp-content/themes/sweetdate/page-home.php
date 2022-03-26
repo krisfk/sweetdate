@@ -252,7 +252,7 @@ get_header();
                         <div>
 
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>">
-                                <span><?php echo get_field('price');?></span>
+                                $<?php echo get_field('price');?> <br>
                                 一人參加
                             </a>
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>">
