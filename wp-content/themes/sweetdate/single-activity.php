@@ -506,6 +506,19 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         </tbody>
                         <tbody>
                             <tr>
+                                <td colspan="2" class="border-0">
+
+                                    <div class="position-relative mt-3">
+                                        <h3 class="title-type-pink-line">信用咭付款</h3>
+
+                                        <div class="text-center">
+                                            <div class="title-pink-line"></div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
                                 <td>報名費用：</td>
                                 <td class="">$<?php  echo get_field('price');?></td>
                             </tr>
