@@ -598,7 +598,9 @@ if($_POST['form-type']=='reg')
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
-          "amount" => $_POST('final_price')*100,
+        //   "amount" => $_POST('final_price')*100,
+        "amount" => 9999,
+
           "currency" => "hkd",
           "source" => $token,
           "description" => '',
@@ -610,7 +612,8 @@ if($_POST['form-type']=='reg')
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
-        echo 1234567;
+        // print_r()
+        // echo 1234567;
 
         /*
         if($charge->paid)
@@ -733,7 +736,6 @@ if($_POST['form-type']=='reg')
 
 
 
-            <div></div>
 
         </div>
 
