@@ -264,7 +264,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         </div>
 
         <?php //echo 999;?>
-        <?php echo $_POST('final-price');?>
+        <?php echo $_POST('fdadsfas');?>
 
         <div class="step step-2">
 
