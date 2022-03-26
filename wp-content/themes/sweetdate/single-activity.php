@@ -643,8 +643,8 @@ if($_POST['form-type']=='reg')
                 $dislike_food=$_POST['dislike-food'];
                 
                 if ($post_id) {
-                    add_post_meta($post_id, 'nonmember_id', $nonmember_id);
-                    add_post_meta($post_id, 'register_email', $register_email);
+                    add_post_meta($post_id, 'non_member_id', $nonmember_id);
+                    add_post_meta($post_id, 'login_email', $register_email);
                     add_post_meta($post_id, 'tel', $tel);
                     add_post_meta($post_id, 'gender', $gender);
                     add_post_meta($post_id, 'first_name', $first_name);
@@ -680,8 +680,8 @@ if($_POST['form-type']=='reg')
             
               
                 if ($post_id) {
-                    add_post_meta($post_id, 'nonmember_id', $nonmember_id);
-                    add_post_meta($post_id, 'register_email', $register_email);
+                    add_post_meta($post_id, 'non_member_id', $nonmember_id);
+                    add_post_meta($post_id, 'login_email', $register_email);
                     add_post_meta($post_id, 'tel', $tel);
                     add_post_meta($post_id, 'gender', $gender);
                     add_post_meta($post_id, 'first_name', $first_name);
