@@ -377,6 +377,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                                 </td>
                             </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
 
                         <tbody>
