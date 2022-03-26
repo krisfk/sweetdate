@@ -253,9 +253,12 @@ get_header();
 
                             <div class="col-6">
 
-                                <a href="">一人參加</a>
+                                <a href="<?php echo get_permalink();?>">一人參加</a>
                             </div>
-                            <div class="col-6">二人同行 <br>附優惠價 </div>
+                            <div class="col-6">
+                                <a href="<?php echo get_permalink();?>">
+                                    二人同行 (附優惠價) </a>
+                            </div>
                         </div>
 
                         <div class="gender-div male">
