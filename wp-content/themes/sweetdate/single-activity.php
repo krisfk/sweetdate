@@ -575,8 +575,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <?php
 if($_POST['form-type']=='reg')
 {
+
   
-//   echo 11;  
+  echo 11;  
     ?>
             <script type="text/javascript">
             $(function() {
