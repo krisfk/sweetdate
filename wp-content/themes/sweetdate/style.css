@@ -522,7 +522,7 @@ h3.title-type-pink-line {
 
 .entry-person-btn,
 .entry-person-btn:hover {
-    background: #f07798;
+    background: #f07798 url(./assets/images/right-arrow.png);
     color: #fff;
     display: inline-block;
     border: none;
