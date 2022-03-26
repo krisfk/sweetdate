@@ -10,6 +10,13 @@
  */
 
 // This theme requires WordPress 5.3 or later.
+
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
