@@ -463,6 +463,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                                 </td>
                             </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                         <tr>
                             <td>報名費用：</td>
