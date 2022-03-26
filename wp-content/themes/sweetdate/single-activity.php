@@ -430,6 +430,8 @@ if($_POST['form-type']=='reg')
         if($charge->paid)
         {
 
+            $balance_transaction = $charge->balance_transaction;
+
             $_SESSION['paid']=1;
             ?>
             <script type="text/javascript">
@@ -458,6 +460,7 @@ if($_POST['form-type']=='reg')
 
         <div class="step step-3 text-center mt-5">
             <?php 
+            echo $_POST['register-email'];
                  print_r($charge);
 
             ?>
