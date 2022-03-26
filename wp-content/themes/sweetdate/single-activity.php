@@ -395,7 +395,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 if($_POST['form-type']=='reg')
 {
   
-  echo 11;  
+//   echo 11;  
     ?>
             <script type="text/javascript">
             $(function() {
@@ -418,7 +418,7 @@ if($_POST['form-type']=='reg')
           "amount" => get_field('price')*100,
           "currency" => "hkd",
           "source" => $token,
-          "description" => '['.get_field('activity_title').']'.' '.$_POST['first-name'].' '.$_POST('register-email'))
+          "description" => '['.get_field('activity_title').']'.' '.$_POST['first-name'].' '.$_POST('first-name'))
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
