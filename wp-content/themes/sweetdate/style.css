@@ -520,10 +520,12 @@ h3.title-type-pink-line {
     margin: 1rem 0 0 0;
 }
 
-.entry-person-btn {
+.entry-person-btn,
+.entry-person-btn:hover {
     background: #f07798;
     color: #fff;
     border: none;
+    text-decoration: none;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     margin: 1rem 0 0 0;
