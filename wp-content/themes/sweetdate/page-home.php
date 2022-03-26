@@ -254,10 +254,17 @@ get_header();
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>">
                                 $<?php echo get_field('price');?> <br>
                                 一人參加
+                                <img class="btn-right-arrow"
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow.png"
+                                    alt="">
                             </a>
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>">
                                 $<?php echo get_field('price');?> <br>
-                                二人同行(優惠價)</a>
+                                二人同行(優惠價)
+                                <img class="btn-right-arrow"
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow.png"
+                                    alt="">
+                            </a>
                         </div>
 
                         <div class="gender-div male">

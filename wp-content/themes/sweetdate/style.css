@@ -522,7 +522,8 @@ h3.title-type-pink-line {
 
 .entry-person-btn,
 .entry-person-btn:hover {
-    background: #f07798 url(./assets/images/right-arrow.png);
+    position: relative;
+    background: #f07798;
     color: #fff;
     display: inline-block;
     border: none;
@@ -531,6 +532,12 @@ h3.title-type-pink-line {
     padding: 0.5rem 2.5rem 0.5rem 1rem;
     margin: 0rem 0 0 0;
     text-align: center;
+}
+
+.entry-person-btn .btn-right-arrow {
+    position: absolute;
+    right: 100%;
+    top: 100%;
 }
 
 .reg-btn,
