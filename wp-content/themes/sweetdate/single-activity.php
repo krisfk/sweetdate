@@ -520,7 +520,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                             <tr>
                                 <td>報名費用：</td>
-                                <td class="">$<?php  echo get_field('price');?></td>
+                                <td class="">$<?php 
+                                if($_GET['person']==2)
+                                {
+                                    echo get_field('two_people_discount_price').'x2 = '.get_field('two_people_discount_price')*2;
+                                    
+                                }
+                                ?></td>
                             </tr>
                             <tr>
                                 <td>信用咭付款</td>
