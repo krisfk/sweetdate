@@ -263,7 +263,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             </div> -->
         </div>
 
-
+        <?php
+        echo $_POST['final-price'];
+        ?>
         <div class="step step-2">
 
             <div class="position-relative mt-5">
@@ -577,8 +579,7 @@ if($_POST['form-type']=='reg')
 {
 
   
-//   echo 11;  
-//   echo $final_price*100;
+
     ?>
             <script type="text/javascript">
             $(function() {
