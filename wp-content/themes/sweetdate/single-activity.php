@@ -597,7 +597,7 @@ if($_POST['form-type']=='reg')
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => 9999,
+        "amount" => $_POST['final-price']*100,
 
           "currency" => "hkd",
           "source" => $token,
@@ -736,7 +736,7 @@ if($_POST['form-type']=='reg')
 
 
         </div>
-        <?php echo $_POST['final-price']*100;?>
+        <?php //echo $_POST['final-price']*100;?>
         <div class="step step-3 text-center mt-5">
             <?php 
 
