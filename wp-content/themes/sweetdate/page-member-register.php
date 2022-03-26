@@ -47,15 +47,19 @@ if($_POST)
     $target_matching_relationship=$_POST['target-matching-relationship'];
     $how_to_know_us=$_POST['how-to-know-us'];
     $join_activity_way=$_POST['join-activity-way'];
-    $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
-        'post_title' => $member_id.' ('.$first_name.' '.$last_name.')',
+        'post_title' =>$first_name.' '.$last_name,
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
     ));
+
+    $member_id = 'M'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+
+   
+
+  
     
     if ($post_id) {
         add_post_meta($post_id, 'member_id', $member_id);
