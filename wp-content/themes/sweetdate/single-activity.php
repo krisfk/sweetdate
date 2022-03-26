@@ -172,7 +172,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 if($_GET['person']==2)
                 {
                     ?>
-                <span class="price me-2">二人同行優惠價 <u>fd</u>$<?php echo get_field('two_people_discount_price');?>/位</span>
+                <span class="price me-2">二人同行優惠價
+                    <span
+                        class="line-through"><?php echo get_field('price');?></span>$<?php echo get_field('two_people_discount_price');?>/位</span>
 
                 <?php
                 }

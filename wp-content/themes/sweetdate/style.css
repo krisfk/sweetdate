@@ -680,6 +680,10 @@ a.pink:hover {
     background-color: #fefde5 !important;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
