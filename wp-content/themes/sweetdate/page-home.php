@@ -251,8 +251,11 @@ get_header();
 
                         <div class="row">
 
-                            <div class="col-6">d</div>
-                            <div class="col-6">d</div>
+                            <div class="col-6">
+
+                                <a href="">一人參加</a>
+                            </div>
+                            <div class="col-6">二人同行 <br>附優惠價 </div>
                         </div>
 
                         <div class="gender-div male">
