@@ -249,15 +249,11 @@ get_header();
 
                         </div>
 
-                        <div class="row">
+                        <div>
 
-                            <div class="col-6 text-center">
-                                <a class="form-submit-btn" href="<?php echo get_permalink();?>">一人參加</a>
-                            </div>
-                            <div class="col-6  text-center">
-                                <a class="form-submit-btn" href="<?php echo get_permalink();?>">
-                                    二人同行<br>(附優惠價) </a>
-                            </div>
+                            <a class="form-submit-btn" href="<?php echo get_permalink();?>">一人參加</a>
+                            <a class="form-submit-btn" href="<?php echo get_permalink();?>">
+                                二人同行<br>(附優惠價) </a>
                         </div>
 
                         <div class="gender-div male">
