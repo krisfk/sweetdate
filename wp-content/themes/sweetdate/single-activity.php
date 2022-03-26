@@ -404,7 +404,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                         </tbody>
 
-                        <tbody>
+                        <tbody class="another-friend-tbody">
                             <tr>
                                 <td colspan="2" class="border-0">
 
