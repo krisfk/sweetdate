@@ -244,7 +244,8 @@ h2.title-type-pink-line {
 h3.title-type-pink-line {
     font-size: 1.6rem !important;
     text-align: center;
-    display: table;
+    /* display: table; */
+    display: block;
     margin: 0 auto;
     padding: 0 0 1rem 0;
     /* position: relative; */
