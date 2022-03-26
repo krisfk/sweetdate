@@ -344,6 +344,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </td>
                         </tr>
                         <tr>
+                            <td>報名費用：</td>
+                            <td><?php  echo get_field('price');?></td>
+                        </tr>
+                        <tr>
                             <td>信用咭付款</td>
                             <td>
                                 <!-- <form action="" method="post" id="payment-form"> -->
@@ -400,7 +404,7 @@ if($_POST['form-type']=='reg')
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
-          "amount" => 1000,
+          "amount" => get_field('price')*100,
           "currency" => "hkd",
           "source" => $token,
           "description" => $email)
