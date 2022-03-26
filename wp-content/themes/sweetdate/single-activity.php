@@ -63,9 +63,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
                 </div>
 
-                <h2 class="mt-3"> 成熟人士. 婚活族New Year Wish下午茶</h2>
+                <h2 class="mt-3 text-center"> 成熟人士. 婚活族New Year Wish下午茶</h2>
             </div>
-            <div class="col-12 mt-1">
+            <div class="col-12 mt-1  text-center">
                 <ul class="news-act-info-ul">
                     <li>
                         <div class="d-table">
