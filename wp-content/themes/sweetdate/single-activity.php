@@ -362,7 +362,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         <tr>
                             <td></td>
                             <td class="text-end">
-                                <button class="form-submit-btn">Submit Payment</button>
+                                <button class="form-submit-btn">送出表格</button>
                                 <!-- <input type="submit" value="送出表格" class="form-submit-btn"> -->
                             </td>
                         </tr>
