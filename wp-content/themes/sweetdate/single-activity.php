@@ -537,9 +537,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     $final_price=   get_field('two_people_discount_price')*2;
                                 }
                                 ?>
-                                    <input type="hidden" name="final-price" value="<?php
-                            echo $final_price;
-                            ?>">
+                                    <input type="hidden" name="final-price" value="<?php echo $final_price; ?>">
                                     <input type="hidden" name="person" value="<?php echo $_GET['person'];?>">
                                 </td>
                             </tr>
@@ -599,7 +597,7 @@ if($_POST['form-type']=='reg')
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => $_POST['final-price']*100,
+        "amount" => 9999,
 
           "currency" => "hkd",
           "source" => $token,
@@ -738,7 +736,7 @@ if($_POST['form-type']=='reg')
 
 
         </div>
-
+        <?php echo $_POST['final-price']*100;?>
         <div class="step step-3 text-center mt-5">
             <?php 
 
