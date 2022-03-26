@@ -615,6 +615,7 @@ if($_POST['form-type']=='reg')
         // print_r()
         // echo 1234567;
 
+        /*
         if($charge->paid)
         {
 
@@ -723,7 +724,7 @@ if($_POST['form-type']=='reg')
             </script>
             <?php
         }
-
+        */
         // echo $charge->id;
     }catch(\Stripe\Error\Card $e){
         echo $e->getMessage();
