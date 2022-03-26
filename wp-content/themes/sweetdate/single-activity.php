@@ -603,7 +603,7 @@ if($_POST['form-type']=='reg')
           "source" => $token,
           "description" => '',
           "metadata" => array("IMEI" => $IMEI))
-          
+          echo 999;
 
         //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
