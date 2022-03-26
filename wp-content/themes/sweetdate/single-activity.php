@@ -293,7 +293,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                             <tr>
                                 <td colspan="2" class="text-end align-top pt-0">
-                                    <div class="pe-3"> <a href="javascript:void(0);" class="pink">忘記密碼</a>
+                                    <div class="pe-3 d-inline-block"> <a href="javascript:void(0);"
+                                            class="pink">忘記密碼</a>
                                     </div>
                                     <input type="submit" class="form-submit-btn" value="會員登入">
                                 </td>
