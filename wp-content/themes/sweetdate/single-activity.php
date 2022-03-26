@@ -460,8 +460,16 @@ if($_POST['form-type']=='reg')
 
         <div class="step step-3 text-center mt-5">
             <?php 
-            echo $_POST['register-email'];
-                 print_r($charge);
+                //  echo $_POST['register-email'];
+                //  print_r($charge);
+                // $balance_transaction
+                $row = array(
+                    'transactio_id'   => $balance_transaction,
+                //     'field_560389746a524'   => 'Another great sunset',
+                //     'field_560389746a528'   => 'http://website.com'
+                );
+                add_row('applied_non_member', $row);
+                
 
             ?>
             <h4 class="pink">我們已收到你的報名！會盡快聯絡您！謝謝！</h4>
