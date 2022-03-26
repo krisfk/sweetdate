@@ -292,8 +292,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td colspan="2" class="border-0 text-start">(會員登入後會自動填寫以下個人資料及儲存報名記錄)</td>
                             </tr>
                             <tr>
-                                <td class="align-top pt-3"></td>
-                                <td class="text-end align-top pt-3">
+                                <td colspan="2" class="text-end align-top pt-0">
                                     <div class="pe-3"> <a href="javascript:void(0);" class="pink">忘記密碼</a>
                                     </div>
                                     <input type="submit" class="form-submit-btn" value="會員登入">
