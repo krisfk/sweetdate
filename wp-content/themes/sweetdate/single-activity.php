@@ -234,7 +234,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
 
-            <div class="mt-5 text-center">
+            <!-- <div class="mt-5 text-center">
                 <?php 
                 if($_GET['person']==2)
                 {
@@ -258,7 +258,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                 <div class="mt-3"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
