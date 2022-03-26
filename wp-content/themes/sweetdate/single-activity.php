@@ -164,35 +164,37 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
         <!--  -->
-        <div class="step step-1">
 
-
-            <div class="mt-5 text-center">
-                <?php 
+        <div class="mt-5 text-center">
+            <?php 
                 if($_GET['person']==2)
                 {
                     ?>
-                <span class="price me-2">二人同行優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
-                    $<?php echo get_field('two_people_discount_price');?>/位</span>
+            <span class="price me-2">二人同行優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
+                $<?php echo get_field('two_people_discount_price');?>/位</span>
 
-                <?php
+            <?php
                 }
                 ?>
 
-                <?php 
+            <?php 
                 if($_GET['person']==1)
                 {
                     ?>
-                <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+            <span class="price me-2">$<?php echo get_field('price');?>/位</span>
 
-                <?php
+            <?php
                 }
                 ?>
 
-                <div class="mt-3"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
-                </div>
-
+            <div class="mt-3"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
             </div>
+
+        </div>
+
+
+        <div class="step step-1">
+
 
 
             <div class="position-relative mt-5">
