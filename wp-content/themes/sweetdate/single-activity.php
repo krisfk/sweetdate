@@ -187,14 +187,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 }
                 ?>
 
-            <div class="mt-3"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
-            </div>
+
 
         </div>
 
 
         <div class="step step-1">
-
+            <div class="mt-3"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
+            </div>
 
 
             <div class="position-relative mt-5">
