@@ -393,15 +393,15 @@ if($_POST['form-type']=='reg')
 
     $token = $_POST['stripeToken'];
 
-    $IMEI = $_POST['ImeiNum'];
+    // $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
           "amount" => 1000,
-          "currency" => "usd",
+          "currency" => "hkd",
           "source" => $token,
           "description" => $email,
-          "metadata" => array("IMEI" => $IMEI))
+        //   "metadata" => array("IMEI" => $IMEI))
         );
         if($charge->paid)
         {
