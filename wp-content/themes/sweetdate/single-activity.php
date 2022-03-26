@@ -385,7 +385,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                         <tbody>
                             <tr>
-                                <td colspan="2">另一位朋友的個人資料</td>
+                                <td colspan="2" class="border-0">另一位朋友的個人資料</td>
                                 <!-- <td></td> -->
                             </tr>
                             <tr>
