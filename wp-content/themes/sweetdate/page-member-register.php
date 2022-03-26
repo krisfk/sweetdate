@@ -228,7 +228,7 @@ $(function() {
                         </tr>
                         <tr>
                             <td>
-                                <label for="first-name">英文名(e.g.Jacky)：*</label>
+                                <label for="first-name">稱呼：*</label>
                             </td>
                             <td>
 

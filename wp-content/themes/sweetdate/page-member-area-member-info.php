@@ -290,7 +290,7 @@ $post_id = get_the_ID();
 
                         <tr>
                             <td>
-                                <label for="first-name">英文名(e.g.Jacky)：*</label>
+                                <label for="first-name">稱呼：*</label>
                             </td>
                             <td>
 
