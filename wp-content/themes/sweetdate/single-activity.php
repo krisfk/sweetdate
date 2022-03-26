@@ -610,7 +610,7 @@ if($_POST['form-type']=='reg')
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
-        echo 999;
+        echo 1234567;
 
         /*
         if($charge->paid)
