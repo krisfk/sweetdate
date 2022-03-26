@@ -594,10 +594,11 @@ if($_POST['form-type']=='reg')
 
     $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
+    // Number($_POST['final-price']*100)
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => $_POST['final-price']*100,
+        "amount" => '3000',
 
           "currency" => "hkd",
           "source" => $token,
