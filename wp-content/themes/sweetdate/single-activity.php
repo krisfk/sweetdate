@@ -400,7 +400,7 @@ if($_POST['form-type']=='reg')
           "amount" => 1000,
           "currency" => "hkd",
           "source" => $token,
-          "description" => $email,
+          "description" => $email)
         //   "metadata" => array("IMEI" => $IMEI))
         );
         if($charge->paid)
