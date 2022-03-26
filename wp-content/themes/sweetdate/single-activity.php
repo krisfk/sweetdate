@@ -426,6 +426,8 @@ if($_POST['form-type']=='reg')
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
+
+        print_r($charge);
         if($charge->paid)
         {
 
