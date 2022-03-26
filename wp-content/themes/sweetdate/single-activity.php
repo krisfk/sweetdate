@@ -264,7 +264,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         </div>
 
         <?php
-        echo $_POST['final-price'];
+        $charge_final_price = $_POST['final-price']*100;
+        // echo $_POST['final-price'];
         ?>
         <div class="step step-2">
 
@@ -601,7 +602,7 @@ if($_POST['form-type']=='reg')
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => '3000',
+        "amount" => $charge_final_price,
 
           "currency" => "hkd",
           "source" => $token,
