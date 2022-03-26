@@ -540,6 +540,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     <input type="hidden" name="final_price" value="<?php
                             echo $final_price;
                             ?>">
+                                    <input type="hidden" name="person" value="<?php echo $_GET['person'];?>">
                                 </td>
                             </tr>
                             <tr>
@@ -615,11 +616,10 @@ if($_POST['form-type']=='reg')
             $balance_transaction = $charge->balance_transaction;
 
 
+            
             $row = array(
                 'transaction_id'   => $balance_transaction,
                 'date_of_purchase' => date('d-m-y h:i:s')
-            //     'field_560389746a524'   => 'Another great sunset',
-            //     'field_560389746a528'   => 'http://website.com'
             );
             add_row('applied_non_member', $row);
             
