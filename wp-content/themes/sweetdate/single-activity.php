@@ -237,14 +237,12 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     <table>
                         <tbody>
                             <tr>
-                                <td class="text-end"><label for="login-email">登記電郵：*</label></td>
-                                <td><input required type="text" class="form-control" id="login-email"
-                                        name="login-email"></td>
+                                <td class="text-end"><label for="login-email">登記電郵：</label></td>
+                                <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
                             </tr>
                             <tr>
-                                <td class="text-end"><label for="login-password">登入密碼：*</label> </td>
-                                <td><input required type="text" class="form-control" id="login-password"
-                                        name="login-password">
+                                <td class="text-end"><label for="login-password">登入密碼：</label> </td>
+                                <td><input type="text" class="form-control" id="login-password" name="login-password">
                                 </td>
                             </tr>
                             <tr>
@@ -277,20 +275,22 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                         <tr>
-                            <td class="text-end"><label for="register-email">登記電郵：</label></td>
-                            <td><input type="text" class="form-control" id="register-email" name="register-email"></td>
+                            <td class="text-end"><label for="register-email">登記電郵：*</label></td>
+                            <td><input required type="text" class="form-control" id="register-email"
+                                    name="register-email"></td>
                         </tr>
 
                         <tr>
-                            <td class="text-end"><label for="tel">登記電話：</label></td>
-                            <td><input type="text" class="form-control" id="tel" name="tel"></td>
+                            <td class="text-end"><label for="tel">登記電話：*</label></td>
+                            <td><input required type="text" class="form-control" id="tel" name="tel"></td>
                         </tr>
 
 
                         <tr>
                             <td class="text-end">姓別：*</td>
                             <td>
-                                <label class="me-2"><input class="me-1" type="radio" name="gender" value="男">男</label>
+                                <label class="me-2"><input required class="me-1" type="radio" name="gender"
+                                        value="男">男</label>
                                 <label class="me-2"><input class="me-1" type="radio" name="gender" value="女">女</label>
                             </td>
                         </tr>
@@ -299,7 +299,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <label for="age">年齡：*</label>
                             </td>
                             <td>
-                                <select id="age" name="age" class="form-select" aria-label="">
+                                <select required id="age" name="age" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option value="20-29">20-29</option>
                                     <option value="30-34">30-34</option>
@@ -311,10 +311,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                         <tr>
                             <td class="  text-end">
-                                <label for="like-food">最喜歡吃的食物：</label>
+                                <label for="like-food">最喜歡吃的食物：*</label>
                             </td>
                             <td>
-                                <select id="like-food" name="like-food" class="form-select" aria-label="">
+                                <select required id="like-food" name="like-food" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option value="牛">牛</option>
                                     <option value="雞">雞</option>
@@ -327,11 +327,12 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         <tr>
 
                             <td class=" text-end">
-                                <label for="dislike-food">最不喜歡吃的食物：</label>
+                                <label for="dislike-food">最不喜歡吃的食物：*</label>
                             </td>
                             <td>
 
-                                <select id="dislike-food" name="dislike-food" class="form-select" aria-label="">
+                                <select required id="dislike-food" name="dislike-food" class="form-select"
+                                    aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option value="牛">牛</option>
                                     <option value="雞">雞</option>
