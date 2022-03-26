@@ -97,6 +97,7 @@ $(function() {
                     <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
                     <td><input type="text" class="form-control" id="login-email" name="login-email"></td>
                 </tr>
+
                 <tr>
                     <td class="text-end"><label for="login-password">登入密碼：</label> </td>
                     <td><input type="password" class="form-control" id="login-password" name="login-password"></td>
