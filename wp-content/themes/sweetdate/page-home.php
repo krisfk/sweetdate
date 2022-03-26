@@ -249,6 +249,12 @@ get_header();
 
                         </div>
 
+                        <div class="row">
+
+                            <div class="col-6">d</div>
+                            <div class="col-6">d</div>
+                        </div>
+
                         <div class="gender-div male">
                             <table>
                                 <tr>
