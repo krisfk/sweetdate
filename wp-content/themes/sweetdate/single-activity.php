@@ -464,7 +464,7 @@ if($_POST['form-type']=='reg')
                 //  print_r($charge);
                 // $balance_transaction
                 $row = array(
-                    'transactio_id'   => $balance_transaction,
+                    'transaction_id'   => $balance_transaction,
                 //     'field_560389746a524'   => 'Another great sunset',
                 //     'field_560389746a528'   => 'http://website.com'
                 );
