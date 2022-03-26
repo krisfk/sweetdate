@@ -256,6 +256,7 @@ get_header();
                                 一人參加
                             </a>
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>">
+                                $<?php echo get_field('price');?> <br>
                                 二人同行 (附優惠價) </a>
                         </div>
 

@@ -524,6 +524,7 @@ h3.title-type-pink-line {
 .entry-person-btn:hover {
     background: #f07798;
     color: #fff;
+    display: inline-block;
     border: none;
     text-decoration: none;
     border-radius: 2rem;
