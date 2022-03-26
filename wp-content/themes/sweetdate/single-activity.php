@@ -578,7 +578,7 @@ if($_POST['form-type']=='reg')
 
   
   echo 11;  
-  echo $final_pricer*100;
+  echo $final_price*100;
     ?>
             <script type="text/javascript">
             $(function() {
