@@ -523,7 +523,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td class="">$<?php 
                                 if($_GET['person']==2)
                                 {
-                                    echo get_field('two_people_discount_price').'x2 = $'.get_field('two_people_discount_price')*2;
+                                    echo get_field('two_people_discount_price').' x 2 = $'.get_field('two_people_discount_price')*2;
                                     
                                 }
                                 ?></td>
