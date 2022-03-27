@@ -340,6 +340,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         <?php
         $charge_final_price = $_POST['final-price']*100;
         echo 999;
+        echo $charge_final_price;
         // echo $_POST['final-price'];
         ?>
         <div class="step step-2">
