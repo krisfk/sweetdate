@@ -192,8 +192,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <div class="mb-5 mt-4">
-                <div class="checkbox-div "><input type="checkbox" class="form-check-input me-2" id="" name=""
-                        value=""><label for="">接受指定日子以外的日子(如接受有-$100優惠)</label>
+                <div class="checkbox-div "><input type="checkbox" class="form-check-input me-2"
+                        id="agree-decide-other-date" name="" value=""><label
+                        for="agree-decide-other-date">接受指定日子以外的日子(如接受有-$100優惠)</label>
 
                     <table class="mx-auto  mt-2">
                         <tr>
