@@ -207,7 +207,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                                 ?>
-                                <select novalidate required id="any-date" name="any-date" class="form-select any-date"
+                                <select novalidate id="any-date" name="any-date" class="form-select any-date"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <?php
@@ -398,8 +398,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 <form action="" class="login-form" id="payment-form" method="post">
 
 
-                    <select novalidate required id="any-date" name="any-date" class="form-select any-date d-none"
-                        aria-label="">
+                    <select novalidate id="any-date" name="any-date" class="form-select any-date d-none" aria-label="">
                         <option value="" selected="">選擇</option>
                         <?php
                                     for($i=0;$i<count($random_date_select_option_arr);$i++)
