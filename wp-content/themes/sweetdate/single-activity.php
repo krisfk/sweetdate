@@ -195,7 +195,24 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 <div class="checkbox-div"><input type="checkbox" class="form-check-input me-2" id="" name=""
                         value=""><label for="">接受指定日子以外的日子(其他日子，如接受有-$100
                         優惠)</label>
+
+                    <table>
+                        <tr>
+                            <td>其他日子選項：</td>
+                            <td>
+
+                                <select required id="age" name="age" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="20-29">20-29</option>
+                                    <option value="30-34">30-34</option>
+                                    <option value="35-39">35-39</option>
+                                    <option value="40或以上">40或以上</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+
             </div>
 
             <?php
