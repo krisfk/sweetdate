@@ -172,8 +172,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <!-- <input type="checkbox">接受指定日子以外的日子(其他日子，如接受有-$100 優惠) -->
 
             <div class="">
-                <div class="checkbox-div"><input type="checkbox" class="form-check-input" id="subject_value2_0"
-                        name="subjects[]" value="全科"><label for="subject_value2_0">接受指定日子以外的日子(其他日子，如接受有-$100
+                <div class="checkbox-div"><input type="checkbox" class="form-check-input pe-3" id="" name=""
+                        value=""><label for="">接受指定日子以外的日子(其他日子，如接受有-$100
                         優惠)</label>
                 </div>
             </div>
