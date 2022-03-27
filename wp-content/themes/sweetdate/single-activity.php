@@ -188,12 +188,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 {
                     ?>
 
-            <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
-                $<?php echo get_field('price')-100;?>/位</span>
+            <div class="one-ppl-discount">
+                <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
+                    $<?php echo get_field('price')-100;?>/位</span>
+            </div>
 
-
-            <span class="price me-2">$<?php echo get_field('price');?>/位</span>
-
+            <div class="one-ppl-no-discount">
+                <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+            </div>
 
 
             <div class="mb-5 mt-4">
