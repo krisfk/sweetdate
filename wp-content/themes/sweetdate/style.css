@@ -685,6 +685,64 @@ a.pink:hover {
     text-decoration: line-through;
 }
 
+.lightbox-bg-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s all;
+}
+
+.lightbox-bg-btn:hover {
+    opacity: 0.85;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(62 72 94 / 80%);
+    z-index: 9999;
+}
+
+.lightbox-content {
+    display: block;
+    max-width: 90%;
+    /* height: 100px; */
+    max-height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    padding: 1rem;
+    border: 4px solid #2d4068;
+    transform: translate(0px, -50%);
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: max-content;
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
+    /* overflow: hidden; */
+}
+
+.lightbox-content .close-btn {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    transition: 0.2s all;
+}
+
+.lightbox-content .close-btn:hover {
+    opacity: 0.85;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}

@@ -38,6 +38,19 @@ session_start();
     <?php wp_body_open(); ?>
 
 
+    <div class="lightbox" style="">
+        <div class="lightbox-bg-btn ">
+        </div>
+        <div class="lightbox-content lightbox-msg" style="">
+            <a href="javascript:void(0);" class="close-btn">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/close-btn.png" alt="">
+            </a>
+            <span class="lightbox-msg-txt d-block p-3"></span>
+        </div>
+    </div>
+
+
+
 
     <?php
 
