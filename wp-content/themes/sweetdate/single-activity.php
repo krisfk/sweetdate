@@ -235,6 +235,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 $('#agree-decide-other-date').change(function() {
 
                     if ($(this).is(":checked")) {
+                        $('.one-ppl-discount').fadeIn(0);
+                        $('.one-ppl-no-discount').fadeOut(0);
 
                     }
                 })
