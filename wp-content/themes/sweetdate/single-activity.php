@@ -15,7 +15,9 @@ get_header();
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
     //  $_SESSION['paid'] ='';
-         unset ($_SESSION["paid"]);
+     unset ($_SESSION["paid"]);
+     unset($_POST);
+
         global $wp;
         $current_url = home_url(add_query_arg(array(), $wp->request));
         
