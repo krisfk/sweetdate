@@ -212,7 +212,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                                 ?>
-                                <select readonly required id="any-date" name="any-date" class="form-select any-date"
+                                <select required id="any-date" name="any-date" class="form-select any-date"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <?php
