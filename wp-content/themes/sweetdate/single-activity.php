@@ -874,6 +874,9 @@ $(function() {
 
     $('#any-date').change(function() {
 
+        if ($('.any-date') != '') {
+            $('#agree-decide-other-date').attr('checked', 'checked');
+        }
         $('.any-date').val($(this).val());
 
     })
