@@ -232,7 +232,7 @@ get_header();
                                             <?php 
                                             for($i=0;$i<count($date_arr);$i++)
                                             {
-                                                echo $date_arr[$i];
+                                                echo $date_arr[$i].'<br>';
                                             }
                                             ?>
 
@@ -249,7 +249,7 @@ get_header();
                                             <?php 
                                             for($i=0;$i<count($time_arr);$i++)
                                             {
-                                                echo $time_arr[$i];
+                                                echo $time_arr[$i].'<br>';
                                             }
                                             ?>
 
