@@ -203,10 +203,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                                 <select required id="age" name="age" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="20-29">20-29</option>
-                                    <option value="30-34">30-34</option>
-                                    <option value="35-39">35-39</option>
-                                    <option value="40或以上">40或以上</option>
+                                    <option value="星期五">星期五</option>
+                                    <option value="星期六">星期六</option>
+                                    <option value="星期日">星期日</option>
                                 </select>
                             </td>
                         </tr>
