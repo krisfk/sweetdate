@@ -212,7 +212,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                                 ?>
-                                <select required id="any-date" name="any-date" class="form-select" aria-label="">
+                                <select required id="any-date" name="any-date" class="form-select any-date"
+                                    aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <?php
                                     for($i=0;$i<count($random_date_select_option_arr);$i++)
@@ -390,7 +391,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 <form action="" class="login-form" id="payment-form" method="post">
 
 
-                    <select required id="any-date" name="any-date" class="form-select" aria-label="">
+                    <select required id="any-date" name="any-date" class="form-select any-date" aria-label="">
                         <option value="" selected="">選擇</option>
                         <?php
                                     for($i=0;$i<count($random_date_select_option_arr);$i++)
@@ -844,6 +845,12 @@ $(function() {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(200);
 
+    })
+
+
+    $('#any-date').change(function() {
+
+        $('.any-date').val($(this).val());
     })
 })
 
