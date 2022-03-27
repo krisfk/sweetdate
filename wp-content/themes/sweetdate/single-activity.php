@@ -188,7 +188,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 {
                     ?>
 
-            <div class="one-ppl-discount">
+            <div class="one-ppl-discount" style="display:none;">
                 <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
                     $<?php echo get_field('price')-100;?>/位</span>
             </div>
