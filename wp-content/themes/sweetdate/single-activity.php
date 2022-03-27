@@ -843,7 +843,7 @@ $(function() {
 
 
     $('#payment-form').submit(function() {
-        if ($('#agree-decide-other-date').is(":checked") && !$('#any-date').val()) {
+        if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
             alert(4);
         }
     })
