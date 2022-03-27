@@ -240,11 +240,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         $('.one-ppl-no-discount').fadeOut(0);
 
                         $('.final-price').html('<?php echo get_field('price')-100;?>');
+                        $('input[name="final-price"]').val('<?php echo get_field('price')-100;?>');
 
                     } else {
                         $('.one-ppl-discount').fadeOut(0);
                         $('.one-ppl-no-discount').fadeIn(0);
                         $('.final-price').html('<?php echo get_field('price');?>');
+                        $('input[name="final-price"]').val('<?php echo get_field('price');?>');
+
 
                         $('.any-date').val('');
 
