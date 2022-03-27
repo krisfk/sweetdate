@@ -860,19 +860,20 @@ $(function() {
 
 
     $('.reg-btn').click(function() {
-        if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
 
-            $('.lightbox').fadeIn(200);
-            $('.lightbox-msg-txt').html('請選擇其他日子選項');
-            // $('.close-btn').fadeOut(0);
-            // $('.cover').fadeIn(0);
-
-        }
     })
 
     $('.reg-btn').click(function() {
-        $('.step').fadeOut(0);
-        $('.step.step-2').fadeIn(200);
+
+        if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html('請選擇其他日子選項');
+        } else {
+
+            $('.step').fadeOut(0);
+            $('.step.step-2').fadeIn(200);
+        }
+
 
     })
 
