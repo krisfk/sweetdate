@@ -344,6 +344,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                 <form action="" class="login-form">
+
+
                     <input type="hidden" name="form-type" value="login">
                     <table>
                         <tbody>
@@ -386,6 +388,18 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
             <div class="position-relative mt-4">
                 <form action="" class="login-form" id="payment-form" method="post">
+
+
+                    <select required id="age" name="any-date" class="form-select" aria-label="">
+                        <option value="" selected="">選擇</option>
+                        <?php
+                                    for($i=0;$i<count($random_date_select_option_arr);$i++)
+                                    {
+                                     echo '<option value="'.$random_date_select_option_arr[$i].'">'.$random_date_select_option_arr[$i].'</option>';   
+                                    }
+                                    ?>
+                    </select>
+
                     <input type="hidden" name="form-type" value="reg">
                     <table>
                         <tbody>
