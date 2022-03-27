@@ -842,7 +842,7 @@ if($_POST['form-type']=='reg')
 $(function() {
 
 
-    $('#payment-form').submit(function() {
+    $('.reg-btn').click(function() {
         if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
             alert(4);
         }
