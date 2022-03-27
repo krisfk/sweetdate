@@ -221,10 +221,10 @@ get_header();
                        ?>
 
 
-                            <ul class="news-act-info-ul row">
+                            <ul class="news-act-info-ul row gx-0">
                                 <li class="col-6">
                                     <div class="d-table">
-                                        <div class="d-table-cell pe-1">
+                                        <div class="d-table-cell pe-3">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
                                                 alt="">
                                         </div>
@@ -242,7 +242,7 @@ get_header();
 
                                 <li class="col-6">
                                     <div class="d-table">
-                                        <div class="d-table-cell pe-1">
+                                        <div class="d-table-cell pe-3">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
                                                 alt="">
                                         </div>
