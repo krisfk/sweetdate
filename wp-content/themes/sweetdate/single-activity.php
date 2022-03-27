@@ -246,6 +246,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         $('.one-ppl-no-discount').fadeIn(0);
                         $('.final-price').html('<?php echo get_field('price');?>');
 
+                        $('.any-date').val('');
+
 
                     }
                 })
@@ -873,6 +875,7 @@ $(function() {
     $('#any-date').change(function() {
 
         $('.any-date').val($(this).val());
+
     })
 })
 
