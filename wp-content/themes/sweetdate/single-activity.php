@@ -859,9 +859,7 @@ if($_POST['form-type']=='reg')
 $(function() {
 
 
-    $('.reg-btn').click(function() {
 
-    })
 
     $('.reg-btn').click(function() {
 
@@ -870,6 +868,9 @@ $(function() {
             $('.lightbox-msg-txt').html('請選擇其他日子選項');
         } else {
 
+
+            $('#agree-decide-other-date').attr('disabled', 'disabled');
+            $('#any-date').attr('disabled', 'disabled');
             $('.step').fadeOut(0);
             $('.step.step-2').fadeIn(200);
         }
