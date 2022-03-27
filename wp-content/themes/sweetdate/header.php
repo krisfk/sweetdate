@@ -32,6 +32,18 @@ session_start();
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
 
+    <script type="text/javascript">
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27) { // ESC
+            $('.lightbox').fadeOut(0);
+
+
+        }
+    });
+    $('.close-btn,.lightbox-bg-btn').click(function() {
+        $('.lightbox').fadeOut(0);
+    })
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
