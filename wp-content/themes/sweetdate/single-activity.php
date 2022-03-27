@@ -237,6 +237,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     if ($(this).is(":checked")) {
                         $('.one-ppl-discount').fadeIn(0);
                         $('.one-ppl-no-discount').fadeOut(0);
+                    } else {
+                        $('.one-ppl-discount').fadeOut(0);
+                        $('.one-ppl-no-discount').fadeIn(0);
 
                     }
                 })
