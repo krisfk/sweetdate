@@ -239,23 +239,7 @@ get_header();
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="d-table">
-                                        <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
-                                                alt="">
-                                        </div>
-                                        <div class="d-table-cell">
-                                            <?php 
-                                            // for($i=0;$i<count($time_arr);$i++)
-                                            // {
-                                            //     echo $time_arr[$i].'<br>';
-                                            // }
-                                            ?>
 
-                                        </div>
-                                    </div>
-                                </li>
                                 <li>
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
