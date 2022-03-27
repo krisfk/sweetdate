@@ -221,28 +221,30 @@ get_header();
                        ?>
 
 
-                            <ul class="news-act-info-ul row gx-0">
-                                <li class="col-6">
+                            <ul class="news-act-info-ul">
+                                <li>
                                     <div class="d-table">
-                                        <div class="d-table-cell pe-2">
+                                        <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
-                                            <?php 
-                                            for($i=0;$i<count($date_arr);$i++)
-                                            {
-                                                echo $date_arr[$i].'('.$time_arr[$i].')<br>';
-                                            }
-                                            ?>
-
-                                        </div>
+                                            <?php echo get_field('activity_date');?></div>
                                     </div>
                                 </li>
-
-                                <li class="col-6">
+                                <li>
                                     <div class="d-table">
-                                        <div class="d-table-cell pe-2">
+                                        <div class="d-table-cell pe-1">
+                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
+                                                alt="">
+                                        </div>
+                                        <div class="d-table-cell">
+                                            <?php echo get_field('activity_time');?></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-table">
+                                        <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
                                                 alt="">
                                         </div>
@@ -252,8 +254,6 @@ get_header();
                                     </div>
                                 </li>
                             </ul>
-
-
 
                         </div>
 
