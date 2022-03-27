@@ -727,6 +727,10 @@ if($_POST['form-type']=='reg')
         if($charge->paid)
         {
 
+            date_default_timezone_set('Asia/Hong_Kong');
+
+            
+
             // print_r()
             $balance_transaction = $charge->balance_transaction;
 
