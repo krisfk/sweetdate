@@ -213,9 +213,6 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                      echo '<option value="'.$random_date_select_option_arr[$i].'">'.$random_date_select_option_arr[$i].'</option>';   
                                     }
                                     ?>
-                                    <!-- <option value="星期五">星期五</option>
-                                    <option value="星期六">星期六</option>
-                                    <option value="星期日">星期日</option> -->
                                 </select>
                             </td>
                         </tr>
@@ -702,6 +699,7 @@ if($_POST['form-type']=='reg')
                     add_post_meta($post_id, 'age', $age);
                     add_post_meta($post_id, 'like_food', $like_food);
                     add_post_meta($post_id, 'dislike_food', $dislike_food);
+                    add_post_meta($post_id, 'number_of_people_apply', 2);
                 }
                 $row = array(
                     'transaction_id'   => $balance_transaction,
@@ -738,7 +736,8 @@ if($_POST['form-type']=='reg')
                     add_post_meta($post_id, 'first_name', $first_name);
                     add_post_meta($post_id, 'age', $age);
                     add_post_meta($post_id, 'like_food', $like_food);
-                    add_post_meta($post_id, 'dislike_food', $dislike_food);   
+                    add_post_meta($post_id, 'dislike_food', $dislike_food);
+                    add_post_meta($post_id, 'number_of_people_apply', 2);   
                 }
 
                 $row = array(
