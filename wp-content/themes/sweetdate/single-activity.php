@@ -187,6 +187,11 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 if($_GET['person']==1)
                 {
                     ?>
+
+            <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
+                $<?php echo get_field('price')-100;?>/位</span>
+
+
             <span class="price me-2">$<?php echo get_field('price');?>/位</span>
 
 
@@ -229,7 +234,6 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                     if ($(this).is(":checked")) {
 
-                        alert(5);
                     }
                 })
             })
