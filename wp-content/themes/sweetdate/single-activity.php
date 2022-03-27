@@ -415,7 +415,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                         </tbody>
 
-                        <?php                 if($_GET['person']==1 ||$_GET['person']!=2)
+                        <?php                 if($_GET['person']==2 )
 
 {
     ?>
