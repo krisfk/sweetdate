@@ -635,7 +635,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 if($_GET['person']==1)
                                 {
                                   ?>
-                                    <span class="final-price"></span>
+                                    <span class="final-price"><?php echo get_field('price');?></span>
                                     <?php
                                 }
                                 
