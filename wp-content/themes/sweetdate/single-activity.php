@@ -227,10 +227,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                 $('#agree-decide-other-date').change(function() {
 
-                    if ($(this).is(":checked") {
+                    if ($(this).is(":checked")) {
 
-                            alert(5);
-                        })
+                        alert(5);
+                    }
                 })
             })
             </script>
