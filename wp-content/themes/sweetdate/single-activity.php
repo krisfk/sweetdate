@@ -238,9 +238,15 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     if ($(this).is(":checked")) {
                         $('.one-ppl-discount').fadeIn(0);
                         $('.one-ppl-no-discount').fadeOut(0);
+
+                        $('.final-price').html('<?php echo get_field('price')-100;?>');
+
                     } else {
                         $('.one-ppl-discount').fadeOut(0);
                         $('.one-ppl-no-discount').fadeIn(0);
+                        $('.final-price').html(''
+                            <?php echo get_field('price');?> '');
+
 
                     }
                 })
@@ -626,6 +632,16 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     echo get_field('two_people_discount_price').' x 2 = $'.get_field('two_people_discount_price')*2;
                                     $final_price=   get_field('two_people_discount_price')*2;
                                 }
+                                
+                                if($_GET['person']==1)
+                                {
+                                  ?>
+                                    <div class="final-price"></div>
+                                    <?php
+                                }
+                                
+                                
+
                                 ?>
                                     <input type="hidden" name="final-price" value="<?php echo $final_price; ?>">
                                     <input type="hidden" name="person" value="<?php echo $_GET['person'];?>">
@@ -844,7 +860,7 @@ $(function() {
 
     $('.reg-btn').click(function() {
         if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
-            alert(4);
+
         }
     })
 
