@@ -615,9 +615,7 @@ if($_POST['form-type']=='reg')
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
-        // print_r()
-        // echo 1234567;
-
+        
         
         if($charge->paid)
         {
@@ -699,17 +697,7 @@ if($_POST['form-type']=='reg')
                     'non_member_info_url' => $post_id
                 );
                 add_row('applied_non_member', $row);
-                
-                
-
-
-         
-    
-
-                
-                
-
-                
+              
     
             }
             
