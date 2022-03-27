@@ -862,6 +862,8 @@ if($_POST['form-type']=='reg')
             $(function() {
                 $('.step').fadeOut(0);
                 $('.step.step-3').fadeIn(200);
+                $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
+
 
             })
             </script>
