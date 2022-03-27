@@ -205,6 +205,22 @@ get_header();
 
 
                         <div>
+
+
+
+                            <?php
+                            $date_arr = [];
+                            $time_arr=[];
+                        while(have_rows('activity_date_and_time') ){ the_row(); 
+                            array_push($date_arr, get_sub_field('activity_date'));
+                            array_push($time_arr, get_sub_field('activity_time'));
+
+                       }
+
+                       
+                       ?>
+
+
                             <ul class="news-act-info-ul">
                                 <li>
                                     <div class="d-table">
@@ -213,7 +229,14 @@ get_header();
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
-                                            <?php echo get_field('activity_date');?></div>
+                                            <?php 
+                                            for($i=0;$i<count($date_arr);$i++)
+                                            {
+                                                echo $date_arr[$i];
+                                            }
+                                            ?>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -223,7 +246,14 @@ get_header();
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
-                                            <?php echo get_field('activity_time');?></div>
+                                            <?php 
+                                            for($i=0;$i<count($time_arr);$i++)
+                                            {
+                                                echo $time_arr[$i];
+                                            }
+                                            ?>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
