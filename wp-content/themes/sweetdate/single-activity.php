@@ -876,6 +876,8 @@ $(function() {
 
         if ($('.any-date') != '') {
             $('#agree-decide-other-date').attr('checked', 'checked');
+        } else {
+            $('#agree-decide-other-date').removeAttr('checked');
         }
         $('.any-date').val($(this).val());
 
