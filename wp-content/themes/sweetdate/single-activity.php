@@ -862,6 +862,11 @@ $(function() {
     $('.reg-btn').click(function() {
         if ($('#agree-decide-other-date').is(":checked") && $('#any-date').val() == '') {
 
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html('請選擇其他日子選項');
+            // $('.close-btn').fadeOut(0);
+            // $('.cover').fadeIn(0);
+
         }
     })
 
