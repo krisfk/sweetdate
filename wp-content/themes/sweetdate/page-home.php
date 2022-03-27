@@ -221,8 +221,8 @@ get_header();
                        ?>
 
 
-                            <ul class="news-act-info-ul">
-                                <li>
+                            <ul class="news-act-info-ul row">
+                                <li class="col-6">
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
@@ -240,7 +240,7 @@ get_header();
                                     </div>
                                 </li>
 
-                                <li>
+                                <li class="col-6">
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
                                             <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
