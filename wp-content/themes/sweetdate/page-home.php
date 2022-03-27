@@ -232,7 +232,7 @@ get_header();
                                             <?php 
                                             for($i=0;$i<count($date_arr);$i++)
                                             {
-                                                echo $date_arr[$i].'<br>';
+                                                echo $date_arr[$i].'('.$time_arr[$i].')<br>';
                                             }
                                             ?>
 
@@ -247,10 +247,10 @@ get_header();
                                         </div>
                                         <div class="d-table-cell">
                                             <?php 
-                                            for($i=0;$i<count($time_arr);$i++)
-                                            {
-                                                echo $time_arr[$i].'<br>';
-                                            }
+                                            // for($i=0;$i<count($time_arr);$i++)
+                                            // {
+                                            //     echo $time_arr[$i].'<br>';
+                                            // }
                                             ?>
 
                                         </div>
