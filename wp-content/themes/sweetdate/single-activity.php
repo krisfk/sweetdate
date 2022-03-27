@@ -192,7 +192,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <div class="mb-5 mt-4">
-                <div class="checkbox-div "><input type="checkbox" class="form-check-input me-2"
+                <div class="checkbox-div"><input type="checkbox" class="form-check-input me-2"
                         id="agree-decide-other-date" name="" value=""><label
                         for="agree-decide-other-date">接受指定日子以外的日子(如接受有-$100優惠)</label>
 
@@ -200,12 +200,22 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         <tr>
                             <td>其他日子選項：</td>
                             <td>
+                                <?php
+                                $random_date_select_option_arr= get_field('random_date_select_option');
 
-                                <select required id="age" name="age" class="form-select" aria-label="">
+
+                                ?>
+                                <select required id="age" name="any-date" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="星期五">星期五</option>
+                                    <?php
+                                    for($i=0;$i<count($random_date_select_option_arr);$i++)
+                                    {
+                                     echo '<option value="'.$random_date_select_option_arr[$i].'">'.$random_date_select_option_arr[$i].'</option>';   
+                                    }
+                                    ?>
+                                    <!-- <option value="星期五">星期五</option>
                                     <option value="星期六">星期六</option>
-                                    <option value="星期日">星期日</option>
+                                    <option value="星期日">星期日</option> -->
                                 </select>
                             </td>
                         </tr>
