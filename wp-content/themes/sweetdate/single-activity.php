@@ -233,24 +233,23 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <script type="text/javascript">
             $(function() {
 
-                        $('#agree-decide-other-date').change(function() {
+                $('#agree-decide-other-date').change(function() {
 
-                                if ($(this).is(":checked")) {
-                                    $('.one-ppl-discount').fadeIn(0);
-                                    $('.one-ppl-no-discount').fadeOut(0);
+                    if ($(this).is(":checked")) {
+                        $('.one-ppl-discount').fadeIn(0);
+                        $('.one-ppl-no-discount').fadeOut(0);
 
-                                    $('.final-price').html('<?php echo get_field('price')-100;?>');
+                        $('.final-price').html('<?php echo get_field('price')-100;?>');
 
-                                } else {
-                                    $('.one-ppl-discount').fadeOut(0);
-                                    $('.one-ppl-no-discount').fadeIn(0);
-                                    $('.final-price').html('
-                                        <?php echo get_field('price');?> ');
+                    } else {
+                        $('.one-ppl-discount').fadeOut(0);
+                        $('.one-ppl-no-discount').fadeIn(0);
+                        $('.final-price').html('<?php echo get_field('price');?>');
 
 
-                                    }
-                                })
-                        })
+                    }
+                })
+            })
             </script>
 
             <?php
