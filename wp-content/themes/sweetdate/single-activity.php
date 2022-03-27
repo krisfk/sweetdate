@@ -199,8 +199,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <div class="mb-5 mt-4">
-                <div class="checkbox-div"><input type="checkbox" class="form-check-input me-2"
-                        id="agree-decide-other-date" name="" value=""><label
+                <div class="checkbox-div agree-decide-other-date-div"><input type="checkbox"
+                        class="form-check-input me-2" id="agree-decide-other-date" name="" value=""><label
                         for="agree-decide-other-date">接受指定日子以外的日子(如接受有-$100優惠)</label>
 
                     <table class="mx-auto  mt-2">
@@ -212,7 +212,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                                 ?>
-                                <select required id="any-date" name="any-date" class="form-select any-date"
+                                <select readonly required id="any-date" name="any-date" class="form-select any-date"
                                     aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <?php
