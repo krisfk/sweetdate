@@ -415,6 +415,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                         </tbody>
 
+                        <?php                 if($_GET['person']==1 ||$_GET['person']!=2)
+
+{
+    ?>
                         <tbody class="another-friend-tbody">
                             <tr>
                                 <td colspan="2" class="border-0">
@@ -517,6 +521,11 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td></td>
                             </tr>
                         </tbody>
+                        <?php
+
+}
+?>
+
                         <tbody>
                             <tr>
                                 <td colspan="2" class="border-0">
