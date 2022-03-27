@@ -841,6 +841,13 @@ if($_POST['form-type']=='reg')
 <script type="text/javascript">
 $(function() {
 
+
+    $('#payment-form').submit(function() {
+        if ($('#agree-decide-other-date').is(":checked") && !$('#any-date').val()) {
+            alert(4);
+        }
+    })
+
     $('.reg-btn').click(function() {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(200);
