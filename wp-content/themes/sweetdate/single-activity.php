@@ -727,6 +727,7 @@ if($_POST['form-type']=='reg')
         if($charge->paid)
         {
 
+            // print_r()
             $balance_transaction = $charge->balance_transaction;
 
             if($_POST['person']==1)
@@ -758,13 +759,14 @@ if($_POST['form-type']=='reg')
                     add_post_meta($post_id, 'age', $age);
                     add_post_meta($post_id, 'like_food', $like_food);
                     add_post_meta($post_id, 'dislike_food', $dislike_food);
-                    add_post_meta($post_id, 'random_date_select', $random_date_select);
+                    // add_post_meta($post_id, 'random_date_select', $random_date_select);
 
                 }
                 $row = array(
                     'transaction_id'   => $balance_transaction,
                     'date_of_purchase' => date('d-m-y h:i:s'),
-                    'non_member_info_url' => $post_id
+                    'non_member_info_url' => $post_id,
+                    'random_date_select' => $random_date_select
                 );
                 add_row('applied_non_member', $row);
                 
