@@ -205,14 +205,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                     <table class="mx-auto  mt-2">
                         <tr>
-                            <td>其他日子選項：</td>
+                            <td> <label for="any-date">其他日子選項：</label></td>
                             <td>
                                 <?php
                                 $random_date_select_option_arr= get_field('random_date_select_option');
 
 
                                 ?>
-                                <select required id="age" name="any-date" class="form-select" aria-label="">
+                                <select required id="any-date" name="any-date" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <?php
                                     for($i=0;$i<count($random_date_select_option_arr);$i++)
@@ -390,7 +390,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 <form action="" class="login-form" id="payment-form" method="post">
 
 
-                    <select required id="age" name="any-date" class="form-select" aria-label="">
+                    <select required id="any-date" name="any-date" class="form-select" aria-label="">
                         <option value="" selected="">選擇</option>
                         <?php
                                     for($i=0;$i<count($random_date_select_option_arr);$i++)
