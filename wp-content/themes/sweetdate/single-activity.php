@@ -171,12 +171,6 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
             <!-- <input type="checkbox">接受指定日子以外的日子(其他日子，如接受有-$100 優惠) -->
 
-            <div class="">
-                <div class="checkbox-div"><input type="checkbox" class="form-check-input me-2" id="" name=""
-                        value=""><label for="">接受指定日子以外的日子(其他日子，如接受有-$100
-                        優惠)</label>
-                </div>
-            </div>
 
             <?php 
                 if($_GET['person']==2)
@@ -194,6 +188,15 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 {
                     ?>
             <span class="price me-2">$<?php echo get_field('price');?>/位</span>
+
+
+
+            <div class="">
+                <div class="checkbox-div"><input type="checkbox" class="form-check-input me-2" id="" name=""
+                        value=""><label for="">接受指定日子以外的日子(其他日子，如接受有-$100
+                        優惠)</label>
+                </div>
+            </div>
 
             <?php
                 }
