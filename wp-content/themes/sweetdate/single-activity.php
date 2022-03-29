@@ -993,9 +993,9 @@ $(function() {
 
     $('.first.login-form').submit(function() {
 
-        $login_email = $('#login-email').val();
-        $login_password = $('#login-password').val();
-        alert($login_email + ' '.login_password);
+        var login_email = $('#login-email').val();
+        var login_password = $('#login-password').val();
+        alert(login_email + ' '.login_password);
         return false;
     })
 
