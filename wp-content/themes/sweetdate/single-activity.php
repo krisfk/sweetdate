@@ -874,8 +874,7 @@ if($_POST['form-type']=='reg')
                 // echo 12345678;
                 
 
-                // if(!$_POST['is-member'])
-                if(true)
+                if(false)
                 {
 
                      //1st person
