@@ -825,6 +825,7 @@ if($_POST['form-type']=='reg')
         // echo $charge->paid;
         // print_r($charge);
         print_r($charge);
+        
 
         
         if($charge->paid)
@@ -884,8 +885,8 @@ if($_POST['form-type']=='reg')
             if($_POST['person']==2)
             {
                 // echo 12345678;
-                // echo $_POST['is-member'];
-                // echo 999;
+                echo $_POST['is-member'];
+                echo 999;
                 
 
                 if(!$_POST['is-member'])
