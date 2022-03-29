@@ -718,7 +718,7 @@ add_action( 'rest_api_init', 'sweetdate_route');
 function sweetdate_route() {
 
 register_rest_route( 'api', '/member-login/', array(
-	'methods'  => 'POST',
+	'methods'  => 'GET',
 	'callback' => 'member_login'
 	)
 );
@@ -726,37 +726,36 @@ register_rest_route( 'api', '/member-login/', array(
 	
 function member_login($request)
 {
-    $email = $request['login_email'];
-    $password = $request['login_password'];
-    // $from_post = $request['from_post'];
+    // $email = $request['login_email'];
+    // $password = $request['login_password'];
 
-    $args = array(
-        'post_type'  => 'member',
-        'meta_query' => array(
-            array(
-                'key'     => 'email',
-                'value'   => $email,
-            ),
-            array(
-                'key'     => 'password',
-                'value'   => $password,
-            ),
-        ),
-    );
-    $query = new WP_Query( $args );
+    // $args = array(
+    //     'post_type'  => 'member',
+    //     'meta_query' => array(
+    //         array(
+    //             'key'     => 'email',
+    //             'value'   => $email,
+    //         ),
+    //         array(
+    //             'key'     => 'password',
+    //             'value'   => $password,
+    //         ),
+    //     ),
+    // );
+    // $query = new WP_Query( $args );
 
-    if($query->have_posts())
-    {
-        $query->the_post();
+    // if($query->have_posts())
+    // {
+    //     $query->the_post();
 
-		$_SESSION['login_member_id']=get_field('member_id');
+	// 	$_SESSION['login_member_id']=get_field('member_id');
 
-        echo json_encode(array("status"=>"1", "msg"=>"login successfully"));        
-    }
-    else
-    {
-        echo json_encode(array("status"=>"-1", "msg"=>"login fail"));       
-    }
+    //     echo json_encode(array("status"=>"1", "msg"=>"login successfully"));        
+    // }
+    // else
+    // {
+    //     echo json_encode(array("status"=>"-1", "msg"=>"login fail"));       
+    // }
     
     
 
