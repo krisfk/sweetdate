@@ -796,7 +796,8 @@ if($_POST['form-type']=='reg')
     
     // echo $_POST['name'];
     // echo $charge_final_price;
-    Number($_POST['final-price']*100);
+    // Number($_POST['final-price']*100)
+    echo $_POST['final-price']*100;
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
