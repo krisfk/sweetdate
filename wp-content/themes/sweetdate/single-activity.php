@@ -995,7 +995,30 @@ $(function() {
 
         var login_email = $('#login-email').val();
         var login_password = $('#login-password').val();
-        alert(login_email + ' ' + login_password);
+        $.ajax({
+            type: "POST",
+            url: '/wp-json/api/member-login',
+            data: {
+                login_email: login_email,
+                login_password: login_password
+            },
+            dataType: "json",
+            success: function(data) {
+                // console.log(data);
+                if (data.status === '1') {
+
+                    alert('logined');
+                    // window.location = "";
+                }
+
+                if (data.status === '-1') {
+                    alert('登入電郵或密碼不正確');
+                    // alert('!');
+                    // $('#captcha-txt').next().next('.error').html(err8_str);
+                }
+            }
+        });
+
         return false;
     })
 
