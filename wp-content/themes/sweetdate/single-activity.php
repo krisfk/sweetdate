@@ -12,11 +12,11 @@
 get_header();
 // session_start();
 
-if($_POST['form-type']=='reg' && $_SESSION['paid'])
+if($_REQUEST['form-type']=='reg' && $_SESSION['paid'])
 {
     //  $_SESSION['paid'] ='';
      unset ($_SESSION["paid"]);
-     unset($_POST);
+     unset($_REQUEST);
 
         global $wp;
         $current_url = home_url(add_query_arg(array(), $wp->request));
@@ -338,9 +338,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         </div>
 
         <?php
-        $charge_final_price = $_POST['final-price']*100;
+        $charge_final_price = $_REQUEST['final-price']*100;
         // echo $charge_final_price;
-        // echo $_POST['final-price'];
+        // echo $_REQUEST['final-price'];
         // echo $_SESSION['login_member_id'];
 
         if($_SESSION['login_member_id'])
@@ -766,10 +766,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             // echo $_SESSION['login_member_id'];
             // echo $_SESSION['mid'];
             
-            // echo $_POST['is-member'];
-            // echo $_POST['is-member'];
+            // echo $_REQUEST['is-member'];
+            // echo $_REQUEST['is-member'];
             
-if($_POST['form-type']=='reg')
+if($_REQUEST['form-type']=='reg')
 {
 
 //   echo 999999999999;
@@ -788,18 +788,18 @@ if($_POST['form-type']=='reg')
 
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
 
-    $token = $_POST['stripeToken'];
+    $token = $_REQUEST['stripeToken'];
     
-    $IMEI = $_POST['ImeiNum'];
+    $IMEI = $_REQUEST['ImeiNum'];
     // echo $token.' '.$charge_final_price.' '.$IMEI;
 
     
-    // echo $_POST['name'];
+    // echo $_REQUEST['name'];
     // echo $charge_final_price;
-    // Number($_POST['final-price']*100)
+    // Number($_REQUEST['final-price']*100)
     try {
         $charge = \Stripe\Charge::create(array(
-        //   "amount" => $_POST('final-price')*100,
+        //   "amount" => $_REQUEST('final-price')*100,
         "amount" => $charge_final_price,
         // $charge_final_price,
 
@@ -809,8 +809,8 @@ if($_POST['form-type']=='reg')
           "metadata" => array("IMEI" => $IMEI))
           
 
-        //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
-          //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
+        //   '['.get_field('activity_title').']'.' '.$_REQUEST['first-name'])
+          //get_field('activity_title').' '.$_REQUEST['first-name'].' '.$_REQUEST('register-email').' '.$_REQUEST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
@@ -825,25 +825,25 @@ if($_POST['form-type']=='reg')
             // print_r()
             $balance_transaction = $charge->balance_transaction;
 
-            if($_POST['person']==1)
+            if($_REQUEST['person']==1)
             {
                 $post_id = wp_insert_post(array (
                     'post_type' => 'nonmember',
-                    'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
+                    'post_title' =>$_REQUEST['first-name'].' '.$_REQUEST['last-name'],
                     'post_status' => 'publish',
                     'comment_status' => 'closed',   // if you prefer
                     'ping_status' => 'closed',      // if you prefer
                 ));
 
                 $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                $register_email=$_POST['register-email'];
-                $tel=$_POST['tel'];
-                $gender=$_POST['gender'];
-                $first_name=$_POST['first-name'];
-                $age = $_POST['age'];
-                $like_food=$_POST['like-food'];
-                $dislike_food=$_POST['dislike-food'];
-                $random_date_select=$_POST['any-date'];
+                $register_email=$_REQUEST['register-email'];
+                $tel=$_REQUEST['tel'];
+                $gender=$_REQUEST['gender'];
+                $first_name=$_REQUEST['first-name'];
+                $age = $_REQUEST['age'];
+                $like_food=$_REQUEST['like-food'];
+                $dislike_food=$_REQUEST['dislike-food'];
+                $random_date_select=$_REQUEST['any-date'];
                 
                 if ($post_id) {
                     add_post_meta($post_id, 'non_member_id', $nonmember_id);
@@ -869,7 +869,7 @@ if($_POST['form-type']=='reg')
             }
 
 
-            if($_POST['person']==2)
+            if($_REQUEST['person']==2)
             {
                 // echo 12345678;
                 
@@ -880,20 +880,20 @@ if($_POST['form-type']=='reg')
                      //1st person
                     $post_id = wp_insert_post(array (
                         'post_type' => 'nonmember',
-                        'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
+                        'post_title' =>$_REQUEST['first-name'].' '.$_REQUEST['last-name'],
                         'post_status' => 'publish',
                         'comment_status' => 'closed',   // if you prefer
                         'ping_status' => 'closed',      // if you prefer
                     ));
                 
                     $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                    $register_email=$_POST['register-email'];
-                    $tel=$_POST['tel'];
-                    $gender=$_POST['gender'];
-                    $first_name=$_POST['first-name'];
-                    $age = $_POST['age'];
-                    $like_food=$_POST['like-food'];
-                    $dislike_food=$_POST['dislike-food'];
+                    $register_email=$_REQUEST['register-email'];
+                    $tel=$_REQUEST['tel'];
+                    $gender=$_REQUEST['gender'];
+                    $first_name=$_REQUEST['first-name'];
+                    $age = $_REQUEST['age'];
+                    $like_food=$_REQUEST['like-food'];
+                    $dislike_food=$_REQUEST['dislike-food'];
                     
                     if ($post_id) {
                         add_post_meta($post_id, 'non_member_id', $nonmember_id);
@@ -928,20 +928,20 @@ if($_POST['form-type']=='reg')
                 //2nd person
                 $post_id = wp_insert_post(array (
                     'post_type' => 'nonmember',
-                    'post_title' =>$_POST['first-name-2'].' '.$_POST['last-name-2'],
+                    'post_title' =>$_REQUEST['first-name-2'].' '.$_REQUEST['last-name-2'],
                     'post_status' => 'publish',
                     'comment_status' => 'closed',   // if you prefer
                     'ping_status' => 'closed',      // if you prefer
                 ));
                 
                 $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                $register_email=$_POST['register-email-2'];
-                $tel=$_POST['tel-2'];
-                $gender=$_POST['gender-2'];
-                $first_name=$_POST['first-name-2'];
-                $age = $_POST['age-2'];
-                $like_food=$_POST['like-food-2'];
-                $dislike_food=$_POST['dislike-food-2'];
+                $register_email=$_REQUEST['register-email-2'];
+                $tel=$_REQUEST['tel-2'];
+                $gender=$_REQUEST['gender-2'];
+                $first_name=$_REQUEST['first-name-2'];
+                $age = $_REQUEST['age-2'];
+                $like_food=$_REQUEST['like-food-2'];
+                $dislike_food=$_REQUEST['dislike-food-2'];
             
               
                 if ($post_id) {
@@ -998,7 +998,7 @@ if($_POST['form-type']=='reg')
 
 
         </div>
-        <?php //echo $_POST['final-price']*100;?>
+        <?php //echo $_REQUEST['final-price']*100;?>
         <div class="step step-3 text-center mt-5">
             <?php 
 
