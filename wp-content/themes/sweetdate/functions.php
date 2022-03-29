@@ -734,11 +734,11 @@ function member_login($request)
         'post_type'  => 'member',
         'meta_query' => array(
             array(
-                'key'     => 'email',
+                'key'     => 'login_email',
                 'value'   => $email,
             ),
             array(
-                'key'     => 'password',
+                'key'     => 'login_password',
                 'value'   => $password,
             ),
         ),
