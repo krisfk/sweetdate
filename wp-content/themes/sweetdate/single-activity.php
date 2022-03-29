@@ -998,7 +998,7 @@ $(function() {
         var login_password = $('#login-password').val();
         $.ajax({
             type: "POST",
-            url: '/wp-json/api/member-login',
+            url: '<?php echo get_site_url();?>/wp-json/api/member-login',
             data: {
                 login_email: login_email,
                 login_password: login_password
