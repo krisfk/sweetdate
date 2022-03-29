@@ -437,7 +437,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     <input type="hidden" name="form-type" value="reg">
                     <table>
                         <tbody>
-
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
 
                             <tr>
                                 <td class="text-end"><label for="register-email">登記電郵：*</label></td>
