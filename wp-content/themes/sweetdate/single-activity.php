@@ -895,7 +895,7 @@ if($_POST['form-type']=='reg')
                     add_post_meta($post_id, 'dislike_food', $dislike_food);
                 }
                 $row = array(
-                    'non_member_id' => $_SESSION['login_member_id'],
+                    'non_member_id' => $nonmember_id,
                     'transaction_id'   => $balance_transaction,
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id
@@ -946,6 +946,7 @@ if($_POST['form-type']=='reg')
                 }
 
                 $row = array(
+                    'non_member_id' => $nonmember_id,
                     'transaction_id'   => $balance_transaction,
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id
