@@ -1012,7 +1012,7 @@ $(function() {
 
 
 
-    if (localStorage.getItem('loginned')) {
+    if (<?php if($_SESSION['login_member_id']) { echo true;}  ?>) {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(0);
         $('#is-member').val(1);
@@ -1037,8 +1037,8 @@ $(function() {
 
                     // $('.lightbox').fadeIn(200);
                     // $('.lightbox-msg-txt').html('登入成功');
-                    localStorage.setItem('loginned', true);
-                    localStorage.setItem('loginned', true);
+                    // localStorage.setItem('loginned', true);
+                    // localStorage.setItem('loginned', true);
 
                     location.reload();
 
