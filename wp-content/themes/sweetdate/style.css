@@ -747,6 +747,15 @@ a.pink:hover {
     opacity: 0.85;
 }
 
+.init-info-cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: inline-table;
+    height: 100%;
+    z-index: 10000;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
