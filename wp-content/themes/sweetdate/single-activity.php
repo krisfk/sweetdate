@@ -339,7 +339,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
         <?php
         $charge_final_price = $_POST['final-price']*100;
-        echo 888;
+        echo $charge_final_price;
         // echo $charge_final_price;
         // echo $_POST['final-price'];
         // echo $_SESSION['login_member_id'];
