@@ -382,7 +382,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                  ?>
                 <div class="text-center">
                     <?php   
-                    echo '歡迎你，'.get_field('last_name').' '.get_field('first_name').'你的個人資料自動替你填上。';
+                    echo '歡迎你'.get_field('last_name').'！ '.get_field('first_name').'你的個人資料自動替你填上。';
                     ?>
                 </div>
                 <?php
