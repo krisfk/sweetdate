@@ -789,7 +789,7 @@ if($_POST['form-type']=='reg')
     \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
 
     $token = $_POST['stripeToken'];
-
+    echo 999999;
     $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
     // echo $charge_final_price;
