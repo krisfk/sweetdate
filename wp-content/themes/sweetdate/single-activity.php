@@ -819,7 +819,7 @@ echo 444;
         //   "metadata" => array("IMEI" => $IMEI))
         );
         echo 777;
-        print_r($charge);
+        // print_r($charge);
 
         
         if($charge->paid)
