@@ -932,7 +932,7 @@ if($_POST['form-type']=='reg')
                 }
                 else
                 {
-                    // echo 
+                    echo  777;
                     $row = array(
                         'member_id' => $_SESSION['login_member_id'],
                         'transaction_id'   => $balance_transaction,
