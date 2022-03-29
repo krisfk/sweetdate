@@ -455,10 +455,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td class="text-end">姓別：*</td>
                                 <td>
-                                    <label class="me-2"><input required class="me-1" type="radio" name="gender"
-                                            value="男">男</label>
-                                    <label class="me-2"><input class="me-1" type="radio" name="gender"
-                                            value="女">女</label>
+                                    <label class="me-2"><input <?php echo get_field('gender')=='男' ? 'checked' :''   ?>
+                                            required class="me-1" type="radio" name="gender" value="男">男</label>
+                                    <label class="me-2"><input <?php echo get_field('gender')=='女' ? 'checked' :''   ?>
+                                            class="me-1" type="radio" name="gender" value="女">女</label>
                                 </td>
                             </tr>
                             <tr>
