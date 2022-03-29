@@ -830,7 +830,6 @@ if($_POST['form-type']=='reg')
         
         if($charge->paid)
         {
-// echo 777;
             date_default_timezone_set('Asia/Hong_Kong');
 
             
@@ -991,9 +990,12 @@ if($_POST['form-type']=='reg')
             ?>
             <script type="text/javascript">
             $(function() {
-                $('.step').fadeOut(0);
-                $('.step.step-3').fadeIn(200);
-                $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
+
+                setTimeout(() => {
+                    $('.step').fadeOut(0);
+                    $('.step.step-3').fadeIn(200);
+                    $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
+                }, 100);
 
 
             })
