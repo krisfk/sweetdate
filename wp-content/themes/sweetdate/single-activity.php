@@ -814,175 +814,177 @@ if($_POST['form-type']=='reg')
         //   "metadata" => array("IMEI" => $IMEI))
         );
 
-        
-        if($charge->paid)
-        {
+      
+        echo 999999;
+        // if($charge->paid)
+        // {
 
-            date_default_timezone_set('Asia/Hong_Kong');
+        //     date_default_timezone_set('Asia/Hong_Kong');
 
             
 
-            // print_r()
-            $balance_transaction = $charge->balance_transaction;
+        //     // print_r()
+        //     $balance_transaction = $charge->balance_transaction;
 
-            if($_POST['person']==1)
-            {
-                $post_id = wp_insert_post(array (
-                    'post_type' => 'nonmember',
-                    'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
-                    'post_status' => 'publish',
-                    'comment_status' => 'closed',   // if you prefer
-                    'ping_status' => 'closed',      // if you prefer
-                ));
+        //     if($_POST['person']==1)
+        //     {
+        //         $post_id = wp_insert_post(array (
+        //             'post_type' => 'nonmember',
+        //             'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
+        //             'post_status' => 'publish',
+        //             'comment_status' => 'closed',   // if you prefer
+        //             'ping_status' => 'closed',      // if you prefer
+        //         ));
 
-                $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                $register_email=$_POST['register-email'];
-                $tel=$_POST['tel'];
-                $gender=$_POST['gender'];
-                $first_name=$_POST['first-name'];
-                $age = $_POST['age'];
-                $like_food=$_POST['like-food'];
-                $dislike_food=$_POST['dislike-food'];
-                $random_date_select=$_POST['any-date'];
+        //         $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        //         $register_email=$_POST['register-email'];
+        //         $tel=$_POST['tel'];
+        //         $gender=$_POST['gender'];
+        //         $first_name=$_POST['first-name'];
+        //         $age = $_POST['age'];
+        //         $like_food=$_POST['like-food'];
+        //         $dislike_food=$_POST['dislike-food'];
+        //         $random_date_select=$_POST['any-date'];
                 
-                if ($post_id) {
-                    add_post_meta($post_id, 'non_member_id', $nonmember_id);
-                    add_post_meta($post_id, 'login_email', $register_email);
-                    add_post_meta($post_id, 'tel', $tel);
-                    add_post_meta($post_id, 'gender', $gender);
-                    add_post_meta($post_id, 'first_name', $first_name);
-                    add_post_meta($post_id, 'age', $age);
-                    add_post_meta($post_id, 'like_food', $like_food);
-                    add_post_meta($post_id, 'dislike_food', $dislike_food);
-                    // add_post_meta($post_id, 'random_date_select', $random_date_select);
+        //         if ($post_id) {
+        //             add_post_meta($post_id, 'non_member_id', $nonmember_id);
+        //             add_post_meta($post_id, 'login_email', $register_email);
+        //             add_post_meta($post_id, 'tel', $tel);
+        //             add_post_meta($post_id, 'gender', $gender);
+        //             add_post_meta($post_id, 'first_name', $first_name);
+        //             add_post_meta($post_id, 'age', $age);
+        //             add_post_meta($post_id, 'like_food', $like_food);
+        //             add_post_meta($post_id, 'dislike_food', $dislike_food);
+        //             // add_post_meta($post_id, 'random_date_select', $random_date_select);
 
-                }
-                $row = array(
-                    'transaction_id'   => $balance_transaction,
-                    'date_of_purchase' => date('d-m-y h:i:s'),
-                    'non_member_info_url' => $post_id,
-                    'random_date_select' => $random_date_select
-                );
-                add_row('applied_non_member', $row);
+        //         }
+        //         $row = array(
+        //             'transaction_id'   => $balance_transaction,
+        //             'date_of_purchase' => date('d-m-y h:i:s'),
+        //             'non_member_info_url' => $post_id,
+        //             'random_date_select' => $random_date_select
+        //         );
+        //         add_row('applied_non_member', $row);
                 
                 
-            }
+        //     }
 
 
-            if($_POST['person']==2)
-            {
-                // echo 12345678;
+        //     if($_POST['person']==2)
+        //     {
+        //         // echo 12345678;
                 
 
-                if(!$_POST['is-member'])
-                {
+        //         if(!$_POST['is-member'])
+        //         {
 
-                     //1st person
-                    $post_id = wp_insert_post(array (
-                        'post_type' => 'nonmember',
-                        'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
-                        'post_status' => 'publish',
-                        'comment_status' => 'closed',   // if you prefer
-                        'ping_status' => 'closed',      // if you prefer
-                    ));
+        //              //1st person
+        //             $post_id = wp_insert_post(array (
+        //                 'post_type' => 'nonmember',
+        //                 'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
+        //                 'post_status' => 'publish',
+        //                 'comment_status' => 'closed',   // if you prefer
+        //                 'ping_status' => 'closed',      // if you prefer
+        //             ));
                 
-                    $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                    $register_email=$_POST['register-email'];
-                    $tel=$_POST['tel'];
-                    $gender=$_POST['gender'];
-                    $first_name=$_POST['first-name'];
-                    $age = $_POST['age'];
-                    $like_food=$_POST['like-food'];
-                    $dislike_food=$_POST['dislike-food'];
+        //             $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        //             $register_email=$_POST['register-email'];
+        //             $tel=$_POST['tel'];
+        //             $gender=$_POST['gender'];
+        //             $first_name=$_POST['first-name'];
+        //             $age = $_POST['age'];
+        //             $like_food=$_POST['like-food'];
+        //             $dislike_food=$_POST['dislike-food'];
                     
-                    if ($post_id) {
-                        add_post_meta($post_id, 'non_member_id', $nonmember_id);
-                        add_post_meta($post_id, 'login_email', $register_email);
-                        add_post_meta($post_id, 'tel', $tel);
-                        add_post_meta($post_id, 'gender', $gender);
-                        add_post_meta($post_id, 'first_name', $first_name);
-                        add_post_meta($post_id, 'age', $age);
-                        add_post_meta($post_id, 'like_food', $like_food);
-                        add_post_meta($post_id, 'dislike_food', $dislike_food);
-                    }
-                    $row = array(
-                        'non_member_id' => $nonmember_id,
-                        'transaction_id'   => $balance_transaction,
-                        'date_of_purchase' => date('d-m-y h:i:s'),
-                        'non_member_info_url' => $post_id
-                    );
-                    add_row('applied_non_member', $row);
+        //             if ($post_id) {
+        //                 add_post_meta($post_id, 'non_member_id', $nonmember_id);
+        //                 add_post_meta($post_id, 'login_email', $register_email);
+        //                 add_post_meta($post_id, 'tel', $tel);
+        //                 add_post_meta($post_id, 'gender', $gender);
+        //                 add_post_meta($post_id, 'first_name', $first_name);
+        //                 add_post_meta($post_id, 'age', $age);
+        //                 add_post_meta($post_id, 'like_food', $like_food);
+        //                 add_post_meta($post_id, 'dislike_food', $dislike_food);
+        //             }
+        //             $row = array(
+        //                 'non_member_id' => $nonmember_id,
+        //                 'transaction_id'   => $balance_transaction,
+        //                 'date_of_purchase' => date('d-m-y h:i:s'),
+        //                 'non_member_info_url' => $post_id
+        //             );
+        //             add_row('applied_non_member', $row);
                 
-                }
-                else
-                {
-                    $row = array(
-                        'member_id' => $_SESSION['login_member_id'],
-                        'transaction_id'   => $balance_transaction,
-                        'date_of_purchase' => date('d-m-y h:i:s'),
-                        'member_info_url' => $_SESSION['mid']
-                    );
-                    add_row('applied_member', $row);
-                }
+        //         }
+        //         else
+        //         {
+        //             $row = array(
+        //                 'member_id' => $_SESSION['login_member_id'],
+        //                 'transaction_id'   => $balance_transaction,
+        //                 'date_of_purchase' => date('d-m-y h:i:s'),
+        //                 'member_info_url' => $_SESSION['mid']
+        //             );
+        //             add_row('applied_member', $row);
+        //         }
                 
-                //2nd person
-                $post_id = wp_insert_post(array (
-                    'post_type' => 'nonmember',
-                    'post_title' =>$_POST['first-name-2'].' '.$_POST['last-name-2'],
-                    'post_status' => 'publish',
-                    'comment_status' => 'closed',   // if you prefer
-                    'ping_status' => 'closed',      // if you prefer
-                ));
+        //         //2nd person
+        //         $post_id = wp_insert_post(array (
+        //             'post_type' => 'nonmember',
+        //             'post_title' =>$_POST['first-name-2'].' '.$_POST['last-name-2'],
+        //             'post_status' => 'publish',
+        //             'comment_status' => 'closed',   // if you prefer
+        //             'ping_status' => 'closed',      // if you prefer
+        //         ));
                 
-                $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-                $register_email=$_POST['register-email-2'];
-                $tel=$_POST['tel-2'];
-                $gender=$_POST['gender-2'];
-                $first_name=$_POST['first-name-2'];
-                $age = $_POST['age-2'];
-                $like_food=$_POST['like-food-2'];
-                $dislike_food=$_POST['dislike-food-2'];
+        //         $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        //         $register_email=$_POST['register-email-2'];
+        //         $tel=$_POST['tel-2'];
+        //         $gender=$_POST['gender-2'];
+        //         $first_name=$_POST['first-name-2'];
+        //         $age = $_POST['age-2'];
+        //         $like_food=$_POST['like-food-2'];
+        //         $dislike_food=$_POST['dislike-food-2'];
             
               
-                if ($post_id) {
-                    add_post_meta($post_id, 'non_member_id', $nonmember_id);
-                    add_post_meta($post_id, 'login_email', $register_email);
-                    add_post_meta($post_id, 'tel', $tel);
-                    add_post_meta($post_id, 'gender', $gender);
-                    add_post_meta($post_id, 'first_name', $first_name);
-                    add_post_meta($post_id, 'age', $age);
-                    add_post_meta($post_id, 'like_food', $like_food);
-                    add_post_meta($post_id, 'dislike_food', $dislike_food);
+        //         if ($post_id) {
+        //             add_post_meta($post_id, 'non_member_id', $nonmember_id);
+        //             add_post_meta($post_id, 'login_email', $register_email);
+        //             add_post_meta($post_id, 'tel', $tel);
+        //             add_post_meta($post_id, 'gender', $gender);
+        //             add_post_meta($post_id, 'first_name', $first_name);
+        //             add_post_meta($post_id, 'age', $age);
+        //             add_post_meta($post_id, 'like_food', $like_food);
+        //             add_post_meta($post_id, 'dislike_food', $dislike_food);
                     
-                }
+        //         }
 
-                $row = array(
-                    'non_member_id' => $nonmember_id,
-                    'transaction_id'   => $balance_transaction,
-                    'date_of_purchase' => date('d-m-y h:i:s'),
-                    'non_member_info_url' => $post_id
-                );
-                add_row('applied_non_member', $row);
+        //         $row = array(
+        //             'non_member_id' => $nonmember_id,
+        //             'transaction_id'   => $balance_transaction,
+        //             'date_of_purchase' => date('d-m-y h:i:s'),
+        //             'non_member_info_url' => $post_id
+        //         );
+        //         add_row('applied_non_member', $row);
               
     
-            }
+        //     }
             
 
          
             
-            $_SESSION['paid']=1;
-            ?>
-            <script type="text/javascript">
-            $(function() {
-                $('.step').fadeOut(0);
-                $('.step.step-3').fadeIn(200);
-                $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
+        //     $_SESSION['paid']=1;
+        //     ?>
+            // <script type="text/javascript">
+            //     $(function() {
+            //         $('.step').fadeOut(0);
+            //         $('.step.step-3').fadeIn(200);
+            //         $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
 
 
-            })
+            //     })
+            //     
             </script>
-            <?php
-        }
+            // <?php
+        // }
         
         // echo $charge->id;
     }catch(\Stripe\Error\Card $e){
