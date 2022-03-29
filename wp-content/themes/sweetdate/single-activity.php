@@ -408,7 +408,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                             <tr>
                                 <td class="text-end"><label for="login-password">登入密碼：</label> </td>
-                                <td><input type="text" class="form-control" id="login-password" name="login-password">
+                                <td><input type="password" class="form-control" id="login-password"
+                                        name="login-password">
                                 </td>
                             </tr>
                             <tr>
