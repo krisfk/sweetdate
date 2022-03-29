@@ -437,8 +437,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     <input type="hidden" name="form-type" value="reg">
                     <table>
                         <tbody>
-                            <tr class="init-info-cover"
-                                class="<?php echo $_SESSION['login_member_id'] ? 'd-block':'d-none'  ?>">
+                            <tr
+                                class="init-info-cover <?php echo $_SESSION['login_member_id'] ? 'd-block':'d-none'  ?>">
                                 <td colspan="2"></td>
                             </tr>
 
