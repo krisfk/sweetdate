@@ -464,7 +464,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         <tbody>
                             <tr
                                 class="init-info-cover <?php echo $_SESSION['login_member_id'] ? 'd-block':'d-none'  ?>">
-                                <td colspan="2"></td>
+                                <td colspan="2" class="border-0"></td>
                             </tr>
 
                             <tr>
