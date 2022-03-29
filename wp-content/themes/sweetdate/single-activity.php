@@ -339,7 +339,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
         <?php
         $charge_final_price = $_POST['final-price']*100;
-        // echo 999;
+        echo 888;
         // echo $charge_final_price;
         // echo $_POST['final-price'];
         // echo $_SESSION['login_member_id'];
@@ -792,7 +792,6 @@ if($_POST['form-type']=='reg')
 
     $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
-    echo 9999999999998;
     echo $charge_final_price;
     // Number($_POST['final-price']*100)
     try {
