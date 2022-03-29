@@ -762,18 +762,18 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <?php
-            echo 123;
-            echo $_SESSION['login_member_id'];
-            echo $_SESSION['mid'];
+            // echo 123;
+            // echo $_SESSION['login_member_id'];
+            // echo $_SESSION['mid'];
             
-            echo $_POST['is-member'];
+            // echo $_POST['is-member'];
             // echo $_POST['is-member'];
             
 if($_POST['form-type']=='reg')
 {
 
-  echo 999999999999;
-  echo $charge_final_price;
+//   echo 999999999999;
+//   echo $charge_final_price;
 
     ?>
             <script type="text/javascript">
@@ -792,7 +792,7 @@ if($_POST['form-type']=='reg')
 
     $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
-    echo $charge_final_price;
+    // echo $charge_final_price;
     // Number($_POST['final-price']*100)
     try {
         $charge = \Stripe\Charge::create(array(
