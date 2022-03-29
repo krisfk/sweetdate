@@ -526,11 +526,21 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     <select required id="dislike-food" name="dislike-food" class="form-select"
                                         aria-label="">
                                         <option value="" selected="">選擇</option>
-                                        <option value="牛">牛</option>
-                                        <option value="雞">雞</option>
-                                        <option value="羊">羊</option>
-                                        <option value="豬">豬</option>
-                                        <option value="魚">魚</option>
+                                        <option <?php echo get_field('dislike_food')=='牛' ? 'selected' :''   ?>
+                                            value="牛">牛
+                                        </option>
+                                        <option <?php echo get_field('dislike_food')=='雞' ? 'selected' :''   ?>
+                                            value="雞">雞
+                                        </option>
+                                        <option <?php echo get_field('dislike_food')=='羊' ? 'selected' :''   ?>
+                                            value="羊">羊
+                                        </option>
+                                        <option <?php echo get_field('dislike_food')=='豬' ? 'selected' :''   ?>
+                                            value="豬">豬
+                                        </option>
+                                        <option <?php echo get_field('dislike_food')=='魚' ? 'selected' :''   ?>
+                                            value="魚">魚
+                                        </option>
                                     </select>
 
                                 </td>
