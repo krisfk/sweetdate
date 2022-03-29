@@ -353,9 +353,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                 $the_query->have_posts();
                 $the_query->the_post();
-                    // echo 999;
                 $register_email = get_field('login_email');
-                echo $register_email;
+                $tel = get_field('tel');
+                $gender= get_field('gender');
+                $first_name =get_field('first_name');
+                $age = get_field('age');
+                $like_food = get_field('like_food');
+                $dislike_food = get_field('dislike_food');
 
         }
 
@@ -438,7 +442,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td class="text-end"><label for="register-email">登記電郵：*</label></td>
                                 <td><input required type="text" class="form-control" id="register-email"
-                                        name="register-email"></td>
+                                        name="register-email" value="<?php echo get_field('login_email');?>"></td>
                             </tr>
 
                             <tr>
