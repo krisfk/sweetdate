@@ -1024,11 +1024,11 @@ $(function() {
         echo 'false';
     }  ?>;
 
-    // if (jump_to_step_2) {
-    //     $('.step').fadeOut(0);
-    //     $('.step.step-2').fadeIn(0);
-    //     $('#is-member').val(1);
-    // }
+    if (jump_to_step_2) {
+        $('.step').fadeOut(0);
+        $('.step.step-2').fadeIn(0);
+        $('#is-member').val(1);
+    }
 
     $('.first.login-form').submit(function() {
 
