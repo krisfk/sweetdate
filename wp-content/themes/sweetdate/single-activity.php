@@ -805,13 +805,15 @@ echo 444;
 
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => $charge_final_price,
+        "amount" => '999',
+        //$charge_final_price,
         // $charge_final_price,
 
           "currency" => "hkd",
           "source" => $token,
-          "description" => '',
-          "metadata" => array("IMEI" => $IMEI))
+          "description" => ''
+        //   "metadata" => array("IMEI" => $IMEI)
+          )
           
 
         //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
