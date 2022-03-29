@@ -337,7 +337,25 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         // echo 999;
         // echo $charge_final_price;
         // echo $_POST['final-price'];
-        echo $_SESSION['login_member_id'];
+        // echo $_SESSION['login_member_id'];
+
+        if($_SESSION['login_member_id'])
+        {
+                $query_args = array(
+                    'post_type' => 'member',
+                    'p'=>$_SESSION['login_member_id']
+                );
+
+                $the_query = new WP_Query( $query_args );
+
+                $the_query->have_posts();
+                $the_query->the_post();
+
+                $register_email = get_field('register-email');
+                echo $register_email;
+
+        }
+
         ?>
         <div class="step step-2">
 
