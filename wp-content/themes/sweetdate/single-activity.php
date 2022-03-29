@@ -991,7 +991,7 @@ $(function() {
 
 
 
-    $('.first.login-form .form-submit-btn').submit(function() {
+    $('.first.login-form').submit(function() {
 
         $login_email = $('#login-email').val();
         $login_password = $('#login-password').val();
