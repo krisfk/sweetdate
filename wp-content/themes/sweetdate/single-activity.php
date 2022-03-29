@@ -168,9 +168,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <?php 
-                if($_GET['person']==2  )
+                if($_GET['person']==2 ||  $_POST['person']==2 )
                 {
-                    echo 9999;
+                    // echo 9999;
                     $final_price = get_field('two_people_discount_price')*2;
 
                     $two_people_discount_price=get_field('two_people_discount_price');
@@ -184,7 +184,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 ?>
 
             <?php 
-                if($_GET['person']==1)
+                if($_GET['person']==1 || $_POST['person']==1)
                 {
                     ?>
 
