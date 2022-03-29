@@ -458,6 +458,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     ?>
                     </select>
 
+                    <input type="text" name="is-member" id="is-member" value="0">
                     <input type="hidden" name="form-type" value="reg">
                     <table>
                         <tbody>
@@ -859,6 +860,10 @@ if($_POST['form-type']=='reg')
 
             if($_POST['person']==2)
             {
+
+                if(!$_POST['is-member'])
+                {
+
                 //1st person
                 $post_id = wp_insert_post(array (
                     'post_type' => 'nonmember',
@@ -894,6 +899,17 @@ if($_POST['form-type']=='reg')
                 );
                 add_row('applied_non_member', $row);
                 
+                }
+                else
+                {
+                    $row = array(
+                        'member_id' => $_SESSION['login_member_id'],
+                        'transaction_id'   => $balance_transaction,
+                        'date_of_purchase' => date('d-m-y h:i:s'),
+                        'non_member_info_url' => $post_id
+                    );
+                    add_row('applied_member', $row);
+                }
                 
                 //2nd person
                 $post_id = wp_insert_post(array (
@@ -996,6 +1012,7 @@ $(function() {
     if (localStorage.getItem('loginned')) {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(0);
+        $('#is-member').val(1);
 
     }
 
