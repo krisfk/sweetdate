@@ -712,11 +712,11 @@ function add_slug_body_class( $classes ) {
 	}
 	
 
-// register_rest_route( 'api', '/member-login/', array(
-// 	'methods'  => 'POST',
-// 	'callback' => 'member_login'
-// 	)
-// );
+register_rest_route( 'api', '/member-login/', array(
+	'methods'  => 'POST',
+	'callback' => 'member_login'
+	)
+);
 
 	
 // function member_login($request)
