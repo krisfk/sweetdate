@@ -447,7 +447,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                             <tr>
                                 <td class="text-end"><label for="tel">登記電話：*</label></td>
-                                <td><input required type="text" class="form-control" id="tel" name="tel"></td>
+                                <td><input required type="text" class="form-control" id="tel" name="tel"
+                                        value="<?php echo get_field('tel');?>"></td>
                             </tr>
 
 
@@ -467,7 +468,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                                 </td>
                                 <td>
-                                    <input required type="text" class="form-control" id="first-name" name="first-name">
+                                    <input required value="<?php echo get_field('first_name');?>" type="text"
+                                        class="form-control" id="first-name" name="first-name">
 
                                 </td>
                             </tr>
