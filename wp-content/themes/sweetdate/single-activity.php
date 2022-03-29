@@ -773,6 +773,7 @@ if($_POST['form-type']=='reg')
 {
 
   echo 999999999999;
+  echo $charge_final_price;
 
     ?>
             <script type="text/javascript">
