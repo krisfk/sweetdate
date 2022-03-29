@@ -885,6 +885,7 @@ if($_POST['form-type']=='reg')
             if($_POST['person']==2)
             {
                 // echo 12345678;
+                echo 123;
                 echo $_POST['is-member'];
                 echo 999;
                 
