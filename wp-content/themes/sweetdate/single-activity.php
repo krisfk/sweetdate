@@ -12,6 +12,13 @@
 get_header();
 // session_start();
 $current_post_id=get_the_ID();
+
+if(!$_POST)
+{
+    unset ($_SESSION["paid"]);
+    unset($_POST);
+}
+
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
     //  $_SESSION['paid'] ='';
