@@ -791,7 +791,7 @@ if($_POST['form-type']=='reg')
     $token = $_POST['stripeToken'];
     
     $IMEI = $_POST['ImeiNum'];
-    echo $token.' '.$charge_final_price.' '.$IMEI;
+    // echo $token.' '.$charge_final_price.' '.$IMEI;
 
     
     // echo $_POST['name'];
@@ -916,13 +916,52 @@ if($_POST['form-type']=='reg')
                 }
                 else
                 {
+
+                    $post_id = wp_insert_post(array (
+                        'post_type' => 'nonmember',
+                        'post_title' =>$_POST['first-name'].' '.$_POST['last-name'],
+                        'post_status' => 'publish',
+                        'comment_status' => 'closed',   // if you prefer
+                        'ping_status' => 'closed',      // if you prefer
+                    ));
+                
+                    $nonmember_id = 'NM'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+                    $register_email=$_POST['register-email'];
+                    $tel=$_POST['tel'];
+                    $gender=$_POST['gender'];
+                    $first_name=$_POST['first-name'];
+                    $age = $_POST['age'];
+                    $like_food=$_POST['like-food'];
+                    $dislike_food=$_POST['dislike-food'];
+                    
+                    if ($post_id) {
+                        add_post_meta($post_id, 'non_member_id', $nonmember_id);
+                        add_post_meta($post_id, 'login_email', $register_email);
+                        add_post_meta($post_id, 'tel', $tel);
+                        add_post_meta($post_id, 'gender', $gender);
+                        add_post_meta($post_id, 'first_name', $first_name);
+                        add_post_meta($post_id, 'age', $age);
+                        add_post_meta($post_id, 'like_food', $like_food);
+                        add_post_meta($post_id, 'dislike_food', $dislike_food);
+                    }
                     $row = array(
-                        'member_id' => $_SESSION['login_member_id'],
+                        'non_member_id' => $nonmember_id,
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
-                        'member_info_url' => $_SESSION['mid']
+                        'non_member_info_url' => $post_id
                     );
-                    add_row('applied_member', $row);
+                    add_row('applied_non_member', $row);
+                
+
+
+
+                    // $row = array(
+                    //     'member_id' => $_SESSION['login_member_id'],
+                    //     'transaction_id'   => $balance_transaction,
+                    //     'date_of_purchase' => date('d-m-y h:i:s'),
+                    //     'member_info_url' => $_SESSION['mid']
+                    // );
+                    // add_row('applied_member', $row);
                 }
                 
                 //2nd person
