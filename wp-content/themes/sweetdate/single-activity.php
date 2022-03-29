@@ -876,7 +876,7 @@ if($_POST['form-type']=='reg')
                     'non_member_info_url' => $post_id,
                     'random_date_select' => $random_date_select
                 );
-                add_row('applied_non_member', $row);
+                add_row('applied_non_member', $row,$current_post_id);
                 
                 
             }
@@ -927,7 +927,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id
                     );
-                    add_row('applied_non_member', $row);
+                    add_row('applied_non_member', $row,$current_post_id);
                 
                 }
                 else
@@ -979,7 +979,7 @@ if($_POST['form-type']=='reg')
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id
                 );
-                add_row('applied_non_member', $row);
+                add_row('applied_non_member', $row,$current_post_id);
               
     
             }
