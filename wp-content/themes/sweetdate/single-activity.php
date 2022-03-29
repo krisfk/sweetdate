@@ -350,7 +350,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                 $the_query->have_posts();
                 $the_query->the_post();
-
+                    echo 999;
                 $register_email = get_field('register-email');
                 echo $register_email;
 
