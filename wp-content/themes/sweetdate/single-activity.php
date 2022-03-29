@@ -343,14 +343,17 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         {
                 $query_args = array(
                     'post_type' => 'member',
-                    'p'=>$_SESSION['login_member_id']
-                );
+                    'meta_query' => array(
+                            'key' => 'member_id',
+                            'value' => $_SESSION['login_member_id'],
+                            'compare' => '='   
+                    ));
 
                 $the_query = new WP_Query( $query_args );
 
                 $the_query->have_posts();
                 $the_query->the_post();
-                    echo 999;
+                    // echo 999;
                 $register_email = get_field('register-email');
                 echo $register_email;
 
