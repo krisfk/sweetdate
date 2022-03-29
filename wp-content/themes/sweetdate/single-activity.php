@@ -995,7 +995,7 @@ $(function() {
 
         var login_email = $('#login-email').val();
         var login_password = $('#login-password').val();
-        alert(login_email + ' '.login_password);
+        alert(login_email + ' ' + login_password);
         return false;
     })
 
