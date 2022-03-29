@@ -766,8 +766,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             echo 123;
             echo $_SESSION['login_member_id'];
             echo $_SESSION['mid'];
+            
             echo $_POST['is-member'];
-            echo $_POST['is-member'];
+            // echo $_POST['is-member'];
             
 if($_POST['form-type']=='reg')
 {
@@ -909,13 +910,13 @@ if($_POST['form-type']=='reg')
                 }
                 else
                 {
-                    $row = array(
-                        'member_id' => $_SESSION['login_member_id'],
-                        'transaction_id'   => $balance_transaction,
-                        'date_of_purchase' => date('d-m-y h:i:s'),
-                        'non_member_info_url' => $_SESSION['mid']
-                    );
-                    add_row('applied_member', $row);
+                    // $row = array(
+                    //     'member_id' => $_SESSION['login_member_id'],
+                    //     'transaction_id'   => $balance_transaction,
+                    //     'date_of_purchase' => date('d-m-y h:i:s'),
+                    //     'non_member_info_url' => $_SESSION['mid']
+                    // );
+                    // add_row('applied_member', $row);
                 }
                 
                 //2nd person
