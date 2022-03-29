@@ -816,6 +816,7 @@ if($_POST['form-type']=='reg')
 
         
         
+        print_r($charge);
         if($charge->paid)
         {
 
