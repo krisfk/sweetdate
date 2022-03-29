@@ -711,3 +711,48 @@ function add_slug_body_class( $classes ) {
 	
 	}
 	
+
+register_rest_route( 'api', '/member-login/', array(
+	'methods'  => 'POST',
+	'callback' => 'member_login'
+	)
+);
+
+	
+function member_login($request)
+{
+    $email = $request['login_email'];
+    $password = $request['login_password'];
+    // $from_post = $request['from_post'];
+
+    $args = array(
+        'post_type'  => 'member',
+        'meta_query' => array(
+            array(
+                'key'     => 'email',
+                'value'   => $email,
+            ),
+            array(
+                'key'     => 'password',
+                'value'   => $password,
+            ),
+        ),
+    );
+    $query = new WP_Query( $args );
+
+    if($query->have_posts())
+    {
+        $query->the_post();
+
+		$_SESSION['login_member_id']=get_field('member_id');
+
+        echo json_encode(array("status"=>"1", "msg"=>"login successfully"));        
+    }
+    else
+    {
+        echo json_encode(array("status"=>"-1", "msg"=>"login fail"));       
+    }
+    
+    
+
+}
