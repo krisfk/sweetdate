@@ -792,6 +792,7 @@ if($_POST['form-type']=='reg')
 
     $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
+    echo 9999999999998;
     // Number($_POST['final-price']*100)
     try {
         $charge = \Stripe\Charge::create(array(
@@ -867,7 +868,7 @@ if($_POST['form-type']=='reg')
 
             if($_POST['person']==2)
             {
-                echo 12345678;
+                // echo 12345678;
                 
 
                 if(!$_POST['is-member'])
