@@ -829,7 +829,7 @@ if($_POST['form-type']=='reg')
         
         if($charge->paid)
         {
-echo 777;
+// echo 777;
             date_default_timezone_set('Asia/Hong_Kong');
 
             
@@ -883,7 +883,7 @@ echo 777;
 
             if($_POST['person']==2)
             {
-                // echo 12345678;
+                echo 12345678;
                 
 
                 if(!$_POST['is-member'])
