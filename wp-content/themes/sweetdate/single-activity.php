@@ -791,16 +791,16 @@ if($_POST['form-type']=='reg')
     $token = $_POST['stripeToken'];
     
     $IMEI = $_POST['ImeiNum'];
-    echo $token.' '.$charge_final_price.' '.$IMEI;
+    // echo $token.' '.$charge_final_price.' '.$IMEI;
 
     
     // echo $_POST['name'];
     // echo $charge_final_price;
     // Number($_POST['final-price']*100)
 // $charge_final_price=9999;
-echo 444;
+// echo 444;
     try {
-        echo 123;
+        // echo 123;
   //      $charge_final_price=8888;
 
         $charge = \Stripe\Charge::create(array(
