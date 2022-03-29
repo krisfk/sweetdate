@@ -458,7 +458,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     ?>
                     </select>
 
-                    <input type="text" name="is-member" id="is-member" value="0">
+                    <input type="hidden" name="is-member" id="is-member" value="0">
                     <input type="hidden" name="form-type" value="reg">
                     <table>
                         <tbody>
