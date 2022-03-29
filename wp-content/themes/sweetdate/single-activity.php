@@ -815,8 +815,6 @@ if($_POST['form-type']=='reg')
         );
 
         
-        
-        print_r($charge);
         if($charge->paid)
         {
 
@@ -988,6 +986,7 @@ if($_POST['form-type']=='reg')
         
         // echo $charge->id;
     }catch(\Stripe\Error\Card $e){
+        echo 987654;
         echo $e->getMessage();
     }
 
