@@ -1008,7 +1008,13 @@ $(function() {
                 // console.log(data);
                 if (data.status === '1') {
 
-                    alert('logined');
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('登入成功');
+                    localStorage.setItem('loginned', true);
+                    location.reload();
+
+
+                    // alert('logined');
                     // window.location = "";
                 }
 
