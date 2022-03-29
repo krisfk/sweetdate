@@ -726,6 +726,7 @@ register_rest_route( 'api', '/member-login/', array(
 	
 function member_login($request)
 {
+	echo 1;
     // $email = $request['login_email'];
     // $password = $request['login_password'];
 
