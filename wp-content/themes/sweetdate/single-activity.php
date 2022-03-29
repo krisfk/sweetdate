@@ -480,10 +480,18 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td>
                                     <select required id="age" name="age" class="form-select" aria-label="">
                                         <option value="" selected="">選擇</option>
-                                        <option value="20-29">20-29</option>
-                                        <option value="30-34">30-34</option>
-                                        <option value="35-39">35-39</option>
-                                        <option value="40或以上">40或以上</option>
+                                        <option <?php echo get_field('age')=='20-29' ? 'selected' :''   ?>
+                                            value="20-29">
+                                            20-29</option>
+                                        <option <?php echo get_field('age')=='30-34' ? 'selected' :''   ?>
+                                            value="30-34">
+                                            30-34</option>
+                                        <option <?php echo get_field('age')=='35-39' ? 'selected' :''   ?>
+                                            value="35-39">
+                                            35-39</option>
+                                        <option <?php echo get_field('age')=='40或以上' ? 'selected' :''   ?>
+                                            value="40或以上">
+                                            40或以上</option>
                                     </select>
                                 </td>
                             </tr>
