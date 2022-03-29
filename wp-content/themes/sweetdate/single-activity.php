@@ -396,7 +396,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 else
             {
                 ?>
-                <form action="" class="login-form">
+                <form action="" class="login-form first">
 
 
                     <input type="hidden" name="form-type" value="login">
@@ -990,6 +990,14 @@ if($_POST['form-type']=='reg')
 $(function() {
 
 
+
+    $('.first.login-form .form-submit-btn').submit(function() {
+
+        $login_email = $('#login-email').val();
+        $login_password = $('#login-password').val();
+        alert($login_email + ' '.login_password);
+        return false;
+    })
 
 
     $('.reg-btn').click(function() {
