@@ -1012,8 +1012,8 @@ $(function() {
 
 
 
-    if (<?php if($_SESSION['login_member_id']) { echo true;}else{
-        echo false;
+    if (<?php if($_SESSION['login_member_id']) { echo 'true';}else{
+        echo 'false';
     }  ?>) {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(0);
