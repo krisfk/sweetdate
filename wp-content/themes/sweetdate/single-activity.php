@@ -772,7 +772,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 if($_POST['form-type']=='reg')
 {
 
-  
+  echo 999999999999;
 
     ?>
             <script type="text/javascript">
