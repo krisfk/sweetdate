@@ -909,7 +909,7 @@ if($_POST['form-type']=='reg')
                         'member_id' => $_SESSION['login_member_id'],
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
-                        'non_member_info_url' => $post_id
+                        'non_member_info_url' => $_SESSION['mid']
                     );
                     add_row('applied_member', $row);
                 }

@@ -750,7 +750,7 @@ function member_login($request)
         $query->the_post();
 
 		$_SESSION['login_member_id']=get_field('member_id');
-
+		$_SESSION['mid']=get_the_ID();
         echo json_encode(array("status"=>"1", "msg"=>"login successfully"));        
     }
     else

@@ -45,6 +45,7 @@ if($_POST)
         // echo 222;
         // echo get_field('member_id');
         $_SESSION['login_member_id']=get_field('member_id');
+        $_SESSION['mid']=get_the_ID();
         ?>
 <script type="text/javascript">
 $(function() {

@@ -49,7 +49,7 @@ if($_POST)
 
         //password no problem
         $_SESSION['login_member_id']=$member_id;
-       
+        $_SESSION['mid']=$post_id;
        ?>
 <script type="text/javascript">
 $(function() {
