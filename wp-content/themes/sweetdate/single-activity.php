@@ -172,7 +172,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 {
                     //  echo 12999;
                     $final_price = get_field('two_people_discount_price')*2;
-                    $charge_final_price=$final_price;
+                    $charge_final_price=$final_price*100;
                     $two_people_discount_price=get_field('two_people_discount_price');
                     // echo $final_price;
                     ?>
