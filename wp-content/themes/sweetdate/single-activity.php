@@ -992,6 +992,13 @@ $(function() {
 
 
 
+
+    if (localStorage.getItem('loginned')) {
+        $('.step').fadeOut(0);
+        $('.step.step-2').fadeIn(0);
+
+    }
+
     $('.first.login-form').submit(function() {
 
         var login_email = $('#login-email').val();
@@ -1008,8 +1015,8 @@ $(function() {
                 // console.log(data);
                 if (data.status === '1') {
 
-                    $('.lightbox').fadeIn(200);
-                    $('.lightbox-msg-txt').html('登入成功');
+                    // $('.lightbox').fadeIn(200);
+                    // $('.lightbox-msg-txt').html('登入成功');
                     localStorage.setItem('loginned', true);
                     location.reload();
 
