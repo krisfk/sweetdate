@@ -376,7 +376,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
             <div class="position-relative mt-4">
 
-
+                <?php
+                if($_SESSION['login_member_id'])
+                {
+                    '歡迎你，'.get_field('last_name').' '.get_field('first_name').'你的個人資料自動替你填上。';
+                }
+                else
+            {
+                ?>
                 <form action="" class="login-form">
 
 
@@ -409,6 +416,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         </tbody>
                     </table>
                 </form>
+                <?php
+            }
+                ?>
+
             </div>
 
 
