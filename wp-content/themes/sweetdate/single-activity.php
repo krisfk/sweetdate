@@ -11,7 +11,7 @@
 
 get_header();
 // session_start();
-
+$current_post_id=get_the_ID();
 if($_POST['form-type']=='reg' && $_SESSION['paid'])
 {
     //  $_SESSION['paid'] ='';
@@ -932,14 +932,14 @@ if($_POST['form-type']=='reg')
                 }
                 else
                 {
-                    echo  777;
+                    // echo  777.' '.;
                     $row = array(
                         'member_id' => $_SESSION['login_member_id'],
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'member_info_url' => $_SESSION['mid']
                     );
-                    add_row('applied_member', $row);
+                    add_row('applied_member', $row,$current_post_id);
                 }
                 
                 //2nd person
