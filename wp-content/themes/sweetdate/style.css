@@ -756,6 +756,10 @@ a.pink:hover {
     z-index: 10000;
 }
 
+tbody {
+    position: relative;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
