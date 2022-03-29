@@ -501,7 +501,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     <label for="like-food">最喜歡吃的食物：*</label>
                                 </td>
                                 <td>
-                                    <select required id="like-food" name="like-food" class="form-select" aria-label="">
+                                    <select readonly required id="like-food" name="like-food" class="form-select"
+                                        aria-label="">
                                         <option value="" selected="">選擇</option>
                                         <option <?php echo get_field('like_food')=='牛' ? 'selected' :''   ?> value="牛">牛
                                         </option>
