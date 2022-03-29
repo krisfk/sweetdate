@@ -337,6 +337,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         // echo 999;
         // echo $charge_final_price;
         // echo $_POST['final-price'];
+        echo $_SESSION['login_member_id'];
         ?>
         <div class="step step-2">
 
