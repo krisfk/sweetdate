@@ -818,6 +818,7 @@ echo 444;
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
+        echo 999;
 
         
         if($charge->paid)
