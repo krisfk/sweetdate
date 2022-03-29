@@ -884,6 +884,8 @@ if($_POST['form-type']=='reg')
             if($_POST['person']==2)
             {
                 echo 12345678;
+                echo $_POST['is-member'];
+                echo 999;
                 
 
                 if(!$_POST['is-member'])
@@ -928,6 +930,7 @@ if($_POST['form-type']=='reg')
                 }
                 else
                 {
+                    echo 
                     $row = array(
                         'member_id' => $_SESSION['login_member_id'],
                         'transaction_id'   => $balance_transaction,
