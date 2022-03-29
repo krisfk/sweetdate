@@ -172,7 +172,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 {
                     // echo 9999;
                     $final_price = get_field('two_people_discount_price')*2;
-                    echo $final_price;
+
+                    $two_people_discount_price=get_field('two_people_discount_price');
+                    // echo $final_price;
                     ?>
             <span class="price me-2">二人同行優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
                 $<?php echo get_field('two_people_discount_price');?>/位</span>
@@ -706,8 +708,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td class="">$<?php 
                                 if($_GET['person']==2)
                                 {
-                                    echo get_field('two_people_discount_price').' x 2 = $'.get_field('two_people_discount_price')*2;
-                                    $final_price=   get_field('two_people_discount_price')*2;
+                                    echo $two_people_discount_price.' x 2 = $'.$two_people_discount_price*2;
+                                    $final_price=   $two_people_discount_price*2;
                                 }
                                 
                                 if($_GET['person']==1)
