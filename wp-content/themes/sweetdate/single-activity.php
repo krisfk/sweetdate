@@ -763,6 +763,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <?php
+            echo 123;
             echo $_POST['is-member'];
 if($_POST['form-type']=='reg')
 {
