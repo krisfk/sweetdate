@@ -821,6 +821,7 @@ echo 444;
         //   "metadata" => array("IMEI" => $IMEI))
         );
         echo 777;
+        echo $charge;
         // print_r($charge);
 
         
