@@ -796,7 +796,7 @@ if($_POST['form-type']=='reg')
     try {
         $charge = \Stripe\Charge::create(array(
         //   "amount" => $_POST('final-price')*100,
-        "amount" => '999',
+        "amount" => $charge_final_price,
         // $charge_final_price,
 
           "currency" => "hkd",
