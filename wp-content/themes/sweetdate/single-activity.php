@@ -1010,11 +1010,11 @@ if($_POST['form-type']=='reg')
 $(function() {
 
 
-
-
-    if (<?php if($_SESSION['login_member_id']) { echo 'true';}else{
+    var jump_to_step_2 = <?php if($_SESSION['login_member_id']) { echo 'true';}else{
         echo 'false';
-    }  ?>) {
+    }  ?>;
+
+    if (jump_to_step_2) {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(0);
         $('#is-member').val(1);
