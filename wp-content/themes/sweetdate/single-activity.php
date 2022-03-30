@@ -840,7 +840,7 @@ if($_POST['form-type']=='reg')
         // echo 777;
         // echo $charge->paid;
         // print_r($charge);
-        print_r($charge);
+        // print_r($charge);
         
 
         
@@ -855,7 +855,7 @@ if($_POST['form-type']=='reg')
 
             if($_POST['person']==1)
             {
-                echo 999;
+                // echo 999;
 
                 if(!$_POST['is-member'])
                 {
@@ -907,7 +907,7 @@ if($_POST['form-type']=='reg')
                         'member_info_url' => $_SESSION['mid'],
                         'random_date_select' => $random_date_select
                     );
-                    add_row('applied_non_member', $row,$current_post_id);
+                    add_row('applied_member', $row,$current_post_id);
                 }
 
                 
