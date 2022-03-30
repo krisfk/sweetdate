@@ -1082,6 +1082,12 @@ $(function() {
         $('.step').fadeOut(0);
         $('.step.step-2').fadeIn(0);
         $('#is-member').val(1);
+
+        if (localStorage.getItem('any-date')) {
+            $('.any-date').val(localStorage.getItem('any-date'))
+
+        }
+
     }
 
     $('.first.login-form').submit(function() {
@@ -1102,7 +1108,8 @@ $(function() {
 
                     // $('.lightbox').fadeIn(200);
                     // $('.lightbox-msg-txt').html('登入成功');
-                    // localStorage.setItem('loginned', true);
+                    localStorage.setItem('any-date', $('.any-date').val());
+
                     // localStorage.setItem('loginned', true);
 
                     location.reload();
