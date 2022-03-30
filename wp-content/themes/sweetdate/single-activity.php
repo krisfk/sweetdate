@@ -193,8 +193,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <?php 
                 if($_GET['person']==1)
                 {
-                    echo 999999;
-                    $charge_final_price=get_field('price');
+                    // echo 999999;
+                    // $charge_final_price=get_field('price');
 
 
                     ?>
@@ -375,6 +375,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 $age = get_field('age');
                 $like_food = get_field('like_food');
                 $dislike_food = get_field('dislike_food');
+
+                
 
         }
 
@@ -726,7 +728,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 
                                 if($_GET['person']==1)
                                 {
-                                    $final_price=   get_field('price');
+                                    echo 999;
+                                    $final_price=  get_field('price');
 
 
                                   ?>
