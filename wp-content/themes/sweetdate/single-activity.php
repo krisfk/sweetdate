@@ -12,6 +12,7 @@
 get_header();
 // session_start();
 $current_post_id=get_the_ID();
+$current_price=get_field('price');
 
 if(!$_POST)
 {
@@ -728,12 +729,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 
                                 if($_GET['person']==1)
                                 {
-                                    echo 999;
-                                    $final_price=  get_field('price');
+                                    // echo 999;
+                                    $final_price=  $current_price;
+                                    // get_field('price');
 
 
                                   ?>
-                                    <span class="final-price"><?php echo get_field('price');?></span>
+                                    <span class="final-price"><?php echo $current_price;?></span>
                                     <?php
                                 }
                                 
