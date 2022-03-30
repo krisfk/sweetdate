@@ -846,6 +846,7 @@ if($_POST['form-type']=='reg')
         
         if($charge->paid)
         {
+            
             date_default_timezone_set('Asia/Hong_Kong');
 
             
@@ -1029,6 +1030,11 @@ if($_POST['form-type']=='reg')
                     $('.step.step-3').fadeIn(200);
                     $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
                 }, 100);
+
+                localStorage.removeItem('any-date');
+                localStorage.clear();
+
+
 
 
             })
