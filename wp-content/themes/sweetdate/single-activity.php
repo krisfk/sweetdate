@@ -1085,7 +1085,7 @@ $(function() {
 
         if (localStorage.getItem('any-date')) {
             $('.any-date').val(localStorage.getItem('any-date'))
-
+            $('#agree-decide-other-date').click();
         }
 
     }
