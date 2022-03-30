@@ -855,6 +855,7 @@ if($_POST['form-type']=='reg')
 
             if($_POST['person']==1)
             {
+                echo 999;
 
                 if(!$_POST['is-member'])
                 {
