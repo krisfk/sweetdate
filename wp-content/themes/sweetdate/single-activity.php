@@ -193,6 +193,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <?php 
                 if($_GET['person']==1)
                 {
+                    $charge_final_price=get_field('price');
+
+
                     ?>
 
             <div class="one-ppl-discount" style="display:none;">
