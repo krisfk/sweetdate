@@ -152,22 +152,6 @@ $post_id = get_the_ID();
                                 <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
                             </td>
                         </tr>
-
-
-
-
-
-
-
-                        <tr>
-                            <td></td>
-                            <td class="text-end">
-
-                                <input type="submit" value="更新登入資料" class="form-submit-btn">
-                            </td>
-                        </tr>
-
-
                     </table>
                 </form>
             </div>
