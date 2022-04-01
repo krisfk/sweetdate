@@ -14,16 +14,14 @@ get_header();
 session_start();
 
 
+$nmid = $_GET['nmid'];
 
 
 $member_id = $_SESSION['login_member_id'];
 
 $query_args = array(
-    'post_type' => 'member',
-    'meta_query' => array(
-            'key'   => 'member_id',
-            'value' => $member_id
-    )
+    'post_type' => 'nonmember',
+    'p'         => $nmid
 );
 
 $the_query = new WP_Query( $query_args );
@@ -50,8 +48,6 @@ $post_id = get_the_ID();
 
         <?php
 
-        $nmid = $_GET['nmid'];
-        echo $nmid;
     
 
     if($_POST)
