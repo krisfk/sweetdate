@@ -152,24 +152,8 @@ $post_id = get_the_ID();
                                 <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
                             </td>
                         </tr>
-                        <tr>
-                            <td class="text-end"><label for="old-login-password">舊登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="old-login-password"
-                                    name="old-login-password">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-end"><label for="new-login-password">新登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="new-login-password"
-                                    name="new-login-password">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-end"><label for="new-login-password">再次輸入新登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="new-login-password"
-                                    name="new-login-password">
-                            </td>
-                        </tr>
+
+
 
 
 
