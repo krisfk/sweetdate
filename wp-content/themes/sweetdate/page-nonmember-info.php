@@ -134,22 +134,6 @@ $post_id = get_the_ID();
         <div class="main-content mt-5">
 
 
-            <div class="login-form form-div">
-                <input type="hidden" name="form-type" value="login-form">
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <h2 class="text-center m-0">登入資料</h2>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-
 
             <div class="detail-form form-div">
 
