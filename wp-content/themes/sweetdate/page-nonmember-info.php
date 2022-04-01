@@ -51,7 +51,7 @@ $post_id = get_the_ID();
         <?php
 
         $nmid = $_GET['nmid'];
-        echo 999;
+        echo $nmid;
     
 
     if($_POST)
