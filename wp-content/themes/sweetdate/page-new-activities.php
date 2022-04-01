@@ -48,9 +48,10 @@ if ( $the_query->have_posts() ) {
 while ( $the_query->have_posts() ) {
 $the_query->the_post();
 ?>
+
             <div class="col-6 mb-2">
 
-                <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
+                <div class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
                     <div class="mt-4">
 
@@ -59,6 +60,22 @@ $the_query->the_post();
 
 
                         <div>
+
+
+
+                            <?php
+            $date_arr = [];
+            $time_arr=[];
+        while(have_rows('activity_date_and_time') ){ the_row(); 
+            array_push($date_arr, get_sub_field('activity_date'));
+            array_push($time_arr, get_sub_field('activity_time'));
+
+       }
+
+       
+       ?>
+
+
                             <ul class="news-act-info-ul">
                                 <li>
                                     <div class="d-table">
@@ -93,14 +110,30 @@ $the_query->the_post();
                                 </li>
                             </ul>
 
-
-
                         </div>
 
                         <div class="mt-3">
 
                             <?php echo get_field('activity_short_content');?>
 
+                        </div>
+
+                        <div>
+
+                            <a class="entry-person-btn" href="<?php echo get_permalink();?>?person=1">
+                                $<?php echo get_field('price');?> <br>
+                                一人參加
+                                <img class="btn-right-arrow"
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow.png"
+                                    alt="">
+                            </a>
+                            <a class="entry-person-btn" href="<?php echo get_permalink();?>?person=2">
+                                $<?php echo get_field('two_people_discount_price');?> <br>
+                                二人同行(優惠價)
+                                <img class="btn-right-arrow"
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow.png"
+                                    alt="">
+                            </a>
                         </div>
 
                         <div class="gender-div male">
@@ -115,12 +148,10 @@ $the_query->the_post();
                                     <td class="">
                                         <div class="row">
 
-                                            <div class="col-5">名額 : <?php echo get_field('male_quota');?>人
+                                            <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
                                                 (<?php echo get_field('male_age_range');?>歲)</div>
-                                            <div class="col-7">餘額 : <?php echo get_field('male_remain_quota');?>人
-                                            </div>
-                                            <div class="col-12 mt-1"><?php echo get_field('male_requirement');?>
-                                            </div>
+                                            <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                            <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -141,12 +172,11 @@ $the_query->the_post();
                                     <td class="">
                                         <div class="row">
 
-                                            <div class="col-5">名額 : <?php echo get_field('female_quota');?>人
+                                            <div class="col-6">名額 : <?php echo get_field('female_quota');?>人
                                                 (<?php echo get_field('female_age_range');?>歲)</div>
-                                            <div class="col-7">餘額 : <?php echo get_field('female_remain_quota');?>人
+                                            <div class="col-6">餘額 : <?php echo get_field('female_remain_quota');?>人
                                             </div>
-                                            <div class="col-12 mt-1"><?php echo get_field('female_requirement');?>
-                                            </div>
+                                            <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -156,8 +186,9 @@ $the_query->the_post();
 
 
                     </div>
-                </a>
+                </div>
             </div>
+
             <?php
 }
 wp_reset_postdata();
