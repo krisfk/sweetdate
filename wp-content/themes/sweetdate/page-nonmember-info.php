@@ -38,7 +38,7 @@ $post_id = get_the_ID();
 
 
     <div class="relative">
-        <h2 class="title-type-pink-line">非會員資料更新</h2>
+        <h2 class="title-type-pink-line">非會員活動資料更新</h2>
         <div class="text-center">
             <div class="title-pink-line"></div>
         </div>
