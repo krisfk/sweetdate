@@ -44,24 +44,6 @@ $post_id = get_the_ID();
         </div>
     </div>
 
-    <ul class="filter-ul mt-4">
-        <li>
-            <a class="" href="<?php echo get_site_url();?>/member-area-new-activity" rel="login-form">最新活動
-            </a>
-        </li>
-        <li>
-            <a class="" href="<?php echo get_site_url();?>/member-area-joined-activity" rel="detail-form">已參加活動
-            </a>
-        </li>
-
-        <li>
-            <a class="active" href="<?php echo get_site_url();?>/member-area-member-info" rel="detail-form">會員資料
-            </a>
-        </li>
-
-
-
-    </ul>
 
 
     <div class="text-center mt-4 pink">
