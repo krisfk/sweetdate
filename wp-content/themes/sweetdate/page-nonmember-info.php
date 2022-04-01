@@ -49,6 +49,9 @@ $post_id = get_the_ID();
     <div class="text-center mt-4 pink">
 
         <?php
+
+        $nmid = $_GET['nmid'];
+        echo 999;
     
 
     if($_POST)
