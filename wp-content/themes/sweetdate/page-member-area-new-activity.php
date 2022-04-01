@@ -119,7 +119,7 @@ $the_query->the_post();
                             <?php echo get_field('activity_short_content');?>
 
                         </div>
-
+                        <!-- 
                         <div>
 
                             <a class="entry-person-btn" href="<?php echo get_permalink();?>?person=1">
@@ -136,7 +136,7 @@ $the_query->the_post();
                                     src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow.png"
                                     alt="">
                             </a>
-                        </div>
+                        </div> -->
 
 
 
