@@ -135,25 +135,27 @@ $post_id = get_the_ID();
 
 
             <div class="login-form form-div">
-                <form action="" class="member-login-info-form mb-5" method="post" action="">
-                    <input type="hidden" name="form-type" value="login-form">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-                                <h2 class="text-center m-0">登入資料</h2>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
-                            <td>
-                                <?php 
+                <input type="hidden" name="form-type" value="login-form">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="text-center m-0">登入資料</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
+                        <td>
+                            <?php 
                             echo get_field('login_email');
                             ?>
-                                <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                            <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
 
 
