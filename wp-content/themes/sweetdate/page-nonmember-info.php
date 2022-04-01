@@ -142,15 +142,7 @@ $post_id = get_the_ID();
                             <h2 class="text-center m-0">登入資料</h2>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
-                        <td>
-                            <?php 
-                            echo get_field('login_email');
-                            ?>
-                            <!-- <input type="text" class="form-control" id="login-email" name="login-email"> -->
-                        </td>
-                    </tr>
+
                     <tr>
                         <td></td>
                         <td></td>
@@ -167,6 +159,7 @@ $post_id = get_the_ID();
 
                     <table class="">
 
+
                         <tr>
                             <td colspan="2">
                                 <h2 class="text-center mb-2">個人資料</h2>
@@ -175,6 +168,15 @@ $post_id = get_the_ID();
 
                             </td>
                         </tr>
+                        <tr>
+                            <td class="text-end"><label for="login-email"> 登記電郵：</label></td>
+                            <td>
+                                <?php 
+                            echo get_field('login_email');
+                            ?>
+                            </td>
+                        </tr>
+
 
                         <tr>
                             <td class="text-end">姓別：</td>
