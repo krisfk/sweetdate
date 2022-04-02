@@ -689,7 +689,7 @@ $post_id = get_the_ID();
                                 <label for="how-to-know-us">如何得知我們：*</label>
                             </td>
                             <td>
-                                <select required class="form-select" name="how_to_know_us" id="how-to-know-us">
+                                <select required class="form-select" name="how-to-know-us" id="how-to-know-us">
                                     <option value="">選擇</option>
                                     <option <?php echo get_field('how_to_know_us')=='Yahoo' ? 'selected' :'';?>
                                         value="Yahoo">Yahoo</option>
