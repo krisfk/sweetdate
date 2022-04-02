@@ -29,7 +29,9 @@ get_header();
             <img src="<?php echo wp_get_attachment_image_url(get_field('article_main_image'),'full');?>" alt="">
         </div>
         <br>
-
+        <div><?php
+echo get_field('article_long_content');
+?></div>
 
 
 
