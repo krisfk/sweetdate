@@ -14,6 +14,13 @@ get_header();
 session_start();
 
 
+if(is_user_logged_in())
+{
+    wp_redirect( get_site_url() );
+    exit;
+}
+
+// http://64.227.13.14/sweetdate/nonmember-info/?nmid=330
 $nmid = $_GET['nmid'];
 
 
@@ -27,6 +34,8 @@ $query_args = array(
 $the_query = new WP_Query( $query_args );
 $the_query->the_post();
 $post_id = get_the_ID();
+
+
 
 
 
