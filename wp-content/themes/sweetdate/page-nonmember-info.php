@@ -15,12 +15,14 @@ session_start();
 
 // echo 999;
 
-if($_SESSION['login_member_id'])
-{
+if($_SESSION['login_member_id'] || !$_GET['mid'])
+{ 
     // echo 112;
     wp_redirect( get_site_url() );
     exit;
 }
+
+
 
 // http://64.227.13.14/sweetdate/nonmember-info/?nmid=330
 $nmid = $_GET['nmid'];
@@ -34,7 +36,16 @@ $query_args = array(
 );
 
 $the_query = new WP_Query( $query_args );
-$the_query->the_post();
+if($the_query->the_post())
+{
+    $the_query->the_post();
+}
+else
+{
+ 
+    wp_redirect( get_site_url() );
+    exit;   
+}
 $post_id = get_the_ID();
 
 
