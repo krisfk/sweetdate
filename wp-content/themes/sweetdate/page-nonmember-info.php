@@ -15,9 +15,9 @@ session_start();
 
 // echo 999;
 
-if(is_user_logged_in())
+if($_SESSION['login_member_id'])
 {
-    echo 112;
+    // echo 112;
     wp_redirect( get_site_url() );
     exit;
 }
