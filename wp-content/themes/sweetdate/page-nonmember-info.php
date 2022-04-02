@@ -91,6 +91,8 @@ $post_id = get_the_ID();
             $religion=$_POST['religion'];
             $overseas_study=$_POST['overseas-study'];
             $overseas_study_nation=$_POST['overseas_study_nation'];
+            $other_overseas_study_nation =$_POST['other-overseas-study-nation'];
+
             $language=$_POST['language'];
             $other_language = $_POST['other_language'];
             $height= $_POST['height'];
@@ -106,6 +108,7 @@ $post_id = get_the_ID();
             $how_to_know_us=$_POST['how-to-know-us'];
             $join_activity_way=$_POST['join-activity-way'];
 
+
             $overseas_study_nation=$_POST['overseas-study-nation'];
 
             update_post_meta($post_id, 'like_food', $like_food);
@@ -114,6 +117,7 @@ $post_id = get_the_ID();
             update_post_meta($post_id, 'last_name', $last_name);
             update_post_meta($post_id, 'age', $age);
             update_post_meta($post_id, 'tel', $tel);
+            
 
             update_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
 
@@ -124,7 +128,7 @@ $post_id = get_the_ID();
             update_post_meta($post_id, 'annual_income', $annual_income);
             update_post_meta($post_id, 'religion', $religion);
             update_post_meta($post_id, 'overseas_study', $overseas_study);
-            update_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+            update_post_meta($post_id, 'other_overseas_study_nation', $other_overseas_study_nation);
             update_post_meta($post_id, 'language', $language);
             update_post_meta($post_id, 'other_language', $other_language);
             update_post_meta($post_id, 'height', $height);
