@@ -95,6 +95,7 @@ $post_id = get_the_ID();
             $other_language = $_POST['other_language'];
             $height= $_POST['height'];
             $hobby= $_POST['hobby'];
+            $tel = $_POST['tel'];
             
             $target_age_from= $_POST['target-age-from'];
             $target_age_to= $_POST['target-age-to'];
