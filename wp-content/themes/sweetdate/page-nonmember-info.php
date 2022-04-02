@@ -16,6 +16,7 @@ session_start();
 
 if(is_user_logged_in())
 {
+    echo 112;
     wp_redirect( get_site_url() );
     exit;
 }
