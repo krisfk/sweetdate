@@ -761,3 +761,12 @@ function member_login($request)
     
 
 }
+
+
+  
+  // In theme's functions.php or plug-in code:
+
+  function wpse27856_set_content_type(){
+    return "text/html";
+}
+add_filter( 'wp_mail_content_type','wpse27856_set_content_type' );
