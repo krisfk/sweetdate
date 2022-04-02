@@ -42,14 +42,11 @@ if($the_query->have_posts())
 }
 else
 {
-    echo 999;
+    wp_redirect( get_site_url() );
+    exit;
 }
-// else
-// {
- 
-//     wp_redirect( get_site_url() );
-//     exit;   
-// }
+
+
 $post_id = get_the_ID();
 
 
