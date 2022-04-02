@@ -37,12 +37,13 @@ $sc=$_GET['sc'];
 $query_args = array(
     'post_type' => 'nonmember',
     'p'         => $nmid,
-    'meta_query' => array(
+    'meta_query' => array(array(
         'key'   => 'secretcode',
         'value' => $sc,
         'compare' => '='
-    )
+    ))
 );
+
 
 $the_query = new WP_Query( $query_args );
 if($the_query->have_posts())
