@@ -96,7 +96,7 @@ get_header();
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">
 
-                        <h2>成熟人士. 婚活族New Year Wish下午茶</h2>
+                        <h2><?php echo get_the_title();?></h2>
 
                         <div class="mt-3">來結織同樣希望以組織家庭為前題的對象! <br>
                             飲品及精美下午茶 <br>
