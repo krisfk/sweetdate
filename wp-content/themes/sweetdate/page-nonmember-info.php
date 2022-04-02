@@ -27,14 +27,19 @@ if($_SESSION['login_member_id'] || !$_GET['nmid'])
 
 // http://64.227.13.14/sweetdate/nonmember-info/?nmid=330
 $nmid = $_GET['nmid'];
-$nmid2=$_GET['nmid2'];
+$sc=$_GET['sc'];
 
+// http://64.227.13.14/sweetdate/nonmember-info/?nmid=339&sc=fdsaa
 
 // $member_id = $_SESSION['login_member_id'];
 
 $query_args = array(
     'post_type' => 'nonmember',
-    'p'         => $nmid
+    'p'         => $nmid,
+    'meta_query' => array(
+        'key'   => 'secretcode',
+        'value' => $sc
+    )
 );
 
 $the_query = new WP_Query( $query_args );
