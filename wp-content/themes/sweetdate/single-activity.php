@@ -14,6 +14,19 @@ get_header();
 $current_post_id=get_the_ID();
 $current_price=get_field('price');
 
+// function generateRandomString($length = 10) {
+    $length=20;
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    // return $randomString;
+// }
+
+// e generateRandomString();
+
 if(!$_POST)
 {
     unset ($_SESSION["paid"]);
@@ -880,6 +893,7 @@ if($_POST['form-type']=='reg')
                     $random_date_select=$_POST['any-date'];
                     
                     if ($post_id) {
+                        add_post_meta($post_id,'secretcode',$randomString);
                         add_post_meta($post_id, 'non_member_id', $nonmember_id);
                         add_post_meta($post_id, 'login_email', $register_email);
                         add_post_meta($post_id, 'tel', $tel);
@@ -945,6 +959,9 @@ if($_POST['form-type']=='reg')
                     $dislike_food=$_POST['dislike-food'];
                     
                     if ($post_id) {
+                        add_post_meta($post_id,'secretcode',$randomString);
+
+
                         add_post_meta($post_id, 'non_member_id', $nonmember_id);
                         add_post_meta($post_id, 'login_email', $register_email);
                         add_post_meta($post_id, 'tel', $tel);
@@ -995,6 +1012,9 @@ if($_POST['form-type']=='reg')
             
               
                 if ($post_id) {
+                    add_post_meta($post_id,'secretcode',$randomString);
+
+                    
                     add_post_meta($post_id, 'non_member_id', $nonmember_id);
                     add_post_meta($post_id, 'login_email', $register_email);
                     add_post_meta($post_id, 'tel', $tel);

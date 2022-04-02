@@ -15,6 +15,7 @@ session_start();
 
 // echo 999;
 
+
 if($_SESSION['login_member_id'] || !$_GET['nmid'])
 { 
     // echo 112;
@@ -26,6 +27,7 @@ if($_SESSION['login_member_id'] || !$_GET['nmid'])
 
 // http://64.227.13.14/sweetdate/nonmember-info/?nmid=330
 $nmid = $_GET['nmid'];
+$nmid2=$_GET['nmid2'];
 
 
 // $member_id = $_SESSION['login_member_id'];
