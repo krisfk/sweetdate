@@ -106,12 +106,15 @@ $post_id = get_the_ID();
 
             $overseas_study_nation=$_POST['overseas-study-nation'];
 
+            $tel = $_POST['tel'];
+
             update_post_meta($post_id, 'like_food', $like_food);
             update_post_meta($post_id, 'dislike_food', $dislike_food);
             update_post_meta($post_id, 'first_name', $first_name);
             update_post_meta($post_id, 'last_name', $last_name);
             update_post_meta($post_id, 'age', $age);
             update_post_meta($post_id, 'overseas_study_nation', $overseas_study_nation);
+            update_post_meta($post_id, 'tel', $tel);
 
             update_post_meta($post_id, 'education_level', $education_level);
             update_post_meta($post_id, 'occupation', $occupation);
