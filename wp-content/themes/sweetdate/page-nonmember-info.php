@@ -39,7 +39,8 @@ $query_args = array(
     'p'         => $nmid,
     'meta_query' => array(
         'key'   => 'secretcode',
-        'value' => $sc
+        'value' => $sc,
+        'compare' => '='
     )
 );
 

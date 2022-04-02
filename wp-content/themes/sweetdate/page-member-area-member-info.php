@@ -22,7 +22,7 @@ $query_args = array(
     'post_type' => 'member',
     'meta_query' => array(
             'key'   => 'member_id',
-            'value' => $member_id
+            'value' => $member_id,
     )
 );
 
