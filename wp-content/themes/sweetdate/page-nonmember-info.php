@@ -15,7 +15,7 @@ session_start();
 
 // echo 999;
 
-if($_SESSION['login_member_id'] || !$_GET['mid'])
+if($_SESSION['login_member_id'] || !$_GET['nmid'])
 { 
     // echo 112;
     wp_redirect( get_site_url() );
