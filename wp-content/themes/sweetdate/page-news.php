@@ -89,11 +89,14 @@ get_header();
             $the_query->the_post();
             // go ahead
           ?>
-            <div class="col-4 mb-4 position-relative">
-                <?php
+
+            <?php
 $category = get_the_category(); 
 
 ?>
+
+            <div class="col-4 mb-4 position-relative article-div <?php echo $category[0]->slug;?>">
+
                 <div class="news-label"><?php echo $category[0]->cat_name;?></div>
                 <a href="#" class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('article_main_image'),'full');?>" alt="">
