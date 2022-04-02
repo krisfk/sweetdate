@@ -873,7 +873,7 @@ if($_POST['form-type']=='reg')
             {
 
                 // 另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：
-                wp_mail( 'krisfk@gmail.com', 'subjecgt', 'msg<br>msg' );
+                wp_mail( $_POST['register-email'], $email_title, $email_content );
 
                 // echo 999;
 
