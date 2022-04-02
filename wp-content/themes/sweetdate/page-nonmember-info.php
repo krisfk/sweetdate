@@ -45,7 +45,7 @@ if($the_query->the_post())
  
 //     wp_redirect( get_site_url() );
 //     exit;   
-}
+// }
 $post_id = get_the_ID();
 
 
