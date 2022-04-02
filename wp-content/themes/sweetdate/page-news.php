@@ -154,6 +154,10 @@ $(function() {
 
         $('.filter-ul li a').removeClass('active');
         $(this).addClass('active');
+
+        $('.article-div').fadeOut(0);
+
+        $('.article-div.' + $(this).attr('ref')).fadeIn(0);
     })
 })
 </script>
