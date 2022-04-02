@@ -36,16 +36,16 @@ $query_args = array(
 );
 
 $the_query = new WP_Query( $query_args );
-if($the_query->the_post())
-{
+// if($the_query->the_post())
+// {
     $the_query->the_post();
-}
-else
-{
+// }
+// else
+// {
  
-    wp_redirect( get_site_url() );
-    exit;   
-}
+//     wp_redirect( get_site_url() );
+//     exit;   
+// }
 $post_id = get_the_ID();
 
 
