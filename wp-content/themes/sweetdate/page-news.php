@@ -89,7 +89,7 @@ get_header();
             $the_query->the_post();
             // go ahead
           ?>
-            <!-- <div class="col-4 mb-4 position-relative">
+            <div class="col-4 mb-4 position-relative">
 
                 <div class="news-label">約會資訊</div>
                 <a href="#" class="s-case-div-a"><img
@@ -109,7 +109,7 @@ get_header();
 
                     </div>
                 </a>
-            </div> -->
+            </div>
 
 
             <?php
