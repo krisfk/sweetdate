@@ -36,13 +36,13 @@ $query_args = array(
 );
 
 $the_query = new WP_Query( $query_args );
-if($the_query->the_post())
+if($the_query->have_posts())
 {
     $the_query->the_post();
 }
 else
 {
-    // echo 999;
+    echo 999;
 }
 // else
 // {
