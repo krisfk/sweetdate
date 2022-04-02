@@ -13,6 +13,8 @@ get_header();
 // session_start();
 $current_post_id=get_the_ID();
 $current_price=get_field('price');
+$email_title=get_field('email_title');
+$email_content=get_field('email_content');
 
 // function generateRandomString($length = 10) {
     $length=20;
@@ -870,6 +872,7 @@ if($_POST['form-type']=='reg')
             if($_POST['person']==1)
             {
 
+                // 另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：
                 wp_mail( 'krisfk@gmail.com', 'subjecgt', 'msg<br>msg' );
 
                 // echo 999;
