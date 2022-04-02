@@ -42,7 +42,7 @@ if($the_query->the_post())
 }
 else
 {
-    echo 999;
+    // echo 999;
 }
 // else
 // {
