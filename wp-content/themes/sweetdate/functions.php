@@ -770,3 +770,8 @@ function member_login($request)
     return "text/html";
 }
 add_filter( 'wp_mail_content_type','wpse27856_set_content_type' );
+
+function app_output_buffer() {
+    ob_start();
+} // soi_output_buffer
+add_action('init', 'app_output_buffer');
