@@ -28,6 +28,7 @@ if($_SESSION['login_member_id'] || !$_GET['nmid'])
 // http://64.227.13.14/sweetdate/nonmember-info/?nmid=330
 $nmid = $_GET['nmid'];
 $sc=$_GET['sc'];
+echo 999;
 
 // http://64.227.13.14/sweetdate/nonmember-info/?nmid=339&sc=fdsaa
 
