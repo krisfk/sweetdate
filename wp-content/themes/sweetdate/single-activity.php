@@ -1059,8 +1059,8 @@ if($_POST['form-type']=='reg')
                 add_row('applied_non_member', $row,$current_post_id);
 
             
-                $email_content= $_POST['first-name'].' 您好！<br><br>'.$email_content.'<br>另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：<br>'.get_site_url().'/nonmember-info/?nmid='.$post_id.'&sc='.$randomString.'<br><br><br>Sweetdate';
-                wp_mail( $_POST['register-email'], $email_title, $email_content );
+                $email_content= $_POST['first-name-2'].' 您好！<br><br>'.$email_content.'<br>另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：<br>'.get_site_url().'/nonmember-info/?nmid='.$post_id.'&sc='.$randomString.'<br><br><br>Sweetdate';
+                wp_mail( $_POST['register-email-2'], $email_title, $email_content );
 
                 
               
