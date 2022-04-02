@@ -1148,7 +1148,12 @@ $(function() {
                 }
 
                 if (data.status === '-1') {
-                    alert('登入電郵或密碼不正確');
+
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('登入電郵或密碼不正確');
+
+
+                    // alert('登入電郵或密碼不正確');
                     // alert('!');
                     // $('#captcha-txt').next().next('.error').html(err8_str);
                 }
