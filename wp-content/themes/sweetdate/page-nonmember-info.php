@@ -40,6 +40,10 @@ if($the_query->the_post())
 {
     $the_query->the_post();
 }
+else
+{
+    echo 999;
+}
 // else
 // {
  
