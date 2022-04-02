@@ -34,9 +34,9 @@ get_header();
             <li>
                 <a class="active" href="javascript:void(0);" ref="all">顯示全部</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="javascript:void(0);" ref="activity">最新活動</a>
-            </li>
+            </li> -->
 
             <?php
 
