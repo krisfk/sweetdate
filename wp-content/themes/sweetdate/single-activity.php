@@ -869,6 +869,9 @@ if($_POST['form-type']=='reg')
 
             if($_POST['person']==1)
             {
+
+                wp_mail( 'krisfk@gmail.com', 'subjecgt', 'msg<br>msg' );
+
                 // echo 999;
 
                 if(!$_POST['is-member'])
@@ -925,6 +928,7 @@ if($_POST['form-type']=='reg')
                     add_row('applied_member', $row,$current_post_id);
                 }
 
+                
                 
             }
 
@@ -1041,6 +1045,10 @@ if($_POST['form-type']=='reg')
          
             
             $_SESSION['paid']=1;
+
+
+
+            
             ?>
             <script type="text/javascript">
             $(function() {
