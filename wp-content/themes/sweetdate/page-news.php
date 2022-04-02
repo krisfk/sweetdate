@@ -98,7 +98,7 @@ $category = get_the_category();
             <div class="col-4 mb-4 position-relative article-div <?php echo $category[0]->slug;?>">
 
                 <div class="news-label"><?php echo $category[0]->cat_name;?></div>
-                <a href="#" class="s-case-div-a"><img
+                <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('article_main_image'),'full');?>" alt="">
                     <div class="mt-4">
 
