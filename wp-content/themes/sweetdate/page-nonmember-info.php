@@ -26,7 +26,7 @@ if($_SESSION['login_member_id'])
 $nmid = $_GET['nmid'];
 
 
-$member_id = $_SESSION['login_member_id'];
+// $member_id = $_SESSION['login_member_id'];
 
 $query_args = array(
     'post_type' => 'nonmember',
