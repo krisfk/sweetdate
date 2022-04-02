@@ -77,9 +77,17 @@ get_header();
         <div class="row mt-5">
 
             <?php
-for($i=0;$i<6;$i++)
-{
-    ?>
+        
+        $args = array(
+            'posts_per_page'   => -1,
+            'post_type'        => 'post',
+        );
+        $the_query = new WP_Query( $args );
+        
+        
+        while ( $the_query->have_posts() ) {
+          // go ahead
+          ?>
             <div class="col-4 mb-4 position-relative">
 
                 <div class="news-label">約會資訊</div>
@@ -87,12 +95,7 @@ for($i=0;$i<6;$i++)
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">
 
-
                         <h2>成熟人士. 婚活族New Year Wish下午茶</h2>
-
-
-
-
 
                         <div class="mt-3">來結織同樣希望以組織家庭為前題的對象! <br>
                             飲品及精美下午茶 <br>
@@ -106,9 +109,16 @@ for($i=0;$i<6;$i++)
                     </div>
                 </a>
             </div>
+
+
             <?php
-}
-?>
+        }
+        
+        
+        
+        ?>
+
+
 
 
         </div>
