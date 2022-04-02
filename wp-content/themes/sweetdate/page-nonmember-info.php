@@ -86,9 +86,6 @@ $post_id = get_the_ID();
             $education_level=$_POST['education-level'];
             $occupation=$_POST['occupation'];
             $occupation_title=$_POST['occupation-title'];
-
-            
-
             $other_occupation=$_POST['other-occupation'];
             $annual_income=$_POST['annual-income'];
             $religion=$_POST['religion'];
