@@ -153,7 +153,7 @@ get_header();
                     <div class="mt-4">
                         <h2><?php echo get_the_title();?></h2>
 
-                        <div><?php echo get_the_content();?></div>
+                        <div><?php echo get_field('article_short_content');?></div>
 
                         <!-- 你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。 -->
 
