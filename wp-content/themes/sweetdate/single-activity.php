@@ -897,7 +897,7 @@ if($_POST['form-type']=='reg')
                     $age = $_POST['age'];
                     $like_food=$_POST['like-food'];
                     $dislike_food=$_POST['dislike-food'];
-                    $random_date_select=$_POST['any-date'];
+                    // $random_date_select=$_POST['any-date'];
                     
                     if ($post_id) {
                         add_post_meta($post_id,'secretcode',$randomString);
