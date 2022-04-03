@@ -149,11 +149,11 @@ get_header();
             ?>
             <div class="s-case-div">
                 <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
+                        src="<?php echo wp_get_attachment_image_url(get_field('article_main_image'),'full');?>" alt="">
                     <div class="mt-4">
                         <h2><?php echo get_the_title();?></h2>
 
-                        <div><?php echo get_the_content();?></div>
+                        <div><?php echo get_content('article_short_content');?></div>
 
                         <!-- 你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。 -->
 
