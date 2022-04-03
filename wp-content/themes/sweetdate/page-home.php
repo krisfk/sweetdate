@@ -150,7 +150,7 @@ get_header();
             <div class="s-case-div">
                 <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
-                    <div class="mt-4">為
+                    <div class="mt-4">
                         <h2><?php echo get_the_title();?></h2>
 
                         <div><?php echo get_the_content();?></div>
