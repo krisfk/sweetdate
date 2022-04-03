@@ -151,7 +151,9 @@ get_header();
                 <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
                     <div class="mt-4">為
-                        <h2><?php echo get_field('activity_title');?></h2>
+                        <h2><?php echo get_the_title();?></h2>
+
+                        <div><?php echo get_the_content();?></div>
 
                         <!-- 你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。 -->
 
