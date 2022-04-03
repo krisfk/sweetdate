@@ -869,6 +869,9 @@ if($_POST['form-type']=='reg')
             // print_r()
             $balance_transaction = $charge->balance_transaction;
 
+            $random_date_select=$_POST['any-date'];
+
+            
             if($_POST['person']==1)
             {
 
