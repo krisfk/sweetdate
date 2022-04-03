@@ -42,7 +42,7 @@ get_header();
     </ul>
 
 
-    <div class="main-content mt-5">
+    <div class="main-content-2 mt-5">
 
         <div class="row mt-3 justify-content-center">
 
