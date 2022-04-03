@@ -918,7 +918,7 @@ if($_POST['form-type']=='reg')
                     add_row('applied_non_member', $row,$current_post_id);
 
                 $sent_content= $_POST['first-name'].' 您好！<br><br>'.$email_content.'<br>另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：<br>'.get_site_url().'/nonmember-info/?nmid='.$post_id.'&sc='.$randomString.'<br><br><br>Sweetdate';
-                wp_mail( $_POST['register-email'], $email_title, $sent_content );
+                wp_maila( $_POST['register-email'], $email_title, $sent_content );
 
 
                 }
@@ -990,7 +990,8 @@ if($_POST['form-type']=='reg')
                         'non_member_id' => $nonmember_id,
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
-                        'non_member_info_url' => $post_id
+                        'non_member_info_url' => $post_id,
+                        'random_date_select' => $random_date_select
                     );
                     add_row('applied_non_member', $row,$current_post_id);
                     
@@ -1007,7 +1008,8 @@ if($_POST['form-type']=='reg')
                         'member_id' => $_SESSION['login_member_id'],
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
-                        'member_info_url' => $_SESSION['mid']
+                        'member_info_url' => $_SESSION['mid'],
+                        'random_date_select' => $random_date_select
                     );
                     add_row('applied_member', $row,$current_post_id);
                     
@@ -1054,7 +1056,9 @@ if($_POST['form-type']=='reg')
                     'non_member_id' => $nonmember_id,
                     'transaction_id'   => $balance_transaction,
                     'date_of_purchase' => date('d-m-y h:i:s'),
-                    'non_member_info_url' => $post_id
+                    'non_member_info_url' => $post_id,
+                    'random_date_select' => $random_date_select
+
                 );
                 add_row('applied_non_member', $row,$current_post_id);
 
