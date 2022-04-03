@@ -148,7 +148,7 @@ get_header();
             $the_query->the_post();
             ?>
             <div class="s-case-div">
-                <a href="javascript:void(0);" class="s-case-div-a"><img
+                <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('article_main_image'),'full');?>" alt="">
                     <div class="mt-4">
                         <h2><?php echo get_the_title();?></h2>
