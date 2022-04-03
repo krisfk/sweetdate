@@ -129,7 +129,25 @@ get_header();
 
 
         <div class="successful-story-carousel mt-4">
+            <?php
+      
+      $query_args = array(
+          'post_type' => 'post',
+          'posts_per_page' => -1,
+          'category__in' => array(4)
 
+       );
+      
+      // The Query
+      $the_query = new WP_Query( $query_args );
+      
+      // The Loop
+      if ( $the_query->have_posts() ) {
+          while ( $the_query->have_posts() ) {
+              echo 1;
+          }
+        }
+              ?>
             <!-- <div class="s-case-div">
                 <a href="javascript:void(0);" class="s-case-div-a"><img
                         src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
