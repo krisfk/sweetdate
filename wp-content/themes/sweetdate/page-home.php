@@ -149,7 +149,7 @@ get_header();
             ?>
             <div class="s-case-div">
                 <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
+                        src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
                     <div class="mt-4">
                         <h2><?php echo get_the_title();?></h2>
 
