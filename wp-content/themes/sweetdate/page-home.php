@@ -146,9 +146,27 @@ get_header();
           while ( $the_query->have_posts() ) {
             //   echo 1;
             $the_query->the_post();
-            echo 1;
+            ?>
+            <div class="s-case-div">
+                <a href="javascript:void(0);" class="s-case-div-a"><img
+                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
+                    <div class="mt-4">為
+                        <h2><?php echo get_field('activity_title');?></h2>
+
+                        <!-- 你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。 -->
+
+                    </div>
+                </a>
+            </div>
+
+            <?php
+            // echo 1;
           }
         }
+
+        wp_reset_postdata();
+
+        
               ?>
             <!-- <div class="s-case-div">
                 <a href="javascript:void(0);" class="s-case-div-a"><img
