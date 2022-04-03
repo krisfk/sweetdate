@@ -60,6 +60,32 @@ $the_query = new WP_Query( $query_args );
 if ( $the_query->have_posts() ) {
 while ( $the_query->have_posts() ) {
 $the_query->the_post();
+
+// $applied_member = get_field('applied_member');
+
+$joined =false;
+
+
+if( have_rows('applied_member') ){
+
+    // Loop through rows.
+    while( have_rows('applied_member') ) { the_row();
+
+        // Load sub field value.
+        $joined_member_id = get_sub_field('member_info_url');
+        // Do something...
+        if($_SESSION['mid']==$joined_member_id)
+        {
+            $joined =true;
+        }
+    }
+}
+
+
+if($joined)
+{
+
+
 ?>
             <div class="col-6 mb-2">
 
@@ -202,6 +228,7 @@ $the_query->the_post();
             </div>
 
             <?php
+            }
 }
 wp_reset_postdata();
 } else {
