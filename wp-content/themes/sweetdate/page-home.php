@@ -144,7 +144,9 @@ get_header();
       // The Loop
       if ( $the_query->have_posts() ) {
           while ( $the_query->have_posts() ) {
-              echo 1;
+            //   echo 1;
+            $the_query->the_post();
+            echo 1;
           }
         }
               ?>
