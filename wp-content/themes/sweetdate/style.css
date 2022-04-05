@@ -392,6 +392,10 @@ h3.title-type-pink-line {
     color: #000;
 }
 
+.gender-div img {
+    width: 100%;
+}
+
 .single-activity .gender-div-col.male {
     background: #e0edf4;
 }
