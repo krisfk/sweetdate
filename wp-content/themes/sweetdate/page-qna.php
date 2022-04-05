@@ -41,18 +41,10 @@ get_header();
         while($query->have_posts())
         {
             $query->the_post();
-            echo 1;
-        }
-    }
-
-    
-    ?>
-
-        <?php
-
-for($i=0;$i<4;$i++)
-{
-    ?>
+       
+            while( have_rows('qna') ){
+                the_row(); 
+                ?>
         <div class="qt-ans-group mb-3">
 
             <a href="javascript:void(0);" class="qt position-relative">
@@ -62,7 +54,7 @@ for($i=0;$i<4;$i++)
                         <td class="pe-2">
                             <span class="symbol">Q</span>
                         </td>
-                        <td>問題問題問題問題問題問題問題問題問題問題問題問題問題</td>
+                        <td><?php echo get_sub_field('question');?></td>
                     </tr>
                 </table>
 
@@ -77,7 +69,7 @@ for($i=0;$i<4;$i++)
                         <td class="pe-2">
                             <span class="symbol">A</span>
                         </td>
-                        <td>答案答案答案答案答案答案答案答案答案答案答案答案答案</td>
+                        <td><?php echo get_sub_field('answer');?></td>
                     </tr>
                 </table>
 
@@ -86,8 +78,16 @@ for($i=0;$i<4;$i++)
             </div>
         </div>
         <?php
-}
-?>
+
+
+                
+            }  
+        }
+    }
+
+    
+    ?>
+
 
 
 
