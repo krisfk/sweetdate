@@ -126,6 +126,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .top-menu-ul li a {
     text-decoration: none;
     color: #595959;
+    transition: 0.2s all;
+}
+
+.top-menu-ul li a:hover {
+    opacity: 0.85;
 }
 
 .top-div {
