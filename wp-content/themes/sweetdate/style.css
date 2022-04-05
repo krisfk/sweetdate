@@ -308,6 +308,7 @@ h3.title-type-pink-line {
 
 .s-case-div-a,
 .s-case-div-a:hover {
+    background: #fff;
     text-decoration: none;
     color: #595959;
     text-align: left;
