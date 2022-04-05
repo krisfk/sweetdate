@@ -341,7 +341,7 @@ get_header();
 
                         </div>
 
-                        <div class="gender-div female row align-items-center gx-0 mt-3">
+                        <div class="gender-div female row align-items-center gx-0 mt-1">
 
                             <div class="col-2 text-center pt-3 pb-3"> <img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
