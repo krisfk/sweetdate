@@ -17,7 +17,7 @@ get_header();
 
     <div class="row gx-5">
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12  mb-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12  mb-5">
 
             <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
                 alt="">
