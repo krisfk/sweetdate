@@ -323,11 +323,11 @@ get_header();
 
                         <div class="gender-div male row align-items-center gx-0 mt-3">
 
-                            <div class="col-3 text-center pt-3 pb-3"> <img
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-3  text-center pt-3 pb-3"> <img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
                             </div>
 
-                            <div class=" col-9 pt-3 pe-2 pb-3">
+                            <div class=" col-lg-10 col-md-10 col-sm-9 col-9  pt-3 pe-2 pb-3">
                                 <div class="row">
 
                                     <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
