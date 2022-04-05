@@ -169,9 +169,9 @@ if(!$_SESSION['login_member_id'])
 {
 ?>
 
-                    <li><a href="<?php echo get_site_url();?>/member-register"><img
+                    <li class="mobile-user-li"><a href="<?php echo get_site_url();?>/member-register"><img
                                 src="<?php echo get_template_directory_uri()?>/assets/images/reg-icon.png" alt="">
-                            會員註冊f</a></li>
+                            會員註冊</a></li>
 
                     <?php
 }
@@ -180,7 +180,7 @@ if(!$_SESSION['login_member_id'])
 if($_SESSION['login_member_id'])
 {
     ?>
-                    <li><a href="<?php echo get_site_url();?>/member-area-new-activity"><img
+                    <li class="mobile-user-li"><a href="<?php echo get_site_url();?>/member-area-new-activity"><img
                                 src="<?php echo get_template_directory_uri()?>/assets/images/account-icon.png" alt="">
                             會員專區</a></li>
                     <?php
@@ -193,7 +193,7 @@ if($_SESSION['login_member_id'])
 if($_SESSION['login_member_id'])
 {
    ?>
-                    <li><a href="<?php echo get_site_url();?>/member-logout"><img
+                    <li class="mobile-user-li"><a href="<?php echo get_site_url();?>/member-logout"><img
                                 src="<?php echo get_template_directory_uri()?>/assets/images/logout-icon.png" alt="">
                             登出</a></li>
                     <?php
@@ -201,7 +201,7 @@ if($_SESSION['login_member_id'])
 else
 {
    ?>
-                    <li><a href="<?php echo get_site_url();?>/member-login"><img
+                    <li class="mobile-user-li"><a href="<?php echo get_site_url();?>/member-login"><img
                                 src="<?php echo get_template_directory_uri()?>/assets/images/login-icon.png" alt="">
                             登入</a></li>
                     <?php
