@@ -347,7 +347,7 @@ get_header();
                                     src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png" alt="">
                             </div>
 
-                            <div class="col-10">
+                            <div class="col-10 pt-3 pe-2 pb-3">
                                 <div class="row">
 
                                     <div class="col-6">名額 : <?php echo get_field('female_quota');?>人
