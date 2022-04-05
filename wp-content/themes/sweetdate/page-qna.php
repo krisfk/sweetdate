@@ -40,6 +40,7 @@ get_header();
     {
         while($query->have_posts())
         {
+            $query->the_post();
             echo 1;
         }
     }
