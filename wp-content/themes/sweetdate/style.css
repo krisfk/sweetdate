@@ -159,7 +159,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 }
 
 .user-menu-ul {
-    /* display: none; */
+    display: none;
     margin: 0;
     padding: 0;
     text-align: right;
@@ -791,6 +791,8 @@ tbody {
     }
     .top-menu-ul li.mobile-logo-li {
         display: block;
+        padding: 0;
+        margin: 0;
     }
     .mobile-menu-submenu {
         display: block;
@@ -819,7 +821,7 @@ tbody {
         opacity: 0;
     }
     .top-menu-ul {
-        display: none;
+        display: block;
         position: fixed;
         /* top: 3rem; */
         top: 0;
@@ -834,6 +836,8 @@ tbody {
     .top-menu-ul li {
         display: block;
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .top-menu-ul li a {
         display: block;
