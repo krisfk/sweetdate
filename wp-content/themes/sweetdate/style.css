@@ -864,6 +864,8 @@ tbody {
     .logo-a {
         width: 100px !important;
         /* height: 10px !important; */
+        position: relative;
+        top: 6px;
     }
     .logo-a img {
         height: auto !important;
@@ -877,6 +879,7 @@ tbody {
         display: block;
         padding: 0;
         margin: 0;
+        margin: 2rem 0 1rem 0 !important;
     }
     .mobile-menu-submenu {
         display: block;
