@@ -468,7 +468,7 @@ h3.title-type-pink-line {
 .member-further-info-form {
     margin: 0 auto;
     display: table;
-    background: #fff;
+    /* background: #fff; */
     color: #595959;
     min-width: 768px;
 }
@@ -489,6 +489,7 @@ h3.title-type-pink-line {
     vertical-align: middle;
     /* vertical-align: top; */
     padding: 1rem;
+    background: #fff;
 }
 
 
@@ -519,6 +520,7 @@ h3.title-type-pink-line {
 .member-further-info-form tr:last-child td {
     border: none;
     padding: 0;
+    background: none;
 }
 
 .form-submit-btn {
