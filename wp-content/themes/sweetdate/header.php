@@ -87,6 +87,8 @@ session_start();
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
+    <img class="background-bg" src="<?php echo get_template_directory_uri()?>/assets/images/sd-logo-new.jpg" alt="">
+
 
     <div class="lightbox" style="">
         <div class="lightbox-bg-btn ">
