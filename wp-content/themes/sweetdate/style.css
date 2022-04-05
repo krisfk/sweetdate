@@ -789,6 +789,14 @@ tbody {
 @media only screen and (max-width: 640px) {}
 
 @media only screen and (max-width: 480px) {
+    .s-case-div {
+        display: block;
+        background: #fff;
+        text-align: center;
+        /* padding: 1rem; */
+        margin: 0 0.5rem;
+        /* box-shadow: 5px 2px 13px #000; */
+    }
     .contact-form td,
     .login-form td {
         border: 1px solid #ebebeb;
