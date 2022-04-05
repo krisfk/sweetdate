@@ -808,7 +808,7 @@ tbody {
         opacity: 0;
     }
     .top-menu-ul {
-        display: block;
+        display: none;
         position: fixed;
         /* top: 3rem; */
         top: 0;
