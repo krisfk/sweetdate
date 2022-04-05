@@ -569,6 +569,11 @@ h3.title-type-pink-line {
     transform: rotate(180deg);
 }
 
+.qt p {
+    padding: 0;
+    margin: 0;
+}
+
 .qt,
 .qt:hover {
     display: block;
