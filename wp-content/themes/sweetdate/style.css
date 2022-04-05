@@ -777,6 +777,10 @@ tbody {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
+    .mobile-user-li a {
+        padding: 0;
+        margin: 0;
+    }
     .logo-a {
         width: 100px !important;
         /* height: 10px !important; */
