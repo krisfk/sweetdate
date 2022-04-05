@@ -839,6 +839,9 @@ tbody {
 @media only screen and (max-width: 991px) {
     .mobile-menu-btn-div {
         display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .sns-a {
         width: 30px !important;
@@ -886,9 +889,10 @@ tbody {
     }
     .mobile-menu-btn {
         display: block;
-        position: fixed;
+        position: relative;
         top: 0;
         right: 0;
+        margin: 0.5rem -10px 0 0;
     }
     .mobile-top-div {
         display: block;
