@@ -782,8 +782,9 @@ tbody {
         /* height: 10px !important; */
     }
     .user-menu-div {
-        width: 70% !important;
+        /* width: 70% !important; */
         /* float: right; */
+        display: none;
     }
     .top-menu-ul li.mobile-logo-li {
         display: block;
