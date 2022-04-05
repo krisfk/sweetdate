@@ -344,7 +344,7 @@ get_header();
                         <div class="gender-div female row align-items-center gx-0 mt-1">
 
                             <div class="col-2 text-center pt-3 pb-3"> <img
-                                    src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png" alt="">
                             </div>
 
                             <div class="col-10">
