@@ -30,7 +30,7 @@ get_header();
         <?php
     // WP_Query arguments
     $args = array(
-        'post_type'              => array( 'qna' ),
+        'post_type'              => array( 'qnas' ),
         'num_of_posts' => -1
     );
 
