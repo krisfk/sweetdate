@@ -27,6 +27,25 @@ get_header();
 
     <div class="main-content mt-4">
 
+        <?php
+    // WP_Query arguments
+    $args = array(
+        'post_type'              => array( 'qna' ),
+        'num_of_posts' => -1
+    );
+
+    // The Query
+    $query = new WP_Query( $args );
+    if($query->have_posts())
+    {
+        while($query->have_posts())
+        {
+            echo 1;
+        }
+    }
+
+    
+    ?>
 
         <?php
 
