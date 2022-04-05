@@ -233,11 +233,11 @@ else
 
                 </ul>
 
-                <div class="col-8 text-end mobile-menu-btn-div">
+                <div class="col-7 text-end mobile-menu-btn-div">
                     <a href="#" class="mobile-menu-btn"> <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <div class="col-2 user-menu-div">
+                <div class="col-3 user-menu-div">
 
                     <ul class="user-menu-ul">
 
