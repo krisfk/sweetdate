@@ -96,7 +96,7 @@ session_start();
             <div class="row align-items-center">
 
                 <a href="<?php echo get_site_url();?>" class="logo-a col-2">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/images/sd-logo.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/images/sd-logo-new.jpg" alt="">
                 </a>
 
 
