@@ -837,6 +837,9 @@ tbody {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
+    ..mobile-menu-btn-div {
+        display: block;
+    }
     .sns-a {
         width: 30px !important;
         display: inline-block !important;
