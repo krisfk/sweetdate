@@ -321,7 +321,7 @@ get_header();
                             </a>
                         </div>
 
-                        <div class="gender-div male row align-items-center gx-0 mt-4">
+                        <div class="gender-div male row align-items-center gx-0 mt-3">
 
                             <div class="col-2 text-center pt-3 pb-3"> <img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
@@ -334,6 +334,26 @@ get_header();
                                         (<?php echo get_field('male_age_range');?>歲)</div>
                                     <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
                                     <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="gender-div female row align-items-center gx-0 mt-3">
+
+                            <div class="col-2 text-center pt-3 pb-3"> <img
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
+                            </div>
+
+                            <div class="col-10">
+                                <div class="row">
+
+                                    <div class="col-6">名額 : <?php echo get_field('female_quota');?>人
+                                        (<?php echo get_field('female_age_range');?>歲)</div>
+                                    <div class="col-6">餘額 : <?php echo get_field('female_remain_quota');?>人</div>
+                                    <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
                                 </div>
 
                             </div>
