@@ -870,6 +870,9 @@ tbody {
     .site-main {
         margin: 2rem 0 0 0;
     }
+    .home .site-main {
+        margin: 0;
+    }
     .mobile-menu-btn-div {
         display: block;
         position: absolute;
