@@ -120,7 +120,7 @@ session_start();
 
 
         <div class=" top-menu-div pt-1 container">
-            <div class="row align-items-center">
+            <div class="row align-items-center position-relative">
 
                 <a href="<?php echo get_site_url();?>" class="logo-a col-2">
                     <img src="<?php echo get_template_directory_uri()?>/assets/images/sd-logo-new.jpg" alt="">
