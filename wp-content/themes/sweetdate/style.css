@@ -258,7 +258,7 @@ h3.title-type-pink-line {
 }
 
 .successful-story-container {
-    background: #f3f3f3 url(./assets/images/bg_stripe.png) repeat;
+    background: hsl(0deg 0% 95% / 70%) url(./assets/images/bg_stripe.png) repeat;
     background-size: 6px;
     position: relative;
     width: 100%;
