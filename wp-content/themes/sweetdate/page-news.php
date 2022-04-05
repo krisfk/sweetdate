@@ -95,7 +95,8 @@ $category = get_the_category();
 
 ?>
 
-            <div class="col-4 mb-4 position-relative article-div <?php echo $category[0]->slug;?>">
+            <div
+                class="col-lg-4 col-md-6 col-sm-12 col-12  mb-4 position-relative article-div <?php echo $category[0]->slug;?>">
 
                 <div class="news-label"><?php echo $category[0]->cat_name;?></div>
                 <a href="<?php echo get_permalink();?>" class="s-case-div-a"><img
