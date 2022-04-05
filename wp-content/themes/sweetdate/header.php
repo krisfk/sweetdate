@@ -66,7 +66,7 @@ session_start();
 
             if ($(this).hasClass('opened')) {
 
-                $('.top-menu-ul').fadeIn(200);
+                $('.top-menu-ul').slideDown(200);
             } else {
                 $('.top-menu-ul').fadeOut(0);
 
