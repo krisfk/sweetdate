@@ -321,31 +321,28 @@ get_header();
                             </a>
                         </div>
 
-                        <div class="gender-div male">
-                            <table>
-                                <tr>
-                                    <td class="gender-icon-td">
-                                        <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png"
-                                            alt="">
+                        <div class="gender-div male row">
+
+                            <div class="col-3"> <img
+                                    src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
+                            </div>
+
+                            <div class="col-9">
+                                <div class="row">
+
+                                    <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
+                                        (<?php echo get_field('male_age_range');?>歲)</div>
+                                    <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                    <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
+                                </div>
+
+                            </div>
 
 
-                                    </td>
-                                    <td class="">
-                                        <div class="row">
-
-                                            <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
-                                                (<?php echo get_field('male_age_range');?>歲)</div>
-                                            <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
-                                            <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </table>
                         </div>
 
 
-                        <div class="gender-div female">
+                        <!-- <div class="gender-div female">
                             <table>
                                 <tr>
                                     <td class="gender-icon-td">
@@ -367,7 +364,7 @@ get_header();
                                 </tr>
 
                             </table>
-                        </div>
+                        </div> -->
 
 
                     </div>
