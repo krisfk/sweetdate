@@ -773,7 +773,7 @@ tbody {
 }
 
 .mobile-user-li {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 1920px) {}
@@ -786,7 +786,7 @@ tbody {
         display: inline-block !important;
     }
     .mobile-user-li {
-        display: inline-block;
+        display: inline-block !important;
     }
     .mobile-user-li a {
         padding: 0.5rem 0 !important;
