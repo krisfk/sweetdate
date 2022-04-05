@@ -131,50 +131,46 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         <div class="row mt-3 gx-0">
 
             <div class="col-lg-6 col-md-12 col-sm-12 col-12  gender-div-col male">
-                <div class="gender-div male">
-                    <table>
-                        <tr>
-                            <td class="gender-icon-td">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
+
+                <div class="gender-div male row align-items-center gx-0 mt-3">
+
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-3 text-center pt-3 pb-3">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
+                    </div>
+
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-9 pt-3 pe-2 pb-3">
+                        <div class="row">
+
+                            <div class="col-6">名額 : <?php echo get_field('male_quota');?>人
+                                (<?php echo get_field('male_age_range');?>歲)</div>
+                            <div class="col-6">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                            <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
+                        </div>
+
+                    </div>
 
 
-                            </td>
-                            <td class="">
-                                <div class="row">
-
-                                    <div class="col-7">名額 : <?php echo get_field('male_quota');?>人
-                                        (<?php echo get_field('male_age_range');?>歲)</div>
-                                    <div class="col-5">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
-                                    <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 gender-div-col female">
-                <div class="gender-div female">
-                    <table>
-                        <tr>
-                            <td class="gender-icon-td">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png" alt="">
+                <div class="gender-div female row align-items-center gx-0 mt-1">
+
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-3 text-center pt-3 pb-3">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/f-icon.png" alt="">
+                    </div>
+
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-9 pt-3 pe-2 pb-3">
+                        <div class="row">
+
+                            <div class="col-6">名額 : <?php echo get_field('female_quota');?>人
+                                (<?php echo get_field('female_age_range');?>歲)</div>
+                            <div class="col-6">餘額 : <?php echo get_field('female_remain_quota');?>人</div>
+                            <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
+                        </div>
+
+                    </div>
 
 
-                            </td>
-                            <td class="">
-                                <div class="row">
-
-                                    <div class="col-7">名額 : <?php echo get_field('female_quota');?>人
-                                        (<?php echo get_field('female_age_range');?>歲)</div>
-                                    <div class="col-5">餘額 : <?php echo get_field('female_remain_quota');?>人
-                                    </div>
-                                    <div class="col-12 mt-1"><?php echo get_field('female_requirement');?></div>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
                 </div>
             </div>
 
