@@ -595,7 +595,7 @@ $(function() {
                         <tr>
                             <td colspan="2" class="text-start"> <input type="checkbox" name="agree2" id="agree2"
                                     class="d-inline">
-                                <label for="agree2">* 我已閱讀，接受及同意有關Sweet Date的服務及免責條款。</label>
+                                <label for="agree2" class="d-inline">* 我已閱讀，接受及同意有關Sweet Date的服務及免責條款。</label>
                             </td>
                         </tr>
 
