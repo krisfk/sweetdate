@@ -826,6 +826,7 @@ tbody {
         display: block;
         padding: 0.5rem 0 0.5rem 1rem;
         outline: none;
+        margin: 0 auto;
     }
     .mobile-menu-submenu li a {
         padding: 0.1rem 0 0.1rem 1rem;
