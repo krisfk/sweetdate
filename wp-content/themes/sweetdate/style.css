@@ -593,6 +593,11 @@ h3.title-type-pink-line {
     background: #f6f6f6;
 }
 
+.ans p {
+    margin: 0;
+    padding: 0;
+}
+
 .qt .symbol {
     font-size: 1.5rem;
     color: #f07798;
