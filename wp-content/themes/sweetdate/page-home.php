@@ -234,7 +234,7 @@ get_header();
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
             ?>
-            <div class="col-5 mb-2">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12  mb-2">
 
                 <div class="s-case-div-a"><img
                         src="<?php echo wp_get_attachment_image_url(get_field('activity_main_image'),'full');?>" alt="">
