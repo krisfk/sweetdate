@@ -54,9 +54,9 @@ session_start();
             $(this).toggleClass('active');
 
             if ($(this).hasClass('active')) {
-                $('.mobile-menu-submenu').slideDown(200);
+                $('.mobile-menu-submenu').fadeIn(200);
             } else {
-                $('.mobile-menu-submenu').fadeOut(0);
+                $('.mobile-menu-submenu').fadeOut(200);
 
             }
 
