@@ -468,6 +468,7 @@ h3.title-type-pink-line {
 .member-further-info-form {
     margin: 0 auto;
     display: table;
+    background: #fff;
     color: #595959;
     min-width: 768px;
 }
