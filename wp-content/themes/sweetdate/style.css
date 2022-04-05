@@ -862,10 +862,10 @@ tbody {
 
 @media only screen and (max-width: 991px) {
     .top-menu-div {
-        height: 75px;
+        height: 80px;
     }
     .top-menu-div .row {
-        height: 75px;
+        height: 80px;
     }
     .site-main {
         margin: 2rem 0 0 0;
