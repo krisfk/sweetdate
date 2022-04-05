@@ -778,9 +778,12 @@ tbody {
 
 @media only screen and (max-width: 991px) {
     .logo-a {
-        width: auto !important;
+        width: 30% !important;
     }
-    .user-menu-div {}
+    .user-menu-div {
+        width: 70% !important;
+        /* float: right; */
+    }
     .top-menu-ul li.mobile-logo-li {
         display: block;
     }
