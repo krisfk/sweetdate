@@ -130,7 +130,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
         <div class="row mt-3 gx-0">
 
-            <div class="col-6 gender-div-col male">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12  gender-div-col male">
                 <div class="gender-div male">
                     <table>
                         <tr>
@@ -153,7 +153,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                     </table>
                 </div>
             </div>
-            <div class="col-6 gender-div-col female">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 gender-div-col female">
                 <div class="gender-div female">
                     <table>
                         <tr>
