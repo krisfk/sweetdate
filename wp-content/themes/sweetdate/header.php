@@ -184,7 +184,7 @@ echo'</li>';
                     <a href="#" class="mobile-menu-btn"> <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-2 user-menu-div">
 
                     <ul class="user-menu-ul">
 

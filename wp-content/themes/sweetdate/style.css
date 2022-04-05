@@ -777,6 +777,7 @@ tbody {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
+    .user-menu-div {}
     .top-menu-ul li.mobile-logo-li {
         display: block;
     }
