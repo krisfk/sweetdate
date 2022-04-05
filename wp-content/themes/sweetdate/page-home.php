@@ -321,7 +321,7 @@ get_header();
                             </a>
                         </div>
 
-                        <div class="gender-div male row">
+                        <div class="gender-div male row align-items-center">
 
                             <div class="col-3"> <img
                                     src="<?php echo get_template_directory_uri()?>/assets/images/m-icon.png" alt="">
