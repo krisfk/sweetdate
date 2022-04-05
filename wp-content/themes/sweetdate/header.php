@@ -73,6 +73,13 @@ session_start();
             }
         })
 
+        $(window).resize(function() {
+
+            if ($(window).width() >= 991) {
+                $('.top-menu-ul').fadeIn(0);
+            }
+        })
+
     })
     </script>
 </head>
