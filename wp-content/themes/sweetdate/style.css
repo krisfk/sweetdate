@@ -777,9 +777,19 @@ tbody {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
+    .sns-a {
+        width: 30px !important;
+        display: inline-block !important;
+    }
     .mobile-user-li a {
-        padding: 0;
-        margin: 0;
+        padding: 0.5rem 0 !important;
+        margin: 0 !important;
+        font-size: 0.95rem;
+    }
+    .mobile-user-li a img {
+        height: 15px;
+        position: relative;
+        top: -2px;
     }
     .logo-a {
         width: 100px !important;
@@ -841,11 +851,12 @@ tbody {
         display: block;
         width: 100%;
         padding: 0;
+        margin: 0 !important;
         margin: 0;
     }
     .top-menu-ul li a {
         display: block;
-        padding: 0.5rem 0 0.5rem 1rem;
+        padding: 0.5rem 0 !important;
         outline: none;
         margin: 0 auto;
     }
