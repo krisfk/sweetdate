@@ -772,6 +772,10 @@ tbody {
     position: relative;
 }
 
+.mobile-user-li {
+    display: none;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
@@ -780,6 +784,9 @@ tbody {
     .sns-a {
         width: 30px !important;
         display: inline-block !important;
+    }
+    .mobile-user-li {
+        display: inline-block;
     }
     .mobile-user-li a {
         padding: 0.5rem 0 !important;
