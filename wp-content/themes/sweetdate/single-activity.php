@@ -142,9 +142,11 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <td class="">
                                 <div class="row">
 
-                                    <div class="col-7">名額 : <?php echo get_field('male_quota');?>人
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 ">名額 :
+                                        <?php echo get_field('male_quota');?>人
                                         (<?php echo get_field('male_age_range');?>歲)</div>
-                                    <div class="col-5">餘額 : <?php echo get_field('male_remain_quota');?>人</div>
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12 ">餘額 :
+                                        <?php echo get_field('male_remain_quota');?>人</div>
                                     <div class="col-12 mt-1"><?php echo get_field('male_requirement');?></div>
                                 </div>
                             </td>
