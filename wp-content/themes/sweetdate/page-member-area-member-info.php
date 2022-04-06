@@ -183,9 +183,9 @@ $post_id = get_the_ID();
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-end"><label for="new-login-password">再次輸入新登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="new-login-password"
-                                    name="new-login-password">
+                            <td class="text-end"><label for="new-login-password-again">再次輸入新登入密碼：</label> </td>
+                            <td><input type="password" class="form-control" id="new-login-passwordp-again"
+                                    name="new-login-password-again">
                             </td>
                         </tr>
 
@@ -852,6 +852,19 @@ $post_id = get_the_ID();
 <script type="text/javascript">
 $(function() {
 
+
+    $('.member-login-info-form').submit(function(e) {
+
+        e.preventDefault();
+        var old_login_password = $('#old-login-password').val();
+        var new_login_password = $('#new-login-password').val();
+        var new_login_password_again = $('#new-login-password-again').val();
+        if (new_login_password != new_login_password_again) {
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html('新密碼再次輸入不相同。');
+        }
+
+    })
 
     // $('.filter-ul li a').click(function() {
     //     $('.filter-ul li a').removeClass('active');
