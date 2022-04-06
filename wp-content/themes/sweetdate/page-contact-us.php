@@ -24,6 +24,7 @@ get_header();
     <div class="main-content mt-4">
 
 
+        <div>WhatsApp 6692 9252</div>
 
         <form action="" class="contact-form" method="post">
             <table>
