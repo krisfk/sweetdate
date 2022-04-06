@@ -67,6 +67,7 @@ session_start();
 $(function() {
 
     $('form').submit(function(e) {
+        e.preventDefault();
 
         $.ajax({
             type: "POST",
@@ -88,7 +89,6 @@ $(function() {
 
             }
         })
-        e.preventDefault();
     })
 })
 </script>
