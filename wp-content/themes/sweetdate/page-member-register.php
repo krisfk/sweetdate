@@ -452,7 +452,7 @@ $(function() {
                         </tr>
                         <tr>
                             <td>
-                                <label for="hobby">興趣：</label>
+                                <label for="hobby">興趣：*</label>
 
                             </td>
                             <td>
