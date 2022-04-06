@@ -649,6 +649,8 @@ $(function() {
         e.preventDefault();
 
 
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
 
         $.ajax({
             type: "POST",
@@ -662,6 +664,9 @@ $(function() {
                 // error_txt=""
                 // alert('這電郵地址已被使用作登記。');
                 // show_lightbox_msg('這電郵地址已被使用作登記。');
+                $('.lightbox').fadeOut(0);
+
+
                 var error_txt = '';
                 error_txt += '這電郵地址已被使用作登記。';
 
@@ -720,10 +725,11 @@ $(function() {
                     $('body,html').animate({
                         scrollTop: $('.error-msg').offset().top - 100
                     }, 200);
+                    $('.lightbox').fadeOut(0);
+
                     // return false;
                 } else {
-                    $('.lightbox').fadeIn(200);
-                    $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
 
 
                     $('.member-login-info-form').unbind('submit').submit();
