@@ -617,6 +617,10 @@ h3.title-type-pink-line {
     /* vertical-align: top; */
 }
 
+.ans tr td:first-child {
+    vertical-align: top;
+}
+
 .ans p {
     margin: 0;
     padding: 0;
