@@ -38,6 +38,7 @@ get_header();
     $query = new WP_Query( $args );
     if($query->have_posts())
     {
+        $idx=1;
         while($query->have_posts())
         {
             $query->the_post();
@@ -52,7 +53,7 @@ get_header();
                 <table>
                     <tr>
                         <td class="pe-3">
-                            <span class="symbol">Q</span>
+                            <span class="symbol">Q<?php echo $idx;$idx++;?></span>
                         </td>
                         <td><?php echo get_sub_field('question');?></td>
                     </tr>
