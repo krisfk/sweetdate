@@ -708,7 +708,7 @@ $post_id = get_the_ID();
                                 </select>
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                             <td>
 
@@ -741,7 +741,7 @@ $post_id = get_the_ID();
                                     <option <?php echo get_field('target_shape_request')=='C' ? 'selected' :'';?>
                                         value="C">C</option>
                                 </select></td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td><label for="target-matching-relationship">期望關係：*</label></td>
                             <td>
