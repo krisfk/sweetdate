@@ -49,7 +49,7 @@ if($_POST)
     $join_activity_way=$_POST['join-activity-way'];
     $post_id = wp_insert_post(array (
         'post_type' => 'member',
-        'post_title' =>$first_name.' '.$last_name,
+        'post_title' => $first_name.' '.$last_name,
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
@@ -644,58 +644,94 @@ $(function() {
 <script type="text/javascript">
 $(function() {
 
-    $('form').submit(function() {
+    $('form').submit(function(e) {
 
-        var login_email = $('#login-email').val();
-        var login_password = $('#login-password').val();
-        var login_password_again = $('#login-password-again').val();
-        var tel = $('#tel').val();
-
-        var error_txt = '';
-
-        // error_txt = '';
-        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(login_email))) {
-            error_txt +=
-                '電郵格式不正確</br>';
-        }
-
-
-        if (!(/^[0-9]{8}$/.test(tel))) {
-            error_txt += '聯絡電話格式不正確</br>';
-        }
-
-
-        if (!login_password) {
-            error_txt +=
-                '請輸入登入密碼</br>';
-        }
-
-        if (login_password != login_password_again) {
-            error_txt +=
-                '確認登入密碼輸入不相同</br>';
-        }
-
-        if (!$('#agree1').is(':checked')) {
-            error_txt +=
-                '請先同意條款1</br>';
-        }
-
-        if (!$('#agree2').is(':checked')) {
-            error_txt +=
-                '請先同意條款2</br>';
-        }
+        e.preventDefault();
 
 
 
-        if (error_txt) {
-            $('.error-msg').html(error_txt);
-            $('body,html').animate({
-                scrollTop: $('.error-msg').offset().top - 100
-            }, 200);
-            return false;
-        } else {
-            return true;
-        }
+        $.ajax({
+            type: "POST",
+            url: '<?php echo get_site_url();?>/wp-json/api/check-reg-email',
+            data: {
+                reg_email: $('#login-email').val()
+            },
+            dataType: "json",
+        }).done(function(response) {
+            if (response.status == -1) {
+                // error_txt=""
+                // alert('這電郵地址已被使用作登記。');
+                // show_lightbox_msg('這電郵地址已被使用作登記。');
+                var error_txt = '';
+                error_txt += '這電郵地址已被使用作登記。';
+
+                $('.error-msg').html(error_txt);
+                $('body,html').animate({
+                    scrollTop: $('.error-msg').offset().top - 100
+                }, 200);
+
+
+
+            } else {
+
+                var login_email = $('#login-email').val();
+                var login_password = $('#login-password').val();
+                var login_password_again = $('#login-password-again').val();
+                var tel = $('#tel').val();
+
+                var error_txt = '';
+
+                // error_txt = '';
+                if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(login_email))) {
+                    error_txt +=
+                        '電郵格式不正確</br>';
+                }
+
+
+                if (!(/^[0-9]{8}$/.test(tel))) {
+                    error_txt += '聯絡電話格式不正確</br>';
+                }
+
+
+                if (!login_password) {
+                    error_txt +=
+                        '請輸入登入密碼</br>';
+                }
+
+                if (login_password != login_password_again) {
+                    error_txt +=
+                        '確認登入密碼輸入不相同</br>';
+                }
+
+                if (!$('#agree1').is(':checked')) {
+                    error_txt +=
+                        '請先同意條款1</br>';
+                }
+
+                if (!$('#agree2').is(':checked')) {
+                    error_txt +=
+                        '請先同意條款2</br>';
+                }
+
+
+
+                if (error_txt) {
+                    $('.error-msg').html(error_txt);
+                    $('body,html').animate({
+                        scrollTop: $('.error-msg').offset().top - 100
+                    }, 200);
+                    // return false;
+                } else {
+                    $('.member-login-info-form').submit();
+                    // return true;
+                }
+
+            }
+
+
+        }).fail(function(Response) {});
+
+
 
 
 

@@ -722,6 +722,38 @@ register_rest_route( 'api', '/member-login/', array(
 	'callback' => 'member_login'
 	)
 );
+
+register_rest_route( 'api', '/check-reg-email/', array(
+	'methods'  => 'POST',
+	'callback' => 'check_reg_email'
+	)
+);
+
+}
+
+function check_reg_email($request)
+{
+	$reg_email = $request['reg_email'];
+	
+		$query_args = array(
+			'post_type' => 'member',
+			'meta_query' => array(
+				array(
+					'key' => 'login_email',
+					'value' => $reg_email,
+					'compare' => '=',
+				)
+			),
+		);
+		
+		$the_query = new WP_Query( $query_args );
+		
+		if ( $the_query->have_posts() ) {
+			echo json_encode(array("status"=>"-1", "msg"=>"this email was existed"));
+
+		} else {
+			echo json_encode(array("status"=>"1", "msg"=>"valid email"));
+		}
 }
 	
 function member_login($request)
