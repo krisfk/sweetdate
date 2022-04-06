@@ -634,6 +634,8 @@ h3.title-type-pink-line {
 .ans .symbol {
     font-size: 1.5rem;
     color: #7798f0;
+    position: relative;
+    top: -5px;
 }
 
 input[type='radio'] {
