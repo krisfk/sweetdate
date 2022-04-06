@@ -614,7 +614,7 @@ h3.title-type-pink-line {
 }
 
 .ans td {
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 .ans p {
