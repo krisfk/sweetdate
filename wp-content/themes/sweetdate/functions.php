@@ -729,6 +729,51 @@ register_rest_route( 'api', '/check-reg-email/', array(
 	)
 );
 
+register_rest_route( 'api', '/reset-pw/', array(
+	'methods'  => 'POST',
+	'callback' => 'reset_pw'
+	)
+);
+// 
+
+
+}
+
+function reset_pw($request)
+{
+	$old_login_password = $request['old_login_password'];
+	$new_login_password = $request['new_login_password'];
+	$mid = $request['mid'];
+	
+	$query_args = array(
+		'post_type' => 'member',
+		'meta_query' => array(
+			array(
+				'key' => 'login_password',
+				'value' => $old_login_password,
+				'compare' => '=',
+			)
+		),
+	);
+
+	$the_query = new WP_Query( $query_args );
+		
+	if ( $the_query->have_posts() ) {
+
+		update_post_meta($mid, 'login_password', $new_login_password);
+		echo json_encode(array("status"=>"1", "msg"=>"Password is updated"));
+
+
+
+	}
+	else
+	{
+		echo json_encode(array("status"=>"-1", "msg"=>"old password is not correct"));
+
+	}
+	
+	
+
 }
 
 function check_reg_email($request)
