@@ -734,9 +734,48 @@ register_rest_route( 'api', '/reset-pw/', array(
 	'callback' => 'reset_pw'
 	)
 );
-// 
 
+register_rest_route( 'api', '/recover-pw/', array(
+	'methods'  => 'POST',
+	'callback' => 'recover_pw'
+	)
+);
 
+}
+
+function recover_pw($request)
+{
+	$login_email=$request['login_email'];
+
+	$query_args = array(
+		'post_type' => 'member',
+		'meta_query' => array(
+			array(
+				'key' => 'login_email',
+				'value' => $login_email,
+				'compare' => '=',
+			)
+		),
+	);
+
+	$the_query = new WP_Query( $query_args );
+		
+	if ( $the_query->have_posts() ) {
+
+		$to = $login_email;
+		$subject = 'Wweetdate - 忘記密碼';
+		$message = get_field('first_name').' '.get_field('last_name').':<br><br>以下是你的登入資料:<br/>'.get_field('login_email').'<br/>'.get_field('login_password');
+
+		wp_mail( $to, $subject, $message);
+				
+		echo json_encode(array("status"=>"1", "msg"=>"Password was sent to the email."));
+	}
+	else
+	{
+		echo json_encode(array("status"=>"1", "msg"=>"Email cannot be found"));
+	}
+	
+	
 }
 
 function reset_pw($request)

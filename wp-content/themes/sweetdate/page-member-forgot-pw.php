@@ -68,6 +68,26 @@ $(function() {
 
     $('form').submit(function(e) {
 
+        $.ajax({
+            type: "POST",
+            url: '<?php echo get_site_url();?>/wp-json/api/recover-pw',
+            data: {
+                login_email: $('#login-email').val()
+            },
+            dataType: "json",
+            success: function(response) {
+
+                if (response.status == -1) {
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('這個登入電郵沒有註冊。');
+                } else {
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('登入資料已發送至您的電子郵箱。');
+                }
+
+
+            }
+        })
         e.preventDefault();
     })
 })
