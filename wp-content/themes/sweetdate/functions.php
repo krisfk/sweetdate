@@ -772,7 +772,7 @@ function recover_pw($request)
 	}
 	else
 	{
-		echo json_encode(array("status"=>"1", "msg"=>"Email cannot be found"));
+		echo json_encode(array("status"=>"-1", "msg"=>"Email cannot be found"));
 	}
 	
 	
