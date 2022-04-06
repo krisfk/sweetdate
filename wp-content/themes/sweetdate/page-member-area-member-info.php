@@ -925,6 +925,10 @@ $(function() {
             // $('.lightbox').fadeOut(0);
             return false;
         } else {
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html('資料交中，請稍候⋯⋯');
+
+
             return true;
             // $('.member-further-info-form').unbind('submit').submit();
         }
