@@ -106,12 +106,7 @@ $(function() {
                     </td>
 
                     <td class="text-end">
-                        <div class="pe-3 d-inline-block"> <a href="javascript:void(0);" class="pink">忘記密碼</a>
-                        </div>
-                        <div class="pe-3 d-inline-block"> <a href="<?php echo get_site_url();?>/member-register"
-                                class="pink">會員註冊</a>
-                        </div>
-                        <input type="submit" class="form-submit-btn" value="會員登入">
+                        <input type="submit" class="form-submit-btn" value="重發密碼">
                     </td>
                 </tr>
             </table>
