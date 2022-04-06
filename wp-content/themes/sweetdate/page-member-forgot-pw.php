@@ -100,10 +100,6 @@ $(function() {
                 </tr>
 
                 <tr>
-                    <td class="text-end"><label for="login-password">登入密碼：</label> </td>
-                    <td><input type="password" class="form-control" id="login-password" name="login-password"></td>
-                </tr>
-                <tr>
                     <td>
 
 
