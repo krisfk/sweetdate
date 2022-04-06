@@ -65,9 +65,9 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-end"><label for="new-login-password">再次輸入新登入密碼：</label> </td>
-                        <td><input type="password" class="form-control" id="new-login-password"
-                                name="new-login-password">
+                        <td class="text-end"><label for="new-login-password-again">再次輸入新登入密碼：</label> </td>
+                        <td><input type="password" class="form-control" id="new-login-password-again"
+                                name="new-login-password-again">
                         </td>
                     </tr>
 
@@ -486,6 +486,9 @@ $(function() {
 
     $('.member-login-info-form').submit(function() {
 
+        var old_login_password = $('#old-login-password');
+        var new_login_password = $('#new-login-password');
+        var new_login_password_again = $('#new-login-password-again');
 
     });
 
