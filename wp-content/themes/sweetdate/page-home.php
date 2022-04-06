@@ -116,7 +116,7 @@ get_header();
             </div>
             <div class="mt-4"> <?php
                echo get_field('brief_news');
-               ?></div>
+            ?></div>
 
         </div>
 

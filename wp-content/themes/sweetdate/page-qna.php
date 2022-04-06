@@ -51,7 +51,7 @@ get_header();
 
                 <table>
                     <tr>
-                        <td class="pe-2">
+                        <td class="pe-3">
                             <span class="symbol">Q</span>
                         </td>
                         <td><?php echo get_sub_field('question');?></td>
@@ -66,7 +66,7 @@ get_header();
 
                 <table>
                     <tr>
-                        <td class="pe-2">
+                        <td class="pe-3">
                             <span class="symbol">A</span>
                         </td>
                         <td><?php echo get_sub_field('answer');?></td>
