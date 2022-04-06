@@ -613,6 +613,10 @@ h3.title-type-pink-line {
     background: #f6f6f6;
 }
 
+.ans td {
+    vertical-align: top;
+}
+
 .ans p {
     margin: 0;
     padding: 0;
@@ -621,6 +625,10 @@ h3.title-type-pink-line {
 .qt .symbol {
     font-size: 1.5rem;
     color: #f07798;
+}
+
+.qt td {
+    vertical-align: top;
 }
 
 .ans .symbol {
