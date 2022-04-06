@@ -897,7 +897,7 @@ $(function() {
     })
 
     $('.member-further-info-form').submit(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
 
 
         $('.lightbox').fadeIn(200);
@@ -922,10 +922,11 @@ $(function() {
 
             $('.lightbox').fadeIn(200);
             $('.lightbox-msg-txt').html(error_txt);
-            $('.lightbox').fadeOut(0);
-
+            // $('.lightbox').fadeOut(0);
+            return false;
         } else {
-            $('.member-further-info-form').unbind('submit').submit();
+            return true;
+            // $('.member-further-info-form').unbind('submit').submit();
         }
 
 
