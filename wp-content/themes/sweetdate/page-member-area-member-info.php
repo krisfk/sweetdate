@@ -853,46 +853,48 @@ $post_id = get_the_ID();
 $(function() {
 
 
-            $('.member-login-info-form').submit(function(e) {
+    $('.member-login-info-form').submit(function(e) {
 
-                e.preventDefault();
-                var old_login_password = $('#old-login-password').val();
-                var new_login_password = $('#new-login-password').val();
-                var new_login_password_again = $('#new-login-password-again').val();
-                if (new_login_password != new_login_password_again) {
+        e.preventDefault();
+        var old_login_password = $('#old-login-password').val();
+        var new_login_password = $('#new-login-password').val();
+        var new_login_password_again = $('#new-login-password-again').val();
+        if (new_login_password != new_login_password_again) {
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html('新密碼再次輸入不相同。');
+        } else {
+
+
+            $.ajax({
+                type: "POST",
+                url: '<?php echo get_site_url();?>/wp-json/api/reset-pw',
+                data: {
+                    mid: '<?php echo $_SESSION['mid'];?>',
+                    old_login_password: old_login_password,
+                    new_login_password: new_login_password,
+                },
+                dataType: "json",
+            }).done(function(response) {
+                if (response.status == -1) {
                     $('.lightbox').fadeIn(200);
-                    $('.lightbox-msg-txt').html('新密碼再次輸入不相同。');
+                    $('.lightbox-msg-txt').html('舊密碼不正確。');
                 } else {
 
-
-                    $.ajax({
-                        type: "POST",
-                        url: '<?php echo get_site_url();?>/wp-json/api/reset-pw',
-                        data: {
-                            mid: '<?php echo $_SESSION['mid'];?>',
-                            old_login_password: old_login_password,
-                            new_login_password: new_login_password,
-                        },
-                        dataType: "json",
-                    }).done(function(response) {
-                            if (response.status == -1) {
-                                $('.lightbox').fadeIn(200);
-                                $('.lightbox-msg-txt').html('舊密碼不正確。');
-                            } else {
-
-                            }
-                        }
-
-                    })
-
-                // $('.filter-ul li a').click(function() {
-                //     $('.filter-ul li a').removeClass('active');
-                //     $(this).addClass('active');
-                //     $('.form-div').fadeOut(0);
-                //     var rel = $(this).attr('rel');
-                //     $('.form-div.' + rel).fadeIn(0);
-                // })
+                }
             })
+
+
+        }
+
+        // $('.filter-ul li a').click(function() {
+        //     $('.filter-ul li a').removeClass('active');
+        //     $(this).addClass('active');
+        //     $('.form-div').fadeOut(0);
+        //     var rel = $(this).attr('rel');
+        //     $('.form-div.' + rel).fadeIn(0);
+        // })
+    })
+})
 </script>
 
 
