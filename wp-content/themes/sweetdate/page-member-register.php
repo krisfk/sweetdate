@@ -506,7 +506,7 @@ $(function() {
                                 </select>
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="align-top pt-4"><label for="target-personality-request">配對性格要求(如有)：</label></td>
                             <td>
 
@@ -521,8 +521,8 @@ $(function() {
                                 </select>
 
                             </td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>
                                 <label for="target-shape-request">配對身型要求：</label>
 
@@ -534,7 +534,7 @@ $(function() {
                                     <option value="B">B</option>
                                     <option value="C">C</option>
                                 </select></td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td><label for="target-matching-relationship">期望關係：*</label></td>
                             <td>
