@@ -592,16 +592,44 @@ $post_id = get_the_ID();
 
                             </td>
                             <td>
-                                <select id="hobby" name="hobby" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option <?php echo get_field('hobby')=='A' ? 'selected' :'';?> value="A">A
-                                    </option>
-                                    <option <?php echo get_field('hobby')=='B' ? 'selected' :'';?> value="B">B
-                                    </option>
-                                    <option <?php echo get_field('hobby')=='C' ? 'selected' :'';?> value="C">C
-                                    </option>
 
+
+                                <select id="hobby" name="hobby" required class="form-select" aria-label="">
+                                    <option value="">選擇</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='1、運動類：籃球、羽毛球、兵乓球、足球、滑板、滑旱冰、跑步、跳繩、舉重……' ? 'selected' :'';?>
+                                        value="1、運動類：籃球、羽毛球、兵乓球、足球、滑板、滑旱冰、跑步、跳繩、舉重……">
+                                        1、運動類：籃球、羽毛球、兵乓球、足球、滑板、滑旱冰、跑步、跳繩、舉重……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='2、娛樂類：聽音樂、看電影、繪畫、寫小說、看書……' ? 'selected' :'';?>
+                                        value="2、娛樂類：聽音樂、看電影、繪畫、寫小說、看書……">2、娛樂類：聽音樂、看電影、繪畫、寫小說、看書……</option>
+                                    <option <?php echo get_field('hobby')=='3、冒險類：做彈弓玩、做木劍玩、做橡皮槍玩……' ? 'selected' :'';?>
+                                        value="3、冒險類：做彈弓玩、做木劍玩、做橡皮槍玩……">3、冒險類：做彈弓玩、做木劍玩、做橡皮槍玩……</option>
+                                    <option <?php echo get_field('hobby')=='4、返老還童類：積木、用麻將搭金字塔……' ? 'selected' :'';?>
+                                        value="4、返老還童類：積木、用麻將搭金字塔……">4、返老還童類：積木、用麻將搭金字塔……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='5、智力類：拼圖、拆裝（拆小汽車、鬧鐘、電風扇之類的）……' ? 'selected' :'';?>
+                                        value="5、智力類：拼圖、拆裝（拆小汽車、鬧鐘、電風扇之類的）……">5、智力類：拼圖、拆裝（拆小汽車、鬧鐘、電風扇之類的）……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='6、收藏類：收藏撲克牌、小汽車、手錶、鞋之類的……' ? 'selected' :'';?>
+                                        value="6、收藏類：收藏撲克牌、小汽車、手錶、鞋之類的……">6、收藏類：收藏撲克牌、小汽車、手錶、鞋之類的……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='7、樂器類：彈吉他、鋼琴、薩克斯、葫蘆絲、大號、小號……' ? 'selected' :'';?>
+                                        value="7、樂器類：彈吉他、鋼琴、薩克斯、葫蘆絲、大號、小號……">7、樂器類：彈吉他、鋼琴、薩克斯、葫蘆絲、大號、小號……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='8、文藝類：摺紙（可以嘗試無限種摺紙飛機的辦法）、剪紙、品茶、塗鴉……' ? 'selected' :'';?>
+                                        value="8、文藝類：摺紙（可以嘗試無限種摺紙飛機的辦法）、剪紙、品茶、塗鴉……">
+                                        8、文藝類：摺紙（可以嘗試無限種摺紙飛機的辦法）、剪紙、品茶、塗鴉……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='9、網遊：英雄聯盟、QQ堂、CS、CF、地下城勇士……' ? 'selected' :'';?>
+                                        value="9、網遊：英雄聯盟、QQ堂、CS、CF、地下城勇士……">9、網遊：英雄聯盟、QQ堂、CS、CF、地下城勇士……</option>
+                                    <option
+                                        <?php echo get_field('hobby')=='10、遊戲類：桌面遊戲(飛行棋、國際象棋、真心話大冒險、五子棋、撲克牌……)' ? 'selected' :'';?>
+                                        value="10、遊戲類：桌面遊戲(飛行棋、國際象棋、真心話大冒險、五子棋、撲克牌……)">
+                                        10、遊戲類：桌面遊戲(飛行棋、國際象棋、真心話大冒險、五子棋、撲克牌……)</option>
                                 </select>
+
+
 
 
                             </td>
