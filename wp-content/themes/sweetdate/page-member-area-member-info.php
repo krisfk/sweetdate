@@ -184,7 +184,7 @@ $post_id = get_the_ID();
                         </tr>
                         <tr>
                             <td class="text-end"><label for="new-login-password-again">再次輸入新登入密碼：</label> </td>
-                            <td><input type="password" class="form-control" id="new-login-passwordp-again"
+                            <td><input type="password" class="form-control" id="new-login-password-again"
                                     name="new-login-password-again">
                             </td>
                         </tr>
