@@ -722,6 +722,10 @@ $(function() {
                     }, 200);
                     // return false;
                 } else {
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
+
                     $('.member-login-info-form').unbind('submit').submit();
                     // return true;
                 }
