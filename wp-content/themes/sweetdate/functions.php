@@ -763,7 +763,7 @@ function recover_pw($request)
 	if ( $the_query->have_posts() ) {
 
 		$to = $login_email;
-		$subject = 'Wweetdate - 忘記密碼';
+		$subject = 'Sweetdate - 忘記密碼';
 		$message = get_field('first_name').' '.get_field('last_name').':<br><br>以下是你的登入資料:<br/>'.get_field('login_email').'<br/>'.get_field('login_password');
 
 		wp_mail( $to, $subject, $message);
