@@ -879,7 +879,8 @@ $(function() {
                     $('.lightbox').fadeIn(200);
                     $('.lightbox-msg-txt').html('舊密碼不正確。');
                 } else {
-
+                    $('.lightbox').fadeIn(200);
+                    $('.lightbox-msg-txt').html('密碼已更新為新密碼。');
                 }
             })
 
@@ -893,6 +894,45 @@ $(function() {
         //     var rel = $(this).attr('rel');
         //     $('.form-div.' + rel).fadeIn(0);
         // })
+    })
+
+    $('.member-further-info-form').submit(function(e) {
+        e.preventDefault();
+
+
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
+
+
+        // var login_email = $('#login-email').val();
+        // var login_password = $('#login-password').val();
+        // var login_password_again = $('#login-password-again').val();
+        var tel = $('#tel').val();
+
+        var error_txt = '';
+
+        // error_txt = '';
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(login_email))) {
+            error_txt +=
+                '電郵格式不正確</br>';
+        }
+
+        if (error_txt) {
+
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html(error_txt);
+            $('.lightbox').fadeOut(0);
+
+        } else {
+            $('.member-further-info-form').unbind('submit').submit();
+        }
+
+
+
+
+
+
     })
 })
 </script>
