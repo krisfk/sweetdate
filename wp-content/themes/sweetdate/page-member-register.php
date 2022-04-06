@@ -722,7 +722,7 @@ $(function() {
                     }, 200);
                     // return false;
                 } else {
-                    $('.member-login-info-form').submit();
+                    $('.member-login-info-form').unbind('submit').submit();
                     // return true;
                 }
 
