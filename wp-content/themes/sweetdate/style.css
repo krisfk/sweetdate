@@ -639,7 +639,8 @@ h3.title-type-pink-line {
     font-size: 1.5rem;
     color: #7798f0;
     position: relative;
-    top: -5px;
+    /* top: -5px; */
+    line-height: 1.5rem;
 }
 
 input[type='radio'] {
