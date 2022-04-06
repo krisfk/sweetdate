@@ -859,9 +859,9 @@ $(function() {
         var old_login_password = $('#old-login-password').val();
         var new_login_password = $('#new-login-password').val();
         var new_login_password_again = $('#new-login-password-again').val();
-        if (!new_login_password) {
+        if (!old_login_password || !new_login_password) {
             $('.lightbox').fadeIn(200);
-            $('.lightbox-msg-txt').html('請輸入新密碼。');
+            $('.lightbox-msg-txt').html('請輸入舊密碼和新密碼。');
         } else
         if (new_login_password != new_login_password_again) {
             $('.lightbox').fadeIn(200);
