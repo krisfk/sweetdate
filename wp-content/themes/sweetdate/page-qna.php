@@ -53,7 +53,7 @@ get_header();
                 <table>
                     <tr>
                         <td class="pe-3">
-                            <span class="symbol">Q<?php echo $idx;$idx++;?></span>
+                            <span class="symbol">Q<?php echo $idx;?></span>
                         </td>
                         <td><?php echo get_sub_field('question');?></td>
                     </tr>
@@ -68,9 +68,9 @@ get_header();
                 <table>
                     <tr>
                         <td class="pe-3">
-                            <span class="symbol">A</span>
+                            <span class="symbol">A<?php echo $idx;?></span>
                         </td>
-                        <td><?php echo get_sub_field('answer');?></td>
+                        <td><?php echo get_sub_field('answer');$idx++;?></td>
                     </tr>
                 </table>
 
