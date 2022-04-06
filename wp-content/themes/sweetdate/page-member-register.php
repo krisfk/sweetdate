@@ -649,6 +649,7 @@ $(function() {
         var login_email = $('#login-email').val();
         var login_password = $('#login-password').val();
         var login_password_again = $('#login-password-again').val();
+        var tel = $('#tel').val();
 
         var error_txt = '';
 
@@ -657,6 +658,12 @@ $(function() {
             error_txt +=
                 '電郵格式不正確</br>';
         }
+
+
+        if (!(/^[0-9]{8}$/.test(tel))) {
+            error_txt += '聯絡電話格式不正確</br>';
+        }
+
 
         if (!login_password) {
             error_txt +=
