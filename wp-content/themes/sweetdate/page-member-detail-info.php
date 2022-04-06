@@ -484,6 +484,15 @@ get_header();
 $(function() {
 
 
+    $('.member-login-info-form').submit(function() {
+
+
+    });
+
+    $('.member-further-info-form').submit(function() {
+
+    })
+
     // $('.filter-ul li a').click(function() {
     //     $('.filter-ul li a').removeClass('active');
     //     $(this).addClass('active');
