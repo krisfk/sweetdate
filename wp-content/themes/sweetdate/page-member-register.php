@@ -456,7 +456,8 @@ $(function() {
 
                             </td>
                             <td>
-                                <select id="hobby" name="hobby" class="form-select" aria-label="">
+                                <select id="hobby" name="hobby" required class="form-select" aria-label="">
+                                    <option value="">選擇</option>
                                     <option value="1、運動類：籃球、羽毛球、兵乓球、足球、滑板、滑旱冰、跑步、跳繩、舉重……">
                                         1、運動類：籃球、羽毛球、兵乓球、足球、滑板、滑旱冰、跑步、跳繩、舉重……</option>
                                     <option value="2、娛樂類：聽音樂、看電影、繪畫、寫小說、看書……">2、娛樂類：聽音樂、看電影、繪畫、寫小說、看書……</option>
