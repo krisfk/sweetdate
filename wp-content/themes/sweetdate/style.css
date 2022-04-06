@@ -871,6 +871,10 @@ tbody {
     z-index: -100;
 }
 
+.ans td ol {
+    padding: 0 0 0 3px;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
