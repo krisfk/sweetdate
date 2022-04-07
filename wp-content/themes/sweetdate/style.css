@@ -893,9 +893,6 @@ tbody {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
-    label[for='agree-decide-other-date'] {
-        display: contents;
-    }
     .top-menu-div {
         height: 80px;
     }
@@ -1034,6 +1031,9 @@ tbody {
 @media only screen and (max-width: 640px) {}
 
 @media only screen and (max-width: 480px) {
+    label[for='agree-decide-other-date'] {
+        display: contents;
+    }
     .s-case-div {
         display: block;
         background: #fff;
