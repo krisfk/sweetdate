@@ -244,7 +244,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items-middle">
                     <div class="col-3"> <img src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg"
                             alt="">
                     </div>
@@ -253,7 +253,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 class="form-check-input me-2" id="agree-decide-other-date" name="" value=""><label
                                 for="agree-decide-other-date">接受指定日子以外的日子(如接受有-$100優惠)</label>
 
-                            <table class="mx-auto  mt-2">
+                            <table class="mt-2">
                                 <tr>
                                     <td> <label for="any-date">其他日子選項：</label></td>
                                     <td>
