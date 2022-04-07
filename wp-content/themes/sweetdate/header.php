@@ -77,6 +77,9 @@ session_start();
 
             if ($(window).width() >= 991) {
                 $('.top-menu-ul').fadeIn(0);
+            } else {
+                $('.top-menu-ul').fadeOut(0);
+
             }
         })
 
