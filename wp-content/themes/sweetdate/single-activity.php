@@ -244,7 +244,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
 
-                <div class="row justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center coupon-discount-div">
                     <div class="col-3"> <img class="coupon-img"
                             src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
                     </div>
