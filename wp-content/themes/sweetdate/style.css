@@ -880,6 +880,10 @@ tbody {
     padding: 0 0 0 20px;
 }
 
+.coupon-img {
+    border-radius: 2rem;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}

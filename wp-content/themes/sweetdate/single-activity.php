@@ -244,9 +244,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
 
-                <div class="row justify-content-center align-items-middle">
-                    <div class="col-3"> <img src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg"
-                            alt="">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3"> <img class="coupon-img"
+                            src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
                     </div>
                     <div class="col-6 text-start">
                         <div class="checkbox-div agree-decide-other-date-div"><input type="checkbox"
