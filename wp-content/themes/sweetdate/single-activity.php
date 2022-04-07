@@ -242,7 +242,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
             <div class="mb-5 mt-4">
 
-                <div class="mt-b">
+                <div class="mt-4">
 
                     <img src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
 
