@@ -229,7 +229,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                 <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
-                    $<?php echo get_field('price')-100;?>/位</span>
+                    $<?php echo get_field('price')-get_field('random_date_fixed_discount_price_off');?>/位</span>
             </div>
 
 
@@ -295,8 +295,12 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         $('.one-ppl-discount').fadeIn(0);
                         $('.one-ppl-no-discount').fadeOut(0);
 
-                        $('.final-price').html('<?php echo get_field('price')-100;?>');
-                        $('input[name="final-price"]').val('<?php echo get_field('price')-100;?>');
+                        $('.final-price').html(
+                            '<?php echo get_field('price')-get_field('random_date_fixed_discount_price_off');?>'
+                            );
+                        $('input[name="final-price"]').val(
+                            '<?php echo get_field('price')-get_field('random_date_fixed_discount_price_off');?>'
+                            );
 
                     } else {
                         $('.one-ppl-discount').fadeOut(0);
