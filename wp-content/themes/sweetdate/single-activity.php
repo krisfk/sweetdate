@@ -245,10 +245,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                 <div class="row justify-content-center align-items-center coupon-discount-div">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-12 "> <img class="coupon-img"
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-8 "> <img class="coupon-img"
                             src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-start">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-8 text-start">
                         <div class="checkbox-div agree-decide-other-date-div"><input type="checkbox"
                                 class="form-check-input me-2" id="agree-decide-other-date" name="" value=""><label
                                 for="agree-decide-other-date">接受指定日子以外的日子(如接受有-$100優惠)</label>
