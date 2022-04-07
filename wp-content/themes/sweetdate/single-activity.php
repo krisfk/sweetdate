@@ -221,11 +221,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                     ?>
 
-            <div>
 
-                <img src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
-
-            </div>
 
             <div class="one-ppl-discount" style="display:none;">
 
@@ -235,6 +231,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 <span class="price me-2">非指定日子優惠價: <span class="line-through">$<?php echo get_field('price');?></span>
                     $<?php echo get_field('price')-100;?>/位</span>
             </div>
+
+            <div class="mt-3">
+
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg" alt="">
+
+            </div>
+
 
             <div class="one-ppl-no-discount">
                 <span class="price me-2">$<?php echo get_field('price');?>/位</span>
