@@ -452,6 +452,13 @@ $(function() {
     $('.banner-img').eq(0).fadeIn(0);
     // successful - story - carousel
 
+    $('.thumbanil-slide-ul li a').click(function() {
+        var idx = $(this).parent('li').index();
+        alert(idx);
+
+
+    })
+
     $('.successful-story-carousel').slick({
         infinite: true,
         // slidesToShow: 3,
