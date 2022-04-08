@@ -26,6 +26,24 @@ get_header();
 
         <div class="text-center mb-4">WhatsApp 6692 9252</div>
 
+        <?php
+        if($_POST)
+        {
+                $nickname=$_POST['nickname'];
+                $email = $_POST['email'];
+                $msg_title= $_POST['msg-title'];
+                $msg_content = $_POST['msg-content'];
+
+                $to='krisfk@gmail.com';
+                $subject='客人('.$nickname.') 查詢';
+
+                $message='剛收到有位客人的查詢：<br><br>稱呼：<br>'.$nickname.'<br><br>聯絡電郵：<br>'.$email.'<br><br>標題：<br>'.$subject.'<br><br>內容：<br>'.$msg_content;
+                wp_mail( $to, $subject, $message);
+
+
+                
+        }
+        ?>
         <form action="" class="contact-form" method="post">
             <table>
                 <tr>
@@ -33,28 +51,29 @@ get_header();
                         <label for="nickname">稱呼：*</label>
 
                     </td>
-                    <td><input required id="nickname" type="text" class="form-control"></td>
+                    <td><input required name="nickname" id="nickname" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
                     <td class="text-end">
                         <label for="email">聯絡電郵：*</label>
                     </td>
-                    <td><input required id="email" type="text" class="form-control"></td>
+                    <td><input required name="email" id="email" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
                     <td class="text-end">
                         <label for="msg-title">標題：*</label>
                     </td>
-                    <td><input required id="msg-title" type="text" class="form-control"></td>
+                    <td><input name="msg-title" required id="msg-title" type="text" class="form-control"></td>
                 </tr>
                 <tr>
 
                     <td class="text-end">
                         <label for="msg-content">內容：*</label>
                     </td>
-                    <td><textarea required id="msg-content" class="form-control" name="" rows="4" cols="50">
+                    <td><textarea name="msg-content" required id="msg-content" class="form-control" name="" rows="4"
+                            cols="50">
 </textarea></td>
                 </tr>
 
