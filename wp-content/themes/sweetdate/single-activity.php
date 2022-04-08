@@ -253,7 +253,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                         <div class="checkbox-div agree-decide-other-date-div"><input type="checkbox"
                                 class="form-check-input me-2" id="agree-decide-other-date" name="" value=""><label
                                 for="agree-decide-other-date">接受本會指定的日子（仍可選擇星期）如接受即享$100折扣優惠</label>
-
+                            <!--  -->
                             <table class="mt-2">
                                 <tr>
                                     <td> <label for="any-date">其他日子選項：</label></td>
