@@ -454,7 +454,12 @@ $(function() {
 
     $('.thumbanil-slide-ul li a').click(function() {
         var idx = $(this).parent('li').index();
-        alert(idx);
+
+        $('.banner-img').fadeOut(0);
+
+        $('.banner-img').eq(idx).fadeIn(0);
+
+        // alert(idx);
 
 
     })
