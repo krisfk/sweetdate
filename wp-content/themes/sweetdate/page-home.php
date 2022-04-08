@@ -17,12 +17,29 @@ get_header();
 
     <div class="row gx-5">
 
+        <?php
+        $content_type=[];
+        $img_arr=[];
+        
+if( have_rows('carousel') ){
+
+    while( have_rows('carousel') ) { the_row();
+        array_push($content_type, get_sub_field('content_type'));
+        array_push($img_arr,get_sub_field('banner_img'));
+    }
+}
+
+?>
+
         <div class="col-lg-6 col-md-6 col-sm-12 col-12  mb-5">
 
             <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
                 alt="">
 
             <ul class="thumbanil-slide-ul">
+
+
+
                 <li>
                     <a href="javascript:void(0);">
 
