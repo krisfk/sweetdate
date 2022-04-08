@@ -592,6 +592,11 @@ h3.title-type-pink-line {
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     margin: 1rem 0 0 0;
+    transition: 0.2s all;
+}
+
+.reg-btn:hover {
+    opacity: 0.85;
 }
 
 .qt .arrow {
