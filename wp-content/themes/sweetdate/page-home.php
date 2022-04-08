@@ -55,7 +55,7 @@ if( have_rows('carousel') ){
             <!-- <img class=" w-100" src="<?php echo $img_arr[$i];?>" alt=""> -->
 
 
-            <ul class="thumbanil-slide-ul mt-3">
+            <ul class="thumbanil-slide-ul mt-2">
 
                 <?php
             
