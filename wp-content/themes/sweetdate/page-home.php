@@ -25,7 +25,7 @@ if( have_rows('carousel') ){
 
     while( have_rows('carousel') ) { the_row();
         array_push($content_type, get_sub_field('content_type'));
-        array_push($img_arr,get_sub_field('banner_img'));
+        array_push($img_arr,wp_get_attachment_image_url(get_sub_field('banner_img'),'full') );
     }
 }
 
@@ -38,18 +38,25 @@ if( have_rows('carousel') ){
 
             <ul class="thumbanil-slide-ul">
 
-
-
+                <?php
+            
+            for($i=0;$i<count($img_arr);$i++)
+            {
+              ?>
                 <li>
                     <a href="javascript:void(0);">
 
-                        <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-1.jpg"
-                            alt="">
+                        <img class="w-100" src="<?php echo $img_arr[$i];?>" alt="">
                     </a>
 
                 </li>
-                <li>
+                <?php  
+            }
+            ?>
+
+
+
+                <!-- <li>
                     <a href="javascript:void(0);">
 
                         <img class="w-100"
@@ -75,7 +82,7 @@ if( have_rows('carousel') ){
                             alt="">
                     </a>
 
-                </li>
+                </li> -->
             </ul>
 
         </div>
