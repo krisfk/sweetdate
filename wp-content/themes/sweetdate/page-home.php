@@ -43,7 +43,8 @@ if( have_rows('carousel') ){
                     {
                         ?>
 
-                <img src="<?php echo $img_arr[$i];?>" alt="">
+                <img class="banner-img position-absolute top-0 left-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
+                    alt="">
                 <?php
                     }
 
