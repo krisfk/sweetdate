@@ -442,8 +442,14 @@ if( have_rows('carousel') ){
 
 </div>
 
+
+
 <script type="text/javascript">
 $(function() {
+
+    $('.banner-img').fadeOut(0);
+
+    $('.banner-img').eq(0).fadeIn(0);
     // successful - story - carousel
 
     $('.successful-story-carousel').slick({
