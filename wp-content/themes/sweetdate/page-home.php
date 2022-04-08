@@ -35,11 +35,23 @@ if( have_rows('carousel') ){
 
             <div class="banner-container position-relative">
                 <img class="w-100 opacity-0"
-                    src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg" alt="">
+                    src="<?php echo get_site_url();?>/wp-content/uploads/2022/03/video-dummy-img.jpg" alt="">
+
+                <?php
+                    
+                    for($i=0;$i<count($img_arr);$i++)
+                    {
+                        ?>
+
+                <img src="<?php echo $img_arr[$i];?>" alt="">
+                <?php
+                    }
+
+                    ?>
 
             </div>
             <!--  -->
-            <!-- <img class="w-100" src="<?php echo $img_arr[$i];?>" alt=""> -->
+            <!-- <img class=" w-100" src="<?php echo $img_arr[$i];?>" alt=""> -->
 
 
             <ul class="thumbanil-slide-ul">
