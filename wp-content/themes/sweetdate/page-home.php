@@ -33,8 +33,11 @@ if( have_rows('carousel') ){
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12  mb-5">
 
-            <img class="w-100" src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg"
-                alt="">
+            <div class="banner-container"><img class="w-100"
+                    src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-img.jpg" alt=""></div>
+            <!--  -->
+            <!-- <img class="w-100" src="<?php echo $img_arr[$i];?>" alt=""> -->
+
 
             <ul class="thumbanil-slide-ul">
 
