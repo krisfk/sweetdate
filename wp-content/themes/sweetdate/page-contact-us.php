@@ -48,12 +48,6 @@ get_header();
         else
         {
             ?>
-        fds
-        <?php
-        }
-        // else
-        // {
-         ?>
         <form action="" class="contact-form" method="post">
             <table>
                 <tr>
@@ -105,6 +99,12 @@ get_header();
             </table>
 
         </form>
+        <?php
+        }
+        // else
+        // {
+         ?>
+
 
 
         <?php   
