@@ -457,7 +457,7 @@ $(function() {
 
         $('.banner-img').fadeOut(0);
 
-        $('.banner-img').eq(idx).fadeIn(200);
+        $('.banner-img').eq(idx).fadeIn(500);
 
         // alert(idx);
 
