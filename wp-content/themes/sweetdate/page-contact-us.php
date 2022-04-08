@@ -42,7 +42,7 @@ get_header();
 
 ?>
         <div class="text-center">您的訊息被傳送，我們會盡快聯絡您。</div>
-        <?
+        <?php
                 
         }
         // else
