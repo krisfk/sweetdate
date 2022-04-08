@@ -40,10 +40,14 @@ get_header();
                 $message='剛收到有位客人的查詢：<br><br>稱呼：<br>'.$nickname.'<br><br>聯絡電郵：<br>'.$email.'<br><br>標題：<br>'.$subject.'<br><br>內容：<br>'.$msg_content;
                 wp_mail( $to, $subject, $message);
 
-
+?>
+        <div class="text-center">您的訊息被傳送，我們會盡快聯絡您。</div>
+        <?
                 
         }
-        ?>
+        else
+        {
+         ?>
         <form action="" class="contact-form" method="post">
             <table>
                 <tr>
@@ -96,6 +100,10 @@ get_header();
 
         </form>
 
+
+        <?php   
+        }
+        ?>
 
 
 
