@@ -45,8 +45,8 @@ get_header();
         <?
                 
         }
-        else
-        {
+        // else
+        // {
          ?>
         <form action="" class="contact-form" method="post">
             <table>
@@ -102,7 +102,7 @@ get_header();
 
 
         <?php   
-        }
+        // }
         ?>
 
 
