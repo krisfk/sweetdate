@@ -1368,10 +1368,31 @@ function stripeTokenHandler(token) {
 
     // Submit the form
 
-    $('.lightbox').fadeIn(200);
-    $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
 
-    form.submit();
+    var error_txt = '';
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email').val()))) {
+        error_txt +=
+            '電郵格式不正確</br>';
+    }
+
+    if (!(/^[0-9]{8}$/.test($('#tev').val()))) {
+        error_txt += '聯絡電話格式不正確</br>';
+    }
+
+    if (error_txt) {
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html(error_txt);
+
+    } else {
+
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
+        form.submit();
+    }
+
+
+
 }
 </script>
 
