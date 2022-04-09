@@ -676,7 +676,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="position-relative" style="z-index:10000">
                                 <td><label for="join-charm-workshop">參加魅力工作坊(免費)</label></td>
                                 <td>
                                     <input type="checkbox" id="join-charm-workshop" name="join-charm-workshop"
@@ -792,7 +792,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 </td>
                             </tr>
 
-                            <tr>
+                            <tr class="position-relative" style="z-index:10000">
                                 <td><label for="join-charm-workshop-2">參加魅力工作坊(免費)</label></td>
                                 <td>
                                     <input type="checkbox" id="join-charm-workshop-2" name="join-charm-workshop-2"
