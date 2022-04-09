@@ -1249,6 +1249,11 @@ else
 <script type="text/javascript">
 $(function() {
 
+    $('input[name="payment-method"]').change(function() {
+
+        alert($(this).val());
+    })
+
 
     var jump_to_step_2 = <?php if($_SESSION['login_member_id']) { echo 'true';}else{
         echo 'false';
