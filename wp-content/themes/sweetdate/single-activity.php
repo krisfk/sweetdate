@@ -1130,7 +1130,7 @@ if($_POST['form-type']=='reg')
             ?>
             <script type="text/javascript">
             $(function() {
-
+                alert(5);
                 setTimeout(() => {
                     $('.step').fadeOut(0);
                     $('.step.step-3').fadeIn(200);
