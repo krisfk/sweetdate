@@ -1341,6 +1341,7 @@ var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
+
     stripe.createToken(card).then(function(result) {
         if (result.error) {
             // Inform the user if there was an error.
@@ -1366,6 +1367,10 @@ function stripeTokenHandler(token) {
     form.appendChild(hiddenInput);
 
     // Submit the form
+
+    $('.lightbox').fadeIn(200);
+    $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
     form.submit();
 }
 </script>
