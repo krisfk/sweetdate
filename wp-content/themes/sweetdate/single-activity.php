@@ -869,6 +869,7 @@ if($_POST['form-type']=='reg')
     $IMEI = $_POST['ImeiNum'];
    
     try {
+        echo 789;
      
         
         $charge = \Stripe\Charge::create(array(
