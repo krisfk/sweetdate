@@ -793,6 +793,15 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
 
                             <tr>
+                                <td><label for="join-charm-workshop-2">參加魅力工作坊(免費)</label></td>
+                                <td>
+                                    <input required="" type="checkbox" id="join-charm-workshop-2"
+                                        name="join-charm-workshop-2" value="yes">
+                                </td>
+                            </tr>
+
+
+                            <tr>
                                 <td></td>
                                 <td></td>
                             </tr>
