@@ -931,7 +931,7 @@ tbody {
 }
 
 .payment-method-tr.payment-method-tr-1 {
-    display: block;
+    display: table-row;
 }
 
 @media only screen and (max-width: 1920px) {}
