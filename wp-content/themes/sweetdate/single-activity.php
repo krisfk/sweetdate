@@ -910,7 +910,7 @@ if($_POST['form-type']=='reg')
 
           "currency" => "hkd",
           "source" => $token,
-          "description" => $_POST['first-name'],
+          "description" => '',
           "metadata" => array("IMEI" => $IMEI)
           )
           
