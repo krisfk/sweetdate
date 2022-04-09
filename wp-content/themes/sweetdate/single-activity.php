@@ -876,7 +876,7 @@ if($_POST['form-type']=='reg')
 // $charge_final_price=9999;
 // echo 444;
     try {
-        // echo 123;
+        echo 546;
   //      $charge_final_price=8888;
 
         $charge = \Stripe\Charge::create(array(
@@ -915,7 +915,7 @@ if($_POST['form-type']=='reg')
             $balance_transaction = $charge->balance_transaction;
 
             $random_date_select=$_POST['any-date'];
-echo 987;
+// echo 987;
             
             if($_POST['person']==1)
             {
