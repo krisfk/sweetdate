@@ -75,33 +75,7 @@ if( have_rows('carousel') ){
 
 
 
-                <!-- <li>
-                    <a href="javascript:void(0);">
 
-                        <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-2.jpg"
-                            alt="">
-                    </a>
-
-                </li>
-                <li>
-                    <a href="javascript:void(0);">
-
-                        <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-3.jpg"
-                            alt="">
-                    </a>
-
-                </li>
-                <li>
-                    <a href="javascript:void(0);">
-
-                        <img class="w-100"
-                            src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/video-dummy-thumbnail-img-4.jpg"
-                            alt="">
-                    </a>
-
-                </li> -->
             </ul>
 
         </div>
@@ -219,30 +193,6 @@ if( have_rows('carousel') ){
 
         
               ?>
-            <!-- <div class="s-case-div">
-                <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
-                    <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
-                </a>
-            </div>
-            <div class="s-case-div">
-                <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-2.jpg" alt="">
-                    <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
-                </a>
-            </div>
-            <div class="s-case-div">
-                <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-3.jpg" alt="">
-                    <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
-                </a>
-            </div>
-            <div class="s-case-div">
-                <a href="javascript:void(0);" class="s-case-div-a"><img
-                        src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/s-foto-1.jpg" alt="">
-                    <div class="mt-4">為你成就緣份的專業配對團隊。尋找你人生伴侶。高端約會，交友，婚姻介紹。專業團隊，絕對保密。</div>
-                </a>
-            </div> -->
 
 
 
@@ -314,7 +264,7 @@ if( have_rows('carousel') ){
                                 <li>
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-cal-icon.png"
+                                            <img src="<?php echo get_site_url();?>/wp-content/uploads/2022/03/small-cal-icon.png"
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
@@ -324,7 +274,7 @@ if( have_rows('carousel') ){
                                 <li>
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/small-clock-icon.png"
+                                            <img src="<?php echo get_site_url();?>/wp-content/uploads/2022/03/small-clock-icon.png"
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
@@ -334,7 +284,7 @@ if( have_rows('carousel') ){
                                 <li>
                                     <div class="d-table">
                                         <div class="d-table-cell pe-1">
-                                            <img src="http://64.227.13.14/sweetdate/wp-content/uploads/2022/03/pin-icon.png"
+                                            <img src="<?php echo get_site_url();?>/wp-content/uploads/2022/03/pin-icon.png"
                                                 alt="">
                                         </div>
                                         <div class="d-table-cell">
