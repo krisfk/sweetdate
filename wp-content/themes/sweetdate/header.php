@@ -256,7 +256,7 @@ else
                         <a class="sns-a" href="javascript:void()">
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/ig-icon.png" alt="">
                         </a>
-                        <a class="sns-a" href="javascript:void(0);">
+                        <a class="sns-a" href="https://www.facebook.com/sweetxDate/" target="_blank">
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/fb-icon.png" alt="">
                         </a>
                     </li>
