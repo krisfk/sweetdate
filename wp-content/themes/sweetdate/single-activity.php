@@ -872,6 +872,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 </form>
 
 
+                <div class="external-card-element"></div>
+
 
             </div>
 
