@@ -977,7 +977,10 @@ tbody {
         top: 6px;
     }
     .logo-a img {
+        /* height: 73px !important; */
         height: 73px !important;
+        width: auto !important;
+        max-width: max-content !important;
     }
     .user-menu-div {
         /* width: 70% !important; */
