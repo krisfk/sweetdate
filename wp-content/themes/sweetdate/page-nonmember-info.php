@@ -834,7 +834,7 @@ $post_id = get_the_ID();
 $(function() {
 
 
-    $('form').submit(function() {
+    $('form').submit(function(e) {
 
         e.preventDefault();
 
