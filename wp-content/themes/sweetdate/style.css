@@ -340,6 +340,11 @@ h3.title-type-pink-line {
     padding: 1rem;
     box-shadow: 2px 2px 4px #f9f9f9, 2px 2px 4px #fbfbfb, 2px 2px 4px #a4a4a4, 2px 2px 0px #d3d3d3, 2px 1px 3px #d3d3d3;
     text-decoration: none;
+    transition: 0.2s all;
+}
+
+.s-case-div-a:hover {
+    opacity: 0.85;
 }
 
 .s-case-div-a img {
