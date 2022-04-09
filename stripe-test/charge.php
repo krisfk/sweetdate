@@ -7,7 +7,7 @@ require_once('./stripe/init.php');
 
     $token = $_POST['stripeToken'];
 
-    $IMEI = $_POST['ImeiNum'];
+    // $IMEI = $_POST['ImeiNum'];
     // echo $_POST['name'];
     try {
         $charge = \Stripe\Charge::create(array(
