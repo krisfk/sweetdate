@@ -977,6 +977,7 @@ if($_POST['form-type']=='reg')
             
             if($_POST['person']==1)
             {
+                echo 111;
 
               
                 // echo 999;
