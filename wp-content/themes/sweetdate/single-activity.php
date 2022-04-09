@@ -911,7 +911,7 @@ if($_POST['form-type']=='reg')
     require_once('./stripe-test/stripe/init.php');
 // sk_test_51Hc7UyK6XoTSXbpZGRS7d11xxvWwPrRlPwyYvMcQ6LSXQVEw5k68nUhs3s7ISeaFd7RPAeM0yDn8adhEmyIS9sO900enLknpWs
 // sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o kay key
-    \Stripe\Stripe::setApiKey('sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o');
+    \Stripe\Stripe::setApiKey('sk_test_51Hc7UyK6XoTSXbpZGRS7d11xxvWwPrRlPwyYvMcQ6LSXQVEw5k68nUhs3s7ISeaFd7RPAeM0yDn8adhEmyIS9sO900enLknpWs');
 
     $token = $_POST['stripeToken'];
     
