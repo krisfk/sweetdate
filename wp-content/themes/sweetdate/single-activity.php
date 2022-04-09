@@ -1244,7 +1244,7 @@ if($_POST['payment-method']=='轉數快/Payme付款')
             </h4>
             <div class="mt-4">因為您選擇了轉數快/Payme付款($<?php echo $_POST['final-price']?>)<br>麻煩從以下payme qrcode 或fps id 付款
                 <br>
-                付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據，以確認留位，謝謝！ <br>
+                付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據(副上姓名及聯絡電話)，以確認留位，謝謝！ <br>
 
 
 
