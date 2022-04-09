@@ -834,8 +834,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     <select name="payment-method" id="payment-method" class="form-select">
 
                                         <option value="" selected="">選擇</option>
-                                        <option value="信用咭付款" selected="">信用咭付款</option>
-                                        <option value="轉數快/Payme付款" selected="">轉數快/Payme付款</option>
+                                        <option value="信用咭付款">信用咭付款</option>
+                                        <option value="轉數快/Payme付款">轉數快/Payme付款</option>
 
                                     </select>
                                 </td>
