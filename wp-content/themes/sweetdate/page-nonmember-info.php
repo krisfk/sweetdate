@@ -858,7 +858,7 @@ $(function() {
 
 
 
-            $('form').unbind('form').submit();
+            $('form').unbind('submit').submit();
             // return true;
         }
 
