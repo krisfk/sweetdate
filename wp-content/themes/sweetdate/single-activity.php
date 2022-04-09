@@ -921,7 +921,7 @@ if($_POST['form-type']=='reg')
             {
 
               
-                // echo 999;
+                echo 999;
 
                 if(!$_POST['is-member'])
                 {
