@@ -254,7 +254,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
             <div class="mb-5 mt-4">
 
 
-
+                <?php if(get_field('random_date_fixed_discount_price_off')>0)
+                        {
+                            
+                        ?>
                 <div class="row justify-content-center align-items-center coupon-discount-div">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-9 mb-lg-0 mb-md-0 mb-sm-0  mb-4 "> <img
                             class="coupon-img" src="<?php echo get_template_directory_uri()?>/assets/images/coupon.jpg"
@@ -269,7 +272,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     <td class="align-top"> <input type="checkbox" class="form-check-input me-2"
                                             id="agree-decide-other-date" name="" value="">
                                     </td>
-                                    <td> <label for="agree-decide-other-date">接受本會指定的日子（仍可選擇星期）如接受即享$100折扣優惠</label>
+                                    <td> <label
+                                            for="agree-decide-other-date">接受本會指定的日子（仍可選擇星期）如接受即享$<?php echo get_field('random_date_fixed_discount_price_off');?>折扣優惠</label>
                                     </td>
                                 </tr>
                             </table>
@@ -304,6 +308,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
                 </div>
+                <?php
+                        }
+                ?>
 
 
             </div>
