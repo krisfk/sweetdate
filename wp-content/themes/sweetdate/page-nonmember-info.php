@@ -447,15 +447,15 @@ $post_id = get_the_ID();
 
                                 <select required id="annual-income" name="annual-income" class="form-control">
                                     <option value="">選擇</option>
-                                    <option <?php echo get_field('annual-income')=='職員' ? 'selected' :'';?>
+                                    <option <?php echo get_field('annual-income')=='250,000以下' ? 'selected' :'';?>
                                         value="250,000以下">250,000以下</option>
-                                    <option <?php echo get_field('annual-income')=='職員' ? 'selected' :'';?>
+                                    <option <?php echo get_field('annual-income')=='250,001-500,001' ? 'selected' :'';?>
                                         value="250,001-500,001">250,001-500,001</option>
-                                    <option <?php echo get_field('annual-income')=='職員' ? 'selected' :'';?>
+                                    <option <?php echo get_field('annual-income')=='500,000-750,000' ? 'selected' :'';?>
                                         value="500,000-750,000">500,000-750,000</option>
-                                    <option <?php echo get_field('annual-income')=='職員' ? 'selected' :'';?>
+                                    <option <?php echo get_field('annual-income')=='annual-income' ? 'selected' :'';?>
                                         value="750,001-100,000">750,001-100,000</option>
-                                    <option <?php echo get_field('annual-income')=='職員' ? 'selected' :'';?>
+                                    <option <?php echo get_field('annual-income')=='1,000,001以上' ? 'selected' :'';?>
                                         value="1,000,001以上">1,000,001以上</option>
                                 </select>
                             </td>
