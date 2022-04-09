@@ -1175,7 +1175,7 @@ if($_POST['form-type']=='reg')
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id,
                     'random_date_select' => $random_date_select,
-                    'join_charm_workshop' => $_POST('join-charm-workshop-2') ? '1' : '0'
+                    // 'join_charm_workshop' => $_POST('join-charm-workshop-2') ? '1' : '0'
 
 
                 );
