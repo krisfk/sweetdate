@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    test
+    <?php
+    mail('krisfk@gmail.com', 'My Subject', 'testing');
+
+    ?>
 </body>
 
 </html>
