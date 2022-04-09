@@ -968,7 +968,7 @@ if($_POST['form-type']=='reg')
                     
                     if ($post_id) {
                         add_post_meta($post_id,'secretcode',$randomString);
-                        add_post_meta($post_id, 'non_member_id', $nonmember_id);
+                        add_post_meta($post_id, 'non_member_id', '9999');
                         add_post_meta($post_id, 'login_email', $register_email);
                         add_post_meta($post_id, 'tel', $tel);
                         add_post_meta($post_id, 'gender', $gender);
