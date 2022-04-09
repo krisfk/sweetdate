@@ -1379,9 +1379,7 @@ function stripeTokenHandler(token) {
         error_txt += '聯絡電話格式不正確</br>';
     }
 
-    if (<?php if($_GET['person'] == 2){echo true;}  ?>
-
-    ) {
+    if (<?php if($_GET['person'] == 2){echo true;}  ?>) {
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email-2').val()))) {
             error_txt +=
                 '另一位朋友的電郵格式不正確</br>';
