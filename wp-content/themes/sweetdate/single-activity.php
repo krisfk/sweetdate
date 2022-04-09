@@ -1254,7 +1254,7 @@ if($_POST['payment-method']=='轉數快/Payme付款')
                 <div>FPS ID: 7420482</div> <br>
                 <img style="width:100px" src="https://sweetdate.com.hk/wp-content/uploads/2022/04/payme-code.jpeg"
                     alt="">
-
+                <!--  -->
             </div>
 
             <?php
