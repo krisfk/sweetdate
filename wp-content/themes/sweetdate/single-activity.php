@@ -869,7 +869,7 @@ if($_POST['form-type']=='reg')
     $IMEI = $_POST['ImeiNum'];
    
     try {
-        echo 789;
+        // echo 789;
      
         
         $charge = \Stripe\Charge::create(array(
@@ -1112,7 +1112,8 @@ if($_POST['form-type']=='reg')
                 setTimeout(() => {
                     $('.step').fadeOut(0);
                     $('.step.step-3').fadeIn(200);
-                    $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
+                    $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount,.coupon-discount-div')
+                        .fadeOut(0);
                 }, 100);
 
                 localStorage.removeItem('any-date');
