@@ -350,8 +350,19 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
         <div class="step step-1">
+
+            <?php
+           
+           if(!$_SESSION['login_member_id'])
+           {
+               ?>
+
             <div class="mt-3 text-center"> <a href="javascript:void(0);" class="reg-btn">活動報名</a>
             </div>
+            <?php
+           }
+           ?>
+
 
 
             <div class="position-relative mt-5">
