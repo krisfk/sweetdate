@@ -1242,8 +1242,14 @@ if($_POST['payment-method']=='轉數快/Payme付款')
             <h4 class="pink">
                 我們已收到你的報名！會盡快聯絡您！謝謝！ <br>
             </h4>
-            <div class="mt-4">因為您選擇了轉數快/Payme付款($<?php echo $_POST['final-price']?>)<br>麻煩從以下payme qrcode 或fps id
-                付款後副上姓名和電話號嗎聯絡我們，謝謝！</div>
+            <div class="mt-4">因為您選擇了轉數快/Payme付款($<?php echo $_POST['final-price']?>)<br>麻煩從以下payme qrcode 或fps id 付款
+                <br>
+                付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據，以確認留位，謝謝！ <br>
+
+
+
+
+            </div>
             <div>
                 <div>FPS ID: 7420482</div> <br>
                 <img src="https://sweetdate.com.hk/wp-content/uploads/2022/04/payme-code.jpeg" alt="">
