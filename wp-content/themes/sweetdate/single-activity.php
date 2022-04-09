@@ -1193,8 +1193,31 @@ if($_POST['form-type']=='reg')
         <div class="step step-3 text-center mt-5">
             <?php 
 
-            ?>
+if($_POST['payment-method']=='轉數快/Payme付款')
+{
+?>
+
+            <h4 class="pink">
+                我們已收到你的報名！會盡快聯絡您！謝謝！ <br>
+            </h4>
+            <div>因為您選擇了轉數快/Payme付款<br>麻煩從以下payme qrcode 或fps id 付款後聯絡我們，謝謝！</div>
+            <div>
+                <div>FPS ID: 7420482</div> <br>
+                <img src="https://sweetdate.com.hk/wp-content/uploads/2022/04/payme-code.jpeg" alt="">
+
+            </div>
+
+            <?php
+}
+else
+{
+    ?>
             <h4 class="pink">我們已收到你的報名！會盡快聯絡您！謝謝！</h4>
+
+            <?php
+}
+            ?>
+
 
 
         </div>
