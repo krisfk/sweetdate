@@ -1021,6 +1021,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
                         'random_date_select' => $random_date_select,
+                        'join_charm_workshop' => $_POST('join-charm-workshop')
                     );
                     add_row('applied_non_member', $row,$current_post_id);
 
@@ -1036,7 +1037,9 @@ if($_POST['form-type']=='reg')
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'member_info_url' => $_SESSION['mid'],
-                        'random_date_select' => $random_date_select
+                        'random_date_select' => $random_date_select,
+                        'join_charm_workshop' => $_POST('join-charm-workshop')
+
                     );
                     add_row('applied_member', $row,$current_post_id);
                     
@@ -1098,7 +1101,9 @@ if($_POST['form-type']=='reg')
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
-                        'random_date_select' => $random_date_select
+                        'random_date_select' => $random_date_select,
+                        'join_charm_workshop' => $_POST('join-charm-workshop-2')
+
                     );
                     add_row('applied_non_member', $row,$current_post_id);
                     
@@ -1157,6 +1162,7 @@ if($_POST['form-type']=='reg')
                     add_post_meta($post_id, 'like_food', $like_food);
                     add_post_meta($post_id, 'dislike_food', $dislike_food);
                     
+                    
                 }
 
                 $row = array(
@@ -1164,7 +1170,9 @@ if($_POST['form-type']=='reg')
                     'transaction_id'   => $balance_transaction,
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id,
-                    'random_date_select' => $random_date_select
+                    'random_date_select' => $random_date_select,
+                    'join_charm_workshop' => $_POST('join-charm-workshop-2')
+
 
                 );
                 add_row('applied_non_member', $row,$current_post_id);
