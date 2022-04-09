@@ -1365,7 +1365,8 @@ $(function() {
 
 
 // Create a Stripe client.
-var stripe = Stripe('pk_test_yDDkdm4SUJ3xMn0veUBLRH6a00zg0gPxaT');
+var stripe = Stripe(
+    'pk_test_51Hc7UyK6XoTSXbpZugJibzaRvVIiFKxcgruxbB3JYHwFRCaWLMMLBnNFFpgfrCGoZNSuDdYdr6hkbKLB98rHxV1a00SgL2kmW2');
 
 // Create an instance of Elements.
 var elements = stripe.elements();
