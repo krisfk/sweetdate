@@ -34,7 +34,7 @@ get_header();
                 $msg_title= $_POST['msg-title'];
                 $msg_content = $_POST['msg-content'];
 
-                $to='krisfk@gmail.com';
+                $to='sweetdatehk@gmail.com';
                 $subject='客人('.$nickname.') 查詢';
 
                 $message='剛收到有位客人的查詢：<br><br>稱呼：<br>'.$nickname.'<br><br>聯絡電郵：<br>'.$email.'<br><br>標題：<br>'.$subject.'<br><br>內容：<br>'.$msg_content;
