@@ -867,20 +867,42 @@ if($_POST['form-type']=='reg')
     $token = $_POST['stripeToken'];
     
     $IMEI = $_POST['ImeiNum'];
-   
+    // echo $token.' '.$charge_final_price.' '.$IMEI;
+
+    
+    // echo $_POST['name'];
+    // echo $charge_final_price;
+    // Number($_POST['final-price']*100)
+// $charge_final_price=9999;
+// echo 444;
     try {
-        // echo 789;
-     
-        
+        // echo 123;
+  //      $charge_final_price=8888;
+
         $charge = \Stripe\Charge::create(array(
+        //   "amount" => $_POST('final-price')*100,
         "amount" => $charge_final_price,
+        // '999',
+        //$charge_final_price,
+        // $charge_final_price,
+
           "currency" => "hkd",
           "source" => $token,
           "description" => '',
           "metadata" => array("IMEI" => $IMEI)
-          ));
- 
+          )
           
+
+        //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
+          //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
+        //   "metadata" => array("IMEI" => $IMEI))
+        );
+        // echo 777;
+        // echo $charge->paid;
+        // print_r($charge);
+        // print_r($charge);
+        
+
         
         if($charge->paid)
         {
@@ -888,6 +910,8 @@ if($_POST['form-type']=='reg')
             date_default_timezone_set('Asia/Hong_Kong');
 
             
+
+            // print_r()
             $balance_transaction = $charge->balance_transaction;
 
             $random_date_select=$_POST['any-date'];
@@ -896,6 +920,8 @@ if($_POST['form-type']=='reg')
             if($_POST['person']==1)
             {
 
+              
+                // echo 999;
 
                 if(!$_POST['is-member'])
                 {
@@ -940,7 +966,7 @@ if($_POST['form-type']=='reg')
                     add_row('applied_non_member', $row,$current_post_id);
 
                 $sent_content= $_POST['first-name'].' 您好！<br><br>'.$email_content.'<br>另外為了方便更有效配對，請閣下進入以下連結填寫詳細個人資料：<br>'.get_site_url().'/nonmember-info/?nmid='.$post_id.'&sc='.$randomString.'<br><br><br>Sweetdate';
-                wp_maila( $_POST['register-email'], $email_title, $sent_content );
+                wp_mail( $_POST['register-email'], $email_title, $sent_content );
 
 
                 }
@@ -1108,8 +1134,7 @@ if($_POST['form-type']=='reg')
                 setTimeout(() => {
                     $('.step').fadeOut(0);
                     $('.step.step-3').fadeIn(200);
-                    $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount,.coupon-discount-div')
-                        .fadeOut(0);
+                    $('.agree-decide-other-date-div,.one-ppl-discount,.one-ppl-no-discount').fadeOut(0);
                 }, 100);
 
                 localStorage.removeItem('any-date');
