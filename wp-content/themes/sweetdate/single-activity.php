@@ -1251,7 +1251,20 @@ $(function() {
 
     $('input[name="payment-method"]').change(function() {
 
-        alert($(this).val());
+        if ($(this).val() == '信用咭付款') {
+            $('.payment-method-tr').fadeOut(0);
+            $('.payment-method-tr-2').fadeIn(0);
+        }
+
+
+        if ($(this).val() == '轉數快/Payme付款') {
+
+            $('.payment-method-tr').fadeOut(0);
+            $('.payment-method-tr-1').fadeIn(0);
+
+        }
+
+        // alert($(this).val());
     })
 
 
