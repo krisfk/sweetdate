@@ -831,7 +831,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td><label for="payment-method">付款方式</label></td>
                                 <td>
-                                    <label class="me-2"><input selected class="me-1" type="radio" name="payment-method"
+                                    <label class="me-2"><input checked class="me-1" type="radio" name="payment-method"
                                             value="信用咭付款">信用咭付款</label>
                                     <label class="me-2"><input class="me-1" type="radio" name="payment-method"
                                             value="轉數快/Payme付款">轉數快/Payme付款</label>
