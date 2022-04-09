@@ -932,8 +932,8 @@ if($_POST['form-type']=='reg')
             date_default_timezone_set('Asia/Hong_Kong');
 
             
-
-            // print_r()
+echo 987;
+             print_r($charge);
             $balance_transaction = $charge->balance_transaction;
 
             $random_date_select=$_POST['any-date'];
