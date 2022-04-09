@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    mail('krisfk@gmail.com', 'My Subject', 'testing');
+    // mail('krisfk@gmail.com', 'My Subject', 'testing');
 
     ?>
 </body>
