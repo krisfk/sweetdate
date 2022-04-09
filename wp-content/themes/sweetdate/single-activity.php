@@ -881,19 +881,12 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
 
 
             <?php
-            // echo 123;
-            // echo $_SESSION['login_member_id'];
-            // echo $_SESSION['mid'];
             
-            // echo $_POST['is-member'];
-            // echo $_POST['is-member'];
             
 if($_POST['form-type']=='reg')
 {
 
-//   echo 999999999999;
-//   echo $charge_final_price;
-
+    
     ?>
             <script type="text/javascript">
             $(function() {
@@ -913,49 +906,39 @@ if($_POST['form-type']=='reg')
     // echo $token.' '.$charge_final_price.' '.$IMEI;
 
     
-    // echo $_POST['name'];
-    // echo $charge_final_price;
-    // Number($_POST['final-price']*100)
-// $charge_final_price=9999;
-// echo 444;
+ 
     try {
-        // echo 123;
-  //      $charge_final_price=8888;
+ 
 
-        $charge = \Stripe\Charge::create(array(
-        //   "amount" => $_POST('final-price')*100,
-        "amount" => $charge_final_price,
-        // '999',
-        //$charge_final_price,
-        // $charge_final_price,
-
-          "currency" => "hkd",
-          "source" => $token,
-          "description" => '',
-          "metadata" => array("IMEI" => $IMEI)
-          )
-          
-
-        //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
-          //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
-        //   "metadata" => array("IMEI" => $IMEI))
-        );
-        // echo 777;
-        // echo $charge->paid;
-        // print_r($charge);
-        //  print_r($charge);
+        if($_POST['payment-method']=='信用咭付款')
+        {
+            $charge = \Stripe\Charge::create(array(
+                "amount" => $charge_final_price,
+                "currency" => "hkd",
+                "source" => $token,
+                "description" => '',
+                "metadata" => array("IMEI" => $IMEI)
+                )
+              );
+    
+        }
+       
         
 
         
-        if($charge->paid)
+        if($charge->paid || $_POST['payment-method']=='轉數快/Payme付款')
         {
             
             date_default_timezone_set('Asia/Hong_Kong');
 
-            
-// echo 987;
-            //  print_r($charge);
-            $balance_transaction = $charge->id;
+            if($_POST['payment-method']=='轉數快/Payme付款')
+            {
+                $balance_transaction='fps/payme';   
+            }
+            else
+            {
+                $balance_transaction = $charge->id;
+            }
 
             $random_date_select=$_POST['any-date'];
 
