@@ -29,6 +29,14 @@ $email_content=get_field('email_content');
 
 // e generateRandomString();
 
+if(!$_GET['person'])
+{
+    global $wp;
+    $current_url = home_url(add_query_arg(array(), $wp->request));    
+    header('Location: '.$current_url.'?person=1');
+
+}
+
 if(!$_POST)
 {
     unset ($_SESSION["paid"]);
@@ -213,6 +221,9 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                 ?>
 
             <?php 
+
+
+
                 if($_GET['person']==1)
                 {
                     // echo 999999;
@@ -1130,7 +1141,7 @@ if($_POST['form-type']=='reg')
             ?>
             <script type="text/javascript">
             $(function() {
-                alert(5);
+                // alert(5);
                 setTimeout(() => {
                     $('.step').fadeOut(0);
                     $('.step.step-3').fadeIn(200);
