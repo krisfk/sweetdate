@@ -791,7 +791,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td colspan="2" class="border-0">
 
                                     <div class="position-relative mt-3">
-                                        <h3 class="title-type-pink-line">信用咭付款</h3>
+                                        <h3 class="title-type-pink-line">付款報名</h3>
 
                                         <div class="text-center">
                                             <div class="title-pink-line"></div>
@@ -826,6 +826,18 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 ?>
                                     <input type="hidden" name="final-price" value="<?php echo $final_price; ?>">
                                     <input type="hidden" name="person" value="<?php echo $_GET['person'];?>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="payment-method">付款方式</label></td>
+                                <td>
+                                    <select name="payment-method" id="payment-method" class="form-select">
+
+                                        <option value="" selected="">選擇</option>
+                                        <option value="信用咭付款" selected="">信用咭付款</option>
+                                        <option value="轉數快/Payme付款" selected="">轉數快/Payme付款</option>
+
+                                    </select>
                                 </td>
                             </tr>
                             <tr>
