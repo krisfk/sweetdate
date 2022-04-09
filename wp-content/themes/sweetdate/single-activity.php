@@ -1375,9 +1375,19 @@ function stripeTokenHandler(token) {
             '電郵格式不正確</br>';
     }
 
-    if (!(/^[0-9]{8}$/.test($('#tev').val()))) {
+    if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
         error_txt += '聯絡電話格式不正確</br>';
     }
+
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email-2').val()))) {
+        error_txt +=
+            '另一位朋友的電郵格式不正確</br>';
+    }
+
+    if (!(/^[0-9]{8}$/.test($('#tel-2').val()))) {
+        error_txt += '另一位朋友的聯絡電話格式不正確</br>';
+    }
+
 
     if (error_txt) {
         $('.lightbox').fadeIn(200);
