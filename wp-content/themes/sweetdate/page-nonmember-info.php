@@ -834,6 +834,36 @@ $post_id = get_the_ID();
 $(function() {
 
 
+    $('form').submit(function() {
+
+        e.preventDefault();
+
+
+        if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
+            error_txt += '聯絡電話格式不正確</br>';
+        }
+
+        if (error_txt) {
+            // $('.error-msg').html(error_txt);
+            // $('body,html').animate({
+            //     scrollTop: $('.error-msg').offset().top - 100
+            // }, 200);
+            $('.lightbox').fadeIn(0);
+            $('.lightbox-msg-txt').html('error_txt');
+
+
+
+            // return false;
+        } else {
+
+
+
+            $('form').unbind('form').submit();
+            // return true;
+        }
+
+
+    })
     // $('.filter-ul li a').click(function() {
     //     $('.filter-ul li a').removeClass('active');
     //     $(this).addClass('active');
