@@ -14,10 +14,9 @@ require_once('./stripe/init.php');
           "amount" => 1000,
           "currency" => "usd",
         //   "source" => $token,
-        //   "description" => '',
-        //   "metadata" => array("IMEI" => $IMEI)
-        )
-        );
+        //   "description" => $email,
+        //   "metadata" => array("IMEI" => $IMEI))
+        ));
 
         print_r($charge);
         // echo $charge->id;
