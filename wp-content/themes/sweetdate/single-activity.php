@@ -915,13 +915,13 @@ if($_POST['form-type']=='reg')
             $balance_transaction = $charge->balance_transaction;
 
             $random_date_select=$_POST['any-date'];
-
+echo 987;
             
             if($_POST['person']==1)
             {
 
               
-                echo 789;
+                // echo 789;
 
                 if(!$_POST['is-member'])
                 {
