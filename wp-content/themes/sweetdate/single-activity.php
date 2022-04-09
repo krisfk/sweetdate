@@ -679,8 +679,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td><label for="join-charm-workshop">參加魅力工作坊(免費)</label></td>
                                 <td>
-                                    <input required="" type="checkbox" id="join-charm-workshop"
-                                        name="join-charm-workshop" value="1">
+                                    <input type="checkbox" id="join-charm-workshop" name="join-charm-workshop"
+                                        value="1">
                                 </td>
                             </tr>
 
@@ -795,8 +795,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td><label for="join-charm-workshop-2">參加魅力工作坊(免費)</label></td>
                                 <td>
-                                    <input required="" type="checkbox" id="join-charm-workshop-2"
-                                        name="join-charm-workshop-2" value="1">
+                                    <input type="checkbox" id="join-charm-workshop-2" name="join-charm-workshop-2"
+                                        value="1">
                                 </td>
                             </tr>
 
@@ -977,7 +977,7 @@ if($_POST['form-type']=='reg')
             
             if($_POST['person']==1)
             {
-                echo 111;
+                // echo 111;
 
               
                 // echo 999;
@@ -1022,7 +1022,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
                         'random_date_select' => $random_date_select,
-                        'join_charm_workshop' => '0'
+                        'join_charm_workshop' => $_POST['join-charm-workshop'] ? '1' :'0'
                     );
                     add_row('applied_non_member', $row,$current_post_id);
 
@@ -1039,7 +1039,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'member_info_url' => $_SESSION['mid'],
                         'random_date_select' => $random_date_select,
-                        // 'join_charm_workshop' => $_POST('join-charm-workshop')
+                        'join_charm_workshop' => $_POST['join-charm-workshop'] ? '1' :'0'
 
                     );
                     add_row('applied_member', $row,$current_post_id);
@@ -1103,7 +1103,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
                         'random_date_select' => $random_date_select,
-                        // 'join_charm_workshop' => $_POST('join-charm-workshop-2')
+                        'join_charm_workshop' => $_POST['join-charm-workshop'] ? '1' :'0'
 
                     );
                     add_row('applied_non_member', $row,$current_post_id);
@@ -1122,7 +1122,10 @@ if($_POST['form-type']=='reg')
                         'transaction_id'   => $balance_transaction,
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'member_info_url' => $_SESSION['mid'],
-                        'random_date_select' => $random_date_select
+                        'random_date_select' => $random_date_select,
+                        'join_charm_workshop' => $_POST['join-charm-workshop'] ? '1' :'0'
+
+                        
                     );
                     add_row('applied_member', $row,$current_post_id);
                     
@@ -1172,7 +1175,7 @@ if($_POST['form-type']=='reg')
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id,
                     'random_date_select' => $random_date_select,
-                    // 'join_charm_workshop' => $_POST('join-charm-workshop-2')
+                    'join_charm_workshop' => $_POST('join-charm-workshop-2') ? '1' : '0'
 
 
                 );
