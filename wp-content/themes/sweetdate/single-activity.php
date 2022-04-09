@@ -897,7 +897,7 @@ if($_POST['form-type']=='reg')
           //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
         //   "metadata" => array("IMEI" => $IMEI))
         );
-        // echo 777;
+        echo 777;
         // echo $charge->paid;
         // print_r($charge);
          print_r($charge);
