@@ -344,7 +344,7 @@ h3.title-type-pink-line {
 }
 
 .s-case-div-a:hover {
-    opacity: 0.85;
+    /* opacity: 0.85; */
 }
 
 .s-case-div-a img {
