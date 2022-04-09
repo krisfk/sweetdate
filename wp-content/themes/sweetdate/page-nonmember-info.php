@@ -838,7 +838,7 @@ $(function() {
 
         e.preventDefault();
 
-
+        var error_txt = '';
         if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
             error_txt += '聯絡電話格式不正確</br>';
         }
