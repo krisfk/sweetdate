@@ -1377,85 +1377,84 @@ card.addEventListener('change', function(event) {
 var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
 
-            if ($('input[name="payment-method"]:checked').val() == '信用咭付款') {
-                {
-                    event.preventDefault();
+    if ($('input[name="payment-method"]:checked').val() == '信用咭付款') {
+        event.preventDefault();
 
 
-                    stripe.createToken(card).then(function(result) {
+        stripe.createToken(card).then(function(result) {
 
-                        if (result.error) {
-                            // Inform the user if there was an error.
-                            var errorElement = document.getElementById('card-errors');
-                            errorElement.textContent = result.error.message;
-                        } else {
-                            // Send the token to your server.
-                            stripeTokenHandler(result.token);
-                        }
-
-                    });
-                }
-
-
-
-            });
-
-        // Submit the form with the token ID.
-        function stripeTokenHandler(token) {
-            // Insert the token ID into the form so it gets submitted to the server
-            var form = document.getElementById('payment-form');
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeToken');
-            hiddenInput.setAttribute('value', token.id);
-            form.appendChild(hiddenInput);
-
-            // Submit the form
-
-
-            var error_txt = '';
-            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email').val()))) {
-                error_txt +=
-                    '電郵格式不正確</br>';
+            if (result.error) {
+                // Inform the user if there was an error.
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+            } else {
+                // Send the token to your server.
+                stripeTokenHandler(result.token);
             }
 
-            if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
-                error_txt += '聯絡電話格式不正確</br>';
-            }
+        });
+    }
 
-            <?php
+
+
+});
+
+// Submit the form with the token ID.
+function stripeTokenHandler(token) {
+    // Insert the token ID into the form so it gets submitted to the server
+    var form = document.getElementById('payment-form');
+    var hiddenInput = document.createElement('input');
+    hiddenInput.setAttribute('type', 'hidden');
+    hiddenInput.setAttribute('name', 'stripeToken');
+    hiddenInput.setAttribute('value', token.id);
+    form.appendChild(hiddenInput);
+
+    // Submit the form
+
+
+    var error_txt = '';
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email').val()))) {
+        error_txt +=
+            '電郵格式不正確</br>';
+    }
+
+    if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
+        error_txt += '聯絡電話格式不正確</br>';
+    }
+
+    <?php
             if($_GET['person'] == 2)
             {
                 ?>
-            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email-2').val()))) {
-                error_txt +=
-                    '另一位朋友的電郵格式不正確</br>';
-            }
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email-2').val()))) {
+        error_txt +=
+            '另一位朋友的電郵格式不正確</br>';
+    }
 
-            if (!(/^[0-9]{8}$/.test($('#tel-2').val()))) {
-                error_txt += '另一位朋友的聯絡電話格式不正確</br>';
-            }
-            <?php
+    if (!(/^[0-9]{8}$/.test($('#tel-2').val()))) {
+        error_txt += '另一位朋友的聯絡電話格式不正確</br>';
+    }
+    <?php
             }
     ?>
 
 
 
-            if (error_txt) {
-                $('.lightbox').fadeIn(200);
-                $('.lightbox-msg-txt').html(error_txt);
+    if (error_txt) {
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html(error_txt);
 
-            } else {
+    } else {
 
-                $('.lightbox').fadeIn(200);
-                $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+        $('.lightbox').fadeIn(200);
+        $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
 
-                form.submit();
-            }
+        form.submit();
+    }
 
 
 
-        }
+}
 </script>
 
 <?php
