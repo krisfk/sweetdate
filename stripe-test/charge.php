@@ -14,7 +14,7 @@ require_once('./stripe/init.php');
           "amount" => 1000,
           "currency" => "usd",
         //   "source" => $token,
-          "description" => '',
+        //   "description" => '',
         //   "metadata" => array("IMEI" => $IMEI)
         )
         );
