@@ -1021,7 +1021,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
                         'random_date_select' => $random_date_select,
-                        'join_charm_workshop' => $_POST('join-charm-workshop')
+                        // 'join_charm_workshop' => $_POST('join-charm-workshop')
                     );
                     add_row('applied_non_member', $row,$current_post_id);
 
@@ -1038,7 +1038,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'member_info_url' => $_SESSION['mid'],
                         'random_date_select' => $random_date_select,
-                        'join_charm_workshop' => $_POST('join-charm-workshop')
+                        // 'join_charm_workshop' => $_POST('join-charm-workshop')
 
                     );
                     add_row('applied_member', $row,$current_post_id);
@@ -1102,7 +1102,7 @@ if($_POST['form-type']=='reg')
                         'date_of_purchase' => date('d-m-y h:i:s'),
                         'non_member_info_url' => $post_id,
                         'random_date_select' => $random_date_select,
-                        'join_charm_workshop' => $_POST('join-charm-workshop-2')
+                        // 'join_charm_workshop' => $_POST('join-charm-workshop-2')
 
                     );
                     add_row('applied_non_member', $row,$current_post_id);
@@ -1171,7 +1171,7 @@ if($_POST['form-type']=='reg')
                     'date_of_purchase' => date('d-m-y h:i:s'),
                     'non_member_info_url' => $post_id,
                     'random_date_select' => $random_date_select,
-                    'join_charm_workshop' => $_POST('join-charm-workshop-2')
+                    // 'join_charm_workshop' => $_POST('join-charm-workshop-2')
 
 
                 );
