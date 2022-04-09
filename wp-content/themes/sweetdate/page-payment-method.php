@@ -15,7 +15,7 @@ get_header();
 <div class="container mt-3">
 
     <div class="position-relative">
-        <h2 class="title-type-pink-line">關於我們</h2>
+        <h2 class="title-type-pink-line">付款方式</h2>
 
         <div class="text-center">
             <div class="title-pink-line"></div>
