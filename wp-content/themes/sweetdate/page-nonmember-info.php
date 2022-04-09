@@ -849,7 +849,7 @@ $(function() {
             //     scrollTop: $('.error-msg').offset().top - 100
             // }, 200);
             $('.lightbox').fadeIn(0);
-            $('.lightbox-msg-txt').html('error_txt');
+            $('.lightbox-msg-txt').html(error_txt);
 
 
 
