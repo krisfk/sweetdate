@@ -849,12 +849,13 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td>信用咭付款</td>
                                 <td>
-                                    <div class="form-row">
+                                    <div class="form-row card-element-main">
 
                                         <div id="card-element">
                                         </div>
 
                                         <div id="card-errors" role="alert"></div>
+
                                     </div>
 
                                 </td>
