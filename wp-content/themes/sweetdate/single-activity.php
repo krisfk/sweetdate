@@ -831,13 +831,19 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             <tr>
                                 <td><label for="payment-method">付款方式</label></td>
                                 <td>
-                                    <select name="payment-method" id="payment-method" class="form-select">
+                                    <label class="me-2"><input required class="me-1" type="radio" name="payment_method"
+                                            value="信用咭付款">信用咭付款</label>
+                                    <label class="me-2"><input class="me-1" type="radio" name="gender"
+                                            value="轉數快/Payme付款">轉數快/Payme付款</label>
+
+
+                                    <!-- <select name="payment-method" id="payment-method" class="form-select">
 
                                         <option value="" selected="">選擇</option>
                                         <option value="信用咭付款">信用咭付款</option>
                                         <option value="轉數快/Payme付款">轉數快/Payme付款</option>
 
-                                    </select>
+                                    </select> -->
                                 </td>
                             </tr>
                             <tr>
