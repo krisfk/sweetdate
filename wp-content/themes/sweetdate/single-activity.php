@@ -784,6 +784,14 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 </td>
                             </tr>
                             <tr>
+                                <td><label for="join-charm-workshop">參加魅力工作坊(免費)</label></td>
+                                <td>
+                                    <input required="" type="checkbox" id="join-charm-workshop"
+                                        name="join-charm-workshop" value="yes">
+                                </td>
+                            </tr>
+
+                            <tr>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -872,14 +880,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                 <td>轉數快/Payme付款</td>
                                 <td>送出表格後從轉數快ID/Payme QRcode付款</td>
                             </tr>
-                            <tr>
-                                <td><label for="join-charm-workshop">參加魅力工作坊(免費)</label></td>
-                                <td>
-                                    <input required="" type="checkbox" id="join-charm-workshop"
-                                        name="join-charm-workshop" value="男">
 
-                                </td>
-                            </tr>
                             <tr>
                                 <td></td>
                                 <td class="text-end">
