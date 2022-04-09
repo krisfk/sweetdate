@@ -867,45 +867,19 @@ if($_POST['form-type']=='reg')
     $token = $_POST['stripeToken'];
     
     $IMEI = $_POST['ImeiNum'];
-    // echo $token.' '.$charge_final_price.' '.$IMEI;
-
-    
-    // echo $_POST['name'];
-    // echo $charge_final_price;
-    // Number($_POST['final-price']*100)
-// $charge_final_price=9999;
-// echo 444;
+   
     try {
-        // echo 546;
-        // echo $charge_final_price;
-
-    //    $charge_final_price=8888;
-    //    echo $charge_final_price;
-
+     
+        
         $charge = \Stripe\Charge::create(array(
-        //   "amount" => $_POST('final-price')*100,
         "amount" => $charge_final_price,
-        // '999',
-        //$charge_final_price,
-        // $charge_final_price,
-
           "currency" => "hkd",
           "source" => $token,
           "description" => '',
           "metadata" => array("IMEI" => $IMEI)
-          )
+          ));
+ 
           
-
-        //   '['.get_field('activity_title').']'.' '.$_POST['first-name'])
-          //get_field('activity_title').' '.$_POST['first-name'].' '.$_POST('register-email').' '.$_POST('tel'))
-        //   "metadata" => array("IMEI" => $IMEI))
-        );
-        echo 789;
-        // echo $charge->paid;
-        print_r($charge);
-        // print_r($charge);
-        
-
         
         if($charge->paid)
         {
