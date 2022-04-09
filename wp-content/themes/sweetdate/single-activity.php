@@ -467,7 +467,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
         <div class="step step-2">
 
             <div class="position-relative mt-5">
-                <h3 class="title-type-pink-line">活動報名</h3>
+                <h3 class="title-type-pink-line">會員登入</h3>
 
                 <div class="text-center">
                     <div class="title-pink-line"></div>
