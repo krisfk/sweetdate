@@ -853,11 +853,8 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     </select> -->
                                 </td>
                             </tr>
-                            <tr>
-                                <td>轉數快/Payme付款</td>
-                                <td>送出表格後從轉數快ID/Payme QRcode付款</td>
-                            </tr>
-                            <tr>
+
+                            <tr class="payment-method-tr payment-method-tr-1">
                                 <td>信用咭付款</td>
                                 <td>
                                     <div class="form-row card-element-main">
@@ -870,6 +867,10 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                                     </div>
 
                                 </td>
+                            </tr>
+                            <tr class="payment-method-tr payment-method-tr-2">
+                                <td>轉數快/Payme付款</td>
+                                <td>送出表格後從轉數快ID/Payme QRcode付款</td>
                             </tr>
                             <tr>
                                 <td></td>

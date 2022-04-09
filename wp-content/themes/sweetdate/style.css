@@ -926,6 +926,14 @@ tbody {
     opacity: 0;
 }
 
+.payment-method-tr {
+    display: none;
+}
+
+.payment-method-tr.payment-method-tr-1 {
+    display: block;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
