@@ -855,7 +855,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
                             <tr>
                                 <td>轉數快/Payme付款</td>
-                                <td>發送表格從轉數快ID/Payme QRcode付款</td>
+                                <td>送出表格後從轉數快ID/Payme QRcode付款</td>
                             </tr>
                             <tr>
                                 <td>信用咭付款</td>
