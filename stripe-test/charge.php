@@ -13,9 +13,9 @@ require_once('./stripe/init.php');
         $charge = \Stripe\Charge::create(array(
           "amount" => 1000,
           "currency" => "usd",
-        //   "source" => $token,
+          "source" => $token,
           "description" => $email,
-          "metadata" => array("IMEI" => $IMEI)
+        //   "metadata" => array("IMEI" => $IMEI)
         )
         );
 
