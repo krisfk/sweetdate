@@ -876,7 +876,7 @@ if($_POST['form-type']=='reg')
 // $charge_final_price=9999;
 // echo 444;
     try {
-        // echo 123;
+        echo 123;
   //      $charge_final_price=8888;
 
         $charge = \Stripe\Charge::create(array(
@@ -921,7 +921,7 @@ if($_POST['form-type']=='reg')
             {
 
               
-                echo 999;
+                // echo 999;
 
                 if(!$_POST['is-member'])
                 {
