@@ -969,7 +969,7 @@ if($_POST['form-type']=='reg')
 
             // wp_mail()
             
-            wp_mail( get_bloginfo('admin_email'), get_field('activity_title').'收到有新報名',get_field('activity_title').'收到有新報名:<br><br>可login admin 後查閱：<br>https://sweetdate.com.hk/wp-admin/post.php?post=398&action=edit'  );
+            wp_mail( get_bloginfo('admin_email'), get_field('activity_title').'收到有新報名'.date('d-m-y h:i:s'),get_field('activity_title').'收到有新報名'.date('d-m-y h:i:s').':<br><br>可login admin 後查閱：<br>https://sweetdate.com.hk/wp-admin/post.php?post=398&action=edit'  );
 
             // date('d-m-y h:i:s')
 
