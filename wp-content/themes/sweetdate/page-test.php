@@ -11,7 +11,7 @@
 <body>
     <?php
     // mail('krisfk@gmail.com', 'My Subject', 'testing');
-echo    get_bloginfo('admin_email');
+// echo    get_bloginfo('admin_email');
 
 
 

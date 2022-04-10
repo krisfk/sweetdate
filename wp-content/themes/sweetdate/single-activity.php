@@ -13,8 +13,11 @@ get_header();
 // session_start();
 $current_post_id=get_the_ID();
 $current_price=get_field('price');
+$current_activity_title=get_field('activity_title');
 $email_title=get_field('email_title');
 $email_content=get_field('email_content');
+
+// https://sweetdate.com.hk/wp-admin/post.php?post=398&action=edit
 
 // function generateRandomString($length = 10) {
     $length=20;
@@ -962,6 +965,13 @@ if($_POST['form-type']=='reg')
         {
             
             date_default_timezone_set('Asia/Hong_Kong');
+
+
+            // wp_mail()
+            
+            wp_mail( get_bloginfo('admin_email'), get_field('activity_title').'收到有新報名',get_field('activity_title').'收到有新報名:<br><br>可login admin 後查閱：<br>https://sweetdate.com.hk/wp-admin/post.php?post=398&action=edit'  );
+
+            // date('d-m-y h:i:s')
 
             if($_POST['payment-method']=='轉數快/Payme付款')
             {
