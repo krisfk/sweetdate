@@ -139,7 +139,7 @@ session_start();
                 </a>
 
 
-                <ul class=" top-menu-ul col-7">
+                <ul class=" top-menu-ul col-8">
 
                     <li class="mobile-logo-li"> <a href="<?php echo get_site_url();?>" class="logo-a col-2">
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/sd-logo-new.jpg" alt="">
