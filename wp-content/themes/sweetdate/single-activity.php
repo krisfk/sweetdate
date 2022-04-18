@@ -1252,7 +1252,48 @@ if($_POST['payment-method']=='轉數快/Payme付款')
             <h4 class="pink">
                 我們已收到你的報名！會盡快聯絡您！謝謝！ <br>
             </h4>
-            <div class="mt-4">因為您選擇了轉數快/Payme付款($<?php echo $_POST['final-price']?>)<br>麻煩從以下payme qrcode 或fps id 付款
+
+            <div class="mt-4">
+
+                <ol>
+                    <li>你的留位必須在付款後才可確認，以下是我們的戶口資料:
+                        或可用我們網站上(報名活動後)有Stripe(credit card)，或用Payme或FPS到7420482。</li>
+                    <li>付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據，以確認留位</li>
+                    <li>我們會發送確認電郵給你</li>
+                    <li>請保留付款收據，作為屆時活動入場驗證之用</li>
+                </ol>
+
+                <div>
+                    如有任何疑問，請WhatsApp或致電6692 9252 Vivian
+                </div>
+                <div class="mt-4 text-start">
+
+                    <img class="" style="width: 155px;"
+                        src="https://sweetdate.com.hk/wp-content/uploads/2022/04/Payme.jpg" alt="" width="140"
+                        height="155"><img style="width: 200px;"
+                        src="https://sweetdate.com.hk/wp-content/uploads/2022/04/payme-code.jpeg" alt="">&nbsp; <span
+                        style="color: var(--global--color-primary); font-family: var(--global--font-secondary); font-size: var(--global--font-size-base);"><strong>Payme</strong>:
+                        payme.hsbc/sweetdate</span>
+
+                    &nbsp;
+                    <div class="mt-4 text-start">
+
+                        <img class="" style="width: 138px;"
+                            src="https://sweetdate.com.hk/wp-content/uploads/2022/04/FPS.jpg" alt="" width="128"
+                            height="130">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;<strong
+                            style="color: var(--global--color-primary); font-family: var(--global--font-secondary); font-size: var(--global--font-size-base);">FPS
+                            ID</strong><span
+                            style="color: var(--global--color-primary); font-family: var(--global--font-secondary); font-size: var(--global--font-size-base);">:
+                            7420482</span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="mt-4">因為您選擇了轉數快/Payme付款($<?php echo $_POST['final-price']?>)<br>麻煩從以下payme qrcode 或fps id 付款
                 <br>
                 付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據(副上姓名及聯絡電話)，以確認留位，謝謝！ <br>
 
@@ -1263,8 +1304,8 @@ if($_POST['payment-method']=='轉數快/Payme付款')
             <div>
                 <div>FPS ID: 7420482</div> <br>
                 <img src="https://sweetdate.com.hk/wp-content/uploads/2022/04/payme-code.jpeg" alt="">
-                <!--  -->
-            </div>
+            </div> -->
+
 
             <?php
 }
