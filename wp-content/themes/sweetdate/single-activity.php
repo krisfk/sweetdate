@@ -895,7 +895,7 @@ if($_POST['form-type']=='reg' && $_SESSION['paid'])
                             </tr>
 
                             <tr>
-                                <td>同意Sweet Date 的 <a href="<?php echo get_site_url();?>/tnc">服務及免責條款</a> </td>
+                                <td>同意SweetDate的<br><a href="<?php echo get_site_url();?>/tnc">服務及免責條款</a> </td>
                                 <td>
                                     <input type="checkbox" id="agree-tnc" name="agree-tnc" value="1">
 
