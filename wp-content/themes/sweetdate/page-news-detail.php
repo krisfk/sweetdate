@@ -26,7 +26,7 @@ get_header();
 
 
 
-    <div class="main-content-2 mt-4">
+    <div class="main-content mt-4">
 
 
 
