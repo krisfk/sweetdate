@@ -1547,6 +1547,8 @@ function stripeTokenHandler(token) {
     // Submit the form
 
 
+
+
     var error_txt = '';
     if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#register-email').val()))) {
         error_txt +=
@@ -1555,6 +1557,10 @@ function stripeTokenHandler(token) {
 
     if (!(/^[0-9]{8}$/.test($('#tel').val()))) {
         error_txt += '聯絡電話格式不正確</br>';
+    }
+
+    if (!$('#agree-tnc').is(":checked")) {
+        error_txt += '報名必須同意SweetDate的服務及免責條款 </br>';
     }
 
     <?php
