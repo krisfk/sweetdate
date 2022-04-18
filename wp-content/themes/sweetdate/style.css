@@ -941,6 +941,14 @@ tbody {
 
 @media only screen and (max-width: 1920px) {}
 
+@media only screen and (max-width: 1400px) {
+    .top-menu-ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 0.7rem 0.2rem 0.7rem;
+    }
+}
+
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
