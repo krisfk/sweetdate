@@ -1512,6 +1512,15 @@ card.addEventListener('change', function(event) {
 var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
 
+    if (!$('#agree-tnc').is(":checked")) {
+        error_txt = "";
+        error_txt += '報名必須同意SweetDate的服務及免責條款 </br>';
+        if (error_txt) {
+            $('.lightbox').fadeIn(200);
+            $('.lightbox-msg-txt').html(error_txt);
+            event.preventDefault();
+        }
+    } else
     if ($('input[name="payment-method"]:checked').val() == '信用咭付款') {
         event.preventDefault();
 
@@ -1559,9 +1568,6 @@ function stripeTokenHandler(token) {
         error_txt += '聯絡電話格式不正確</br>';
     }
 
-    if (!$('#agree-tnc').is(":checked")) {
-        error_txt += '報名必須同意SweetDate的服務及免責條款 </br>';
-    }
 
     <?php
             if($_GET['person'] == 2)
@@ -1589,6 +1595,10 @@ function stripeTokenHandler(token) {
 
         $('.lightbox').fadeIn(200);
         $('.lightbox-msg-txt').html('資料提交中，請稍後⋯⋯');
+
+
+
+
 
         form.submit();
     }
