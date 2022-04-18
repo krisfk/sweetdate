@@ -1255,7 +1255,7 @@ if($_POST['payment-method']=='轉數快/Payme付款')
 
             <div class="mt-4">
 
-                <ol>
+                <ol class="text-start">
                     <li>你的留位必須在付款後才可確認，以下是我們的戶口資料:
                         或可用我們網站上(報名活動後)有Stripe(credit card)，或用Payme或FPS到7420482。</li>
                     <li>付款后盡快以電郵或WhatsApp 66929252 Vivian付款收據，以確認留位</li>
