@@ -961,6 +961,10 @@ tbody {
     height: 100%;
 }
 
+.video-banner-content-div {
+    display: none;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1400px) {
