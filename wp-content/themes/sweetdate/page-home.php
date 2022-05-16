@@ -20,12 +20,15 @@ get_header();
         <?php
         $content_type=[];
         $img_arr=[];
+        $img_arr2=[];
+
         
 if( have_rows('carousel') ){
 
     while( have_rows('carousel') ) { the_row();
         array_push($content_type, get_sub_field('content_type'));
         array_push($img_arr,wp_get_attachment_image_url(get_sub_field('banner_img'),'full') );
+        array_push($img_arr2,wp_get_attachment_image_url(get_sub_field('banner_thumbnail'),'full'));
     }
 }
 
@@ -59,13 +62,13 @@ if( have_rows('carousel') ){
 
                 <?php
             
-            for($i=0;$i<count($img_arr);$i++)
+            for($i=0;$i<count($img_arr2);$i++)
             {
               ?>
                 <li>
                     <a href="javascript:void(0);">
 
-                        <img class="w-100" src="<?php echo $img_arr[$i];?>" alt="">
+                        <img class="w-100" src="<?php echo $img_arr2[$i];?>" alt="">
                     </a>
 
                 </li>
