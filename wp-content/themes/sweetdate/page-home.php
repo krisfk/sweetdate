@@ -62,6 +62,18 @@ if( have_rows('carousel') ){
 
 
 
+
+
+                <?php
+                        }
+                        ?>
+
+
+                <?php
+                    }
+
+                    ?>
+
                 <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
                     <div id="player" class="video-player"></div>
 
@@ -96,16 +108,6 @@ if( have_rows('carousel') ){
                     }
                     </script>
                 </div>
-
-                <?php
-                        }
-                        ?>
-
-
-                <?php
-                    }
-
-                    ?>
 
             </div>
             <!--  -->
