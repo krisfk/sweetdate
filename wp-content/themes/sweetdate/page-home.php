@@ -463,12 +463,14 @@ $(function() {
 
         if ($('.banner-content-div').eq(idx).attr('youtube-id')) {
 
-            var video_id = $('.banner-content-div').eq(idx).attr('youtube-id');
-            // alert(video_id);
-            $('.banner-content-div').eq(idx).prepend($('#player'));
-            $('#player').fadeIn(0);
-            loadVideoById('lsq9e3Nuhjw');
-            // player.loadVideoById(video_id);
+            var youtube_id = $('.banner-content-div').eq(idx).attr('youtube-id');
+
+            $('.video-player').html('');
+            $('#player').html(
+                '<iframe class="video-iframe" src="https://www.youtube.com/embed/' + youtube_id +
+                '?autoplay=1&rel=0&mute=1&playinline=1" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            )
+
         }
         // alert(idx);
 
@@ -481,7 +483,6 @@ $(function() {
         $('.banner-content-div').eq(0).prepend($('#player'));
         $('#player').fadeIn(0);
 
-        var player;
         var youtube_id = $('.banner-content-div').eq(0).attr('youtube-id');
 
         $('.video-player').html('');
@@ -490,28 +491,8 @@ $(function() {
             '?autoplay=1&rel=0&mute=1&playinline=1" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         )
 
-        // function onYouTubeIframeAPIReady() {
-        //     // function onPlayerReady(event) {
-        //     alert(6);
-        // }
 
 
-        // player = new YT.Player('player', {
-        //     width: '100%',
-        //     videoId: youtube_id,
-        //     playerVars: {
-        //         'autoplay': 1,
-        //         'playsinline': 1
-        //     },
-        //     events: {
-        //         'onReady': onPlayerReady
-        //     }
-        // });
-        // player.playVideo();
-        // }
-
-
-        // alert($('.banner-content-div').eq(0).attr('youtube-id'))
     }
 
     $('.successful-story-carousel').slick({
