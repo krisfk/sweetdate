@@ -484,7 +484,7 @@ $(function() {
             // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
-            player.loadVideoById('lsq9e3Nuhjw');
+            loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
         // alert(idx);
