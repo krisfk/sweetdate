@@ -452,6 +452,15 @@ window.onYouTubeIframeAPIReady = function() {
 $(function() {
 
 
+
+    // $(document).ready(function() {
+    YTdeferred.done(function(YT) {
+        alert(5);
+        // use YT here
+    });
+    // });
+
+
     // var player;
 
     // function onYouTubeIframeAPIReady() {
@@ -511,10 +520,7 @@ $(function() {
         //     // function onPlayerReady(event) {
         //     alert(6);
         // }
-        YTdeferred.done(function(YT) {
-            alert(6);
-            // use YT here
-        });
+
 
         // player = new YT.Player('player', {
         //     width: '100%',
