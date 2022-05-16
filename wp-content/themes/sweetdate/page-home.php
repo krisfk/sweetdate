@@ -480,9 +480,23 @@ window.onPlayerReady = function(event) {
             // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
+
+
+            player = new YT.Player('player', {
+                width: '100%',
+                videoId: 'A7ZUt_2jrxg',
+                playerVars: {
+                    'autoplay': 1,
+                    'playsinline': 1
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+
             // test();
             // alert(7);
-            player.loadVideoById('lsq9e3Nuhjw');
+            // player.loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
         // alert(idx);
