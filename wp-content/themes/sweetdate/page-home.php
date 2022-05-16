@@ -481,7 +481,9 @@ $(function() {
     })
 
     if ($('.banner-content-div').eq(0).attr('youtube-id')) {
-        alert(1);
+
+        $('.banner-content-div').eq(0).prepend($('#player'));
+        $('#player').fadeIn(0);
     }
 
     $('.successful-story-carousel').slick({
