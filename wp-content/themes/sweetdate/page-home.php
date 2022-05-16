@@ -482,7 +482,7 @@ $(function() {
 
             var video_id = $('.banner-content-div').eq(idx).attr('youtube-id');
             alert(video_id);
-            $('.banner-content-div').eq(0).prepend($('#player'));
+            $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
             player.loadVideoById(video_id);
         }
