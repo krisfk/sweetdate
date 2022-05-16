@@ -480,6 +480,10 @@ $(function() {
 
     })
 
+    if ($('.banner-content-div').eq(0).attr('youtube-id')) {
+        alert(1);
+    }
+
     $('.successful-story-carousel').slick({
         infinite: true,
         // slidesToShow: 3,
