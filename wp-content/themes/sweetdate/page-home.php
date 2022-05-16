@@ -61,7 +61,7 @@ if( have_rows('carousel') ){
                             ?>
 
                 <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/_nJSFrveMZg"
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/A7ZUt_2jrxg"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
