@@ -460,23 +460,12 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
+
+
+
 window.onPlayerReady = function(event) {
-    alert(4);
-}
-
-
-
-$(function() {
-
-
-
-    $('.banner-content-div').fadeOut(0);
-
-    $('.banner-content-div').eq(0).fadeIn(0);
-    // successful - story - carousel
 
     $('.thumbanil-slide-ul li a').click(function() {
-
 
         var idx = $(this).parent('li').index();
 
@@ -491,14 +480,27 @@ $(function() {
             // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
-            test();
-            // player.loadVideoById('lsq9e3Nuhjw');
+            // test();
+            player.loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
         // alert(idx);
 
 
     })
+}
+
+
+$(function() {
+
+
+
+    $('.banner-content-div').fadeOut(0);
+
+    $('.banner-content-div').eq(0).fadeIn(0);
+    // successful - story - carousel
+
+
 
     if ($('.banner-content-div').eq(0).attr('youtube-id')) {
 
