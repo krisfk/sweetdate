@@ -462,7 +462,7 @@ function onYouTubeIframeAPIReady() {
 
 
 
-$(function(player) {
+$(function() {
 
 
 
