@@ -86,7 +86,8 @@ if( have_rows('carousel') ){
                             videoId: 'A7ZUt_2jrxg',
                             playerVars: {
                                 'autoplay': 1,
-                                'playsinline': 1
+                                'playsinline': 1,
+                                'mute': 1
                             },
                             events: {
                                 'onReady': onPlayerReady
