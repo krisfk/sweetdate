@@ -461,7 +461,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function test() {
-    alert(5);
+    player.loadVideoById('lsq9e3Nuhjw');
 }
 
 
