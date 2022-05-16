@@ -481,6 +481,7 @@ window.onPlayerReady = function(event) {
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
             // test();
+            alert(7);
             player.loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
