@@ -484,7 +484,7 @@ window.onPlayerReady = function(event) {
 
             player = new YT.Player('player', {
                 width: '100%',
-                videoId: 'A7ZUt_2jrxg',
+                videoId: '5qap5aO4i9A',
                 playerVars: {
                     'autoplay': 1,
                     'playsinline': 1
@@ -496,7 +496,7 @@ window.onPlayerReady = function(event) {
 
             // test();
             // alert(7);
-            // player.loadVideoById('lsq9e3Nuhjw');
+            player.loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
         // alert(idx);
