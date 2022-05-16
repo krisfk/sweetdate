@@ -65,7 +65,7 @@ if( have_rows('carousel') ){
 
 
                 <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
-                    <div id="player" class="video-player"></div>
+                    <div id="player<?php $i;?>" class="video-player"></div>
 
                     <script>
                     var tag = document.createElement('script');
@@ -75,10 +75,10 @@ if( have_rows('carousel') ){
                     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
-                    var player;
+                    var player<?php $i;?>;
 
-                    function onYouTubeIframeAPIReady() {
-                        player = new YT.Player('player', {
+                    function onYouTubeIframeAPIReady<?php $i;?>() {
+                        player<?php $i;?> = new YT.Player('player<?php $i;?>', {
                             width: '100%',
                             videoId: '<?php echo $video_code_arr[$i]?>',
                             playerVars: {
@@ -86,13 +86,13 @@ if( have_rows('carousel') ){
                                 'playsinline': 1
                             },
                             events: {
-                                'onReady': onPlayerReady
+                                'onReady': onPlayerReady<?php $i;?>
                             }
                         });
                     }
 
                     // 4. The API will call this function when the video player is ready.
-                    function onPlayerReady(event) {
+                    function onPlayerReady<?php $i;?>(event) {
                         event.target.mute();
                         event.target.playVideo();
                     }
