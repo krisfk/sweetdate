@@ -939,6 +939,11 @@ tbody {
     right: 0;
 }
 
+.video-iframe {
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1400px) {
