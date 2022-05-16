@@ -83,13 +83,13 @@ if( have_rows('carousel') ){
 
                 <div id="player" class="video-player"></div>
 
-                <script>
+                <!-- <script>
                 var tag = document.createElement('script');
 
                 tag.src = "https://www.youtube.com/iframe_api";
                 var firstScriptTag = document.getElementsByTagName('script')[0];
                 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                </script>
+                </script> -->
 
 
             </div>
@@ -497,6 +497,8 @@ $(function() {
 
         $('.banner-content-div').eq(0).prepend($('#player'));
         $('#player').fadeIn(0);
+
+        alert($('.banner-content-div').eq(0).attr('youtube-id'))
     }
 
     $('.successful-story-carousel').slick({
