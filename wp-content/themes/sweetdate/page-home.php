@@ -49,8 +49,10 @@ if( have_rows('carousel') ){
                         {
                             ?>
 
-                <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
-                    alt="">
+                <div class="banner-content-div">
+                    <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
+                        alt="">
+                </div>
                 <?php
                         }
                         
@@ -58,10 +60,13 @@ if( have_rows('carousel') ){
                         if($content_type[$i]=='video')
                         {
                             ?>
-                <iframe class="video-iframe" src="https://www.youtube.com/embed/_nJSFrveMZg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+
+                <div class="banner-content-div">
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/_nJSFrveMZg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
                 <?php
                         }
@@ -421,17 +426,17 @@ if( have_rows('carousel') ){
 <script type="text/javascript">
 $(function() {
 
-    $('.banner-img').fadeOut(0);
+    $('.banner-content-div').fadeOut(0);
 
-    $('.banner-img').eq(0).fadeIn(0);
+    $('.banner-content-div').eq(0).fadeIn(0);
     // successful - story - carousel
 
     $('.thumbanil-slide-ul li a').click(function() {
         var idx = $(this).parent('li').index();
 
-        $('.banner-img').fadeOut(0);
+        $('.banner-content-div').fadeOut(0);
 
-        $('.banner-img').eq(idx).fadeIn(500);
+        $('.banner-content-div').eq(idx).fadeIn(500);
 
         // alert(idx);
 
