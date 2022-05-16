@@ -64,7 +64,7 @@ if( have_rows('carousel') ){
 
                 <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
 
-                    <div class="player"></div>
+                    <div id="player1"></div>
 
                     <!-- <iframe class="video-iframe"
                         src="https://www.youtube.com/embed/A7ZUt_2jrxg?mute=1&autoplay=1&rel=0&playsinline=1"
@@ -495,7 +495,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('.player', {
+    player = new YT.Player('player', {
         width: '100%',
         videoId: 'A7ZUt_2jrxg',
         playerVars: {
