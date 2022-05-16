@@ -438,46 +438,12 @@ if( have_rows('carousel') ){
 
 
 <script type="text/javascript">
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-    event.target.mute();
-    event.target.playVideo();
-}
-
-
 $(function() {
 
 
-    var YTdeferred = $.Deferred();
-    window.onYouTubeIframeAPIReady = function() {
-        YTdeferred.resolve(window.YT);
-    };
 
 
 
-    // $(document).ready(function() {
-    YTdeferred.done(function(YT) {
-        alert(5);
-        // use YT here
-    });
-    // });
-
-
-    // var player;
-
-    // function onYouTubeIframeAPIReady() {
-    //     player = new YT.Player('player', {
-    //         width: '100%',
-    //         videoId: 'A7ZUt_2jrxg',
-    //         playerVars: {
-    //             'autoplay': 1,
-    //             'playsinline': 1
-    //         },
-    //         events: {
-    //             'onReady': onPlayerReady
-    //         }
-    //     });
-    // }
 
 
     $('.banner-content-div').fadeOut(0);
@@ -517,6 +483,12 @@ $(function() {
 
         var player;
         var youtube_id = $('.banner-content-div').eq(0).attr('youtube-id');
+
+        $('.video-player').html('');
+        $('#player').html(
+            '<iframe class="video-iframe" src="https://www.youtube.com/embed/' + youtube_id +
+            '?autoplay=1&rel=0&mute=1&playinline=1" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        )
 
         // function onYouTubeIframeAPIReady() {
         //     // function onPlayerReady(event) {
