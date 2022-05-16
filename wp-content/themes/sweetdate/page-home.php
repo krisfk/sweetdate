@@ -21,12 +21,14 @@ get_header();
         $content_type=[];
         $img_arr=[];
         $img_arr2=[];
+        $video_code_arr=[];
 
         
 if( have_rows('carousel') ){
 
     while( have_rows('carousel') ) { the_row();
         array_push($content_type, get_sub_field('content_type'));
+        array_push($video_code_arr, get_sub_field('video_url'));
         array_push($img_arr,wp_get_attachment_image_url(get_sub_field('banner_img'),'full') );
         array_push($img_arr2,wp_get_attachment_image_url(get_sub_field('banner_thumbnail'),'full'));
     }
@@ -62,18 +64,6 @@ if( have_rows('carousel') ){
 
 
 
-
-
-                <?php
-                        }
-                        ?>
-
-
-                <?php
-                    }
-
-                    ?>
-
                 <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
                     <div id="player" class="video-player"></div>
 
@@ -90,7 +80,7 @@ if( have_rows('carousel') ){
                     function onYouTubeIframeAPIReady() {
                         player = new YT.Player('player', {
                             width: '100%',
-                            videoId: 'A7ZUt_2jrxg',
+                            videoId: '<?php echo $video_code_arr[$i]?>',
                             playerVars: {
                                 'autoplay': 1,
                                 'playsinline': 1
@@ -108,6 +98,16 @@ if( have_rows('carousel') ){
                     }
                     </script>
                 </div>
+
+                <?php
+                        }
+                        ?>
+
+
+                <?php
+                    }
+
+                    ?>
 
             </div>
             <!--  -->
