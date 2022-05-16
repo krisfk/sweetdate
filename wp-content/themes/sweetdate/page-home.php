@@ -481,7 +481,7 @@ $(function() {
         if ($('.banner-content-div').eq(idx).attr('youtube-id')) {
 
             var video_id = $('.banner-content-div').eq(idx).attr('youtube-id');
-            alert(video_id);
+            // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
             player.loadVideoById(video_id);
