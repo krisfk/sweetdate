@@ -502,8 +502,8 @@ $(function() {
         var player;
         var youtube_id = $('.banner-content-div').eq(0).attr('youtube-id');
 
-        // function onYouTubeIframeAPIReady() {
-        function onPlayerReady(event) {
+        function onYouTubeIframeAPIReady() {
+            // function onPlayerReady(event) {
             alert(6);
         }
         player = new YT.Player('player', {
