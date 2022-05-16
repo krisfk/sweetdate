@@ -83,6 +83,13 @@ if( have_rows('carousel') ){
 
                 <div id="player" class="video-player"></div>
 
+                <script>
+                var tag = document.createElement('script');
+
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                </script>
 
 
             </div>
@@ -437,35 +444,33 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+$(function() {
 
 
-var player;
+    var player;
 
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        width: '100%',
-        videoId: 'A7ZUt_2jrxg',
-        playerVars: {
-            'autoplay': 1,
-            'playsinline': 1
-        },
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-}
-
-
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            width: '100%',
+            videoId: 'A7ZUt_2jrxg',
+            playerVars: {
+                'autoplay': 1,
+                'playsinline': 1
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
 
 
-window.onPlayerReady = function(event) {
+    $('.banner-content-div').fadeOut(0);
+
+    $('.banner-content-div').eq(0).fadeIn(0);
+    // successful - story - carousel
 
     $('.thumbanil-slide-ul li a').click(function() {
+
 
         var idx = $(this).parent('li').index();
 
@@ -480,49 +485,18 @@ window.onPlayerReady = function(event) {
             // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
-
-
-            player = new YT.Player('player', {
-                width: '100%',
-                videoId: '5qap5aO4i9A',
-                playerVars: {
-                    'autoplay': 1,
-                    'playsinline': 1
-                },
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-
-            // test();
-            // alert(7);
-            player.loadVideoById('lsq9e3Nuhjw');
+            loadVideoById('lsq9e3Nuhjw');
             // player.loadVideoById(video_id);
         }
         // alert(idx);
 
 
     })
-}
-
-
-$(function() {
-
-
-
-    $('.banner-content-div').fadeOut(0);
-
-    $('.banner-content-div').eq(0).fadeIn(0);
-    // successful - story - carousel
-
-
 
     if ($('.banner-content-div').eq(0).attr('youtube-id')) {
 
         $('.banner-content-div').eq(0).prepend($('#player'));
         $('#player').fadeIn(0);
-
-        // $video_code_arr
     }
 
     $('.successful-story-carousel').slick({
