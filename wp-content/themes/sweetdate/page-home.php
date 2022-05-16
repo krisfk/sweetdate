@@ -444,12 +444,14 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
-var YTdeferred = $.Deferred();
-window.onYouTubeIframeAPIReady = function() {
-    YTdeferred.resolve(window.YT);
-};
 
 $(function() {
+
+
+    var YTdeferred = $.Deferred();
+    window.onYouTubeIframeAPIReady = function() {
+        YTdeferred.resolve(window.YT);
+    };
 
 
 
