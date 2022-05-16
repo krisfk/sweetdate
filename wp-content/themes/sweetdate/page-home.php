@@ -469,12 +469,22 @@ $(function() {
     // successful - story - carousel
 
     $('.thumbanil-slide-ul li a').click(function() {
+
+
         var idx = $(this).parent('li').index();
 
         $('.banner-content-div').fadeOut(0);
 
         $('.banner-content-div').eq(idx).fadeIn(500);
 
+
+        if ($('.banner-content-div').eq(idx).attr('youtube-id')) {
+
+            var video_id = $('.banner-content-div').eq(idx).attr('youtube-id');
+            $('.banner-content-div').eq(0).prepend($('#player'));
+            $('#player').fadeIn(0);
+            player.loadVideoById(video_id);
+        }
         // alert(idx);
 
 
