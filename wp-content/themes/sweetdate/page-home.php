@@ -62,7 +62,8 @@ if( have_rows('carousel') ){
                         {
                             ?>
 
-                <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
+                <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100"
+                    youtube-id="<?php echo $video_code_arr[$i]; ?>">
 
                 </div>
 
