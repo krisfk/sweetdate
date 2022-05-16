@@ -502,19 +502,20 @@ $(function() {
         var player;
         var youtube_id = $('.banner-content-div').eq(0).attr('youtube-id');
 
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                width: '100%',
-                videoId: youtube_id,
-                playerVars: {
-                    'autoplay': 1,
-                    'playsinline': 1
-                },
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
+        // function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            width: '100%',
+            videoId: youtube_id,
+            playerVars: {
+                'autoplay': 1,
+                'playsinline': 1
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+        player.playVideo();
+        // }
 
 
         // alert($('.banner-content-div').eq(0).attr('youtube-id'))
