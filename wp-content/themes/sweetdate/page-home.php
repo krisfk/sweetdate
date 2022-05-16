@@ -58,8 +58,8 @@ if( have_rows('carousel') ){
                         if($content_type[$i]=='video')
                         {
                             ?>
-                <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
-                    alt="">
+                <!-- <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
+                    alt=""> -->
 
                 <?php
                         }
