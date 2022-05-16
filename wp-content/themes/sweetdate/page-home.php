@@ -437,30 +437,33 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        width: '100%',
+        videoId: 'A7ZUt_2jrxg',
+        playerVars: {
+            'autoplay': 1,
+            'playsinline': 1
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+
+
 $(function() {
 
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-    var player;
-
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            width: '100%',
-            videoId: 'A7ZUt_2jrxg',
-            playerVars: {
-                'autoplay': 1,
-                'playsinline': 1
-            },
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
-    }
 
 
     $('.banner-content-div').fadeOut(0);
