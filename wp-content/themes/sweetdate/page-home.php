@@ -64,40 +64,6 @@ if( have_rows('carousel') ){
 
 
 
-                <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
-                    <div id="player<?php $i;?>" class="video-player"></div>
-
-                    <script>
-                    var tag = document.createElement('script');
-
-                    tag.src = "https://www.youtube.com/iframe_api";
-                    var firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-                    var player<?php $i;?>;
-
-                    function onYouTubeIframeAPIReady<?php $i;?>() {
-                        player<?php $i;?> = new YT.Player('player<?php $i;?>', {
-                            width: '100%',
-                            videoId: '<?php echo $video_code_arr[$i]?>',
-                            playerVars: {
-                                'autoplay': 1,
-                                'playsinline': 1
-                            },
-                            events: {
-                                'onReady': onPlayerReady<?php $i;?>
-                            }
-                        });
-                    }
-
-                    // 4. The API will call this function when the video player is ready.
-                    function onPlayerReady<?php $i;?>(event) {
-                        event.target.mute();
-                        event.target.playVideo();
-                    }
-                    </script>
-                </div>
 
                 <?php
                         }
@@ -108,6 +74,43 @@ if( have_rows('carousel') ){
                     }
 
                     ?>
+
+                <div class="banner-content-div position-absolute top-0 start-0 w-100 h-100">
+                    <div id="player" class="video-player"></div>
+
+                    <script>
+                    var tag = document.createElement('script');
+
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+                    var player;
+
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+                            width: '100%',
+                            videoId: 'A7ZUt_2jrxg',
+                            playerVars: {
+                                'autoplay': 1,
+                                'playsinline': 1
+                            },
+                            events: {
+                                'onReady': onPlayerReady
+                            }
+                        });
+                    }
+
+                    // 4. The API will call this function when the video player is ready.
+                    function onPlayerReady(event) {
+                        event.target.mute();
+                        event.target.playVideo();
+                    }
+                    </script>
+                </div>
+
+
 
             </div>
             <!--  -->
