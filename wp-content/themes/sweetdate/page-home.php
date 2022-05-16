@@ -444,6 +444,11 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
+var YTdeferred = $.Deferred();
+window.onYouTubeIframeAPIReady = function() {
+    YTdeferred.resolve(window.YT);
+};
+
 $(function() {
 
 
@@ -502,22 +507,27 @@ $(function() {
         var player;
         var youtube_id = $('.banner-content-div').eq(0).attr('youtube-id');
 
-        function onYouTubeIframeAPIReady() {
-            // function onPlayerReady(event) {
+        // function onYouTubeIframeAPIReady() {
+        //     // function onPlayerReady(event) {
+        //     alert(6);
+        // }
+        YTdeferred.done(function(YT) {
             alert(6);
-        }
-        player = new YT.Player('player', {
-            width: '100%',
-            videoId: youtube_id,
-            playerVars: {
-                'autoplay': 1,
-                'playsinline': 1
-            },
-            events: {
-                'onReady': onPlayerReady
-            }
+            // use YT here
         });
-        player.playVideo();
+
+        // player = new YT.Player('player', {
+        //     width: '100%',
+        //     videoId: youtube_id,
+        //     playerVars: {
+        //         'autoplay': 1,
+        //         'playsinline': 1
+        //     },
+        //     events: {
+        //         'onReady': onPlayerReady
+        //     }
+        // });
+        // player.playVideo();
         // }
 
 
