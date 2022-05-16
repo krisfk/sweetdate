@@ -44,10 +44,28 @@ if( have_rows('carousel') ){
                     
                     for($i=0;$i<count($img_arr);$i++)
                     {
-                        ?>
+
+                        if($content_type[$i]=='image')
+                        {
+                            ?>
 
                 <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
                     alt="">
+                <?php
+                        }
+                        
+
+                        if($content_type[$i]=='video')
+                        {
+                            ?>
+                <img class="banner-img position-absolute top-0 start-0 w-100 h-100" src="<?php echo $img_arr[$i];?>"
+                    alt="">
+
+                <?php
+                        }
+                        ?>
+
+
                 <?php
                     }
 
@@ -59,7 +77,8 @@ if( have_rows('carousel') ){
 
 
             <ul class="thumbanil-slide-ul mt-2">
-
+                <!-- _nJSFrveMZg -->
+                <!-- A7ZUt_2jrxg -->
                 <?php
             
             for($i=0;$i<count($img_arr2);$i++)
