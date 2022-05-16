@@ -464,7 +464,7 @@ $(function() {
         if ($('.banner-content-div').eq(idx).attr('youtube-id')) {
 
 
-            $('.banner-content-div').eq(0).prepend($('#player'));
+            $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
 
             var youtube_id = $('.banner-content-div').eq(idx).attr('youtube-id');
