@@ -438,22 +438,6 @@ if( have_rows('carousel') ){
 
 
 <script type="text/javascript">
-var player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        width: '100%',
-        videoId: 'A7ZUt_2jrxg',
-        playerVars: {
-            'autoplay': 1,
-            'playsinline': 1
-        },
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-}
-
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
     event.target.mute();
@@ -461,6 +445,24 @@ function onPlayerReady(event) {
 }
 
 $(function() {
+
+
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            width: '100%',
+            videoId: 'A7ZUt_2jrxg',
+            playerVars: {
+                'autoplay': 1,
+                'playsinline': 1
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
 
     $('.banner-content-div').fadeOut(0);
 
