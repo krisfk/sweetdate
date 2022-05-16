@@ -81,7 +81,7 @@ if( have_rows('carousel') ){
 
 
 
-                <div id="player" class="video-player d-none"></div>
+                <div id="player" class="video-player"></div>
 
                 <script>
                 var tag = document.createElement('script');
