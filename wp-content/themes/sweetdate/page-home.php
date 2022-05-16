@@ -484,6 +484,7 @@ $(function() {
             // alert(video_id);
             $('.banner-content-div').eq(idx).prepend($('#player'));
             $('#player').fadeIn(0);
+            alert(player);
             player.loadVideoById(video_id);
         }
         // alert(idx);
