@@ -404,7 +404,7 @@ $post_id = get_the_ID();
                                     <option
                                         <?php echo get_field('occupation')=='宗教職業者' ? 'selected' :'';?>value="宗教職業者">
                                         宗教職業者</option>
-                                    <option <?php echo get_field('occupation')=='家庭婦女' ? 'selected' :'';?>value="家庭婦女">
+                                    <!-- <option <?php echo get_field('occupation')=='家庭婦女' ? 'selected' :'';?>value="家庭婦女">
                                         家庭婦女</option>
                                     <option <?php echo get_field('occupation')=='退休' ? 'selected' :'';?>value="退休">
                                         退休</option>
@@ -415,7 +415,7 @@ $post_id = get_the_ID();
                                     <option <?php echo get_field('occupation')=='兒童' ? 'selected' :'';?>value="兒童">
                                         兒童</option>
                                     <option <?php echo get_field('occupation')=='職員' ? 'selected' :'';?>value="職員">
-                                        職員</option>
+                                        職員</option> -->
                                     <option
                                         <?php echo get_field('occupation')=='法律工作者' ? 'selected' :'';?>value="法律工作者">
                                         法律工作者</option>
