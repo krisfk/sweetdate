@@ -161,6 +161,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .sns-a {
     position: relative;
     top: -2px;
+    z-index: 100;
 }
 
 .sns-a img {
