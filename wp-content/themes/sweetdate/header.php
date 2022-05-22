@@ -253,7 +253,7 @@ else
 
 
                     <li class="m-0 ms-2">
-                        <a class="sns-a" href="javascript:void()">
+                        <a class="sns-a" href="https://www.instagram.com/sweetdatehk/" target="_blank">
                             <img src="<?php echo get_template_directory_uri()?>/assets/images/ig-icon.png" alt="">
                         </a>
                         <a class="sns-a" href="https://www.facebook.com/sweetxDate/" target="_blank">
