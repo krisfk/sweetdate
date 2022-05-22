@@ -941,11 +941,10 @@ if($_POST['form-type']=='reg')
     
     
     require_once('./stripe-test/stripe/init.php');
-// sk_test_51Hc7UyK6XoTSXbpZGRS7d11xxvWwPrRlPwyYvMcQ6LSXQVEw5k68nUhs3s7ISeaFd7RPAeM0yDn8adhEmyIS9sO900enLknpWs
-// sk_test_g9irmT4kYqGJ7bZi4Z6bw4j100ZM9jPv5o kay key
-    \Stripe\Stripe::setApiKey('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');
-//sk_test_51Hc7UyK6XoTSXbpZGRS7d11xxvWwPrRlPwyYvMcQ6LSXQVEw5k68nUhs3s7ISeaFd7RPAeM0yDn8adhEmyIS9sO900enLknpWs
-    // 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
+    
+    \Stripe\Stripe::setApiKey('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');
+
+    
     $token = $_POST['stripeToken'];
     
     $IMEI = $_POST['ImeiNum'];
@@ -1463,9 +1462,8 @@ $(function() {
 
 // Create a Stripe client.
 var stripe = Stripe(
-    'pk_live_51Hc7UyK6XoTSXbpZsyNKn9i4dFOnpGX7DVEMvW2ck0mfCiis68rBBTvttrHaFWNvwDumy7PF3WigC2wmVPM1vo3Y00SDtlqAni');
-//pk_test_51Hc7UyK6XoTSXbpZugJibzaRvVIiFKxcgruxbB3JYHwFRCaWLMMLBnNFFpgfrCGoZNSuDdYdr6hkbKLB98rHxV1a00SgL2kmW2
-//pk_live_51Hc7UyK6XoTSXbpZsyNKn9i4dFOnpGX7DVEMvW2ck0mfCiis68rBBTvttrHaFWNvwDumy7PF3WigC2wmVPM1vo3Y00SDtlqAni
+    'pk_live_51L23KcCOVE1KjROYXG38bBoNpN9ZFz42DxTO3v9l85pJDz9i34SKBypef52Yii1PeGQirm3sOR8cbAJZc2npHwKN006eK0tEwT');
+
 // Create an instance of Elements.
 var elements = stripe.elements();
 
