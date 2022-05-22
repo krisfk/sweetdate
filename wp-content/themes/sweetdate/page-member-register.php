@@ -322,12 +322,12 @@ $(function() {
                                     <option value="律師">律師</option>
                                     <option value="商人">商人</option>
                                     <option value="宗教職業者">宗教職業者</option>
-                                    <option value="家庭婦女">家庭婦女</option>
+                                    <!-- <option value="家庭婦女">家庭婦女</option>
                                     <option value="退休">退休</option>
                                     <option value="無業">無業</option>
                                     <option value="學生">學生</option>
                                     <option value="兒童">兒童</option>
-                                    <option value="職員">職員</option>
+                                    <option value="職員">職員</option> -->
                                     <option value="法律工作者">法律工作者</option>
                                     <option value="教授">教授</option>
                                 </select>
