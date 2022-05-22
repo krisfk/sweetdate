@@ -164,7 +164,8 @@ if( have_rows('carousel') ){
                         <div class="d-table-cell  align-middle">
 
                             <h2 class="d-inline-block m-0  ps-2">
-                                最新資訊
+                                <!-- 最新資訊 -->
+                                魅力提升工作坊
                             </h2>
                         </div>
                     </div>
