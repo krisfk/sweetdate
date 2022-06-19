@@ -24,7 +24,7 @@ get_header();
     <div class="main-content mt-4">
 
 
-        <div class="text-center mb-4">WhatsApp 6692 9252</div>
+        <!-- <div class="text-center mb-4">WhatsApp 6692 9252</div> -->
 
         <?php
         if($_POST)
